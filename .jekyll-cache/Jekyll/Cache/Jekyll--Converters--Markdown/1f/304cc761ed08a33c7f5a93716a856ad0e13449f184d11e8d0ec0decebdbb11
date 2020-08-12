@@ -1,0 +1,139 @@
+I"<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+[Link to another page](./another-page.html).
+
+There should be whitespace between paragraphs.
+
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project. -->
+
+<h1 id="johdanto">Johdanto</h1>
+
+<p>Tähän sit jotain sopivaa tekstiä hankkeen loppuvaiheessa.</p>
+
+<h1 id="robot-operating-system-ros">Robot Operating System, ROS</h1>
+
+<p>Vuonna 2007 Stanfordin Artificial Intelligence laboratoriossa ja Willow Garagen avustuksella kehitetty Robot Operating System (ROS) edustaa avoimen lähdekoodin politiikkaa ja on siten muodostunut yhdeksi suosituimmista ohjelmistokehyksistä robotiikassa. GitHub-kehitysalustassa on yli tuhat ROS talletusta. ROS tukee mobiili-, teollisuus-, kirurgia- ja avaruusrobotiikkaa sekä autonomisia autoja. (Ohnsman, 2019) ROS on eräänlainen aarreaitta täynnä algoritmeja, ohjelmistoja, ajureita, toimintoja ja paljon muuta. ROS:sin joustavuus pohjautuu sen kykyyn toimia informatiivisena perustana innovatiiviselle kehitykselle. Muokattavuutensa vuoksi ROS mahdollistaa käyttäjien omien suunnittelumallien käytön. ROS:sin käyttö säästää tarvittavaa työvoimaa prosessiohjelmoinnissa sekä kehityskustannuksia erilaisten laitteisto- ja ohjelmistokirjastojen mahdollistaman viestinnän avulla.  Käyttäjäyhteisönsä jatkuvan kehittämisen ja lähdekoodin avoimuuden vuoksi ROS:sin käyttö koetaan turvallisena ja luotettavana. (Vozel, 2019)</p>
+
+<p>ROS markkinoiden odotetaan kasvavan vuoden 2019 321M $:sta 467M $:iin vuoteen 2024 mennessä (Taulukko  ). Sen vuotuinen CAGR (Compaund Annual Growth Rate) tällä aikajaksolla olisi täten 8.4%. Tutkimus- ja kehitystyöhön liittyvät teollisuus automaation varat, yhteistyössä toimivien modulaaristen robottien lisääntyvä käyttö sekä RaaS (Robotics-as-a-Service) kasvava kysyntä ennustavat edullisten ROS teollisuusrobottien käyttöönottoa. (Robot Operating System Market by Robot Type (Articulated, SCARA, Parallel, Cartesian, Collaborative), Industry (Automotive, Electrical and Electronics, Metals and Machinery, Food and Beverages, Healthcare), and Region - Global Forecast to 2024, 2019)</p>
+
+<p><img src="/assets/images/Taulukko_1.png" alt="Taulukko" /></p>
+<h5 id="ros-kasvuodotukset-vuoteen-2024">ROS kasvuodotukset vuoteen 2024</h5>
+
+<h1 id="ros-1">ROS 1</h1>
+
+<h1 id="ros-2">ROS 2</h1>
+
+<h3 id="micto-ros">micto-ROS</h3>
+
+<h3 id="ros--matlab--simulink">ROS + Matlab &amp; Simulink</h3>
+
+<h1 id="ros-health">ROS health</h1>
+
+<h1 id="ros-industrial">ROS Industrial</h1>
+
+<h3 id="liitännät-muihin-järjestelmiin">Liitännät muihin järjestelmiin</h3>
+
+<h3 id="moveit">MoveIt</h3>
+
+<h3 id="gazebo">Gazebo</h3>
+
+<h3 id="neuroverkot-ja-syväoppiminen">Neuroverkot ja syväoppiminen</h3>
+
+<h1 id="turvallisuus-verkossa">Turvallisuus verkossa</h1>
+
+<h1 id="ros-tuettuja-antureita">ROS tuettuja antureita</h1>
+
+<p>Erilaiset anturit kuuluvat jo melkein jokaisen arkeen. Antureilla mitataan lämpötilaa, etäisyyttä, ilman kosteutta, tasataan paineita ja havaitaan mahdollinen tulipalon aiheuttama savu tai häkä. Käyttökohteita ja tarkoituksia on lukemattomia. Anturit ovat laitteita, jotka mittaavat fyysistä syötettä ja muuntavat ne tiedoksi, jonka joko ihminen tai kone voi tulkita. ROS:sin avulla robotti kehittää tietoisuutta ympäristöstään käyttämällä esim. stereonäköä, inertiamittausta sekä 3D-laserskannausta. Robotti yhdistää keräämänsä tiedot, jotta se tietää missä se on, minne se on menossa tai mitä mahdollisia esteitä on matkalla. (A Case Study: Developing a ROS Robot with On-Board Computing for a University Robotics Department, 2020) Hyvä listaus ROS antureita löytyy ROS wiki sivistolta: http://wiki.ros.org/Sensors.</p>
+
+<h2 id="velodyne-lidar-velodyne">Velodyne Lidar (Velodyne)</h2>
+
+<p>Velodyne on 1983 perustettu yritys, joka tarjoaa tehokkaimpia ja älykkäimpiä markkinoilla olevia etäisyydenmittauslaitteita autonomiaan ja kuljettajan avustukseen. (Velodyne Lidar, Inc., n.d) Lidar (Light Detection and Ranging) kutsutaan usein myös laserskannaukseksi tai 3D-skannaukseksi. Lidar käyttää silmille turvallisia lasersäteitä muodostaakseen 3D-esityksen ympäristöstään. Se laskee etäisyyksiä lähettämällä laservalopulssin ympäristöönsä ja laskee ajan, joka pulssilta, kuluu heijastua kohteesta takaisin. Toistamalla prosessia miljoonia kertoja sekunnissa saadaan tarkka reaaliaikainen 3D kartta. Velodyne voidaan liittää ROS:iin ja generoida pilveen pistetietoja raakadatasta. (What is LIDAR?, 2020)</p>
+
+<p><img src="assets/images/Velodyne.png" alt="Kuva" /></p>
+<h5 id="velodyne-simulointi-gazebolla">Velodyne simulointi Gazebolla</h5>
+
+<!-- #### Header 4
+
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+
+##### Header 5
+
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
+
+###### Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this.
+
+* * *
+
+### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+
+### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+### Small image
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
+
+
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+``` -->
+:ET

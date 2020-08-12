@@ -1,45 +1,4 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Rokokoo | Robotiikan koulutus kasvuyritysten ohjenuorana</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Rokokoo" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<meta property="og:description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Rokokoo" />
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Rokokoo","description":"Robotiikan koulutus kasvuyritysten ohjenuorana","name":"Rokokoo","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  </head>
-  <body>
-
-      <header>
-        <h1>Rokokoo</h1>
-        <p>Robotiikan koulutus kasvuyritysten ohjenuorana</p>
-      </header>
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
+I"�'<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
@@ -124,45 +83,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p>Intel® RealSense™ D400-sarjan syvyyskamerat käyttävät stereonäkymää laskeakseen syvyyden. Stereokuva toteutetaan käyttämällä vasenta ja oikeaa kuvanninta sekä valinnaista infrapunaprojektoria. Matala tekstuurisissa näkymissä infrapunaprojektori heijastaa näkymätöntä staattista IR (Infrared) kuvioita parantaakseen syvyystarkkuutta. Kuvantimet tallentavat näkymän ja lähettävät datan syvyysnäköprosessorille, joka laskee kuvan jokaiselle pikselille syvyysarvot korreloimalla pisteitä keskenään ja siirtämällä pisteitä kuvien välillä. Syvyyspikseliarvot prosessoidaan syvyyskehyksen luomiseksi. Perättäisistä syvyyskehyksistä saadaan luotua syvyysvideostriimaus (Kuva  ). (Intel® RealSenseTM Product Family D400 Series, 2020)</p>
 
 <p><img src="/assets/images/Intel_Realsense.png" alt="Kuva6" /></p>
-<h5 id="aktiivinen-ir-stereonäkö-teknologia">Aktiivinen IR Stereonäkö teknologia</h5>
-
-<h1 id="alustat">Alustat</h1>
-
-<p>Alustoja käytetään sovellusten, prosessien sekä teknologioiden kehittämisen pohjana. Valintaan vaikuttaa käyttötarkoituksen lisäksi moni seikka, kuten mm. tulo/lähtöjärjestelmät, rajapinnat, haluttu prosessorin nopeus, muistikapasiteetti sekä laajennusmahdollisuudet. Myös kaikki x86-arkkitehtuurin prosessorit ovat käytettävissä. Tässä mainitaan vain muutama soveltuva alusta.</p>
-
-<h3 id="nvidia-tx1tx2">NVIDIA TX1/TX2</h3>
-
-<p>NVIDIA® Jetson™- järjestelmät nopeampaan autonomisten koneiden ohjelmistojen ajamiseen pienemmällä virrankulutuksella. Jokainen on kokonainen SOM-järjestelmä (System-on-Module), jossa on CPU (Central Processing Unit), GPU (Graphics Processing Unit), PMIC (Power Management Integrated Circuit), DRAM (Dynamic Random Access Memory) ja flash-muisti. Jetson on laajennettavissa valitsemalla sovellukselle sopivia SOM ja rakentamalla kustomoitu järjestelmä vastaamaan erityistarpeista. (Embedded Systems for Next-Generation Autonomous Machines, 2020)</p>
-
-<h3 id="raspberry-pi-4">Raspberry Pi 4</h3>
-
-<p>Viimeisin Raspberry Pi 4 Model B tarjoaa suorityskyvyn, joka on verrattavissa x86 pöytäkoneeseen. 64-bittinen neliydinprosessori, kahden näytön tuki 4K:n resoluutiolla mikro-HDMI porttiparin kautta, jopa 8 GB RAM-muistia, kaksitaajuinen 2.4 / 5 GHz langaton LAN (Local Area Network), 5.0 Bluetooth, Gigabitin Ethernet, USB 3 ja PoE (Power over Ethernet) ominaisuus erillisen lisäosan kautta. (Raspberry Pi 4 Model B, 2020)</p>
-
-<h3 id="intel-nuc">Intel NUC</h3>
-
-<p>Intel® NUC (Next Unit of Computing) on pienikokoinen pöytäkone, joka tarjoaa suorituskykyä Celeronista Core i7:ään. Ensimmäiset laitteet tuotiin markkinoille 2013. Ytimenä toimii NUC Board emolevy, jossa on sisäänrakennettu suoritin. Intel HD tai Iris Graphics näytönohjain taas puolestaan on integroitu suorittimeen. Tehomalleissa on lisäksi integroitu Radeon RX Vega näytönohjain. Uusimmat NUC:it käyttävät DDR4 SO-DIMM muistimoduuleita 2400 MHz muistinopeuksilla. Ne tukevat kahden muistimoduulin käyttöä Dual Channel tilassa parantaen näin suorituskykyä. SSD kiintolevyjä on saatavilla 2.5” SSD ja M.2 SSD. Intel NUC tukee sekä Windows 10 käyttöjärjestelmää että Linuxia. Ubuntulla ja siihen perustuvilla jakeluilla kuten esim. Mint on paras Intel NUC tuki. Molemmat käyttöjärjestelmät voidaan asentaa myös rinnakkain nk. Dual-boot tilaan. (Intel NUC Ostajan Opas 2019, 2020)</p>
-
-<h3 id="odroid-xu4">Odroid-XU4</h3>
-
-<p>Odroid-XU4 on yhden piirilevyn tietokone. Siinä on Samsung Exynos 5422 (4x Cortex-A15 @ 2.0GHz ja 4x Cortex-A7 @ 1.4GHz) suoritin, yhdistettynä Mali-T628 MP6 GPU ja 2 Gt RAM-muistiin. Se voi suorittaa Ubuntun ja Androidin uusimpia versioita. Ordroid-XU4:llä on erittäin suuri tiedonsiirtonopeus. Miinuspuolena voidaan mainita, että siitä puuttuu Wifi- tai Bluetooth yhteys, jotka ovat saatavana vain USB-dongleina. (2020 Best Single Board Computers/ Raspberry Pi Alternatives, 2020)</p>
-
-<h1 id="rossin-hyödyntäminen">ROS:sin hyödyntäminen</h1>
-
-<p>Älykkäiden robottien suunnittelu ja rakentaminen ei ole niin yksinkertaista ja suoraviivaista kuin se voisi olla. Monet robotiikassa työskentelevät joutuivat usein aloittamaan aivan alusta aloittaessaan uuden projektin ja uudelleen kehittää ohjelmistoinfrastruktuurin joihin robottien algoritmit perustuvat. Jaetut työkalut ja resurssit olivat vähissä. ROS:sin etu on siinä, että suurimmassa osassa tapauksia ohjelmiston on jo todettu toimivan käytännössä. (Mok, 2020)</p>
-
-<h3 id="case-esimerkkejä-maailmalta">Case-esimerkkejä maailmalta</h3>
-
-<p>Tähän kans sit jotain sopivaa tekstiä</p>
-
-<h4 id="teollisuusrobotit">Teollisuusrobotit</h4>
-
-<p>ISO 8373:2012 mukaan teollisuusrobotti on autonomisesti ohjautuva, uudelleen ohjelmoitavissa oleva, moneen tarkoitukseen sopiva kolme tai useampi akselinen manipulaattori, joka voidaan asentaa joko kiinteästi tai käyttää mobiilina teollisuuden automaatiosovelluksissa. Näitä ovat mm. lineaari-, SCARA-, delta-, ja nivelrobotit. (Mueller, 2019) Koneoppiminen, AI (Artificial Intelligence), IIoT (Industrial Internet of Things) sekä ihmisen ja koneen yhteistyö sekä autonomiset mobiilijärjestelmät ovat tätä päivää. Edessä on kuitenkin suuria haasteita, kuten nopeasti muuttuvat kuluttajasuuntaukset, resurssien puute, ammattitaitoisten työtekijöiden puute, ikääntyvä yhteiskunta ja paikallisten tuotteiden kysyntä. Joustava teollisuusrobotiikka mahdollistaa ratkaisun näihin haasteisiin. (World Robotics 2020, 2020)</p>
-
-<h4 id="motoplus--sdk-ohjain">MotoPlus ™ SDK ohjain</h4>
-
-<p>Japanilainen Yaskawa Motoman oli yksi ensimmäisistä yhteistyö-, ja teollisuusrobottien valmistajista, joka hyödyntää ROS:sia. Yaskawa:lla on ROS-I ajuri YRC1000, YRC1000micro, DX200 ja DX100 robottien ohjaimiin. Ohjain kehitettiin käyttämällä MotoPlus™ SDK:ta (Kuva  ). Se sisältää C/C++ yhteensopivan ohjelmointirajapinnan (API, Application Programming Interface) jolla ohjelmoijat voivat tehdä reaaliaikaisia sovelluksia, jotka toimivat robotin alkuperäisessä VxWorks-käyttöjärjestelmässä. Rajoitettujen sovellusten kehittäminen voimanhallintaan, visuaaliseen robotin ohjaukseen sekä geneeriseen anturien integrointiin mahdollistuu. (Specific Unified Robot Description Formats (URDF) on saatavana robottien käsivarsien simulointiin. (Vozel, 2019)</p>
-
-<p><img src="/assets/images/Liikepaketin_kerrostumat.png" alt="Kuva7" /></p>
 
 <!-- #### Header 4
 
@@ -248,12 +168,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
-
-
-      </section>
-      
-    </div>
-
-    
-  </body>
-</html>
+:ET
