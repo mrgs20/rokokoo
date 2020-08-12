@@ -3,3 +3,6 @@ description: Robotiikan koulutus kasvuyritysten ohjenuorana
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-leap-day
+github:
+  url: https://github.com/mrgs20/rokokoo.git
+  username: mrgs20

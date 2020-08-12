@@ -1,45 +1,4 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Rokokoo | Robotiikan koulutus kasvuyritysten ohjenuorana</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Rokokoo" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<meta property="og:description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Rokokoo" />
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Rokokoo","description":"Robotiikan koulutus kasvuyritysten ohjenuorana","name":"Rokokoo","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-  </head>
-  <body>
-
-      <header>
-        <h1>Rokokoo</h1>
-        <p>Robotiikan koulutus kasvuyritysten ohjenuorana</p>
-      </header>
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
+I"<<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
@@ -57,27 +16,27 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p>ROS markkinoiden odotetaan kasvavan vuoden 2019 321M $:sta 467M $:iin vuoteen 2024 mennessä (Taulukko  ). Sen vuotuinen CAGR (Compaund Annual Growth Rate) tällä aikajaksolla olisi täten 8.4%. Tutkimus- ja kehitystyöhön liittyvät teollisuus automaation varat, yhteistyössä toimivien modulaaristen robottien lisääntyvä käyttö sekä RaaS (Robotics-as-a-Service) kasvava kysyntä ennustavat edullisten ROS teollisuusrobottien käyttöönottoa. (Robot Operating System Market by Robot Type (Articulated, SCARA, Parallel, Cartesian, Collaborative), Industry (Automotive, Electrical and Electronics, Metals and Machinery, Food and Beverages, Healthcare), and Region - Global Forecast to 2024, 2019)</p>
 
-<p><img src="/assets/images/Taulukko_1.png" alt="Taulukko" /></p>
+<p>![ROS kasvuodotukset vuoteen 2024] (/assets/images/Taulukko_1.png)</p>
 
 <h1 id="ros-1">ROS 1</h1>
 
 <h1 id="ros-2">ROS 2</h1>
 
-<h3 id="micto-ros">micto-ROS</h3>
+<h2 id="micto-ros">micto-ROS</h2>
 
-<h3 id="ros--matlab--simulink">ROS + Matlab &amp; Simulink</h3>
+<h2 id="ros--matlab--simulink">ROS + Matlab &amp; Simulink</h2>
 
 <h1 id="ros-health">ROS health</h1>
 
 <h1 id="ros-industrial">ROS Industrial</h1>
 
-<h3 id="liitännät-muihin-järjestelmiin">Liitännät muihin järjestelmiin</h3>
+<h2 id="liitännät-muihin-järjestelmiin">Liitännät muihin järjestelmiin</h2>
 
-<h3 id="moveit">MoveIt</h3>
+<h2 id="moveit">MoveIt</h2>
 
-<h3 id="gazebo">Gazebo</h3>
+<h2 id="gazebo">Gazebo</h2>
 
-<h3 id="neuroverkot-ja-syväoppiminen">Neuroverkot ja syväoppiminen</h3>
+<h2 id="neuroverkot-ja-syväoppiminen">Neuroverkot ja syväoppiminen</h2>
 
 <h1 id="turvallisuus-verkossa">Turvallisuus verkossa</h1>
 
@@ -173,12 +132,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
-
-
-      </section>
-      
-    </div>
-
-    
-  </body>
-</html>
+:ET
