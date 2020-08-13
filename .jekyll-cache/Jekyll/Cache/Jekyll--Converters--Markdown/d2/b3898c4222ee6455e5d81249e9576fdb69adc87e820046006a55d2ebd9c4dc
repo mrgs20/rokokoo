@@ -1,46 +1,4 @@
-<!doctype html>
-<html lang="fi">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Rokokoo | Robotiikan koulutus kasvuyritysten ohjenuorana</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Rokokoo" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<meta property="og:description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Rokokoo" />
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Rokokoo","description":"Robotiikan koulutus kasvuyritysten ohjenuorana","name":"Rokokoo","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
- 
-  </head>
-  <body>
-
-      <header>
-        <h1>Rokokoo</h1>
-        <p>Robotiikan koulutus kasvuyritysten ohjenuorana</p>
-      </header>
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-        
-      </nav>
-      <section>
-        <!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
+I",D<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
@@ -61,17 +19,17 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Taulukko_1.png" alt="Taulukko" /></p>
 <h5 id="ros-kasvuodotukset-vuoteen-2024">ROS kasvuodotukset vuoteen 2024</h5>
 
-<h2 id="ros-1">ROS 1</h2>
+<h1 id="ros-1">ROS 1</h1>
 
-<h2 id="ros-2">ROS 2</h2>
+<h1 id="ros-2">ROS 2</h1>
 
 <h3 id="micto-ros">micto-ROS</h3>
 
 <h3 id="ros--matlab--simulink">ROS + Matlab &amp; Simulink</h3>
 
-<h2 id="ros-health">ROS health</h2>
+<h1 id="ros-health">ROS health</h1>
 
-<h2 id="ros-industrial">ROS Industrial</h2>
+<h1 id="ros-industrial">ROS Industrial</h1>
 
 <h3 id="liitännät-muihin-järjestelmiin">Liitännät muihin järjestelmiin</h3>
 
@@ -151,7 +109,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p>Älykkäiden robottien suunnittelu ja rakentaminen ei ole niin yksinkertaista ja suoraviivaista kuin se voisi olla. Monet robotiikassa työskentelevät joutuivat usein aloittamaan aivan alusta aloittaessaan uuden projektin ja uudelleen kehittää ohjelmistoinfrastruktuurin joihin robottien algoritmit perustuvat. Jaetut työkalut ja resurssit olivat vähissä. ROS:sin etu on siinä, että suurimmassa osassa tapauksia ohjelmiston on jo todettu toimivan käytännössä. (Mok, 2020)</p>
 
-<h2 id="case-esimerkkejä-maailmalta">Case-esimerkkejä maailmalta</h2>
+<h3 id="case-esimerkkejä-maailmalta">Case-esimerkkejä maailmalta</h3>
 
 <p>Tähän kans sit jotain sopivaa tekstiä</p>
 
@@ -159,21 +117,17 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p>ISO 8373:2012 mukaan teollisuusrobotti on autonomisesti ohjautuva, uudelleen ohjelmoitavissa oleva, moneen tarkoitukseen sopiva kolme tai useampi akselinen manipulaattori, joka voidaan asentaa joko kiinteästi tai käyttää mobiilina teollisuuden automaatiosovelluksissa. Näitä ovat mm. lineaari-, SCARA-, delta-, ja nivelrobotit. (Mueller, 2019) Koneoppiminen, AI (Artificial Intelligence), IIoT (Industrial Internet of Things) sekä ihmisen ja koneen yhteistyö sekä autonomiset mobiilijärjestelmät ovat tätä päivää. Edessä on kuitenkin suuria haasteita, kuten nopeasti muuttuvat kuluttajasuuntaukset, resurssien puute, ammattitaitoisten työtekijöiden puute, ikääntyvä yhteiskunta ja paikallisten tuotteiden kysyntä. Joustava teollisuusrobotiikka mahdollistaa ratkaisun näihin haasteisiin. (World Robotics 2020, 2020)</p>
 
-<h3 id="motoplus--sdk-ohjain">MotoPlus ™ SDK ohjain</h3>
+<h4 id="motoplus--sdk-ohjain">MotoPlus ™ SDK ohjain</h4>
 
 <p>Japanilainen Yaskawa Motoman oli yksi ensimmäisistä yhteistyö-, ja teollisuusrobottien valmistajista, joka hyödyntää ROS:sia. Yaskawa:lla on ROS-I ajuri YRC1000, YRC1000micro, DX200 ja DX100 robottien ohjaimiin. Ohjain kehitettiin käyttämällä MotoPlus™ SDK:ta (Kuva  ). Se sisältää C/C++ yhteensopivan ohjelmointirajapinnan (API, Application Programming Interface) jolla ohjelmoijat voivat tehdä reaaliaikaisia sovelluksia, jotka toimivat robotin alkuperäisessä VxWorks-käyttöjärjestelmässä. Rajoitettujen sovellusten kehittäminen voimanhallintaan, visuaaliseen robotin ohjaukseen sekä geneeriseen anturien integrointiin mahdollistuu. (Specific Unified Robot Description Formats (URDF) on saatavana robottien käsivarsien simulointiin. (Vozel, 2019)</p>
 
 <p><img src="/assets/images/Liikepaketin_kerrostumat.png" alt="Kuva7" /></p>
-<h5 id="ros-industrial-liikepaketin-kerrostumat-sekä-miten-motoros-ja-yaskawa-motoman-ohjain-liittyvät-toisiinsa">Ros-Industrial liikepaketin kerrostumat sekä miten MotoROS ja Yaskawa Motoman ohjain liittyvät toisiinsa</h5>
 
-<h3 id="plugnplay-ros-ohjain">Plug’n’play ROS-ohjain</h3>
+<h4 id="plugnplay-ros-ohjain">Plug’n’play ROS-ohjain</h4>
 
 <p>Tanskalainen Universal Robots on hallitseva kevyiden käsivarsirobottien toimittaja sekä teollisuuteen että tutkimukseen ja opetukseen. Tutkimuskenttä on kehittänyt kolmansien osapuolien ohjaimia, joilla ROS yhteisö on voinut kommunikoida UR robottien kanssa. ROS yhteisöstä löytyy yli 200 haaraa, jotka ovat UR yhteensopivia. UR ei silti koskaan ole ollut kehittämässä tai tukemassa näitä ohjaimia. Saatavilla on monia yhteisön kehittämiä ohjaimia, joista ei tiedä millä niistä on viimeisimmät ominaisuudet tai mitkä niistä tukevat oikeaa UR ohjelmaversiota. (Madsen, 2019)</p>
 
 <p>Jotta Universal Robots: in parhaita ominaisuuksia hyödynnettäisiin, kehittivät he yhteistyössä saksalaisen tutkimuslaitoksen, FZI (Forschungszentrum Informatik, Research Center for Information Technology) kanssa Universal Robots: in tukeman ROS-ohjaimen, jotta siitä saatiin vakaa ja kestävä. Ohjain julkaistiin markkinoille lokakuussa 2019. Tämä on ”plug’n’play”-tyylinen, helppokäyttöinen ohjain UR roboteille. Se hyödyntää robotin pääominaisuuksia, jotta se kykenee parhaaseen suorituskykykyynsä ja tarjoaa parhaimman teollisuusluokan rajapinnan, jonka nykyinen ROS käytäntö mahdollistaa. Ohjain sisältää spesifit robotin kalibrointidatat parhaaseen tarkkuuteen. Ohjain tulee olemaan avoin lähdekoodi ja nojaa tulevaisuuden yhteisökehitykseen. Ohjain on tarkoitettu CB3 ja e-sarjalaisille, joissa RTDE (Real-Time Data Exhange) on saatavilla (Kuva  ). (Madsen, 2019; Universal Robots ROS driver, 2020)</p>
-
-<p><img src="/assets/images/Universal.png" alt="Kuva8" /></p>
-<h5 id="universal-robotsin-e-sarjalaiset">Universal robots:in e-sarjalaiset</h5>
 
 <!-- #### Header 4
 
@@ -259,13 +213,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
-
-
-      </section>
-      
-    </div>
-
-
-    
-  </body>
-</html>
+:ET

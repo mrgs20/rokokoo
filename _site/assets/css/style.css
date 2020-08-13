@@ -236,7 +236,7 @@ strong { font-weight: bold; color: #333; }
 
 .wrapper { width: 650px; margin: 0 auto; position: relative; }
 
-section img { max-width: 100%; }
+section img { max-width: 100%; position: relative; }
 
 blockquote { border-left: 1px solid #ffcc00; margin: 0; padding: 0 0 0 20px; font-style: italic; }
 
@@ -284,15 +284,15 @@ header p { color: #d8d8d8; text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0; font-size: 1
 
 #banner #logo { position: absolute; height: 36px; width: 36px; right: 7px; top: 7px; display: block; background: url(../images/octocat-logo.svg); }
 
-section { width: 590px; padding: 30px 30px 50px 30px; margin: 20px 0; margin-top: 190px; position: relative; background: #fbfbfb; border-radius: 3px; border: 1px solid #cbcbcb; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4); }
+section { width: 600px; padding: 30px 30px 50px 30px; margin: 20px 0; margin-top: 190px; position: relative; background: #fbfbfb; border-radius: 3px; border: 1px solid #cbcbcb; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4); }
 
 small { font-size: 12px; }
 
-nav { width: 230px; position: fixed; top: 220px; left: 50%; margin-left: -580px; text-align: right; }
+nav { width: 260px; position: fixed; top: 200px; left: 50%; margin-left: -620px; text-align: right; }
 
-nav ul { list-style: none; list-style-image: none; font-size: 14px; line-height: 24px; }
+nav ul { list-style: none; list-style-image: none; font-size: 14px; line-height: 24px; overflow: auto; height: 450px; padding: 4%; }
 
-nav ul li { padding: 5px 0px; line-height: 16px; }
+nav ul li { padding: 5px 0px; line-height: 12px; }
 
 nav ul li.tag-h1 { font-size: 1.2em; }
 
