@@ -288,7 +288,7 @@ section { width: 600px; padding: 30px 30px 50px 30px; margin: 20px 0; margin-top
 
 small { font-size: 12px; }
 
-nav { width: 260px; position: fixed; top: 200px; left: 50%; margin-left: -620px; text-align: right; }
+nav { width: 260px; position: fixed; top: 200px; left: 50%; margin-left: -600px; text-align: right; }
 
 nav ul { list-style: none; list-style-image: none; font-size: 14px; line-height: 24px; overflow: auto; height: 450px; padding: 4%; }
 
@@ -304,11 +304,13 @@ nav ul a { color: #666; }
 
 nav ul a:hover { color: #999; }
 
+nav ul .active { border-right: solid 4px #519cc5; padding-right: 13px; }
+
 footer { width: 180px; position: fixed; left: 50%; margin-left: -530px; bottom: 20px; text-align: right; line-height: 16px; }
 
 @media print, screen and (max-width: 1060px) { div.wrapper { width: auto; margin: 0; } nav { display: none; } header, section, footer { float: none; } header h1, section h1, footer h1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; } #banner { width: 100%; } #banner .downloads { margin-right: 60px; } #banner #logo { margin-right: 15px; } section { border: 1px solid #e5e5e5; border-width: 1px 0; padding: 20px auto; margin: 190px auto 20px; max-width: 600px; } footer { text-align: center; margin: 20px auto; position: relative; left: auto; bottom: auto; width: auto; } }
 
-@media print, screen and (max-width: 720px) { body { word-wrap: break-word; } header { padding: 20px 20px; margin: 0; } header h1 { font-size: 32px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; } header p { display: none; } #banner { top: 80px; } #banner .fork { float: left; display: inline-block; margin-left: 0px; position: fixed; left: 20px; } section { margin-top: 130px; margin-bottom: 0px; width: auto; } header ul, header p.view { position: static; } }
+@media print, screen and (max-width: 720px) { body { word-wrap: break-word; } header { padding: 20px 20px; margin: 0; } header h1 { font-size: 32px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; } header p { display: none; } #banner { top: 80px; } #banner .fork { display: inline-block; margin-left: 0px; position: fixed; left: 20px; } section { margin-top: 130px; margin-bottom: 0px; width: auto; } header ul, header p.view { position: static; } }
 
 @media print, screen and (max-width: 480px) { header { position: relative; padding: 5px 0px; min-height: 0px; } header h1 { font-size: 24px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; -ms-text-overflow: ellipsis; } section { margin-top: 5px; } #banner { display: none; } header ul { display: none; } }
 

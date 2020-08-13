@@ -1,46 +1,4 @@
-<!doctype html>
-<html lang="fi">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Rokokoo | Robotiikan koulutus kasvuyritysten ohjenuorana</title>
-<meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Rokokoo" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<meta property="og:description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Rokokoo" />
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Rokokoo","description":"Robotiikan koulutus kasvuyritysten ohjenuorana","name":"Rokokoo","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
- 
-  </head>
-  <body>
-
-      <header>
-        <h1>Rokokoo</h1>
-        <p>Robotiikan koulutus kasvuyritysten ohjenuorana</p>
-      </header>
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-        
-      </nav>
-      <section>
-        <!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
+I"�j<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
@@ -231,95 +189,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p>Windows 10 Enterprise tuo mukanaan hyötyjä kuten yritysluokan suojauksen, helpon yhdistettävyyden pilveen, enemmän älykkyyttä Windows:in ML ROS noden kautta sekä nopeamman kehityksen. (Clearpath robots on Windows 10, 2020)</p>
 
 <p><img src="/assets/images/Clearpath Robots, JACKAL.png" alt="Kuva16" /></p>
-<h5 id="clearpath-robots-jackal">Clearpath Robots, JACKAL</h5>
-
-<h1 id="ros-suomessa">ROS Suomessa</h1>
-
-<h3 id="ohjelmistokehitys">Ohjelmistokehitys</h3>
-
-<p>VAISTO on Tampereella sijaitseva yritys, joka tekee yhteistyötä älykytkettyihin ajoneuvoihin, koneisiin ja teollisuusautomaatioon erikoistuneiden yritysten kanssa. Heidän tavoitteensa on auttaa asiakkaitaan kehittämään parempia tuotteita sekä kokemuksia teollisuuden AI:n avulla hyödyntämällä datapohjaista tekniikkaa. Yrityksen ytimenä toimii ohjelmistokeskeisyys. (What Vaisto can do for you., n.d) Vaistossa käytetään ROS:sia autonomisten työkiertokonseptien prototyyppinä. Vaisto myös kehittää reaaliaikaisia datavirtoja autonomisille hallinta järjestelmille. (Koning, n.d)</p>
-
-<h3 id="autonominen-kuljetus">Autonominen kuljetus</h3>
-
-<p>Sensible 4 on Espoossa sijaitseva palkittu start-up joka suunnittelee ja kehittää autonomisia ajoneuvoja erilaisiin sääolosuhteisiin jotta kaupungeista voidaan saada puhtaampia ja täten ihmiskunnalle kestävämpi tulevaisuus. He ovat luoneet uraauurtavan ja ainutlaatuisen tekniikan itseohjautuville ajoneuvoille. Heidän tavoitteensa on, että vuonna 2021 näitä itseohjautuvia linja-autoja (Kuva   ) olisi osana kaupunkien nykyisiä kuljetusjärjestelmiä. (Steering towards a smarter planet, 2019) NordicNinja VC rahoitti ensimmäisen rahoituskierroksen 100M $ jota tukivat japanilaiset teknologiayritykset ja ITOCHU, joka on yksi suurimmista japanilaisista kauppayhtiöistä. Alkuvuonna 2020 Sensible 4 keräsi 7M $ joiden odotetaan laajentavan yritysmarkkinoita Eurooppaan ja Aasiaan. (Finnish Sensible 4 raises $7 million to support expansion of autonomous driving system specialised for harsh weather conditions, 2020)</p>
-
-<p><img src="/assets/images/Gacha bussi.png" alt="Kuva17" /></p>
-<h5 id="gacha-autonominen-linja-auto">Gacha, autonominen linja-auto</h5>
-
-<p>LiDAR-pohjainen paikannusohjelmisto suodattaa poikkeukset kuten lumen, sateen tai sumun, sallien näin etenemisen ilman kaista- tai maamerkkejä. Jotta saavutetaan todella tarkka paikannus olosuhteista riippumatta, käytetään omaa 3D-kartoitusta ja karttapohjaista lokalisointialgoritmia. LiDAR:in antamista 3D-tiedoista luodaan ympäristökartta, mutta sen sijaan, että käytettäisiin raakaa valotutkan antamaa dataa tai tunnistettaisiin datan antamat fyysiset piirteet, esitetään ympäristö nk. ”tilastomatemaattisena tilavuusjakautumana”. Erilaisia antureita käyttämällä havaitaan ja tunnistetaan esteet jopa näkyvyyden ollessa heikko. Esteiden havaitseminen perustuu monimuotoantureiden dataan ja omaan paikannusjärjestelmään, joka antaa sekä ajoneuvon tarkan sijainnin että 3D-mallin ympäristöstä. Havaitut esteet luokitellaan syväoppimisen avulla omiin kategorioihinsa sijainnin, koon tai nopeuden mukaan samalla ennustaen tulevan liikkeen. Lopuksi havainnot integroidaan monikohdeliikenteenseurantaan tarjoten näin parhaan mahdollisen tilannetietoisuusennusteen ohjausjärjestelmälle. (Our autonomous driving software, 2019)</p>
-
-<p>MPC-pohjaista (Model Predictive Control) liikerataohjausta käytetään optimoimaan ajoneuvojen ohjaustoimintoja suhteessa liikeratapisteiden sekvenssiin. Näin voidaan ennustaa ajoneuvon liikkuminen muutamia sekunteja etukäteen. S4 sijaintipino tarjoaa automaattisen kulkukelpoisuusindeksikartan. Näin ajoneuvo voi poiketa reitistä tarpeen tullen. Tieolosuhteet havaitaan reaaliajassa. (Our autonomous driving software, 2019)</p>
-
-<p>Tällä hetkellä SAE-tason 4 automaatiojärjestelmä tarvitsee ihmistä varmistukseksi. Järjestelmä sisältääkin ohjaus- ja valvontajärjestelmän antaen etäkäyttäjälle reaaliaikaista tietoa ajoneuvon tilasta ja sijainnista. (Our autonomous driving software, 2019)</p>
-
-<h3 id="ûber-drone-sekä-autonomiset-ajoneuvot">Ûber-drone sekä autonomiset ajoneuvot</h3>
-
-<p>Fleetonomy.ai Oy on vuonna 2016 perustettu osakeyhtiö, jonka kotipaikka on Helsinki. He tekevät yhteistyötä kumppanien kanssa hankkeissa, jotka voivat muuttaa maailmaa sellaiseksi joka useimmille on vielä science fictionia. (Fleetonomy.ai Oy, n.d) (Fortum GO, n.d) Yhtiön toimitusjohtajan Markus Kantosen (Kantonen, Toimitusjohtaja, 2020) (muuta tää lähdejuttu oikein, kun valmista!) mukaan monen UAV:in ja UGV:in komentorajapinta laitteen puolesta on toteutettu ROS:illa. Laitekohtaiseen komentorajapintaan liitytään omalla ohjelmistolla, joka yhtenäistää eri komentorajapinnat heidän sisäiseen standardimuotoonsa. He myös käyttävät mahdollisuuksien mukaan ROS:sia laitekohtaisessa simuloinnissa.</p>
-
-<p>Vuonna 2017 Fleetonomy.ai otti osaa brittien Defence and Security Accelerator (DASA) kisaan kehittäen Uber-tyylisen toimituspalvelun droneilla, hyödyntäen 3D fotogrammetrian fuusiodataa ja paikallista avointa karttadataa. He saivat kisasta 69,310 £ rahoituksen. (Transparency data Defence and Security Accelerator funded contracts: 1April 2017 to 31 March 2018, 2020)</p>
-
-<p>Fleetonomy.ai osallistui myös VTT:n autonomisen ajoratkaisun demonstrointiin FortumGO projektissa. Päämäärä 18 km:in matkalla Helsinki-Vantaan lentokentältä Pasilaan oli näyttää mobiiliuden liikkuvuus, yhteydet ja automatisointi. Näin nähdään miten autonomiset sähköiset ajoneuvot vaikuttavat liikenteeseen vähentämällä saasteita ja hiilidioksidipäästöjä. (Kantonen, 2020)</p>
-
-<p>Fleetonomy.ai otti osaa vuonna 2019 käynnistettyyn Autonomy in the Dynamic World-kilpailuun, jonka tarkoitus oli etsiä innovatiivisia ratkaisuehdotuksia ja tekniikoita autonomisten järjestelmien toiminnan parantamiseksi haastavissa olosuhteissa. Huhtikuussa 2020 DASA julkisti tehneensä 21 sopimusta, joiden yhteisarvo on 2.1 M £. Fleetonomy.ai on yksi voittaneista yrityksistä. (News story DASA awards £2-million to fast track autonomous vehicles in harsh conditions, 2020)</p>
-
-<!-- (”Monen UAV:n ja UGV:n komentorajapinta laitteen puolesta on toteutettu ROS:lla. Me liitymme laitekohtaiseen komentorajapintaan omalla ohjelmistollamme, joka yhtenäistää eri komentorajapinnat meidän sisäiseen standardimuotoomme. Lisäksi olemme mahdollisuuksien mukaan käyttäneet myös ROS:sia laitekohtaisessa simuloinnissa.” Markus Kantonen, Fleetonomy.ai) Tää ei kuulu mukaan.   -->
-
-<h3 id="it-palveluita-ja-ohjelmistoratkaisuja">IT-palveluita ja ohjelmistoratkaisuja</h3>
-<p>Solteq?</p>
-
-<h3 id="tekoäly-robotiikka-jätteiden-lajitteluun">Tekoäly robotiikka jätteiden lajitteluun</h3>
-<p>Zenrobotics?</p>
-
-<h3 id="devecto-espoo">Devecto, Espoo?</h3>
-
-<h3 id="cargotec-tampere">Cargotec, Tampere?</h3>
-
-<h1 id="alan-tutkimus-ja-kehitys">Alan tutkimus ja kehitys</h1>
-<p>Jotain juttua tähän</p>
-
-<h2 id="mikrokirurginen-robotin-tutkimusalusta">Mikrokirurginen robotin tutkimusalusta</h2>
-
-<p>The Hamlyn Centre for Robotics Surgery, Imperial College Lontoossa on yksi kuudesta Institute of Global Health Innovation’s (IGHI) tutkimuskeskuksista, jotka tukevat terveydenhuollon innovaatioiden tunnistamista, kehittämistä ja levittämistä. (About us, 2020) Nykyisin saatavilla olevat mikrokirurgisten taitojen kehittämistä ja nopeuttamista tukevat robottiavusteiset mikrokirurgian (RAMS, Robot-Assisted Micro-Surgery) koulutusalustat on pääsääntöisesti suunniteltu makromittakaavassa minimalistisen invasiiviseen leikkaukseen. Siksi Hamlyn Centre on nähnyt tarpeelliseksi kehittää oma mikrokirurgisen robotin tutkimusalusta. He kehittävät mikrokirurgista robotin tutkimusalustaa (MRRP, Microsurgical Robot Research Platform) joka sisältää orjarobotin, jossa on kaksikätinen manipulaattori, kaksi pääkontrolleria sekä näköjärjestelmä (Kuva  ). Se tukee joustavasti monia mikrokirurgisia työkaluja. Ohjelmiston arkkitehtuuri pohjautuu ROS:iin, jota voidaan laajentaa. Eri rajapintoja tutkimalla päädyttiin valitsemaan isäntä-orja-kartoitusstrategia.</p>
-
-<p><img src="assets/images/Kirurgirobot.png" alt="Kuva18" /></p>
-<h5 id="orjarobotin-cad-malli-mrrplle">Orjarobotin CAD malli MRRP:lle</h5>
-
-<p>Orjarobotin kinemaattinen ohjaus perustuu SmarPod API:iin (Application Programming Interface) (Kuva   ). Modulaarista ohjausjärjestelmää käytetään ohjaamaan orjarobottimanipulaattorien pietsomoottoreita samalla kun alemman tason muodostavat kaksi harjatonta DC moottorinohjainta käytetään ohjaamaan moottoroituja mikroatuloita. Suuntauksen ohjaamiseksi ohjausjärjestelmällä voi olla 1 kHz näytteenottotaajuus. Järjestelmässä käytetään ROS väliohjelmistoa MRRP yhteyden luomiseksi. He kehittivät ROS-to-SmarPod API-sillan komponenteilla, jotka julkaisevat robotin tilat ROS-sanomina. Reaaliaikainen kinemaattinen ja visuaalinen data voidaan tilata ROS-viesteinä korkeatasoisen apuprosessin saamiseksi. Päämanipulaattorin ohjauskomennot, joita järjestelmä tuottaa ihmisten tai älykkään järjestelmän välityksellä voidaan julkaista ROS topiceina jotta MRRP- robotin päätelaite saadaan asetettua haluttuun asentoon karteesisessa tilassa. Kädessä pidettävällä isäntäohjaimella operatiiviset käskyt generoidaan OpenCV:hen perustuvalla liikkeenseuranta moduulilla. Laskenta ja käsittely on toteutettavissa Python, C++ ja C-ohjelmointikielillä. Käyttöliittymien kehittäminen mahdollistuu QT-pohjaisella GUI:lla (Graphical User Interface). (Zhang;Chen;Li;Salinas;&amp; Yang, 2019)</p>
-
-<p><img src="/assets/images/Ohjelmistoarkkitehtuuri.png" alt="Kuva19" /></p>
-<h5 id="ohjelmistoarkkitehtuuri-mrrplle">Ohjelmistoarkkitehtuuri MRRP:lle</h5>
-
-<h2 id="prosessin-piirteiden-havaitseminen">Prosessin piirteiden havaitseminen</h2>
-
-<p>Saksassa sijaitseva Soutwest Research Institute:n (SwRI) ROS Industrial-tiimi kehittää 3D-tunnistinjärjestelmiin hybridia lähestymistapaa, jossa kehittyneet 2D-tunnistimet integroidaan ROS 3D-tunnistuslinjalle prosessin piirteiden havaitsemiseksi ja jotta tunnistin voidaan päivittää joustavasti ilman muutoksia muuhun järjestelmään. Teollisissa sovelluksissa on usein 3D-havaintodataa 3D-syvyyskameroista, jotka tuottavat myös 2D-video suoratoistoa. ROS-työkaluilla tuota 2D-video suoratoistoa voidaan käyttää haluttujen piirteiden havaitsemisemiseksi ja projisoida ne takaisin 3D-dataan. Semanttisesti merkityn 3D-verkon aikaansaamiseksi tunnistetut piirteet voidaan yhdistää skannauksen aikana. Verkon päälle voidaan generoida työstöratoja, jotka saadaan havaituista piirteistä. Lähestymistavan arvioimiseksi kehitettiin esimerkki hitsausmenetelmä, jossa jokainen osa oli sarja kiinnehitsattuja alumiinilevyjä, mutta joiden tarkkaa kokoa tai sijaintia ei tiedetty. (Powelson, 2020) (Kuva  )</p>
-
-<p><img src="/assets/images/Hitsauskoe.png" alt="Kuva20" /></p>
-<h5 id="kokeellinen-hitsausmenetelmä">Kokeellinen hitsausmenetelmä</h5>
-
-<p>Järjestelmä etenee käyttäen ROS-työkaluja. Aluksi kameraohjain toimittaa värillisen pistepilven TSDF-solmulle (Truncated Signed Distance Field), joka rekonstruoi ympäristön geometrian. Samalla pistepilviä huomioiva solmu erottelee pikseliin kohdistetun 2D-kuvan pistepilvestä ja lähettää sen ROS-palvelun kautta satunnaisille 2D-tunnistimille, joka palauttaa naamion, jossa on leima jokaiselle kuvapikselille. Näitä leimoja uudelleen värjätään pistepilven merkitsemiseksi. Tulokset voidaan yhdistää avoimen lähdekoodin octomap_serveriä käyttämällä. Skannauksen lopussa YAK-kirjasto toimittaa 3D-verkon ympäristöstä ja octomap antaa octomapin, joka on väritetty semanttisilla leimoilla. Tesseract-törmäyksen tarkistusrajapintoja voidaan käyttää havainnoimaan kolmioverkkoon liittyvät vokselit, jolloin geometrinen verkko lisätään semanttiseen dataan. (Powelson, 2020)</p>
-
-<p><img src="/assets/images/Hitsikuvat.png" alt="Kuva21" /></p>
-<h5 id="vasemmalla-näkyy-2d-kuva-ja-havaittu-sauma-oikealla-näkyy-3d-verkko-ja-yhdistetty-3d-havaittu-hitsaussauma">Vasemmalla näkyy 2D kuva ja havaittu sauma. Oikealla näkyy 3D-verkko ja yhdistetty 3D havaittu hitsaussauma</h5>
-
-<h2 id="ascento-kaksipyöräinen-hyppäävä-robotti">Ascento: kaksipyöräinen hyppäävä robotti</h2>
-
-<p>Sveitsissä joukko insinööriopiskelijoita ETH Zürichin tutkimus instituutista on kehittänyt tasapainottelevan kaksipyöräisen robotin. Ascenton (Kuva  ) rakennekomponentit luotiin topologisella optimoinnilla (Kuva   ) ja ne on kokonaan 3D-tulostettu polyamidi 12:sta (PA 12) käyttäen selektiivistä lasersintraus (SLS) tekniikkaa.</p>
-
-<p><img src="/assets/images/Ascento.png" alt="Kuva22" /></p>
-<h5 id="ascento">Ascento</h5>
-
-<p>Jalkojen optimoitu geometria erottaa ajo- ja hyppyliikkeet antaen näin robotin taipua erilaisissa tippumisskenaarioissa. LQR (Linear Quadratic Regulator) kontrollerilla saavutetaan vakaa ajo. Palautuakseen erilaisista hyppy- tai tippumisliikkeistä robotti käyttää peräkkäismyötäkytkentäistä säätökontrolleria, jossa on takaisinkytkennän seuranta. Ascentossa on keskusyksikkönä Intel NUC i7, IMU (Inertial Measurement Unit) sekä mikrokontrolleri mahdollistamaan yhteydenpito tietokoneen ja IMU:n välillä. Moottorien virrankulutukseen on akku, joka koostuu neljästä sarjaan kytketystä kolmekennoisesta litiuminonipolymeeriakusta (LiPO). Tietokone ja muut elektroniset laitteet saavat virtansa neljäkennoisesta LiPO akusta. Ohjelmiston on oltava laskennallisesti tehokas, jotta suuren kaistanleveyden ohjaimet mahdollistuvat. Kaikki ohjelmistot on kirjoitettu C++:lla. ROS:sia käytetään korkean tason viestintään. Kalman suodatinta toimii IMU:n ja moottorin kooderi mittauksista saaduilla anturitiedoilla. Ascentoa voidaan kauko-ohjata mutta se voi myös operoida täysin autonomisesti käyttäen kameroita ja antureita. Se painaa 10.4 kg ja sen huippunopeus on 8 km/h. Suurin mahdollinen hyppykorkeus on 0.4 m ja operointiaika on n. 1,5 h. (Coxworth, 2020) (Klemm, ym., 2019)</p>
-
-<p><img src="/assets/images/Topologiset.png" alt="Kuva23" /></p>
-<h5 id="topologialla-optimoitu-osa">Topologialla optimoitu osa</h5>
-
-<h1 id="hankkeen-onnistuminen">Hankkeen onnistuminen</h1>
-
-<h1 id="tulevaisuus">Tulevaisuus</h1>
-
-<h1 id="yhteenveto">Yhteenveto</h1>
-
-<h1 id="lähteet">Lähteet</h1>
 
 <!-- #### Header 4
 
@@ -405,13 +274,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
-
-
-      </section>
-      
-    </div>
-
-
-    
-  </body>
-</html>
+:ET

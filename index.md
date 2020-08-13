@@ -122,7 +122,7 @@ Odroid-XU4 on yhden piirilevyn tietokone. Siinä on Samsung Exynos 5422 (4x Cort
 
 ## Case-esimerkkejä maailmalta
 
-Tähän kans sit jotain sopivaa tekstiä
+
 
 ### Teollisuusrobotit
 
@@ -143,6 +143,161 @@ Jotta Universal Robots: in parhaita ominaisuuksia hyödynnettäisiin, kehittivä
 
 ![Kuva8](/assets/images/Universal.png)
 ##### Universal robots:in e-sarjalaiset
+
+### ROSweld hitsausjärjestelmä
+
+Norjalainen robottijärjestelmien integraattori, PPM Robotics on kehittänyt ROSweldin (Kuva  ) joka on ensimmäinen raskasrobottihitsausjärjestelmä jossa käytetään koneoppimista monipalkohitsauksen suunnittelussa ja mallinnuksessa. ROSweldiin kuuluu myös suunnittelu CAD-malleista, graafinen monipalkohitsauksen poikkileikkauksen käsittely, simulointi sekä hitsauskameran integraatio. Konenäköjärjestelmä käyttää FlexGui 4.0:aa käyttöliittymänä, jolla voidaan uudelleenohjelmoida työstettävät kappaleet, filtteri, parametrit sekä toistot. ROS-alustasta johtuen näköjärjestelmä on robotti ja kamera riippumaton. (Santos, 2020) 
+
+![Kuva9](/assets/images/ROSweld.png)
+##### ROSweld järjestelmä PPM Robotics:lta
+
+ROSweld järjestelmässä jokainen komponentti on solmu tarjoten saman toiminnallisuuden ohjainryhmässä. Eri moduuleille on vakaa viestintäkerros ja standardit. MoveIt!, Rviz, RobotWebTools ROS2d.js, PCL (Point Cloud Library), pyros sekä rosbridge ovat käytössä olevia komponentteja. (Thomessen, 2018) 
+
+![Kuva10](/assets/images/ROSweld_järjestelmä.png)
+##### Järjestelmän rakenne
+
+### Autonomiset ajoneuvot
+
+Määritelmän mukaan ajoneuvo, joka havainnoi ja tunnistaa ympäristönsä sekä kykenee toimimaan itsenäisesti, luokitellaan autonomiseksi (Kuva  ). Autonomisten ajoneuvojen haasteita ovat ja tulevat edelleen olemaan lokalisointi, kartoitus, näkymän havainnointi, ajoneuvon hallinta, liikeradan optimointi sekä korkeatasoiset ennakoivat päätökset. (Fridman, ym., 2017) Volvo Car Group:in teknologiajohtaja Henrik Green:in mukaan täysin autonomisilla ajoneuvoilla on potentiaalia parantaa liikenneturvallisuutta tasoon, jota ei ole aiemmin nähty ja mullistaa tapa, jolla ihmiset elävät, työskentelevät ja matkustavat. (Cuneo, 2020) 
+
+![Kuva11](/assets/images/Autonomisen auton komp.png)
+##### Autonomisen auton tärkeitä komponenetteja
+
+### Autonominen kuorma-auto
+
+Yhdysvaltalainen Embark on vuonna 2016 perustettu kahden nuoren kanadalaisen tietokone tutkijan startup San Franciscossa. Yritys toimii yhteistyössä Electroluxin ja Ryderin kanssa ja kehittää autonomisten kuorma-autojen (Kuva  ) teknologiaa, jossa kuorma-autot kulkevat maanteillä ilman kuljettajaa, täysin itsenäisesti jopa 1046 km matkan (Sushant, 2019). Heidän kokonaisrahoituksensa on 117M $, josta 70M $ tuli vuonna 2019. (Ohnsman, 2019) Erilaisia tutkia, kameroita ja syvyysantureita, kuten LiDAR:ia (Light Detection and Ranging) käyttämällä miljoonat saadut datapisteet käsitellään neuroverkolla, Deep Neural Nets (DNN). Näin kuorma-auto kykenee oppimaan kokemuksistaan kuten ihmisetkin. Terabittejä reaalimaailman dataa analysoituaan neuroverkko oppii itsenäisesti tunnistamaan häikäisyn, sumun ja pimeyden. (Fleet Owner, 2017) Embark Trucks toimii nykyisin tason kaksi autonomiana. Tämä tarkoittaa sitä, että ammattitaitoisen kuljettajan on lain mukaan istuttava ohjauspyörän takana varmistuksena. Erikoisvalmisteinen kaksoisredundantti tietokone, joka testaa itsensä satoja kertoja sekunnissa tarkkailee jokaista komentoa reaaliajassa. (Sushant, 2019) 
+
+![Kuva12](/assets/images/Autonominen kuorma-auto.png)
+##### Embark kuorma-auto
+
+### Autonomisten autojen Rosbag-data
+
+Yhdysvaltalainen Ford Motor Company on vuonna 1903 perustettu yhtiö, joka on valmistanut T-mallin, Continentalin, Mustangin ja Broncon. He ovat valmistaneet myös lentokoneita, radioita, jääkaappeja, postituskoneita sekä sääsatelliitteja. Maaliskuussa 2020 Ford julkisti kaikessa hiljaisuudessa kokoelman, joka sisältää useiden eri autonomisten autojen datan – Ford Autonomous Vehicle Dataset. Data on kerätty eri päivinä ja aikoina vuosina 2017-2018. Ajoneuvot kulkivat keskimäärin 66 km: n reitin ja jokaisessa oli Applanix POS-LV GNSS- järjestelmä, neljä HDL-32E Velodyne 3D-lidar skanneria, kuusi 1,3 MP harmaapiste kameraa katolle asennettuna 360 asteen peittoa varten ja yksi 5 MP: n harmaapiste kamera tuulilasin taakse asennettuna suoraan eteenpäin kohdistuvan näkymän varmistamiseksi. Auton takaluukkuun sijoitettiin neljä Quad -core i7-prosessoria, joissa oli 16 Gt RAM, verkkolaitteet ja jäähdytysmekanismi. Aineiston jälkikäsittely suoritettiin kannettavalla Dell Precision 7710 tietokoneella. Kaikki tieto on saatavissa Rosbag-muodossa (Kuva  ), jota voidaan visualisoida ja muokata ROS:sin avulla. He toivovat, että tämä monen vuodenajan aineisto tulisi olemaan hyödyllinen robotiikalle ja AI-yhteisölle sekä tarjoamaan uusia tutkimusmahdollisuuksia. (Wiggers, 2020) 
+
+![Kuva13](/assets/images/Rosbag.png)
+##### Yhteenveto Rosbag-viesteistä
+
+## Autonomiset mobiilirobotit (AMRs, Autonomous Mobile Robots)
+
+Mobiilirobotteja käytetään teollisuudessa, kotitalouksissa ja erilaisissa palvelutoiminnoissa. Ne ovat tunnettuja uniikista kyvystään navigoida kontrolloimattomassa ympäristössä sensoreiden, piirustusten, tekoälyn, 3D- tai 2D-näön tai vastaavan kautta. ”AMR: t eivät vain kulje paikasta A paikkaan B, vaan niiden havaintokyky sallii uudelleenreitityksen, mikäli jokin este tulee niiden eteen.” sanoo Matt Wicks, tuotekehityksen varajohtaja Honeywell Intelligent: sta. (Zenner, 2019) 
+
+### Relay-palvelurobotti
+
+Yhdysvaltalainen Savioke on vuonna 2013 perustettu yritys, joka kehittää ja valmistaa autonomisia palvelurobotteja. Sen lippulaiva on Relay niminen robotti (Kuva   ), joka käyttää sisäistä karttaa ja LiDar:ia liikkuakseen ihmisten parissa. Suomalainen hissivalmistaja KONE tekee Savioke:n kanssa yhteistyötä huippuluokan hotelleissa. Tulevaisuudessa hotelleissa ei tarvitse olla mitään ylimääräisiä asennuksia sillä Relay ja hissit tulevat käyttämään KONE:een Flow Connectivity- ja pilvipalveluita, jolloin Relay kommunikoi KONE:een IoT alustan kanssa. (The robot butler is coming to a hotel near you, 2018) Yhtiö sai vuonna 2018 13.4M $ rahoituksen laajentaakseen tuotteensa sairaaloihin, joissa Relay voi auttaa sairaanhoitajia, laboratorioteknikoita ja muita terveydenhuollon ammattilaisia toimittamalla esim. näytteitä, lääkkeitä ja tarvikkeita. (Johnson, 2018)  
+
+![Kuva14](/assets/images/Relay.png)
+##### Savioke, Relay
+
+### Moxi-mobiilirobotti manipulaattorilla
+
+Yhdysvaltalainen Diligent Robotics perustettiin vuonna 2017 sosiaalisen robottiteollisuuden asiantuntijoiden toimesta. He ovat luoneet Moxi-mobiilirobotin, jossa on manipulaattori ja johon yhdistyy sosiaalinen älykkyys sekä ihmisohjatut oppimismahdollisuudet. Moxi toimii sairaaloissa auttaen hoitajia ei-potilas-hoidollisissa tilanteissa, jolloin hoitajille jää enemmän aikaa itse potilaiden hoitoon. Näitä tehtäviä ovat mm. tarvikkeiden kerääminen, potilaslaboratorionäytteiden ja päivittäisten liinanvaatteiden toimittaminen sekä esineiden hakeminen keskusvarastosta. Moxi parantaa tehokkuutta, lisää työntekijöiden tyytyväisyyttä sekä parantaa hoidon laatua. Robotti käyttää koneoppimista kohteiden tunnistukseen ja tarttumiseen sekä ROS:iin perustuvaa navigaatio-ohjelmistoa. Siinä on osia eri laitevalmistajilta kuten Fetch Robotics, Velodyne Lidar, Intel, Kinova ja Robotiq. (Kara, 2020) (Diligent Robotics transforming the meaning of "work", n.d) 
+
+![Kuva15](/assets/images/Moxi.png)
+##### Moxi-mobiilirobotti manipulaattorilla
+
+### Windows IoT tuki Jackal UGV:lle
+
+Kanadalainen Cleatpath Robotics on neljän yliopistokaveruksen kellarista vuonna 2009 ponnistanut, palkittu, johtava miehittämättömien robottiajoneuvojen valmistaja maailmalla. Heidän tuotteitaan käytetään maataloudessa, kaivostoiminnassa, teollisuudessa, asevoimissa ja eri tutkimusaloilla. Toukokuussa 2020 Clearpath ilmoitti aloittavansa Windows IoT Enterprise tuennan, alkaen Jackal UGV:sta. Jackal (Kuva  ) on pieni, kestävä mobiilirobotti, jota voidaan käyttää ympäristön etävalvonnassa ja -tarkastuksissa tilanteissa, jotka vaativat navigointia ulkona ja/tai ihmisen ja robotin vuorovaikutusta. Siinä on sisäänrakennettu tietokone, GPS (Global Positioning System) sekä IMU (Inertial Measurement Unit) joka on integroitu ROS:iin käyttövalmiin autonomian vuoksi. Se on valmistettu tukevasta alumiinirungosta, siinä on suuri vääntömomentti 4 x 4 voimansiirrolla tehden siitä soveltuvan vaikeisiinkin maasto-olosuhteisiin. Siinä on IP62 luokituksen omaava kotelo ja sen kykenee operoimaan -20°C - 45°C lämpötiloissa. (Jackal, n.d) (Clearpath robots on Windows 10, 2020)
+
+Windows 10 Enterprise tuo mukanaan hyötyjä kuten yritysluokan suojauksen, helpon yhdistettävyyden pilveen, enemmän älykkyyttä Windows:in ML ROS noden kautta sekä nopeamman kehityksen. (Clearpath robots on Windows 10, 2020)    
+
+![Kuva16](/assets/images/Clearpath Robots, JACKAL.png)
+##### Clearpath Robots, JACKAL
+
+# ROS Suomessa
+
+### Ohjelmistokehitys
+
+VAISTO on Tampereella sijaitseva yritys, joka tekee yhteistyötä älykytkettyihin ajoneuvoihin, koneisiin ja teollisuusautomaatioon erikoistuneiden yritysten kanssa. Heidän tavoitteensa on auttaa asiakkaitaan kehittämään parempia tuotteita sekä kokemuksia teollisuuden AI:n avulla hyödyntämällä datapohjaista tekniikkaa. Yrityksen ytimenä toimii ohjelmistokeskeisyys. (What Vaisto can do for you., n.d) Vaistossa käytetään ROS:sia autonomisten työkiertokonseptien prototyyppinä. Vaisto myös kehittää reaaliaikaisia datavirtoja autonomisille hallinta järjestelmille. (Koning, n.d) 
+
+### Autonominen kuljetus
+
+Sensible 4 on Espoossa sijaitseva palkittu start-up joka suunnittelee ja kehittää autonomisia ajoneuvoja erilaisiin sääolosuhteisiin jotta kaupungeista voidaan saada puhtaampia ja täten ihmiskunnalle kestävämpi tulevaisuus. He ovat luoneet uraauurtavan ja ainutlaatuisen tekniikan itseohjautuville ajoneuvoille. Heidän tavoitteensa on, että vuonna 2021 näitä itseohjautuvia linja-autoja (Kuva   ) olisi osana kaupunkien nykyisiä kuljetusjärjestelmiä. (Steering towards a smarter planet, 2019) NordicNinja VC rahoitti ensimmäisen rahoituskierroksen 100M $ jota tukivat japanilaiset teknologiayritykset ja ITOCHU, joka on yksi suurimmista japanilaisista kauppayhtiöistä. Alkuvuonna 2020 Sensible 4 keräsi 7M $ joiden odotetaan laajentavan yritysmarkkinoita Eurooppaan ja Aasiaan. (Finnish Sensible 4 raises $7 million to support expansion of autonomous driving system specialised for harsh weather conditions, 2020) 
+
+![Kuva17](/assets/images/Gacha bussi.png)
+##### Gacha, autonominen linja-auto
+
+LiDAR-pohjainen paikannusohjelmisto suodattaa poikkeukset kuten lumen, sateen tai sumun, sallien näin etenemisen ilman kaista- tai maamerkkejä. Jotta saavutetaan todella tarkka paikannus olosuhteista riippumatta, käytetään omaa 3D-kartoitusta ja karttapohjaista lokalisointialgoritmia. LiDAR:in antamista 3D-tiedoista luodaan ympäristökartta, mutta sen sijaan, että käytettäisiin raakaa valotutkan antamaa dataa tai tunnistettaisiin datan antamat fyysiset piirteet, esitetään ympäristö nk. ”tilastomatemaattisena tilavuusjakautumana”. Erilaisia antureita käyttämällä havaitaan ja tunnistetaan esteet jopa näkyvyyden ollessa heikko. Esteiden havaitseminen perustuu monimuotoantureiden dataan ja omaan paikannusjärjestelmään, joka antaa sekä ajoneuvon tarkan sijainnin että 3D-mallin ympäristöstä. Havaitut esteet luokitellaan syväoppimisen avulla omiin kategorioihinsa sijainnin, koon tai nopeuden mukaan samalla ennustaen tulevan liikkeen. Lopuksi havainnot integroidaan monikohdeliikenteenseurantaan tarjoten näin parhaan mahdollisen tilannetietoisuusennusteen ohjausjärjestelmälle. (Our autonomous driving software, 2019) 
+
+MPC-pohjaista (Model Predictive Control) liikerataohjausta käytetään optimoimaan ajoneuvojen ohjaustoimintoja suhteessa liikeratapisteiden sekvenssiin. Näin voidaan ennustaa ajoneuvon liikkuminen muutamia sekunteja etukäteen. S4 sijaintipino tarjoaa automaattisen kulkukelpoisuusindeksikartan. Näin ajoneuvo voi poiketa reitistä tarpeen tullen. Tieolosuhteet havaitaan reaaliajassa. (Our autonomous driving software, 2019) 
+
+Tällä hetkellä SAE-tason 4 automaatiojärjestelmä tarvitsee ihmistä varmistukseksi. Järjestelmä sisältääkin ohjaus- ja valvontajärjestelmän antaen etäkäyttäjälle reaaliaikaista tietoa ajoneuvon tilasta ja sijainnista. (Our autonomous driving software, 2019) 
+
+### Ûber-drone sekä autonomiset ajoneuvot
+
+Fleetonomy.ai Oy on vuonna 2016 perustettu osakeyhtiö, jonka kotipaikka on Helsinki. He tekevät yhteistyötä kumppanien kanssa hankkeissa, jotka voivat muuttaa maailmaa sellaiseksi joka useimmille on vielä science fictionia. (Fleetonomy.ai Oy, n.d) (Fortum GO, n.d) Yhtiön toimitusjohtajan Markus Kantosen (Kantonen, Toimitusjohtaja, 2020) (muuta tää lähdejuttu oikein, kun valmista!) mukaan monen UAV:in ja UGV:in komentorajapinta laitteen puolesta on toteutettu ROS:illa. Laitekohtaiseen komentorajapintaan liitytään omalla ohjelmistolla, joka yhtenäistää eri komentorajapinnat heidän sisäiseen standardimuotoonsa. He myös käyttävät mahdollisuuksien mukaan ROS:sia laitekohtaisessa simuloinnissa. 
+
+Vuonna 2017 Fleetonomy.ai otti osaa brittien Defence and Security Accelerator (DASA) kisaan kehittäen Uber-tyylisen toimituspalvelun droneilla, hyödyntäen 3D fotogrammetrian fuusiodataa ja paikallista avointa karttadataa. He saivat kisasta 69,310 £ rahoituksen. (Transparency data Defence and Security Accelerator funded contracts: 1April 2017 to 31 March 2018, 2020)  
+
+Fleetonomy.ai osallistui myös VTT:n autonomisen ajoratkaisun demonstrointiin FortumGO projektissa. Päämäärä 18 km:in matkalla Helsinki-Vantaan lentokentältä Pasilaan oli näyttää mobiiliuden liikkuvuus, yhteydet ja automatisointi. Näin nähdään miten autonomiset sähköiset ajoneuvot vaikuttavat liikenteeseen vähentämällä saasteita ja hiilidioksidipäästöjä. (Kantonen, 2020) 
+
+Fleetonomy.ai otti osaa vuonna 2019 käynnistettyyn Autonomy in the Dynamic World-kilpailuun, jonka tarkoitus oli etsiä innovatiivisia ratkaisuehdotuksia ja tekniikoita autonomisten järjestelmien toiminnan parantamiseksi haastavissa olosuhteissa. Huhtikuussa 2020 DASA julkisti tehneensä 21 sopimusta, joiden yhteisarvo on 2.1 M £. Fleetonomy.ai on yksi voittaneista yrityksistä. (News story DASA awards £2-million to fast track autonomous vehicles in harsh conditions, 2020) 
+
+<!-- (”Monen UAV:n ja UGV:n komentorajapinta laitteen puolesta on toteutettu ROS:lla. Me liitymme laitekohtaiseen komentorajapintaan omalla ohjelmistollamme, joka yhtenäistää eri komentorajapinnat meidän sisäiseen standardimuotoomme. Lisäksi olemme mahdollisuuksien mukaan käyttäneet myös ROS:sia laitekohtaisessa simuloinnissa.” Markus Kantonen, Fleetonomy.ai) Tää ei kuulu mukaan.   -->
+
+### IT-palveluita ja ohjelmistoratkaisuja
+Solteq?
+
+### Tekoäly robotiikka jätteiden lajitteluun
+Zenrobotics?
+
+### Devecto, Espoo?
+
+### Cargotec, Tampere?
+
+# Alan tutkimus ja kehitys
+Jotain juttua tähän 
+
+## Mikrokirurginen robotin tutkimusalusta
+
+The Hamlyn Centre for Robotics Surgery, Imperial College Lontoossa on yksi kuudesta Institute of Global Health Innovation’s (IGHI) tutkimuskeskuksista, jotka tukevat terveydenhuollon innovaatioiden tunnistamista, kehittämistä ja levittämistä. (About us, 2020) Nykyisin saatavilla olevat mikrokirurgisten taitojen kehittämistä ja nopeuttamista tukevat robottiavusteiset mikrokirurgian (RAMS, Robot-Assisted Micro-Surgery) koulutusalustat on pääsääntöisesti suunniteltu makromittakaavassa minimalistisen invasiiviseen leikkaukseen. Siksi Hamlyn Centre on nähnyt tarpeelliseksi kehittää oma mikrokirurgisen robotin tutkimusalusta. He kehittävät mikrokirurgista robotin tutkimusalustaa (MRRP, Microsurgical Robot Research Platform) joka sisältää orjarobotin, jossa on kaksikätinen manipulaattori, kaksi pääkontrolleria sekä näköjärjestelmä (Kuva  ). Se tukee joustavasti monia mikrokirurgisia työkaluja. Ohjelmiston arkkitehtuuri pohjautuu ROS:iin, jota voidaan laajentaa. Eri rajapintoja tutkimalla päädyttiin valitsemaan isäntä-orja-kartoitusstrategia.  
+
+![Kuva18](assets/images/Kirurgirobot.png)
+##### Orjarobotin CAD malli MRRP:lle
+
+Orjarobotin kinemaattinen ohjaus perustuu SmarPod API:iin (Application Programming Interface) (Kuva   ). Modulaarista ohjausjärjestelmää käytetään ohjaamaan orjarobottimanipulaattorien pietsomoottoreita samalla kun alemman tason muodostavat kaksi harjatonta DC moottorinohjainta käytetään ohjaamaan moottoroituja mikroatuloita. Suuntauksen ohjaamiseksi ohjausjärjestelmällä voi olla 1 kHz näytteenottotaajuus. Järjestelmässä käytetään ROS väliohjelmistoa MRRP yhteyden luomiseksi. He kehittivät ROS-to-SmarPod API-sillan komponenteilla, jotka julkaisevat robotin tilat ROS-sanomina. Reaaliaikainen kinemaattinen ja visuaalinen data voidaan tilata ROS-viesteinä korkeatasoisen apuprosessin saamiseksi. Päämanipulaattorin ohjauskomennot, joita järjestelmä tuottaa ihmisten tai älykkään järjestelmän välityksellä voidaan julkaista ROS topiceina jotta MRRP- robotin päätelaite saadaan asetettua haluttuun asentoon karteesisessa tilassa. Kädessä pidettävällä isäntäohjaimella operatiiviset käskyt generoidaan OpenCV:hen perustuvalla liikkeenseuranta moduulilla. Laskenta ja käsittely on toteutettavissa Python, C++ ja C-ohjelmointikielillä. Käyttöliittymien kehittäminen mahdollistuu QT-pohjaisella GUI:lla (Graphical User Interface). (Zhang;Chen;Li;Salinas;& Yang, 2019) 
+
+![Kuva19](/assets/images/Ohjelmistoarkkitehtuuri.png)
+##### Ohjelmistoarkkitehtuuri MRRP:lle
+
+## Prosessin piirteiden havaitseminen
+
+Saksassa sijaitseva Soutwest Research Institute:n (SwRI) ROS Industrial-tiimi kehittää 3D-tunnistinjärjestelmiin hybridia lähestymistapaa, jossa kehittyneet 2D-tunnistimet integroidaan ROS 3D-tunnistuslinjalle prosessin piirteiden havaitsemiseksi ja jotta tunnistin voidaan päivittää joustavasti ilman muutoksia muuhun järjestelmään. Teollisissa sovelluksissa on usein 3D-havaintodataa 3D-syvyyskameroista, jotka tuottavat myös 2D-video suoratoistoa. ROS-työkaluilla tuota 2D-video suoratoistoa voidaan käyttää haluttujen piirteiden havaitsemisemiseksi ja projisoida ne takaisin 3D-dataan. Semanttisesti merkityn 3D-verkon aikaansaamiseksi tunnistetut piirteet voidaan yhdistää skannauksen aikana. Verkon päälle voidaan generoida työstöratoja, jotka saadaan havaituista piirteistä. Lähestymistavan arvioimiseksi kehitettiin esimerkki hitsausmenetelmä, jossa jokainen osa oli sarja kiinnehitsattuja alumiinilevyjä, mutta joiden tarkkaa kokoa tai sijaintia ei tiedetty. (Powelson, 2020) (Kuva  ) 
+
+![Kuva20](/assets/images/Hitsauskoe.png)
+##### Kokeellinen hitsausmenetelmä
+
+Järjestelmä etenee käyttäen ROS-työkaluja. Aluksi kameraohjain toimittaa värillisen pistepilven TSDF-solmulle (Truncated Signed Distance Field), joka rekonstruoi ympäristön geometrian. Samalla pistepilviä huomioiva solmu erottelee pikseliin kohdistetun 2D-kuvan pistepilvestä ja lähettää sen ROS-palvelun kautta satunnaisille 2D-tunnistimille, joka palauttaa naamion, jossa on leima jokaiselle kuvapikselille. Näitä leimoja uudelleen värjätään pistepilven merkitsemiseksi. Tulokset voidaan yhdistää avoimen lähdekoodin octomap_serveriä käyttämällä. Skannauksen lopussa YAK-kirjasto toimittaa 3D-verkon ympäristöstä ja octomap antaa octomapin, joka on väritetty semanttisilla leimoilla. Tesseract-törmäyksen tarkistusrajapintoja voidaan käyttää havainnoimaan kolmioverkkoon liittyvät vokselit, jolloin geometrinen verkko lisätään semanttiseen dataan. (Powelson, 2020) 
+
+![Kuva21](/assets/images/Hitsikuvat.png)
+##### Vasemmalla näkyy 2D kuva ja havaittu sauma. Oikealla näkyy 3D-verkko ja yhdistetty 3D havaittu hitsaussauma
+
+## Ascento: kaksipyöräinen hyppäävä robotti
+
+Sveitsissä joukko insinööriopiskelijoita ETH Zürichin tutkimus instituutista on kehittänyt tasapainottelevan kaksipyöräisen robotin. Ascenton (Kuva  ) rakennekomponentit luotiin topologisella optimoinnilla (Kuva   ) ja ne on kokonaan 3D-tulostettu polyamidi 12:sta (PA 12) käyttäen selektiivistä lasersintraus (SLS) tekniikkaa. 
+
+![Kuva22](/assets/images/Ascento.png)
+##### Ascento
+
+Jalkojen optimoitu geometria erottaa ajo- ja hyppyliikkeet antaen näin robotin taipua erilaisissa tippumisskenaarioissa. LQR (Linear Quadratic Regulator) kontrollerilla saavutetaan vakaa ajo. Palautuakseen erilaisista hyppy- tai tippumisliikkeistä robotti käyttää peräkkäismyötäkytkentäistä säätökontrolleria, jossa on takaisinkytkennän seuranta. Ascentossa on keskusyksikkönä Intel NUC i7, IMU (Inertial Measurement Unit) sekä mikrokontrolleri mahdollistamaan yhteydenpito tietokoneen ja IMU:n välillä. Moottorien virrankulutukseen on akku, joka koostuu neljästä sarjaan kytketystä kolmekennoisesta litiuminonipolymeeriakusta (LiPO). Tietokone ja muut elektroniset laitteet saavat virtansa neljäkennoisesta LiPO akusta. Ohjelmiston on oltava laskennallisesti tehokas, jotta suuren kaistanleveyden ohjaimet mahdollistuvat. Kaikki ohjelmistot on kirjoitettu C++:lla. ROS:sia käytetään korkean tason viestintään. Kalman suodatinta toimii IMU:n ja moottorin kooderi mittauksista saaduilla anturitiedoilla. Ascentoa voidaan kauko-ohjata mutta se voi myös operoida täysin autonomisesti käyttäen kameroita ja antureita. Se painaa 10.4 kg ja sen huippunopeus on 8 km/h. Suurin mahdollinen hyppykorkeus on 0.4 m ja operointiaika on n. 1,5 h. (Coxworth, 2020) (Klemm, ym., 2019) 
+
+![Kuva23](/assets/images/Topologiset.png)
+##### Topologialla optimoitu osa
+
+# Hankkeen onnistuminen
+
+# Tulevaisuus
+
+# Yhteenveto
+
+# Lähteet
+
+
+
+
+
+
+
 
 
 
