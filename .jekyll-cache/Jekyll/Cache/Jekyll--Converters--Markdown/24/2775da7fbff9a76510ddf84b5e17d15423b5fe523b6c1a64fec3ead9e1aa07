@@ -1,46 +1,4 @@
-<!doctype html>
-<html lang="fi">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Rokokoo | Robotiikan koulutus kasvuyritysten ohjenuorana</title>
-<meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Rokokoo" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<meta property="og:description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Rokokoo" />
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Rokokoo","description":"Robotiikan koulutus kasvuyritysten ohjenuorana","name":"Rokokoo","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/assets/css/style.css?v=fc4c8a741af59722be19188dd8c4feac51dd94f2">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="/assets/js/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
- 
-  </head>
-  <body>
-
-      <header>
-        <h1>Rokokoo</h1>
-        <p>Robotiikan koulutus kasvuyritysten ohjenuorana</p>
-      </header>
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-        
-      </nav>
-      <section>
-        <!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
+I"3�<!-- Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
@@ -60,44 +18,31 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p><img src="/assets/images/Taulukko_1.png" alt="Taulukko" /></p>
 <h5 id="ros-kasvuodotukset-vuoteen-2024">ROS kasvuodotukset vuoteen 2024</h5>
-<p>&nbsp;</p>
 
 <h2 id="ros-1">ROS 1</h2>
 
-<p>&nbsp;</p>
 <h2 id="ros-2">ROS 2</h2>
 
-<p>&nbsp;</p>
-<h3 id="micro-ros">micro-ROS</h3>
+<h3 id="micto-ros">micto-ROS</h3>
 
-<p>&nbsp;</p>
 <h3 id="ros--matlab--simulink">ROS + Matlab &amp; Simulink</h3>
 
-<p>&nbsp;</p>
 <h2 id="ros-health">ROS health</h2>
 
-<p>&nbsp;</p>
 <h2 id="ros-industrial">ROS Industrial</h2>
 
-<p>&nbsp;</p>
 <h3 id="liitännät-muihin-järjestelmiin">Liitännät muihin järjestelmiin</h3>
 
-<p>&nbsp;</p>
 <h3 id="moveit">MoveIt</h3>
 
-<p>&nbsp;</p>
 <h3 id="gazebo">Gazebo</h3>
 
-<p>&nbsp;</p>
 <h3 id="rviz">Rviz</h3>
 
-<p>&nbsp;</p>
 <h3 id="neuroverkot-ja-syväoppiminen">Neuroverkot ja syväoppiminen</h3>
 
-<p>&nbsp;</p>
 <h1 id="turvallisuus-verkossa">Turvallisuus verkossa</h1>
 
-<p>&nbsp;</p>
 <h1 id="ros-tuettuja-antureita">ROS tuettuja antureita</h1>
 
 <p>Erilaiset anturit kuuluvat jo melkein jokaisen arkeen. Antureilla mitataan lämpötilaa, etäisyyttä, ilman kosteutta, tasataan paineita ja havaitaan mahdollinen tulipalon aiheuttama savu tai häkä. Käyttökohteita ja tarkoituksia on lukemattomia. Anturit ovat laitteita, jotka mittaavat fyysistä syötettä ja muuntavat ne tiedoksi, jonka joko ihminen tai kone voi tulkita. ROS:sin avulla robotti kehittää tietoisuutta ympäristöstään käyttämällä esim. stereonäköä, inertiamittausta sekä 3D-laserskannausta. Robotti yhdistää keräämänsä tiedot, jotta se tietää missä se on, minne se on menossa tai mitä mahdollisia esteitä on matkalla. (A Case Study: Developing a ROS Robot with On-Board Computing for a University Robotics Department, 2020) Hyvä listaus ROS antureita löytyy ROS wiki sivistolta: http://wiki.ros.org/Sensors.</p>
@@ -106,9 +51,9 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p>Velodyne on 1983 perustettu yritys, joka tarjoaa tehokkaimpia ja älykkäimpiä markkinoilla olevia etäisyydenmittauslaitteita autonomiaan ja kuljettajan avustukseen. (Velodyne Lidar, Inc., n.d) Lidar (Light Detection and Ranging) kutsutaan usein myös laserskannaukseksi tai 3D-skannaukseksi. Lidar käyttää silmille turvallisia lasersäteitä muodostaakseen 3D-esityksen ympäristöstään. Se laskee etäisyyksiä lähettämällä laservalopulssin ympäristöönsä ja laskee ajan, joka pulssilta, kuluu heijastua kohteesta takaisin. Toistamalla prosessia miljoonia kertoja sekunnissa saadaan tarkka reaaliaikainen 3D kartta. Velodyne voidaan liittää ROS:iin ja generoida pilveen pistetietoja raakadatasta. (What is LIDAR?, 2020)</p>
 
-<p><img src="/assets/images/Velodyne.png" alt="Kuva1" /></p>
+<p><img src="assets/images/Velodyne.png" alt="Kuva1" /></p>
 <h5 id="velodyne-simulointi-gazebolla">Velodyne simulointi Gazebolla</h5>
-<p>&nbsp;</p>
+
 <p><img src="/assets/images/Velodyne_Rviz.png" alt="Kuva2" /></p>
 <h5 id="velodyne-anturi-visualisaatio-rvizlla">Velodyne anturi visualisaatio Rviz:lla</h5>
 
@@ -119,7 +64,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/ZED_2.png" alt="Kuva3" /></p>
 <h5 id="zed-2-visualisaatio-rvizllä">ZED 2 visualisaatio Rviz:llä</h5>
 
-<p>&nbsp;</p>
 <h2 id="teraranger-terabee">TeraRanger (Terabee)</h2>
 
 <p>Terabee perustettiin vuonna 2012 tarjoamaan innovatiivista dronepalvelua erityisen vaativiin tarkastuksiin. Vuonna 2013 näki European Centre of Nuclear Research (CERN) mahdollisen potentiaalin ja tiedusteli, kykenisivätkö he kehittämään täysin autonomimisen dronen tutkimaan Large Hardon Colloder (LHC) tunnelia, joka on maailman suurin ja tehokkain hiukkaskiihdytin. Markkinoilla huomattiin olevan aukko ja nykyisin Terabee kehittää ja valmistaa monia erilaisia anturimoduleja kuten 2D-infrapuna LED Time-of-Flight (ToF) etäisyysantureita, 3D ToF syvyys- ja lämpökameroita. (About us, n.d) (The Large Hadron Collider, 2020) Esimerkkinä mainittakoon TeraRanger Evo 60 m (Kuva  ), joka kuuluu TeraRanger tuoteperheeseen. Se on pieni ja kevyt, pitkän kantaman ToF- anturi, joka tarjoaa kalibroidut etäisyyslukemat millimetreinä ja käyttää LED teknologiaa laserin sijaan. (teraranger, 2019)</p>
@@ -127,7 +71,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/TeraRanger.png" alt="Kuva4" /></p>
 <h5 id="teraranger-evo-60-m">TeraRanger Evo 60 m</h5>
 
-<p>&nbsp;</p>
 <h2 id="xsense-mti-imu-xsens">Xsense MTi IMU (Xsens)</h2>
 
 <p>Xsens on vuonna 2000 perustettu innovaatiojohtaja 3D-liikkeenseuranta- ja tallennusteknologiassa. Kuten nimikin sanoo perustuvat inertia-anturit inertiaan eli hitausmomenttiin. Ne vaihtelevat MEMS-inertia-antureiden muutaman neliömillin kokoisista erittäin tarkkoihin rengaslasergyroskooppeihin, joiden halkaisija saattaa olla jopa 50 cm kokoinen (Kuva  ). Inertial Measurement Unit (IMU) on muista riippumaton järjestelmä, joka mittaa lineaarista ja angulaarista liikettä kolmen gyroskoopin ja kiihtyvyysmittarin avulla. (About us, n.d) (Inertial Sensor Modules, n.d)</p>
@@ -135,7 +78,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Xsens.png" alt="Kuva5" /></p>
 <h5 id="xsens-mti">Xsens MTi</h5>
 
-<p>&nbsp;</p>
 <h2 id="hokuyo-laser-hokuyo">Hokuyo Laser (Hokuyo)</h2>
 
 <p>Intel® RealSense™ D400-sarjan syvyyskamerat käyttävät stereonäkymää laskeakseen syvyyden. Stereokuva toteutetaan käyttämällä vasenta ja oikeaa kuvanninta sekä valinnaista infrapunaprojektoria. Matala tekstuurisissa näkymissä infrapunaprojektori heijastaa näkymätöntä staattista IR (Infrared) kuvioita parantaakseen syvyystarkkuutta. Kuvantimet tallentavat näkymän ja lähettävät datan syvyysnäköprosessorille, joka laskee kuvan jokaiselle pikselille syvyysarvot korreloimalla pisteitä keskenään ja siirtämällä pisteitä kuvien välillä. Syvyyspikseliarvot prosessoidaan syvyyskehyksen luomiseksi. Perättäisistä syvyyskehyksistä saadaan luotua syvyysvideostriimaus (Kuva  ). (Intel® RealSenseTM Product Family D400 Series, 2020)</p>
@@ -143,7 +85,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Intel_Realsense.png" alt="Kuva6" /></p>
 <h5 id="aktiivinen-ir-stereonäkö-teknologia">Aktiivinen IR Stereonäkö teknologia</h5>
 
-<p>&nbsp;</p>
 <h1 id="alustat">Alustat</h1>
 
 <p>Alustoja käytetään sovellusten, prosessien sekä teknologioiden kehittämisen pohjana. Valintaan vaikuttaa käyttötarkoituksen lisäksi moni seikka, kuten mm. tulo/lähtöjärjestelmät, rajapinnat, haluttu prosessorin nopeus, muistikapasiteetti sekä laajennusmahdollisuudet. Myös kaikki x86-arkkitehtuurin prosessorit ovat käytettävissä. Tässä mainitaan vain muutama soveltuva alusta.</p>
@@ -164,7 +105,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p>Odroid-XU4 on yhden piirilevyn tietokone. Siinä on Samsung Exynos 5422 (4x Cortex-A15 @ 2.0GHz ja 4x Cortex-A7 @ 1.4GHz) suoritin, yhdistettynä Mali-T628 MP6 GPU ja 2 Gt RAM-muistiin. Se voi suorittaa Ubuntun ja Androidin uusimpia versioita. Ordroid-XU4:llä on erittäin suuri tiedonsiirtonopeus. Miinuspuolena voidaan mainita, että siitä puuttuu Wifi- tai Bluetooth yhteys, jotka ovat saatavana vain USB-dongleina. (2020 Best Single Board Computers/ Raspberry Pi Alternatives, 2020)</p>
 
-<p>&nbsp;</p>
 <h1 id="rossin-hyödyntäminen">ROS:sin hyödyntäminen</h1>
 
 <p>Älykkäiden robottien suunnittelu ja rakentaminen ei ole niin yksinkertaista ja suoraviivaista kuin se voisi olla. Monet robotiikassa työskentelevät joutuivat usein aloittamaan aivan alusta aloittaessaan uuden projektin ja uudelleen kehittää ohjelmistoinfrastruktuurin joihin robottien algoritmit perustuvat. Jaetut työkalut ja resurssit olivat vähissä. ROS:sin etu on siinä, että suurimmassa osassa tapauksia ohjelmiston on jo todettu toimivan käytännössä. (Mok, 2020)</p>
@@ -182,7 +122,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Liikepaketin_kerrostumat.png" alt="Kuva7" /></p>
 <h5 id="ros-industrial-liikepaketin-kerrostumat-sekä-miten-motoros-ja-yaskawa-motoman-ohjain-liittyvät-toisiinsa">Ros-Industrial liikepaketin kerrostumat sekä miten MotoROS ja Yaskawa Motoman ohjain liittyvät toisiinsa</h5>
 
-<p>&nbsp;</p>
 <h3 id="plugnplay-ros-ohjain">Plug’n’play ROS-ohjain</h3>
 
 <p>Tanskalainen Universal Robots on hallitseva kevyiden käsivarsirobottien toimittaja sekä teollisuuteen että tutkimukseen ja opetukseen. Tutkimuskenttä on kehittänyt kolmansien osapuolien ohjaimia, joilla ROS yhteisö on voinut kommunikoida UR robottien kanssa. ROS yhteisöstä löytyy yli 200 haaraa, jotka ovat UR yhteensopivia. UR ei silti koskaan ole ollut kehittämässä tai tukemassa näitä ohjaimia. Saatavilla on monia yhteisön kehittämiä ohjaimia, joista ei tiedä millä niistä on viimeisimmät ominaisuudet tai mitkä niistä tukevat oikeaa UR ohjelmaversiota. (Madsen, 2019)</p>
@@ -192,7 +131,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Universal.png" alt="Kuva8" /></p>
 <h5 id="universal-robotsin-e-sarjalaiset">Universal robots:in e-sarjalaiset</h5>
 
-<p>&nbsp;</p>
 <h3 id="rosweld-hitsausjärjestelmä">ROSweld hitsausjärjestelmä</h3>
 
 <p>Norjalainen robottijärjestelmien integraattori, PPM Robotics on kehittänyt ROSweldin (Kuva  ) joka on ensimmäinen raskasrobottihitsausjärjestelmä jossa käytetään koneoppimista monipalkohitsauksen suunnittelussa ja mallinnuksessa. ROSweldiin kuuluu myös suunnittelu CAD-malleista, graafinen monipalkohitsauksen poikkileikkauksen käsittely, simulointi sekä hitsauskameran integraatio. Konenäköjärjestelmä käyttää FlexGui 4.0:aa käyttöliittymänä, jolla voidaan uudelleenohjelmoida työstettävät kappaleet, filtteri, parametrit sekä toistot. ROS-alustasta johtuen näköjärjestelmä on robotti ja kamera riippumaton. (Santos, 2020)</p>
@@ -200,29 +138,25 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/ROSweld.png" alt="Kuva9" /></p>
 <h5 id="rosweld-järjestelmä-ppm-roboticslta">ROSweld järjestelmä PPM Robotics:lta</h5>
 
-<p>&nbsp;</p>
 <p>ROSweld järjestelmässä jokainen komponentti on solmu tarjoten saman toiminnallisuuden ohjainryhmässä. Eri moduuleille on vakaa viestintäkerros ja standardit. MoveIt!, Rviz, RobotWebTools ROS2d.js, PCL (Point Cloud Library), pyros sekä rosbridge ovat käytössä olevia komponentteja. (Thomessen, 2018)</p>
 
-<p><img src="/assets/images/ROSweld_j%C3%A4rjestelm%C3%A4.png" alt="Kuva10" /></p>
+<p><img src="/assets/images/ROSweld_järjestelmä.png" alt="Kuva10" /></p>
 <h5 id="järjestelmän-rakenne">Järjestelmän rakenne</h5>
 
-<p>&nbsp;</p>
 <h3 id="autonomiset-ajoneuvot">Autonomiset ajoneuvot</h3>
 
 <p>Määritelmän mukaan ajoneuvo, joka havainnoi ja tunnistaa ympäristönsä sekä kykenee toimimaan itsenäisesti, luokitellaan autonomiseksi (Kuva  ). Autonomisten ajoneuvojen haasteita ovat ja tulevat edelleen olemaan lokalisointi, kartoitus, näkymän havainnointi, ajoneuvon hallinta, liikeradan optimointi sekä korkeatasoiset ennakoivat päätökset. (Fridman, ym., 2017) Volvo Car Group:in teknologiajohtaja Henrik Green:in mukaan täysin autonomisilla ajoneuvoilla on potentiaalia parantaa liikenneturvallisuutta tasoon, jota ei ole aiemmin nähty ja mullistaa tapa, jolla ihmiset elävät, työskentelevät ja matkustavat. (Cuneo, 2020)</p>
 
-<p><img src="/assets/images/Autonomisen%20auton%20komp.png" alt="Kuva11" /></p>
+<p><img src="/assets/images/Autonomisen auton komp.png" alt="Kuva11" /></p>
 <h5 id="autonomisen-auton-tärkeitä-komponenetteja">Autonomisen auton tärkeitä komponenetteja</h5>
 
-<p>&nbsp;</p>
 <h3 id="autonominen-kuorma-auto">Autonominen kuorma-auto</h3>
 
 <p>Yhdysvaltalainen Embark on vuonna 2016 perustettu kahden nuoren kanadalaisen tietokone tutkijan startup San Franciscossa. Yritys toimii yhteistyössä Electroluxin ja Ryderin kanssa ja kehittää autonomisten kuorma-autojen (Kuva  ) teknologiaa, jossa kuorma-autot kulkevat maanteillä ilman kuljettajaa, täysin itsenäisesti jopa 1046 km matkan (Sushant, 2019). Heidän kokonaisrahoituksensa on 117M $, josta 70M $ tuli vuonna 2019. (Ohnsman, 2019) Erilaisia tutkia, kameroita ja syvyysantureita, kuten LiDAR:ia (Light Detection and Ranging) käyttämällä miljoonat saadut datapisteet käsitellään neuroverkolla, Deep Neural Nets (DNN). Näin kuorma-auto kykenee oppimaan kokemuksistaan kuten ihmisetkin. Terabittejä reaalimaailman dataa analysoituaan neuroverkko oppii itsenäisesti tunnistamaan häikäisyn, sumun ja pimeyden. (Fleet Owner, 2017) Embark Trucks toimii nykyisin tason kaksi autonomiana. Tämä tarkoittaa sitä, että ammattitaitoisen kuljettajan on lain mukaan istuttava ohjauspyörän takana varmistuksena. Erikoisvalmisteinen kaksoisredundantti tietokone, joka testaa itsensä satoja kertoja sekunnissa tarkkailee jokaista komentoa reaaliajassa. (Sushant, 2019)</p>
 
-<p><img src="/assets/images/Autonominen%20kuorma-auto.png" alt="Kuva12" /></p>
+<p><img src="/assets/images/Autonominen kuorma-auto.png" alt="Kuva12" /></p>
 <h5 id="embark-kuorma-auto">Embark kuorma-auto</h5>
 
-<p>&nbsp;</p>
 <h3 id="autonomisten-autojen-rosbag-data">Autonomisten autojen Rosbag-data</h3>
 
 <p>Yhdysvaltalainen Ford Motor Company on vuonna 1903 perustettu yhtiö, joka on valmistanut T-mallin, Continentalin, Mustangin ja Broncon. He ovat valmistaneet myös lentokoneita, radioita, jääkaappeja, postituskoneita sekä sääsatelliitteja. Maaliskuussa 2020 Ford julkisti kaikessa hiljaisuudessa kokoelman, joka sisältää useiden eri autonomisten autojen datan – Ford Autonomous Vehicle Dataset. Data on kerätty eri päivinä ja aikoina vuosina 2017-2018. Ajoneuvot kulkivat keskimäärin 66 km: n reitin ja jokaisessa oli Applanix POS-LV GNSS- järjestelmä, neljä HDL-32E Velodyne 3D-lidar skanneria, kuusi 1,3 MP harmaapiste kameraa katolle asennettuna 360 asteen peittoa varten ja yksi 5 MP: n harmaapiste kamera tuulilasin taakse asennettuna suoraan eteenpäin kohdistuvan näkymän varmistamiseksi. Auton takaluukkuun sijoitettiin neljä Quad -core i7-prosessoria, joissa oli 16 Gt RAM, verkkolaitteet ja jäähdytysmekanismi. Aineiston jälkikäsittely suoritettiin kannettavalla Dell Precision 7710 tietokoneella. Kaikki tieto on saatavissa Rosbag-muodossa (Kuva  ), jota voidaan visualisoida ja muokata ROS:sin avulla. He toivovat, että tämä monen vuodenajan aineisto tulisi olemaan hyödyllinen robotiikalle ja AI-yhteisölle sekä tarjoamaan uusia tutkimusmahdollisuuksia. (Wiggers, 2020)</p>
@@ -230,7 +164,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Rosbag.png" alt="Kuva13" /></p>
 <h5 id="yhteenveto-rosbag-viesteistä">Yhteenveto Rosbag-viesteistä</h5>
 
-<p>&nbsp;</p>
 <h2 id="autonomiset-mobiilirobotit-amrs-autonomous-mobile-robots">Autonomiset mobiilirobotit (AMRs, Autonomous Mobile Robots)</h2>
 
 <p>Mobiilirobotteja käytetään teollisuudessa, kotitalouksissa ja erilaisissa palvelutoiminnoissa. Ne ovat tunnettuja uniikista kyvystään navigoida kontrolloimattomassa ympäristössä sensoreiden, piirustusten, tekoälyn, 3D- tai 2D-näön tai vastaavan kautta. ”AMR: t eivät vain kulje paikasta A paikkaan B, vaan niiden havaintokyky sallii uudelleenreitityksen, mikäli jokin este tulee niiden eteen.” sanoo Matt Wicks, tuotekehityksen varajohtaja Honeywell Intelligent: sta. (Zenner, 2019)</p>
@@ -242,7 +175,6 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Relay.png" alt="Kuva14" /></p>
 <h5 id="savioke-relay">Savioke, Relay</h5>
 
-<p>&nbsp;</p>
 <h3 id="moxi-mobiilirobotti-manipulaattorilla">Moxi-mobiilirobotti manipulaattorilla</h3>
 
 <p>Yhdysvaltalainen Diligent Robotics perustettiin vuonna 2017 sosiaalisen robottiteollisuuden asiantuntijoiden toimesta. He ovat luoneet Moxi-mobiilirobotin, jossa on manipulaattori ja johon yhdistyy sosiaalinen älykkyys sekä ihmisohjatut oppimismahdollisuudet. Moxi toimii sairaaloissa auttaen hoitajia ei-potilas-hoidollisissa tilanteissa, jolloin hoitajille jää enemmän aikaa itse potilaiden hoitoon. Näitä tehtäviä ovat mm. tarvikkeiden kerääminen, potilaslaboratorionäytteiden ja päivittäisten liinanvaatteiden toimittaminen sekä esineiden hakeminen keskusvarastosta. Moxi parantaa tehokkuutta, lisää työntekijöiden tyytyväisyyttä sekä parantaa hoidon laatua. Robotti käyttää koneoppimista kohteiden tunnistukseen ja tarttumiseen sekä ROS:iin perustuvaa navigaatio-ohjelmistoa. Siinä on osia eri laitevalmistajilta kuten Fetch Robotics, Velodyne Lidar, Intel, Kinova ja Robotiq. (Kara, 2020) (Diligent Robotics transforming the meaning of “work”, n.d)</p>
@@ -250,17 +182,15 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Moxi.png" alt="Kuva15" /></p>
 <h5 id="moxi-mobiilirobotti-manipulaattorilla-1">Moxi-mobiilirobotti manipulaattorilla</h5>
 
-<p>&nbsp;</p>
 <h3 id="windows-iot-tuki-jackal-ugvlle">Windows IoT tuki Jackal UGV:lle</h3>
 
 <p>Kanadalainen Cleatpath Robotics on neljän yliopistokaveruksen kellarista vuonna 2009 ponnistanut, palkittu, johtava miehittämättömien robottiajoneuvojen valmistaja maailmalla. Heidän tuotteitaan käytetään maataloudessa, kaivostoiminnassa, teollisuudessa, asevoimissa ja eri tutkimusaloilla. Toukokuussa 2020 Clearpath ilmoitti aloittavansa Windows IoT Enterprise tuennan, alkaen Jackal UGV:sta. Jackal (Kuva  ) on pieni, kestävä mobiilirobotti, jota voidaan käyttää ympäristön etävalvonnassa ja -tarkastuksissa tilanteissa, jotka vaativat navigointia ulkona ja/tai ihmisen ja robotin vuorovaikutusta. Siinä on sisäänrakennettu tietokone, GPS (Global Positioning System) sekä IMU (Inertial Measurement Unit) joka on integroitu ROS:iin käyttövalmiin autonomian vuoksi. Se on valmistettu tukevasta alumiinirungosta, siinä on suuri vääntömomentti 4 x 4 voimansiirrolla tehden siitä soveltuvan vaikeisiinkin maasto-olosuhteisiin. Siinä on IP62 luokituksen omaava kotelo ja sen kykenee operoimaan -20°C - 45°C lämpötiloissa. (Jackal, n.d) (Clearpath robots on Windows 10, 2020)</p>
 
 <p>Windows 10 Enterprise tuo mukanaan hyötyjä kuten yritysluokan suojauksen, helpon yhdistettävyyden pilveen, enemmän älykkyyttä Windows:in ML ROS noden kautta sekä nopeamman kehityksen. (Clearpath robots on Windows 10, 2020)</p>
 
-<p><img src="/assets/images/Clearpath%20Robots,%20JACKAL.png" alt="Kuva16" /></p>
+<p><img src="/assets/images/Clearpath Robots, JACKAL.png" alt="Kuva16" /></p>
 <h5 id="clearpath-robots-jackal">Clearpath Robots, JACKAL</h5>
 
-<p>&nbsp;</p>
 <h1 id="ros-suomessa">ROS Suomessa</h1>
 
 <h3 id="ohjelmistokehitys">Ohjelmistokehitys</h3>
@@ -271,17 +201,15 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p>Sensible 4 on Espoossa sijaitseva palkittu start-up joka suunnittelee ja kehittää autonomisia ajoneuvoja erilaisiin sääolosuhteisiin jotta kaupungeista voidaan saada puhtaampia ja täten ihmiskunnalle kestävämpi tulevaisuus. He ovat luoneet uraauurtavan ja ainutlaatuisen tekniikan itseohjautuville ajoneuvoille. Heidän tavoitteensa on, että vuonna 2021 näitä itseohjautuvia linja-autoja (Kuva   ) olisi osana kaupunkien nykyisiä kuljetusjärjestelmiä. (Steering towards a smarter planet, 2019) NordicNinja VC rahoitti ensimmäisen rahoituskierroksen 100M $ jota tukivat japanilaiset teknologiayritykset ja ITOCHU, joka on yksi suurimmista japanilaisista kauppayhtiöistä. Alkuvuonna 2020 Sensible 4 keräsi 7M $ joiden odotetaan laajentavan yritysmarkkinoita Eurooppaan ja Aasiaan. (Finnish Sensible 4 raises $7 million to support expansion of autonomous driving system specialised for harsh weather conditions, 2020)</p>
 
-<p><img src="/assets/images/Gacha%20bussi.png" alt="Kuva17" /></p>
+<p><img src="/assets/images/Gacha bussi.png" alt="Kuva17" /></p>
 <h5 id="gacha-autonominen-linja-auto">Gacha, autonominen linja-auto</h5>
 
-<p>&nbsp;</p>
 <p>LiDAR-pohjainen paikannusohjelmisto suodattaa poikkeukset kuten lumen, sateen tai sumun, sallien näin etenemisen ilman kaista- tai maamerkkejä. Jotta saavutetaan todella tarkka paikannus olosuhteista riippumatta, käytetään omaa 3D-kartoitusta ja karttapohjaista lokalisointialgoritmia. LiDAR:in antamista 3D-tiedoista luodaan ympäristökartta, mutta sen sijaan, että käytettäisiin raakaa valotutkan antamaa dataa tai tunnistettaisiin datan antamat fyysiset piirteet, esitetään ympäristö nk. ”tilastomatemaattisena tilavuusjakautumana”. Erilaisia antureita käyttämällä havaitaan ja tunnistetaan esteet jopa näkyvyyden ollessa heikko. Esteiden havaitseminen perustuu monimuotoantureiden dataan ja omaan paikannusjärjestelmään, joka antaa sekä ajoneuvon tarkan sijainnin että 3D-mallin ympäristöstä. Havaitut esteet luokitellaan syväoppimisen avulla omiin kategorioihinsa sijainnin, koon tai nopeuden mukaan samalla ennustaen tulevan liikkeen. Lopuksi havainnot integroidaan monikohdeliikenteenseurantaan tarjoten näin parhaan mahdollisen tilannetietoisuusennusteen ohjausjärjestelmälle. (Our autonomous driving software, 2019)</p>
 
 <p>MPC-pohjaista (Model Predictive Control) liikerataohjausta käytetään optimoimaan ajoneuvojen ohjaustoimintoja suhteessa liikeratapisteiden sekvenssiin. Näin voidaan ennustaa ajoneuvon liikkuminen muutamia sekunteja etukäteen. S4 sijaintipino tarjoaa automaattisen kulkukelpoisuusindeksikartan. Näin ajoneuvo voi poiketa reitistä tarpeen tullen. Tieolosuhteet havaitaan reaaliajassa. (Our autonomous driving software, 2019)</p>
 
 <p>Tällä hetkellä SAE-tason 4 automaatiojärjestelmä tarvitsee ihmistä varmistukseksi. Järjestelmä sisältääkin ohjaus- ja valvontajärjestelmän antaen etäkäyttäjälle reaaliaikaista tietoa ajoneuvon tilasta ja sijainnista. (Our autonomous driving software, 2019)</p>
 
-<p>&nbsp;</p>
 <h3 id="ûber-drone-sekä-autonomiset-ajoneuvot">Ûber-drone sekä autonomiset ajoneuvot</h3>
 
 <p>Fleetonomy.ai Oy on vuonna 2016 perustettu osakeyhtiö, jonka kotipaikka on Helsinki. He tekevät yhteistyötä kumppanien kanssa hankkeissa, jotka voivat muuttaa maailmaa sellaiseksi joka useimmille on vielä science fictionia. (Fleetonomy.ai Oy, n.d) (Fortum GO, n.d) Yhtiön toimitusjohtajan Markus Kantosen (Kantonen, Toimitusjohtaja, 2020) (muuta tää lähdejuttu oikein, kun valmista!) mukaan monen UAV:in ja UGV:in komentorajapinta laitteen puolesta on toteutettu ROS:illa. Laitekohtaiseen komentorajapintaan liitytään omalla ohjelmistolla, joka yhtenäistää eri komentorajapinnat heidän sisäiseen standardimuotoonsa. He myös käyttävät mahdollisuuksien mukaan ROS:sia laitekohtaisessa simuloinnissa.</p>
@@ -294,53 +222,43 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <!-- (”Monen UAV:n ja UGV:n komentorajapinta laitteen puolesta on toteutettu ROS:lla. Me liitymme laitekohtaiseen komentorajapintaan omalla ohjelmistollamme, joka yhtenäistää eri komentorajapinnat meidän sisäiseen standardimuotoomme. Lisäksi olemme mahdollisuuksien mukaan käyttäneet myös ROS:sia laitekohtaisessa simuloinnissa.” Markus Kantonen, Fleetonomy.ai) Tää ei kuulu mukaan.   -->
 
-<p>&nbsp;</p>
 <h3 id="it-palveluita-ja-ohjelmistoratkaisuja">IT-palveluita ja ohjelmistoratkaisuja</h3>
 <p>Solteq?</p>
 
-<p>&nbsp;</p>
 <h3 id="tekoäly-robotiikka-jätteiden-lajitteluun">Tekoäly robotiikka jätteiden lajitteluun</h3>
 <p>Zenrobotics?</p>
 
-<p>&nbsp;</p>
 <h3 id="devecto-espoo">Devecto, Espoo?</h3>
 
-<p>&nbsp;</p>
 <h3 id="cargotec-tampere">Cargotec, Tampere?</h3>
 
-<p>&nbsp;</p>
 <h1 id="alan-tutkimus-ja-kehitys">Alan tutkimus ja kehitys</h1>
 <p>Jotain juttua tähän</p>
 
-<p>&nbsp;</p>
 <h2 id="mikrokirurginen-robotin-tutkimusalusta">Mikrokirurginen robotin tutkimusalusta</h2>
 
 <p>The Hamlyn Centre for Robotics Surgery, Imperial College Lontoossa on yksi kuudesta Institute of Global Health Innovation’s (IGHI) tutkimuskeskuksista, jotka tukevat terveydenhuollon innovaatioiden tunnistamista, kehittämistä ja levittämistä. (About us, 2020) Nykyisin saatavilla olevat mikrokirurgisten taitojen kehittämistä ja nopeuttamista tukevat robottiavusteiset mikrokirurgian (RAMS, Robot-Assisted Micro-Surgery) koulutusalustat on pääsääntöisesti suunniteltu makromittakaavassa minimalistisen invasiiviseen leikkaukseen. Siksi Hamlyn Centre on nähnyt tarpeelliseksi kehittää oma mikrokirurgisen robotin tutkimusalusta. He kehittävät mikrokirurgista robotin tutkimusalustaa (MRRP, Microsurgical Robot Research Platform) joka sisältää orjarobotin, jossa on kaksikätinen manipulaattori, kaksi pääkontrolleria sekä näköjärjestelmä (Kuva  ). Se tukee joustavasti monia mikrokirurgisia työkaluja. Ohjelmiston arkkitehtuuri pohjautuu ROS:iin, jota voidaan laajentaa. Eri rajapintoja tutkimalla päädyttiin valitsemaan isäntä-orja-kartoitusstrategia.</p>
 
-<p><img src="/assets/images/Kirurgirobot.png" alt="Kuva18" /></p>
+<p><img src="assets/images/Kirurgirobot.png" alt="Kuva18" /></p>
 <h5 id="orjarobotin-cad-malli-mrrplle">Orjarobotin CAD malli MRRP:lle</h5>
 
-<p>&nbsp;</p>
 <p>Orjarobotin kinemaattinen ohjaus perustuu SmarPod API:iin (Application Programming Interface) (Kuva   ). Modulaarista ohjausjärjestelmää käytetään ohjaamaan orjarobottimanipulaattorien pietsomoottoreita samalla kun alemman tason muodostavat kaksi harjatonta DC moottorinohjainta käytetään ohjaamaan moottoroituja mikroatuloita. Suuntauksen ohjaamiseksi ohjausjärjestelmällä voi olla 1 kHz näytteenottotaajuus. Järjestelmässä käytetään ROS väliohjelmistoa MRRP yhteyden luomiseksi. He kehittivät ROS-to-SmarPod API-sillan komponenteilla, jotka julkaisevat robotin tilat ROS-sanomina. Reaaliaikainen kinemaattinen ja visuaalinen data voidaan tilata ROS-viesteinä korkeatasoisen apuprosessin saamiseksi. Päämanipulaattorin ohjauskomennot, joita järjestelmä tuottaa ihmisten tai älykkään järjestelmän välityksellä voidaan julkaista ROS topiceina jotta MRRP- robotin päätelaite saadaan asetettua haluttuun asentoon karteesisessa tilassa. Kädessä pidettävällä isäntäohjaimella operatiiviset käskyt generoidaan OpenCV:hen perustuvalla liikkeenseuranta moduulilla. Laskenta ja käsittely on toteutettavissa Python, C++ ja C-ohjelmointikielillä. Käyttöliittymien kehittäminen mahdollistuu QT-pohjaisella GUI:lla (Graphical User Interface). (Zhang;Chen;Li;Salinas;&amp; Yang, 2019)</p>
 
 <p><img src="/assets/images/Ohjelmistoarkkitehtuuri.png" alt="Kuva19" /></p>
 <h5 id="ohjelmistoarkkitehtuuri-mrrplle">Ohjelmistoarkkitehtuuri MRRP:lle</h5>
 
-<p>&nbsp;</p>
-<h2 id="kappaleen-piirteiden-havaitseminen">Kappaleen piirteiden havaitseminen</h2>
+<h2 id="prosessin-piirteiden-havaitseminen">Prosessin piirteiden havaitseminen</h2>
 
-<p>Saksassa sijaitseva Soutwest Research Institute:n (SwRI) ROS Industrial-tiimi kehittää 3D-tunnistinjärjestelmiin hybridia lähestymistapaa, jossa kehittyneet 2D-tunnistimet integroidaan ROS 3D-tunnistuslinjalle kappaleen piirteiden havaitsemiseksi ja jotta tunnistin voidaan päivittää joustavasti ilman muutoksia muuhun järjestelmään. Teollisissa sovelluksissa on usein 3D-havaintodataa 3D-syvyyskameroista, jotka tuottavat myös 2D-video suoratoistoa. ROS-työkaluilla tuota 2D-video suoratoistoa voidaan käyttää haluttujen kappaleiden havaitsemisemiseksi ja projisoida ne takaisin 3D-dataan. Semanttisesti merkityn 3D-verkon aikaansaamiseksi tunnistetut piirteet voidaan yhdistää skannauksen aikana. Verkon päälle voidaan generoida työstöratoja, jotka saadaan havaituista kappaleista. Lähestymistavan arvioimiseksi kehitettiin esimerkki hitsausmenetelmä, jossa jokainen osa oli sarja kiinnehitsattuja alumiinilevyjä, mutta joiden tarkkaa kokoa tai sijaintia ei tiedetty. (Powelson, 2020) (Kuva  )</p>
+<p>Saksassa sijaitseva Soutwest Research Institute:n (SwRI) ROS Industrial-tiimi kehittää 3D-tunnistinjärjestelmiin hybridia lähestymistapaa, jossa kehittyneet 2D-tunnistimet integroidaan ROS 3D-tunnistuslinjalle prosessin piirteiden havaitsemiseksi ja jotta tunnistin voidaan päivittää joustavasti ilman muutoksia muuhun järjestelmään. Teollisissa sovelluksissa on usein 3D-havaintodataa 3D-syvyyskameroista, jotka tuottavat myös 2D-video suoratoistoa. ROS-työkaluilla tuota 2D-video suoratoistoa voidaan käyttää haluttujen piirteiden havaitsemisemiseksi ja projisoida ne takaisin 3D-dataan. Semanttisesti merkityn 3D-verkon aikaansaamiseksi tunnistetut piirteet voidaan yhdistää skannauksen aikana. Verkon päälle voidaan generoida työstöratoja, jotka saadaan havaituista piirteistä. Lähestymistavan arvioimiseksi kehitettiin esimerkki hitsausmenetelmä, jossa jokainen osa oli sarja kiinnehitsattuja alumiinilevyjä, mutta joiden tarkkaa kokoa tai sijaintia ei tiedetty. (Powelson, 2020) (Kuva  )</p>
 
 <p><img src="/assets/images/Hitsauskoe.png" alt="Kuva20" /></p>
 <h5 id="kokeellinen-hitsausmenetelmä">Kokeellinen hitsausmenetelmä</h5>
 
-<p>&nbsp;</p>
 <p>Järjestelmä etenee käyttäen ROS-työkaluja. Aluksi kameraohjain toimittaa värillisen pistepilven TSDF-solmulle (Truncated Signed Distance Field), joka rekonstruoi ympäristön geometrian. Samalla pistepilviä huomioiva solmu erottelee pikseliin kohdistetun 2D-kuvan pistepilvestä ja lähettää sen ROS-palvelun kautta satunnaisille 2D-tunnistimille, joka palauttaa naamion, jossa on leima jokaiselle kuvapikselille. Näitä leimoja uudelleen värjätään pistepilven merkitsemiseksi. Tulokset voidaan yhdistää avoimen lähdekoodin octomap_serveriä käyttämällä. Skannauksen lopussa YAK-kirjasto toimittaa 3D-verkon ympäristöstä ja octomap antaa octomapin, joka on väritetty semanttisilla leimoilla. Tesseract-törmäyksen tarkistusrajapintoja voidaan käyttää havainnoimaan kolmioverkkoon liittyvät vokselit, jolloin geometrinen verkko lisätään semanttiseen dataan. (Powelson, 2020)</p>
 
 <p><img src="/assets/images/Hitsikuvat.png" alt="Kuva21" /></p>
 <h5 id="vasemmalla-näkyy-2d-kuva-ja-havaittu-sauma-oikealla-näkyy-3d-verkko-ja-yhdistetty-3d-havaittu-hitsaussauma">Vasemmalla näkyy 2D kuva ja havaittu sauma. Oikealla näkyy 3D-verkko ja yhdistetty 3D havaittu hitsaussauma</h5>
 
-<p>&nbsp;</p>
 <h2 id="ascento-kaksipyöräinen-hyppäävä-robotti">Ascento: kaksipyöräinen hyppäävä robotti</h2>
 
 <p>Sveitsissä joukko insinööriopiskelijoita ETH Zürichin tutkimus instituutista on kehittänyt tasapainottelevan kaksipyöräisen robotin. Ascenton (Kuva  ) rakennekomponentit luotiin topologisella optimoinnilla (Kuva   ) ja ne on kokonaan 3D-tulostettu polyamidi 12:sta (PA 12) käyttäen selektiivistä lasersintraus (SLS) tekniikkaa.</p>
@@ -348,22 +266,17 @@ There should be whitespace between paragraphs. We recommend including a README, 
 <p><img src="/assets/images/Ascento.png" alt="Kuva22" /></p>
 <h5 id="ascento">Ascento</h5>
 
-<p>&nbsp;</p>
 <p>Jalkojen optimoitu geometria erottaa ajo- ja hyppyliikkeet antaen näin robotin taipua erilaisissa tippumisskenaarioissa. LQR (Linear Quadratic Regulator) kontrollerilla saavutetaan vakaa ajo. Palautuakseen erilaisista hyppy- tai tippumisliikkeistä robotti käyttää peräkkäismyötäkytkentäistä säätökontrolleria, jossa on takaisinkytkennän seuranta. Ascentossa on keskusyksikkönä Intel NUC i7, IMU (Inertial Measurement Unit) sekä mikrokontrolleri mahdollistamaan yhteydenpito tietokoneen ja IMU:n välillä. Moottorien virrankulutukseen on akku, joka koostuu neljästä sarjaan kytketystä kolmekennoisesta litiuminonipolymeeriakusta (LiPO). Tietokone ja muut elektroniset laitteet saavat virtansa neljäkennoisesta LiPO akusta. Ohjelmiston on oltava laskennallisesti tehokas, jotta suuren kaistanleveyden ohjaimet mahdollistuvat. Kaikki ohjelmistot on kirjoitettu C++:lla. ROS:sia käytetään korkean tason viestintään. Kalman suodatinta toimii IMU:n ja moottorin kooderi mittauksista saaduilla anturitiedoilla. Ascentoa voidaan kauko-ohjata mutta se voi myös operoida täysin autonomisesti käyttäen kameroita ja antureita. Se painaa 10.4 kg ja sen huippunopeus on 8 km/h. Suurin mahdollinen hyppykorkeus on 0.4 m ja operointiaika on n. 1,5 h. (Coxworth, 2020) (Klemm, ym., 2019)</p>
 
 <p><img src="/assets/images/Topologiset.png" alt="Kuva23" /></p>
 <h5 id="topologialla-optimoitu-osa">Topologialla optimoitu osa</h5>
 
-<p>&nbsp;</p>
 <h1 id="hankkeen-onnistuminen">Hankkeen onnistuminen</h1>
 
-<p>&nbsp;</p>
 <h1 id="tulevaisuus">Tulevaisuus</h1>
 
-<p>&nbsp;</p>
 <h1 id="yhteenveto">Yhteenveto</h1>
 
-<p>&nbsp;</p>
 <h1 id="lähteet">Lähteet</h1>
 
 <!-- #### Header 4
@@ -450,16 +363,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ``` -->
-
-
-      </section>
-      
-    </div>
-
-    <footer>
-      Author: M. Saarivirta
-    </footer>
-
-    
-  </body>
-</html>
+:ET
