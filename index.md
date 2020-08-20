@@ -276,8 +276,14 @@ Fleetonomy.ai otti osaa vuonna 2019 käynnistettyyn Autonomy in the Dynamic Worl
 <!-- (”Monen UAV:n ja UGV:n komentorajapinta laitteen puolesta on toteutettu ROS:lla. Me liitymme laitekohtaiseen komentorajapintaan omalla ohjelmistollamme, joka yhtenäistää eri komentorajapinnat meidän sisäiseen standardimuotoomme. Lisäksi olemme mahdollisuuksien mukaan käyttäneet myös ROS:sia laitekohtaisessa simuloinnissa.” Markus Kantonen, Fleetonomy.ai) Tää ei kuulu mukaan.   -->
 
 <p>&nbsp;</p>  
-### IT-palveluita ja ohjelmistoratkaisuja
-Solteq?
+### Solteq vähittäiskaupparobotti
+
+Kotipaikkaa Vantaalla pitävä pohjoismainen ohjelmistokonserni Solteq Oyj on vuonna 1982 perustettu, alun perin Tampereen Tiedonhallinta Oyj;nä tunnettu yritys. Yritys on erikoistunut liiketoiminnan digitalisaatioon ja toimialakohtaisiin ohjelmistoihin. Business Finlandin lainarahoitusta hyödyntämällä yritys on ollut kehittämässä kahta ROS-robotiikan tutkimus- ja tuotekehitysprojektia, joista laajempi 2,5M € projekti koskee 2019 julkistettua Solteq Retail Robot -tekoälyrobottia, joka osaa liikkua itsenäisesti hypermarket-ympäristössä. Robotti on varustettu Lidar-tutkalla, jolla saadaan myymälästä 360 asteen näkymä ja robotti kuvaa hyllyt 2D- ja 3D-kameroilla, tarkistaen siten hinnat ja mahdolliset tyhjät hyllypaikat. Robotin skannatessa hyllyvälejä saadaan myymälän automaattinen tilausjärjestelmä optimoitua. Robotilta saatu reaaliaikainen data tallennetaan pilveen ja se käsitellään jälkiprosessointina konesalissa, jossa on hyvä laskentakapasiteetti. Solteq Retail Robot voitti Potentiaaliset innovaatiot-kilpailusarjan Quality Innovation Awardin 4.12.2019 edeten näin muiden kilpailusarjojen kanssa kansainväliseen finaaliin. (Sallinen, 2020) (Solteq, 2019) (Solteq Retail Robot palkittiin Quality Innovation Award -kilpailussa, 2019)
+
+Toinen Solteqin ROS-projekti on Helsingin ja Uudenmaan sairaanhoitopiirin (HUS) pilotoima ohjelmistorobotti, joka lukee urologian lähetekeskukseen saapuneita lähetteitä. Kannustavien tuloksien mukaan koneoppimiseen perustuvan lajittelun avulla hoitajien työaikaa säästyy 2-3 tuntiä päivässä. HUS:in mukaan tämä auttaa potilaita pääsemään nopeammin hoitoon. (Sallinen, 2020)
+
+![Kuva24](/assets/images/retail-robo.PNG)
+#### Solteq Retail Robot 
 
 <p>&nbsp;</p>  
 ### Tekoäly robotiikka jätteiden lajitteluun

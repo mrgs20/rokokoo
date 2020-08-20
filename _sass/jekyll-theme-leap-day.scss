@@ -273,7 +273,7 @@ header {
 }
 
 section {
-  width:750px;
+  width:650px;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
   margin-top: 190px;
@@ -353,11 +353,16 @@ nav {
 footer {
   width:180px;
   position: fixed;
-  left:50%;
-  margin-left:-530px;
+  right:50%;
+  margin-right: -900px;
   bottom:20px;
   text-align: right;
   line-height: 16px;
+
+  .inline-block {
+    display: block;
+
+  }
 }
 
 @media print, screen and (max-width: 1060px) {

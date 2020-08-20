@@ -19,8 +19,9 @@
       <header>
         <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+       
       </header>
-
+      
     <div class="wrapper">
       <nav>
         <ul></ul>
@@ -34,7 +35,15 @@
     </div>
 
     <footer>
-      Author: M. Saarivirta
+      <div class="inline-block">
+        <img src="/assets/images/samk logo.jpg" width="60" height="30">
+        <img src="/assets/images/RoboAI_logo.jpg" width="40" height="40">
+        <img src="assets/images/Tampereen yliopisto logo.jpg" width="103" height="30">
+        <img src="/assets/images/lippu-ja-vipuvoima.png" width="80" height="30">
+        <img src="/assets/images/ELY-keskus-logo.jpg" width="80" height="30">   
+      </div>
+    
+      
     </footer>
 
     {% if site.google_analytics %}
