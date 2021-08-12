@@ -4,6 +4,6 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-leap-day
 github: 
-  url: https://github.com/mrgs20/rokokoo.git
+  url: https://github.com/rokokoo/rokokoo.git
   username: mrgs20
-  site_url: https://github.com/mrgs20/rokokoo.git
+  site_url: https://github.com/rokokoo/rokokoo.git
