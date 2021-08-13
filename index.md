@@ -175,31 +175,31 @@ Mikro-ROS on räätälöity erityisesti sulautetuille ja resurssirajoitteisille 
 
 - Optimoitu asiakasrajapinta, joka tukee kaikkia tärkeimpiä ROS-konsepteja
 
-Mikro-ROS:in avulla kaikki solmut, julkaisu/tilaus, asiakas/palvelu, solmukaavio jne. tuodaan MCU:lle (Microcontroller Unit). Asiakasrajapinta perustuu vakio-ROS 2 rcl-kirjastoon sekä sarjaan laajennuksia ja soveltuvuustoimintoja (sclc). Näiden yhdistelmä on optimoitu MCU:lle. (micro-ROS, 2021)
+  Mikro-ROS:in avulla kaikki solmut, julkaisu/tilaus, asiakas/palvelu, solmukaavio jne. tuodaan MCU:lle (Microcontroller Unit). Asiakasrajapinta perustuu vakio-ROS 2 rcl-kirjastoon sekä sarjaan laajennuksia ja soveltuvuustoimintoja (sclc). Näiden yhdistelmä on optimoitu MCU:lle. (micro-ROS, 2021)
 
 - Saumaton integrointi ROS 2:n kanssa
 
-Mikro-ROS agentti yhdistää MCU:in mikro-ROS-solmut saumattomasti ROS 2 järjestelmiin mahdollistaen näin pääsyn mikro-ROS-solmuihin ROS 2:sta tunnetuilla työkaluilla ja API:lla tavallisten solmujen tapaan. (micro-ROS, 2021)
+  Mikro-ROS agentti yhdistää MCU:in mikro-ROS-solmut saumattomasti ROS 2 järjestelmiin mahdollistaen näin pääsyn mikro-ROS-solmuihin ROS 2:sta tunnetuilla työkaluilla ja API:lla tavallisten solmujen tapaan. (micro-ROS, 2021)
 
 - Erittäin resurssirajoitettu mutta joustava väliohjelmisto
 
-eProsiman Mikro XRCE-DDS täyttää kaikki sulautetuille järjestelmille asetetut vaatimukset. Ajon aikaisten muistin allokointien välttämiseksi ROS-väliohjelmiston rajapinnassa otettiin käyttöön staattiset muistivarastot. (micro-ROS, 2021)
+  eProsiman Mikro XRCE-DDS täyttää kaikki sulautetuille järjestelmille asetetut vaatimukset. Ajon aikaisten muistin allokointien välttämiseksi ROS-väliohjelmiston rajapinnassa otettiin käyttöön staattiset muistivarastot. (micro-ROS, 2021)
 
 - Multi-RTOS-tuki yleisellä koontijärjestelmällä
 
-Mikro-ROS tukee kolmea avoimen lähdekoodin reaaliaikaista käyttöjärjestelmää (RTOS): FreeRTOS, Zephyr ja NuttX. Se voidaan siirtää mihin tahansa POSIX-käyttöliittymän omaavaan RTOS:iin. ROS 2-pakettina toimitettavaan asennusohjelmaan on integroitu RTOS-spesifiset rakennusjärjestelmät. Näin ROS-kehittäjät voivat käyttää tavallisia komento
+  Mikro-ROS tukee kolmea avoimen lähdekoodin reaaliaikaista käyttöjärjestelmää (RTOS): FreeRTOS, Zephyr ja NuttX. Se voidaan siirtää mihin tahansa POSIX-käyttöliittymän omaavaan RTOS:iin. ROS 2-pakettina toimitettavaan asennusohjelmaan on integroitu RTOS-spesifiset rakennusjärjestelmät. Näin ROS-kehittäjät voivat käyttää tavallisia komento
 
 - Lupalisenssi
 
-Mikro-ROS kuuluu samaan Apache License 2.0 lisenssiin kuin ROS 2. Tämä koske mikro-ROS-asiakaskirjastoa, väliohjelmistokerrosta sekä työkaluja. RTOS projektia luotaessa on otettava huomioon ROS-projektin tai toimittajan lisenssit. (micro-ROS, 2021)
+  Mikro-ROS kuuluu samaan Apache License 2.0 lisenssiin kuin ROS 2. Tämä koske mikro-ROS-asiakaskirjastoa, väliohjelmistokerrosta sekä työkaluja. RTOS projektia luotaessa on otettava huomioon ROS-projektin tai toimittajan lisenssit. (micro-ROS, 2021)
 
-- Vilkas yhteisö ja ekosysteemi
+- Vilkas yhteisö ja ekosysteemi  
 
-Jatkuvasti kasvava, itseorganisoitunut yhteisö on kehittänyt mikro-ROS:in ja sitä tukee virallinen ROS 2-työryhmä, Embedded Working Group. Yhteisö jakaa aloitustason opetusohjelmia, tarjoaa tukea Slackin ja GitHubin kautta ja tapaa kuukausittaisissa julkisissa Working Group-videopuheluissa. Yhteisö kehittää myös työkaluja mikro-ROS:in ympärille. Esimerkkinä MCU-laitteistolle kehitetyt benchmarkkaustyökalut joiden avulla voidaan tarkistaa muistin käyttö, suorittimen ajankulutus sekä yleinen suorituskyky. (micro-ROS, 2021)
+  Jatkuvasti kasvava, itseorganisoitunut yhteisö on kehittänyt mikro-ROS:in ja sitä tukee virallinen ROS 2-työryhmä, Embedded Working Group. Yhteisö jakaa aloitustason opetusohjelmia, tarjoaa tukea Slackin ja GitHubin kautta ja tapaa kuukausittaisissa julkisissa Working Group-videopuheluissa. Yhteisö kehittää myös työkaluja mikro-ROS:in ympärille. Esimerkkinä MCU-laitteistolle kehitetyt benchmarkkaustyökalut joiden avulla voidaan tarkistaa muistin käyttö, suorittimen ajankulutus sekä yleinen suorituskyky. (micro-ROS, 2021)
 
 - Pitkäaikainen ylläpito ja yhteentoimivuus
 
-Pitkäaikaisen ylläpidettävyyden takaamiseksi mikro-ROS-spesifisen koodin määrää minimoitiin käyttäen avoimen lähdekoodin RTOS:ia, standardoitua väliohjelmistoa sekä vakio ROS 2 Client Support kirjastoa. SOSS (System-Of-Systems Synthesizer), nopea ja kevyt OMG DDS-XTYPES-integraatiotyökalu voi liittää muita väliohjelmistoprotokollia. (micro-ROS, 2021)
+  Pitkäaikaisen ylläpidettävyyden takaamiseksi mikro-ROS-spesifisen koodin määrää minimoitiin käyttäen avoimen lähdekoodin RTOS:ia, standardoitua väliohjelmistoa sekä vakio ROS 2 Client Support kirjastoa. SOSS (System-Of-Systems Synthesizer), nopea ja kevyt OMG DDS-XTYPES-integraatiotyökalu voi liittää muita väliohjelmistoprotokollia. (micro-ROS, 2021)
 
 <p>&nbsp;</p> 
 ## OpenCV
@@ -303,7 +303,6 @@ Move_group-elementin ajatuksena on, että liitäntäryhmät ja muut elementit m�
 Yksi MoveIt:in tärkeimmistä ominaisuuksista on törmäyksien ja niiden välttämisen tarkistus. Tämä tehdään rinnakkain liikesuunnittelun ja IK-algoritmi (Inverse Kinematics) ratkaisun kanssa. Robotti voi törmätä itsensä (mallista riippuen) tai ympäristön kanssa. MoveIt kykenee hallitsemaan molemmat tapaukset. Pakettiin on sisällytetty avoimen lähdekoodin FCL (Flexible Collision Library), joka suorittaa erilaiset törmäyksen havainnointi- ja välttämisalgoritmit. Törmäyksen tarkistukseen kuuluu objekteja kuten mesh-verkko, primitiiviset muodot, kuten laatikot ja sylinterit sekä OctoMap. (Martinez, et al., 2018)
 
 OctoMap-kirjasto muodostaa 3D-varauksellisen ruudukon, jota kutsutaan ”octreeksi”. Se koostuu ympäristön esteiden tilastomatemaattisesta tiedosta. MoveIt-paketti rakentaa
-
 OctoMapin käyttämällä 3D-pistepilveä ja siirtämällä se suoraan FCL:lle törmäyksen tarkistusta varten. (Martinez, et al., 2018) 
 
 <p>&nbsp;</p>  
@@ -321,37 +320,34 @@ Ilman lisätoimia järjestelmän käytön rajoittamiseksi ROS.org sivuilla suosi
 
 luominen tai palomuurin käyttö sekä erilaiset ROS laajennukset, jotka voivat todentaa käyttäjät ennen komentojen sallimista. (Security, 2020)
 
-- Verkon käyttö suojauksessa
+#### Verkon käyttö suojauksessa
 
 Suositeltavinta on käyttää ROS:sia verkossa, joka ei ole yhdistetty Internettiin tai joka on verkossa palomuurilla määritetty estämään ROS-pääpostista (TCP 11311) saapuva liikenne. Yleinen asetus on ajaa ROS isännät erillisessä verkossa kuluttaja reitittimen takana, joka suorittaa Network Address Translation (NAT) jotta useat laitteet voivat jakaa saman julkisen IP osoitteen. NAT estää saapuvat yhteydet joita sisäiset isännät eivät ole käynnistäneet jolloin NAT:nin takana oleva isäntä ei ole oletusarvoisesti näkyvissä Internetissä. NAT ei kuitenkaan ole turvallisuuslaitteisto. Se voidaan määrittää väärin tai sillä voidaan avata portit ulkopuolista käyttöä varten. Käytettäessä eristettyä verkkoa tai NAT:nia, ulkopuolisille verkon käyttäjille voidaan antaa pääsy käyttäen Virtual Private Networkia (VPN) tai jotain muuta vastaavaa ratkaisua. Käytettäessä ROS:sia kannettavalla tietokoneella tai jollain muulla mobiilijärjestelmällä olisi tärkeää tiedostaa mitä verkkoa ollaan käyttämässä, jottei vahingossa käy niin, että siirrytään eristetystä verkosta avoimeen, jolloin päälle jäänyt isäntä pääsee vaarantumaan. (Security, 2020)
 
-- Palomuurin määritys
+#### Palomuurin määritys
 
 Palomuurin määrittämiseksi on päätettävä mikä IP-osoitealue edustaa IP-osoitteita, joille sallitaan yhteyden muodostus. Tähän sisäiseen verkkoon voi halutessaan liittää yhden tai useampia IP-osoitteita. (Security, 2020)
 
 Palomuurin olisi kuitenkin suotavaa toimia seuraavasti:
 
-- Sallia kaikki liikenne sisäisestä verkosta ROS isäntäporttiin, jotta ROS isäntä liikenne mahdollistuu
-
-- Sallia kaikki sisäisen verkon uudet TCP ja UDP yhteydet mistä tahansa portista tilaajia varten
-
-- Sallia liikenne muista porteista muita palveluita varten
-
-- Estää muista verkoista tulevia uusia TCP ja UDP yhteyksiä
+  - Sallia kaikki liikenne sisäisestä verkosta ROS isäntäporttiin, jotta ROS isäntä liikenne mahdollistuu
+  - Sallia kaikki sisäisen verkon uudet TCP ja UDP yhteydet mistä tahansa portista tilaajia varten
+  - Sallia liikenne muista porteista muita palveluita varten
+  - Estää muista verkoista tulevia uusia TCP ja UDP yhteyksiä
 
 (Security, 2020)
 
-- Verkkoyhteyden luominen teollisuusroboteilla
+#### Verkkoyhteyden luominen teollisuusroboteilla
 
 Tyypillisesti teollisuusrobotit ovat yhdistettyinä tietokoneeseen, jossa on asennettuna ROS ja joka käyttää ns. liikepalvelinta (Kuva ). Ohjelmat on kirjoitettu OEM kielellä (Original Equipment Manufacturer) jotka ovat käytössä teollisuusrobottien kontrollereissa ja mahdollistavat akseleiden paikkatietojen vastaanottamisen ja todellisten tietojen sekä tilan lähettämisen robottien ROS-ohjaimelle. OEM kielissä on eroja riippuen valmistajasta. Tällä hetkellä valmistajat eivät tarjoa käyttöliittymiä, jotka mahdollistavat salauksen tai oikeuksien todentamisen eikä toimenpidettä voida lisätä robotin kontrollerissa ajettuun liikepalvelinohjelmiin. Tämä mahdollistaa ROS-robottiohjaimeen ja siinä toimivaan liikepalvelinohjelmaan kohdistuvat hyökkäykset. (Security, 2020)
 
 ![security](/assets/images/kytkenta.png)
-#### Teollisuusrobotin yleinen kytkentä ja mahdollinen hyökkäys (wiki.ros.org/Security, 2020)
+##### Teollisuusrobotin yleinen kytkentä ja mahdollinen hyökkäys (wiki.ros.org/Security, 2020)
 
 Jotta minimoidaan riskit hyökkäyksille, on verkko määritettävä oikein. ROS-koneen ja robotin kontrollerin yhteys on oltava eristettynä muista verkoista. Tämä voidaan tehdä käyttämällä esimerkiksi kahta verkkoadapteria, jotka on yhdistetty kahteen eri verkkoon (Kuva ). (Security, 2020) 
 
 ![security](/assets/images/verkko.png)
-#### Esimerkki verkon konfiguraatiosta (wiki.ros.org/Security) 
+##### Esimerkki verkon konfiguraatiosta (wiki.ros.org/Security) 
 
 Toinen adapteri on yhdistettynä teollisuusrobotin kontrolleriin (Net2 adapteri) ja toinen yhdistettynä paikallisen verkon reitittimeen (Net1 adapteri). Nämä adapterit on määritettävä eri aliverkko osoitteilla ja edelleen lähetystä pitäisi välttää. (Security, 2020)
 
@@ -360,7 +356,7 @@ DDS:n lisääminen yksinään ei ole kokonaisvaltainen robotiikan suojausmalli s
 Eräät tutkijat ovat jakaneet ROS 2:sen haavoittuvuudet kolmeen eri kategoriaan: invasiivinen, ei-invasiivinen sekä puoli-invasiivinen. Näiden haavoittuvuuksien yhteenveto ja suhde sovellettavaan kerroksen on esitetty kuvassa ????. (Basheer & Varol, 2019) 
 
 ![security](/assets/images/haavoittuvuudet.png)
-#### ROS-tekniikkaa käyttävien robottien haavoittuvuudet (Basheer & al.,2019)
+##### ROS-tekniikkaa käyttävien robottien haavoittuvuudet (Basheer & al.,2019)
 
 On tärkeä ymmärtää, että erilaisilla roboteilla kuten esim. herkkien esineiden manipulointiin tarkoitetuilla ja julkisilla teillä liikkuvilla autonomisilla ajoneuvoilla on erilaiset käyttöympäristöt ja siten hyvin erilaiset turvallisuusvaatimukset. Riippuen robottien tyypistä ja toiminnoista PKI-komponenteille (Public Key Infrastructure) ja yksittäisten vahvistuksien suorittamiselle tulisi asettaa suojauskäytäntö. ROS 2 mahdollistaa eri robottijärjestelmien suojaustekniikat joustavalla toimialueiden ja osallistujien segmentoinnilla. Robottijärjestelmän turvallisuuden määrittäminen voidaan ratkaista käyttämällä kaksitasoista pääsynvalvontaa eli hallinto- ja käyttöoikeuskäytäntöä. Välttämätöntä on kuitenkin suorittaa haavoittuvuusanalyysi, jotta riskit ja niiden vähentäminen voidaan määrittää. Kokonaiskuvasta nähdään, että ROS 2:ssa on parannettu turvallisuutta, mutta monet tasot ovat edelleen alttiina. (DiLuoffo, et al., 2018)
 
@@ -378,12 +374,12 @@ TLS:n käyttö kahden kommunikoivan sovelluksen välillä edesauttaa yksityisyyt
 Rosbridge tarjoaa robotiikkaan ylimääräisen sovelluskerroksen (Kuva ), joka mahdollistaa muidenkin kuin ROS-asiakasprosessien toiminnan yhdessä ROS-prosessien kanssa, mukaan lukien Web-rajapinnat. Rosbridge suhtautuu ROS:iin palvelinpuolena (back-end). Näin sovelluskehittäjät eivät tarvitse intiimejä tietoja matalan tason ohjausrajapinnoista, väliohjelmien koontijärjestelmistä tai monimutkaisista robotintunnistus ja ohjausalgoritmeista. Minimissään heidän on kuitenkin ymmärrettävä väliohjelmistopaketin rakenne ja kuljetusmekanismit. (Crick, et al., 2016)
 
 ![rosbridge](assets/images/Rosbridge.png)
-#### Rodbridgea käyttävän verkkosovelluksen rakenne (Alexander & al., 2012) 
+##### Rodbridgea käyttävän verkkosovelluksen rakenne (Alexander & al., 2012) 
 
 Rosbridgen avulla asiakkaat voivat julkaista ja tilata ROS-aiheita ja käynnistää ROS-palveluita palvelimen ajonaikaisessa ympäristössä kuljettamalla JSON-muotoiset (JavaScript Object Notation) viestit TCP- ja Websockettien kautta. Rosbridgen asiakkaat ovat kieliriippumattomia, tarkoittaen sitä, että voidaan käyttää mitä tahansa Websocketin tukemaa kieltä. Se ei myöskään rajoita asiakkaita ROS:een. Rosbridge mahdollistaa yksinkertaisen viestinkäsittelyn sekä HTML5-verkkosovitteissa (Hypertext Markup Language), että standardeissa POSIX (Portable Operating System Interface) IP suoritinkannoissa. Esimerkkinä ”/sensorPacket” niminen ROS-aihe jonka julkaisijana on yksinkertainen Python-asiakas (Kuva ). (Alexander, et al., 2012) (Crick, et al., 2016)
 
 ![rosbridge](assets/images/sensorPacket.png)
-#### "sensorPacket", ROS-topic (Crick & al., 2016)
+##### "sensorPacket", ROS-topic (Crick & al., 2016)
 
 JSON-pohjainen rosbridge protokolla on suunniteltu mahdollistamaan datan julkaisu, tilaaminen ja palveluiden hyödyntäminen minkä tahansa asiakkaan ja palvelimen välillä alustasta riippumatta. Onnistuneita toteutuksia on tehty mm. Linuxilla, Windowsilla, iOS:lla,
 
@@ -554,100 +550,80 @@ Lokakuun 13. päivä 2020 MOV.AI ilmoitti keränneensä 4 M$ rahoituksen yhteist
 
 Visual ROS Launch system (Kuva  ) 
 
-    Replaces roslaunch / rosrun framework with Visual Launch Diagrams 
+- Replaces roslaunch / rosrun framework with Visual Launch Diagrams 
+- Multi-protocol node launcher, in-browser 
+- Drag & Drop Nodes, Connect Node inputs/outputs 
+- VLD lines represent communication protocols between nodes 
+- Modify Nodes/connections in split seconds 
+- Organize multiple Node networks, Node versions & Parameters 
+- Supports all ROS features including TF, Nodelets, pluginlib, lifecycle 
 
-    Multi-protocol node launcher, in-browser 
+  ![mov](/assets/images/visual_system.png)
+  ##### ROS Visual Launch system (mov.ai, n.d)
 
-    Drag & Drop Nodes, Connect Node inputs/outputs 
+MOV.AI Nodes – IDE in Browser (Kuva  ) 
 
-    VLD lines represent communication protocols between nodes 
+- Multi-Protocol Event processor 
+  - Message/Event triggers Callback in Python 
+  - Support for ROS1, ROS2, HTTP, WebSocket, Serial Driver, Redis DB 
+  - Callback code cannot access communication layer 
+- Native parallel processing;  
+  - Callbacks are Re-entrant – Persistent data only via Redis DB API 
+  - AsyncIO backend + Cython (C level performance) 
+  - Resource Usage Profiling tools 
+- Upgrade / Downgrade – mandatory for industrial clients 
+  - Imported libraries – outside the callback code 
+  - GIT based versioning of Callbacks 
 
-    Modify Nodes/connections in split seconds 
-
-    Organize multiple Node networks, Node versions & Parameters 
-
-    Supports all ROS features including TF, Nodelets, pluginlib, lifecycle 
-
- ![mov](/assets/images/visual_system.png)
- ##### ROS Visual Launch system (mov.ai, n.d)
-
- MOV.AI Nodes – IDE in Browser (Kuva  ) 
-
-    Multi-Protocol Event processor 
-
-– Message/Event triggers Callback in Python 
-– Support for ROS1, ROS2, HTTP, WebSocket, Serial Driver, Redis DB 
-– Callback code cannot access communication layer 
-
-    Native parallel processing;  
-
-– Callbacks are Re-entrant – Persistent data only via Redis DB API 
-– AsyncIO backend + Cython (C level performance) 
-– Resource Usage Profiling tools 
-
-    Upgrade / Downgrade – mandatory for industrial clients 
-    – Imported libraries – outside the callback code 
-    – GIT based versioning of Callbacks 
-
- ![mov](/assets/images/IDE.png)
- ##### IDE selaimessa (mov.ai, n.d)
+  ![mov](/assets/images/IDE.png)
+  ##### IDE selaimessa (mov.ai, n.d)
 
 Customizable UI (Kuva  ) 
 
-    Modern MVC framework; 
-    – Collaborative UI (2-direct. link w db replicated on every robot) 
-    – Any Robot can act as Web server 
+- Modern MVC framework; 
+  - Collaborative UI (2-direct. link w db replicated on every robot) 
+  - Any Robot can act as Web server 
+- Extensible web API 
+  - HTTP/WebSockets protocols supported in MOV.AI Nodes 
+  - Custom server-side functions 
+  - REST API available for CRUDE actions (vs replicated DB) 
+- REST-full application 
+  - Develop apps with preferred js framework (React, Vue, etc) 
+  - Upload your own javascript application to Mov.AI system 
+- Dashboard Creator 
+  - Create operator views with stats and queues 
+  - Create custom dashboards to monitor and control fleets 
+  - Extensible set of customizable widgets 
 
-    Extensible web API 
-    – HTTP/WebSockets protocols supported in MOV.AI Nodes 
-    – Custom server-side functions 
-    – REST API available for CRUDE actions (vs replicated DB) 
+  ![mov](/assets/images/muunneltava_UI.png)
+  ##### Muunneltava UI (mov.ai, n.d)
 
-    REST-full application 
-    – Develop apps with preferred js framework (React, Vue, etc) 
-    – Upload your own javascript application to Mov.AI system 
+- State Transitions 
 
-    Dashboard Creator 
-    – Create operator views with stats and queues 
-    – Create custom dashboards to monitor and control fleets 
-    – Extensible set of customizable widgets 
-
-
- ![mov](/assets/images/muunneltava_UI.png)
- ##### Muunneltava UI (mov.ai, n.d)
-
- State Transitions 
-
-    Mix Nodes and State Machine in single view 
-
-    Visual Launch Diagrams can act as State Machine Diagrams 
-
-    MOV.AI Nodes can act as “State Nodes” 
-
-    When a Node is transitioned-to, all non-connected nodes are recursively 
+  - Mix Nodes and State Machine in single view 
+  - Visual Launch Diagrams can act as State Machine Diagrams 
+  - MOV.AI Nodes can act as “State Nodes” 
+  - When a Node is transitioned-to, all non-connected nodes are recursively 
     killed/disabled 
-
-    Visualize dependency between Robot’s State & required ROS nodes 
-
-    Visual ROS2 lifecycle manager 
+  - Visualize dependency between Robot’s State & required ROS nodes 
+  - Visual ROS2 lifecycle manager 
 
 (Mov.ai, n.d) 
-
 
 <p>&nbsp;</p>  
 ### Autonomiset ajoneuvot
 
 Määritelmän mukaan ajoneuvo, joka havainnoi ja tunnistaa ympäristönsä sekä kykenee toimimaan itsenäisesti, luokitellaan autonomiseksi (Kuva  ). Autonominen auto käyttää erilaisia tekniikoita ympäristönsä havaitsemiseen. näitä ovat mm. tutka, laservalo, GPS (Global Positioning System), odometri, konenäkö ja monet muut. Autonomisten ajoneuvojen haasteita ovat ja tulevat edelleen olemaan lokalisointi, kartoitus, näkymän havainnointi, ajoneuvon hallinta, liikeradan optimointi sekä korkeatasoiset ennakoivat päätökset. Autonomisen ajamisen tasoja on viisi:  
 
-    Taso 1: kuljettajan avustus, josta mainittakoon esimerkkinä vakionopeuden säädin sekä kaista-avustin. 
+Taso 1: kuljettajan avustus, josta mainittakoon esimerkkinä vakionopeuden säädin sekä kaista-avustin. 
 
-    Taso 2: osittainen automaatio, jossa auto voi liikkua ilman kuljettajan ajoon puuttumista, mutta kuljettajan on pidettävä käden auton ratissa ja kuljettajalla on vastuu.  
+Taso 2: osittainen automaatio, jossa auto voi liikkua ilman kuljettajan ajoon puuttumista, mutta kuljettajan on pidettävä käden auton ratissa ja kuljettajalla on vastuu.  
 
-    Taso 3: ehdollinen automaatio antaa jo kuljettajalle vapauden keskittyä vaikka puhelimen tai videoiden katseluun. Nukkuminen ei tosin vieläkään ole sallittua. 
+Taso 3: ehdollinen automaatio antaa jo kuljettajalle vapauden keskittyä vaikka puhelimen tai videoiden katseluun. Nukkuminen ei tosin vieläkään ole sallittua. 
 
-    Taso 4: korkea automaatio, jossa auton tuli selviytyä suurimmasta osasta ajotilanteita itsenäisesti. Kuljettajan on kuitenkin oltava valmiina ottamaan auto hallintaa hälytettäessä, mikäli näin ei tapahdu. auto ohjautuu itse tien sivuun ja pysähtyy. 
+Taso 4: korkea automaatio, jossa auton tuli selviytyä suurimmasta osasta ajotilanteita itsenäisesti. Kuljettajan on kuitenkin oltava valmiina ottamaan auto hallintaa hälytettäessä, mikäli näin ei tapahdu. auto ohjautuu itse tien sivuun ja pysähtyy. 
 
-    Taso 5: täysi automaatio, jossa kuljettajaa ei enää tarvita. 
+Taso 5: täysi automaatio, jossa kuljettajaa ei enää tarvita. 
 
 (Kokkonen, 2020) 
 
@@ -668,8 +644,6 @@ Yhdysvaltalainen Embark on vuonna 2016 perustettu kahden nuoren kanadalaisen tie
 
 Embark Trucks toimii nykyisin tason kaksi autonomiana. Erikoisvalmisteinen, kaksoisredundantti tietokone, joka testaa itsensä satoja kertoja sekunnissa tarkkailee jokaista komentoa reaaliajassa. (Sushant, 2019) 
 
- 
-
 <p>&nbsp;</p>  
 ### Autonomisten autojen Rosbag-data
 
@@ -687,6 +661,7 @@ Mobiilirobotteja käytetään teollisuudessa, kotitalouksissa ja erilaisissa pal
 
 COVID-19 pandemia muutti Yhdysvaltojen pitkäaikaista trendiä, jossa autonomiset robotit päätyivät pääasiassa autoteollisuudelle. Ihmisten ostaessa tuotteita verkosta pandemia myös vauhditti automaation pitkäaikaista suuntausta, jossa verkkokauppiaat lisäävät kapasiteettiaan ja tehtaat käyttävät automaatiota pitämään tuotantolinjat toiminnassa ja työntekijät turvaetäisyyksien päässä toisistaan. Association for Advancing Automationin mukaan robottitoimitukset lisääntyivät vuonna 2020 3,5 % edellisvuoteen verrattuna ja niistä 52 % menee laitoksiin, jotka valmistavat kulutustavaroita ja lääkkeitä. Näiden tilausten arvo oli 1.57 miljardia dollaria. Pandemian alkuvaiheessa keväällä 2020 robottiteollisuus joutui koetukselle maailmanlaajuisten toimitusketjujen katketessa ja yritysten sulkeutuessa. Ala ponnahti kuitenkin takaisin myöhemmin samana vuonna toimitusten ollessa historiallisen korkeita. Autoteollisuus on pitkään hallinnut robottien markkinoita, mutta sittemmin ovat muut teollisuudenalat saaneet enemmän jalansijaa kuvastaen halvempien ja mukautumiskykyisten robottien kehittymistä. (Reuters, 2021) 
 
+<p>&nbsp;</p> 
 ### Relay-palvelurobotti
 
 Yhdysvaltalainen Savioke on vuonna 2013 perustettu yritys, joka kehittää ja valmistaa autonomisia palvelurobotteja. Sen lippulaiva on Relay niminen robotti (Kuva   ), joka käyttää sisäistä karttaa ja LiDAR:ia liikkuakseen ihmisten parissa. Suomalainen hissivalmistaja KONE tekee Savioke:n kanssa yhteistyötä huippuluokan hotelleissa. Tulevaisuudessa hotelleissa ei tarvitse olla mitään ylimääräisiä asennuksia sillä Relay ja hissit tulevat käyttämään KONE:n Flow Connectivity- ja pilvipalveluita, jolloin Relay kommunikoi KONE:n IoT alustan kanssa. (KONE, 2018)  
@@ -728,7 +703,7 @@ Skypen perustajat Ahti Heinla ja Janus Friis perustivat Starship:in vuonna 2014.
 
 Robotti käyttää vähintään 9 kameraa mukaan lukien 6 spektri kameraa sekä kolmea 3D ToF-kameraa. Konenäköön ja autonomisten ajotoimintojen suorittamiseen se käyttää Nvidia Tegra K1 -mobiiliprosessoria sekä 360° näkymällä varustettuja ultraääniantureita sekä GPS- ja IMU-kiihtyvyysanturia. Henlan mukaan akkukäyttöiset robotit käyttävät vähemmän energiaa kuin suurin osa hehkulampuista. Mikäli jotain menee pieleen, kykenee operoija ottamaan ohjauksen hallintaansa ja näkemään maailman robotin ”silmin”. Robotti on varustettu mikrofoneilla ja kaiuttimilla, joten se kykenee kommunikoimaan tapaamiensa ihmisten kanssa. Robotti käyttää samankaltaista teknologiaa kuin autonomiset autot, mutta paljon halvemmalla. Robotin on suunnitellut pohjoismainen Aivan ja se on voittanut Kaj Franckin muotoilupalkinnon 2019. (Kottasova, 2015) (Vision systems design, 2017) (Aivan, n.d) (Desing forum, 2019) 
 
-![starship](/assets/images/Starship_maailma.png)
+![starship](/assets/images/starship_maailma.png)
 ##### Starshipin toimitukset maailmanlaajuisesti (Heinla, 2021)
 
 Kuusi vuotta perustamisensa jälkeen Starship on toimittanut jo yli miljoona tilausta ja heillä on useita toimialueita Yhdysvalloissa ja Euroopassa (Kuva  ). (Heinla, 2021) 
@@ -748,6 +723,7 @@ Robotti esiteltiin GreenTechissä 2016. Yksi robotti kykenee suoriutumaan 0.75�
 
 Niillä saadaan laaja näkökenttä sekä tomaatin oikealta, että vasemmalta puolelta. Järjestelmässä käytetään Xenon strobe valoa valaisemaan kasveja. Strobo lähettää valoa 2 sekunnin välein, jolloin se laukaisee stereokamerat 30 mikrosekunnin välein. Tämä mahdollistaa yhtenäisen kuvajoukon. Kuvien ottamisen jälkeen ne siirretään USB-liitännän kautta tietokoneelle, jossa käytetään Ubuntu-käyttöjärjestelmää ja ROS:sia. OpenCV:ssä olevia kustomoituja kuvankäsittelyalgoritmeja käytetään molempien kameroiden kuvasarjojen käsittelyyn, jotta tomaattikasvien lehdet tunnistetaan tietyltä korkeusalueelta. Sijainnin tunnistamisen jälkeen ohjelmisto laskee katkaistavien lehtiruotien 3D-koordinaatit. Tämä koordinaattidata siirretään ROS:lle ja sitä kautta älykkäille servomoottoreille, jotka ohjaavat robotin teleskooppikäsivarren oikeaan paikkaan kasvia, missä se leikkaa lehtiruodin poistaen näin tomaatin lehdet. Koska kamerat ovat samalla alustalla kuin käsivarsi ne ottavat kuvia samaan aikaan kun käsivarsi liikkuu. Järjestelmä poistaa lehtiä, kunnes ei kykene enää tunnistamaan enempää lehtiä. (Priva, n.d) (Phil by Priva, 2019) (Vision Systems Design, 2017) 
 
+<p>&nbsp;</p> 
 ### XGO-Mini, AI-moduuleja omaava nelijalkainen robotti 
 
 HIT-ryhmän (Harbin Institute of Technology, Kiina) perustama STEM-koulutusteknologiayritys Luwu ilmoitti keväällä 2021 lanseeraavansa XGO-Mini nimisen nelijalkaisen robotin (Kuva  ). Pöytäkoneen kokoisella tekoälyrobotilla on 12 vapausastetta ja se kykenee liikkumaan moneen suuntaan, lisäksi siltä onnistuvat kuusiulotteiset asennot ja monenlaiset eri liikkeet. Jäljittelemällä koiran kävelyä se voi liikkua epätasaisessa maastossa ja erittäin haastavilla pinnoilla. Säätämällä korkeuttaan se voi sopeuttaa itsensä välttämään esteet. Ainutlaatuisen bionisen järjestelmän ansiosta XGO-Mini suorittaa minkä tahansa dynaamisen liikkeen. AI-moduuleissa on visuaalinen-, äänen-, ja eleiden tunnistus. Se voi seurata eri värejä ja tunnistaa QR-koodit, AprilTagit, DataMatrixit jne.  (Introducing XGO-Mini, 2021) 
@@ -760,10 +736,8 @@ Robotin nivelet muodostuvat DC-moottoreista, alennusvaihteistosta, antureista ja
 ![XGO](/assets/images/XGO-jarjestelma.png)
 ##### XGO-Mini järjestelmä (Introducing XGO-Mini, 2021)
 
-Robotti on heti käyttövalmis ja sitä voidaan käyttää erityisen sovelluksen avulla. Edge Computing Chipin avulla tekoäly voi toimia paikallisissa järjestelmissä ja sitä voidaan ohjata ilman Internettiä tai matkapuhelinta. Robottia voidaan käyttää luomaan omia toimintoja koulutukseen, viihteeseen sekä kaupalliseen käyttöön. (Introducing XGO-Mini, 2021) Tästä tai vastaavasta robotista saattaa olla iloa ja hyötyä tutustuttaessa robottien, tekoälyn ja ohjelmoinnin ihmeelliseen maailmaan. Luwu Intelligence Technology-tuotepäällikön Pengfei Liun sanoin:  
-
-<!--Tähän pitää saada eri  fontti-->
-"Robotiikkaan ja STEM-koulutukseen keskittyvänä teknologiayrityksenä ymmärrämme robotiikan ja tekoälyopetuksen merkityksen nuorille. Nämä tekniikat ovat avain tulevaisuuteen. XGO Mini, bioninen nelijalkainen robottikoira nuorten tekoälyopetukseen, on täydellinen foorumi robotiikan ja ohjelmointitaitojen kehittämiseen hauskalla tavalla. 12 DOF: n, monisuuntaisen liikkeen ja edistyneen tason tekoälyn ansiosta se pystyy käytännössä mihin tahansa liikkeeseen tai tehtävään ja tarjoaa käyttäjille rajattomat ohjelmointimahdollisuudet, jotka auttavat käyttäjiä tutkimaan, oppimaan ja pitämään hauskaa ". (Introducing XGO-Mini, 2021) 
+Robotti on heti käyttövalmis ja sitä voidaan käyttää erityisen sovelluksen avulla. Edge Computing Chipin avulla tekoäly voi toimia paikallisissa järjestelmissä ja sitä voidaan ohjata ilman Internettiä tai matkapuhelinta. Robottia voidaan käyttää luomaan omia toimintoja koulutukseen, viihteeseen sekä kaupalliseen käyttöön. (Introducing XGO-Mini, 2021) Tästä tai vastaavasta robotista saattaa olla iloa ja hyötyä tutustuttaessa robottien, tekoälyn ja ohjelmoinnin ihmeelliseen maailmaan. Luwu Intelligence Technology-tuotepäällikön Pengfei Liun sanoin: <em>
+"Robotiikkaan ja STEM-koulutukseen keskittyvänä teknologiayrityksenä ymmärrämme robotiikan ja tekoälyopetuksen merkityksen nuorille. Nämä tekniikat ovat avain tulevaisuuteen. XGO Mini, bioninen nelijalkainen robottikoira nuorten tekoälyopetukseen, on täydellinen foorumi robotiikan ja ohjelmointitaitojen kehittämiseen hauskalla tavalla. 12 DOF: n, monisuuntaisen liikkeen ja edistyneen tason tekoälyn ansiosta se pystyy käytännössä mihin tahansa liikkeeseen tai tehtävään ja tarjoaa käyttäjille rajattomat ohjelmointimahdollisuudet, jotka auttavat käyttäjiä tutkimaan, oppimaan ja pitämään hauskaa ".</em> (Introducing XGO-Mini, 2021) 
 
 <p>&nbsp;</p> 
 ## Humanoidit
@@ -772,6 +746,7 @@ Humanoidirobotit suunnitellaan muistuttamaan ihmistä ja uusin liikkumis- ja tek
 
 Ennen koronapandemiaa ja taloudellista epävarmuutta Stratistics Market Research Consulting ennakoi maailmanlaajuisten humanoidirobottien markkinoiden nousevan 13 miljardiin dollariin vuoteen 2026 mennessä. Markkinoiden epävarmuudesta riippumatta robottien käyttö on kasvussa. (Merkusheva, 2020) 
 
+<p>&nbsp;</p> 
 ### Robonaut
 
 NASA:n (National Aeronautics and Space Administration) Robonaut-projekti aloitettiin vuonna 1996. Siinä NASA:n Johnsonin avaruuskeskuksen Robot Systems Technology Branch kehitti yhteistyössä DARPA:n (Defense Advanced Research Projects Agency) kanssa humanoidirobotin, joka suorittaa samoja töitä kuin ihminen ja joka kykenee työskentelemään kansainvälisellä avaruusasemalla, ISS:llä (International Space Station). Ensimmäinen versio valmistui vuonna 2000. Robottia on jatkuvasti kehitetty ja uusin malli on Robonaut 2 tai R2. Se on tehty NASA:n sekä autovalmistaja General Motorsin yhteistyönä ja Oceaneering Space Systemin insinöörien avustuksella. (Badger, 2019) (Bibby & Necessary, 2008) (Dunbar, 2012) 
@@ -792,6 +767,7 @@ Orocosia käytetään ROS-kehyksessä monien vapausasteiden koordinoimiseksi, jo
 
 Helmikuussa 2011 R2 lähetettiin ISS:lle, jossa se suoritti erilaisia testejä siitä, miten työskennellä rinnan ihmisten kanssa. 2014 asennettujen jalkojen jälkeen alkoi kuitenkin esiintyä ongelmia. Johnsonin avaruuskeskuksen varaprojektipäällikkö Jonathan Rogersin mukaan prosessori lopetti vastaamisen ohjelmistopäivityksen aikana. Uudelleenkäynnistys korjasi ongelman väliaikaisesti, mutta lopulta prosessorit eivät käynnistyneet lainkaan. NASA:n astronautit yrittivät aluksi korjata vikaa kiertoradalla. Vika paikallistettiin vikaantuneeseen 24 voltin sähkökaapeliin. Korvaavan kaapelin lähettämistä asemalle harkittiin, mutta lopulta päätettiin tuoda R2 kotiin ja suorittaa kunnollinen korjaus. R2 saapui takaisin Johnson Space Centeriin toukokuussa 2018. Ongelmaksi paljastui lopulta virtalähteen puuttuva maakaapeli, joka aiheutti R2:n järjestelmän ylikuormittumisen ja sammumisen odottamattomasti. Sähköjärjestelmä uusittiin ja laitteistot sekä ohjelmistot päivitettiin. Milloin ja miten R2 palaa avaruusasemalle ei ole vielä tehty päätöstä. (Foust, 2019) (Robonaut returns to..., 2021) 
 
+<p>&nbsp;</p> 
 ### NimbRo-OP2X 
 
 Ficht, Farazi, Rodriguez, Pavlichenko, Allgeuer, Brandenburger ja Behnke ovat kehittäneet aikaisempien (NimbRo-OP, NimbRo-OP2) robottikokoonpanojen pohjalta edullisen NimbRo-OP2X humanoidirobotin, joka on 135 cm pitkä ja painaa vain 19 kg (Kuva  ). NimbRo-OP2X voitti RoboCup 2018 humanoidijalkapallosarjan aikuisten kokoluokan parhaan humanoidin palkinnon. Robotti kykenee toimimaan ihmisympäristössä ilman erityisiä turvavarusteita. Siinä on täysin 3D-tulostettu rakenne, sisäinen GPU laskentayksikkö standardi Mini-ITX koossa sekä sarja tehokkaampia, älykkäämpiä toimilaitteita. Sekä laitteisto-, että ohjelmistokomponentit ovat täysin avointa lähdekoodia. (Ficht, et al., 2020) 
@@ -820,7 +796,7 @@ YOLOv3 (You only look once) käytetään yleiseen kohteiden tunnistukseen. Reaal
 
 Sekä NimbRo-OP2X:n ohjelmistokehys, että 3D-tulostettavat CAD-tiedostot ja materiaalilista ovat ilmaiseksi saatavilla internetistä. (Ficht, et al., 2020) 
 
-
+<p>&nbsp;</p> 
 ### Sophia
 
 Amerikkalainen Hanson Robotics kehitti Sophia-nimisen humanoidirobotin, joka aktivoitiin 19. huhtikuuta 2015. Robotin kasvojen mallina toimi brittinäyttelijä Audrey Hepburn ja sen tärkein teknologinen ominaisuus on kyky oppia vuorovaikutuksesta ihmisen kanssa. Sophia kykenee puhumaan sekä ilmehtimään ja elehtimään kuten ihminen. Hämmästyttävien ominaisuuksiensa vuoksi Saudi-Arabian hallitus myönsi Sophialle maansa kansalaisuuden Riadissa 25. lokakuuta vuonna 2017. Sophia on myös innovaatiolähettiläs Yhdistyneiden Kansakuntien kehitysohjelmassa. Sophia on esiintynyt ohjelmissa kuten ”The Tonight Show”, ”Good Morning Britain” sekä sadoissa konferensseissa ympäri maailman. Sophian erityiset tekniset ominaisuudet ovat aiheuttaneet erilaisia jälkiseurauksia paitsi akateemisessa tiedemaailmassa myös eettisiä, taiteellisia, uskonnollisia, moraalisia, poliittisia sekä taloudellisia seurauksia. (Retto, 2017) (Sophia, 2021) 
@@ -844,29 +820,21 @@ Kehitettäessä uusia ihmisen innoittamia kognitiivisia koneoppimisen neuroarkki
 
 Alustalle kehitettiin suhteellisen edullisesti uudenlaiset 14 DoF-robottikäsivarret inhimillisillä mittasuhteilla ja sijainnilla, jokaisen nivelen voimantakaisinkytkennällä sekä kaikilla käden vapausasteen elastisilla toimilaitteilla. Käsivarsille ja käsille kehitettyjä toimintoja ovat mm. PID-säätö (Proportional-integral-derivate), servomoottorit 360° asennon ohjauksella, URDF-mallit useissa liikkeenohjausympäristöissä kuten Roodle, Gazebo sekä MoveIt, sekä ROS API:iin sidotut voimantakaisinkytkentä ohjaimet, IK (Inverse Kinematic) ratkaisimet sekä PID-silmukat yhdistäen klassisen liikkeenohjauksen tietokoneanimaatioon. (Imran, 2021) 
 
- 
 
 Hanson AI SDK  
 
 Havainnointi: 
 
-    Kasvojen seuranta, tunnistus, ilmeet, tärkeys, eleet, STT (Speech To Text), SLAM (Simultaneous Localization and Mapping) jne. 
-
-    Havainnoinnin proseduraaliset animaatiovasteet: seuranta, jäljittely, vetäytyminen 
-
-    Gazebo, Blender ja Unity simulaatiot 
+  - Kasvojen seuranta, tunnistus, ilmeet, tärkeys, eleet, STT (Speech To Text), SLAM (Simultaneous Localization and Mapping) jne. 
+  - Havainnoinnin proseduraaliset animaatiovasteet: seuranta, jäljittely,             vetäytyminen 
+  - Gazebo, Blender ja Unity simulaatiot 
 
 Robotin ohjaimet: 
 
-    ROS, IK-ratkaisin, PID-silmukat, havaintofuusio, työkalujen kirjaus ja testaus 
-
-    Elokuvalaatuinen animaatio interaktiivisten esitysten kehittämistyökaluilla 
-
-    Käsivarret ja kädet: sosiaaliset eleet, kivi-sakset-paperi, kuvion piirtäminen, baccarat 
-
-    Tanssiminen, pyörillä liikkuminen, kävely (Yhdessä KAIST:in (Korea Advanced Institute of Science and Technology) ja UNVL:n (University of Nevada) DRC-Hubon tiimien kanssa) (Imran, 2021) 
-
- 
+  - ROS, IK-ratkaisin, PID-silmukat, havaintofuusio, työkalujen kirjaus ja testaus 
+  - Elokuvalaatuinen animaatio interaktiivisten esitysten kehittämistyökaluilla 
+  - Käsivarret ja kädet: sosiaaliset eleet, kivi-sakset-paperi, kuvion piirtäminen, baccarat 
+  - Tanssiminen, pyörillä liikkuminen, kävely (Yhdessä KAIST:in (Korea Advanced Institute of Science and Technology) ja UNVL:n (University of Nevada) DRC-Hubon tiimien kanssa) (Imran, 2021) 
 
 Standardin mukaisen ROS-kehyksen ja hyvin suunnitellun API:n kautta kehittäjät pääsevät käyttämään kaikkia ohjelmistokomponentteja. Kehitettyjen ominaisuuksien testaamiseen SDK sisältää myös luonnollisen näköisen robotin visualisoinnin ilman fyysistä robottia. (Imran, 2021) 
 
@@ -886,10 +854,12 @@ Hanson Roboticsin tehtaat aloittavat vuoden 2021 ensimmäisellä puoliskolla mas
 
 Tieto ROS-ekosysteemistä on alkanut levitä ympäri Suomen. Ongelma Suomessa on lähinnä osaajien puute. Yritykset joutuvat etsimään osaavaa henkilöstöä eri puolilta maailmaa. Hankkeessa järjestettävän koulutuksen toivotaan tuovan helpotusta ongelmaan. Tässä esitellään Suomesta löydettyjä käyttökohteita ja käytäntöjä. 
 
+<p>&nbsp;</p> 
 ### Ohjelmistokehitys
 
 VAISTO on Tampereella sijaitseva yritys, joka tekee yhteistyötä älykytkettyihin ajoneuvoihin, koneisiin ja teollisuusautomaatioon erikoistuneiden yritysten kanssa. Heidän tavoitteensa on auttaa asiakkaitaan kehittämään parempia tuotteita sekä kokemuksia teollisuuden AI:n avulla hyödyntämällä datapohjaista tekniikkaa. Yrityksen ytimenä toimii ohjelmistokeskeisyys. Vaistossa käytetään ROS:sia autonomisten työkiertokonseptien prototyyppinä. Vaisto myös kehittää reaaliaikaisia datavirtoja autonomisille hallinta järjestelmille. (Koning, n.d) (VAISTO, n.d) 
 
+<p>&nbsp;</p> 
 ### Autonominen kuljetus
 
 Sensible 4 on Espoossa sijaitseva palkittu start-up joka suunnittelee ja kehittää autonomisia ajoneuvoja erilaisiin sääolosuhteisiin jotta kaupungeista voidaan saada puhtaampia ja täten ihmiskunnalle kestävämpi tulevaisuus. He ovat luoneet uraauurtavan ja ainutlaatuisen tekniikan itseohjautuville ajoneuvoille. Heidän tavoitteensa on, että vuonna 2021 näitä itseohjautuvia linja-autoja (Kuva   ) olisi osana kaupunkien nykyisiä kuljetusjärjestelmiä. NordicNinja VC rahoitti ensimmäisen rahoituskierroksen 100 M$ jota tukivat japanilaiset teknologiayritykset ja ITOCHU, joka on yksi suurimmista japanilaisista kauppayhtiöistä. Alkuvuonna 2020 Sensible 4 keräsi 7 M$ joiden odotetaan laajentavan yritysmarkkinoita Eurooppaan ja Aasiaan. (Sensible4, 2019) (sensible4, 2020) 
@@ -941,6 +911,7 @@ Fast Picker puolestaan käyttää RGB-kameraa ja LED:ä. Fast Picker lajittelee 
 
 Jätteenkäsittelyrobotin käyttöliittymästä vastasi Vincit Oy, joka tuotti myös simulaation robotin toiminnasta. Vincit Oy puolestaan taas on Pirkanmaalainen yritys, jonka toimitusjohtaja Mikko Kuitunen voitti vuonna 2012 Työ- ja elinkeinoministeriön Timangi-kilpailussa vuoden nuoren yrittäjän tittelin ja 30 000 €. (Tervola, 2012) (Kuitunen, n.d) 
 
+<p>&nbsp;</p> 
 ### Autonominen ajoneuvon tehdas pysäköinti 
 
 Kotipaikkaa Tampereella pitävä Unikie Oy on perustettu vuonna 2015 ja sen pääasiallisena toimialana ovat IT-konsultointi sekä -palvelut ja se on erikoistunut autonomisten ajoneuvojen ohjelmistoihin. Yksi esimerkki Unikien tarjoamista ratkaisuista on tehtaissa tapahtuva autonominen pysäköinti, joka on suunniteltu vähentämään autologistiikan kustannuksia. Käyttäen reunalaskentaa ja yhdistämällä laaja sekä monipuolinen anturiverkosto saadaan aikaan täydellinen ja tarkka hallinta sekä tilannetietoisuus, jolla kyetään luomaan tehokkaat puitteet autonomisesti ohjattavan ajoneuvologistiikan kehittämiselle. Näin saadaan aikaan järjestelmä, joka voi ohjata rajattomasti autoja myös ahtaissa tiloissa ja ruuhkaisilla tehdasalueilla. (Finder, n.d) (Automated factory parking, n.d) 
@@ -952,6 +923,7 @@ Autojen telematiikkaa, sähköistä ohjaustehostinta, automaattivaihteistoa sek�
 
 Unikien autonomiset ajo- ja ohjausratkaisut mahdollistuvat AI Visionin joustavilla ja monipuolisilla sovellusohjelmointirajapinnoilla. (Automated factory parking, n.d) 
 
+<p>&nbsp;</p> 
 ### RustDDS
 
 Atostek perustettiin Tampereelle vuonna 1999. Nykyisin sillä on toimisto Tampereen lisäksi myös Espoossa. Yritys on ohjelmistoalan asiantuntija, jolla on kokemusta terveyden ja lääketieteen sovellusten, teollisuuden tuotekehityksen sekä julkisen sektorin IT-konsultoinnista. (Atostek Oy, n.d) (Ohjelmistoalan asiantuntija, n.d) 
@@ -975,6 +947,7 @@ Koodi (Kuva ) sisältää tarvittavat lukijat ja kirjoittajat rosout- ja paramet
 
 Kiinnostus ROS-robottiekosysteemiin on suurta ympäri maailman. ROS:n käytössä vain mielikuvitus vaikuttaa olevan rajana. Erilaisia tutkimus- ja kehitysmahdollisuuksia on jo melkein joka lähtöön.   
 
+<p>&nbsp;</p> 
 ## ROS health
 
 Ikääntyvä väestö luo terveydenhuollolle haasteita, sillä työvoima vähenee ja kustannukset kasvavat. Vanhustenhoidon automatisoinnin ja tuen markkinat voivat kasvaa suuriksi sillä haasteita on mm. potilaiden kävelyttämisessä, kuulemisessa ja hoidossa, aina osastolla ja kotona tapahtuvaan valvontaan. Robotiikan avulla työntekijät voivat lisätä kliinisen työn määrää ja vähentää aikaa, joka kuluu toimitettaessa tavaroita potilaille. (Meertens, 2019) 
@@ -985,6 +958,7 @@ Voidaan säästää jopa vuosia aikaa, yhdistämällä laivueiden käyttöönott
 
 ROS health sisältää kahdenlaisia käyttöliittymiä. Suoratoisto käyttöliittymä näyttää monien eri robottilaivueiden robottien sijainnin käyttäen Websocket-verkkotekniikkaa, joka mahdollistaa kaksisuuntaisen yhteyden selain- ja palvelinohjelmistojen välille TCP-yhteydellä. Mobiililaitteiden käyttöliittymällä hoitajat saavat potilaita koskevat hoitotiedot nopeasti ja voivat antaa roboteille erilaisia komentoja. HL7-protokollaa (Health Level Seven) käyttävät useimmat sairaalasovellukset ja Open Robotics loi kerroksen, joka muuntaa protokollan viestit ROS-viesteiksi, jolloin ROS 2 voi muodostaa yhteyden olemassa oleviin sairaalasovelluksiin DDS-protokollan avulla. (Meertens, 2019) 
 
+<p>&nbsp;</p> 
 ## Mikrokirurginen robotin tutkimusalusta
 
 The Hamlyn Centre for Robotics Surgery, Imperial College Lontoossa on yksi kuudesta Institute of Global Health Innovation’s (IGHI) tutkimuskeskuksista, jotka tukevat terveydenhuollon innovaatioiden tunnistamista, kehittämistä ja levittämistä. (About us, 2020) Nykyisin saatavilla olevat mikrokirurgisten taitojen kehittämistä ja nopeuttamista tukevat robottiavusteiset mikrokirurgian (RAMS, Robot-Assisted Micro-Surgery) koulutusalustat on pääsääntöisesti suunniteltu makromittakaavassa minimalistisen invasiiviseen leikkaukseen. Siksi Hamlyn Centre on nähnyt tarpeelliseksi kehittää oma mikrokirurgisen robotin tutkimusalusta. He kehittävät mikrokirurgista robotin tutkimusalustaa (MRRP, Microsurgical Robot Research Platform) joka sisältää orjarobotin, jossa on kaksikätinen manipulaattori, kaksi pääkontrolleria sekä näköjärjestelmä (Kuva  ). Se tukee joustavasti monia mikrokirurgisia työkaluja. Ohjelmiston arkkitehtuuri pohjautuu ROS:iin, jota voidaan laajentaa. Eri rajapintoja tutkimalla päädyttiin valitsemaan isäntä-orja-kartoitusstrategia. (Zhang, et al., 2019)  
@@ -992,7 +966,6 @@ The Hamlyn Centre for Robotics Surgery, Imperial College Lontoossa on yksi kuude
 ![Kirurgirobo](assets/images/Kirurgirobot.png)
 ##### Orjarobotin CAD malli MRRP:lle (Zhang & al., 2019)
 
-<p>&nbsp;</p>  
 Orjarobotin kinemaattinen ohjaus perustuu SmarPod API:iin (Application Programming Interface) (Kuva   ). Modulaarista ohjausjärjestelmää käytetään ohjaamaan orjarobottimanipulaattorien pietsomoottoreita samalla kun alemman tason muodostavat kaksi harjatonta DC moottorinohjainta käytetään ohjaamaan moottoroituja mikroatuloita. Suuntauksen ohjaamiseksi ohjausjärjestelmällä voi olla 1 kHz näytteenottotaajuus. 
 
 ![Ohjelmistoarkkitehtuuri](/assets/images/Ohjelmistoarkkitehtuuri.png)
@@ -1008,7 +981,6 @@ Saksassa sijaitseva Soutwest Research Institute:n (SwRI) ROS Industrial-tiimi ke
 ![Hitsauskoe](/assets/images/Hitsauskoe.png)
 ##### Kokeellinen hitsausmenetelmä (SwRI, 2020)
 
-<p>&nbsp;</p>  
 Järjestelmä etenee käyttäen ROS-työkaluja. Aluksi kameraohjain toimittaa värillisen pistepilven TSDF-solmulle (Truncated Signed Distance Field), joka rekonstruoi ympäristön geometrian. Samalla pistepilviä huomioiva solmu erottelee pikseliin kohdistetun 2D-kuvan pistepilvestä ja lähettää sen ROS-palvelun kautta satunnaisille 2D-tunnistimille, joka palauttaa naamion, jossa on leima jokaiselle kuvapikselille. Näitä leimoja uudelleen värjätään pistepilven merkitsemiseksi. Tulokset voidaan yhdistää avoimen lähdekoodin octomap_serveriä käyttämällä. Skannauksen lopussa YAK-kirjasto toimittaa 3D-verkon ympäristöstä ja octomap antaa octomapin, joka on väritetty semanttisilla leimoilla. Tesseract-törmäyksen tarkistusrajapintoja voidaan käyttää havainnoimaan kolmioverkkoon liittyvät vokselit, jolloin geometrinen verkko lisätään semanttiseen dataan. (Powelson, 2020) 
 
 ![Hitsikuvat](/assets/images/Hitsikuvat.png)
@@ -1027,6 +999,7 @@ Sveitsissä joukko insinööriopiskelijoita ETH (Eidgenössische Technische Hoch
 
 Jalkojen optimoitu geometria erottaa ajo- ja hyppyliikkeet antaen näin robotin taipua erilaisissa tippumisskenaarioissa. LQR (Linear Quadratic Regulator) kontrollerilla saavutetaan vakaa ajo. Palautuakseen erilaisista hyppy- tai tippumisliikkeistä robotti käyttää peräkkäismyötäkytkentäistä säätökontrolleria, jossa on takaisinkytkennän seuranta. Ascentossa on keskusyksikkönä Intel NUC i7, IMU (Inertial Measurement Unit) sekä mikrokontrolleri mahdollistamaan yhteydenpito tietokoneen ja IMU:n välillä. Moottorien virrankulutukseen on akku, joka koostuu neljästä sarjaan kytketystä kolmekennoisesta litiuminonipolymeeriakusta (LiPO). Tietokone ja muut elektroniset laitteet saavat virtansa neljäkennoisesta LiPO akusta. Ohjelmiston on oltava laskennallisesti tehokas, jotta suuren kaistanleveyden ohjaimet mahdollistuvat. Kaikki ohjelmistot on kirjoitettu C++:lla. ROS:sia käytetään korkean tason viestintään. Kalman suodatin toimii IMU:n ja moottorin kooderi mittauksista saaduilla anturitiedoilla. Ascentoa voidaan kauko-ohjata, mutta se voi myös operoida täysin autonomisesti käyttäen kameroita ja antureita. Se painaa 10.4 kg ja sen huippunopeus on 8 km/h. Suurin mahdollinen hyppykorkeus on 0.4 m ja operointiaika on n. 1,5 h. (Coxworth, 2020) (Klemm, ym., 2019) 
 
+<p>&nbsp;</p> 
 ## Hedelmäpuiden leikkausrobotti
 
 Saksassa sijaitseva Hohenheimin yliopisto kehittää autonomista hedelmäpuiden leikkausrobottia (Kuva  ). Keski-Euroopassa on paljon hedelmätarhoja, joiden viljely ei ole taloudellisesti kannattavaa ja valtaosa on huonosti hoidettu tai niitä ei ole hoidettu lainkaan. Pelkästään Saksassa omenatarhat tuottavat 500 000–1 000 000 tonnia omenoita satovuodesta riippuen. Säännöllisellä ja ammattimaisella leikkauksella puiden terveyttä ja pitkää ikää voidaan kuitenkin edesauttaa. Vaikka erilaiset maatalouskoneet kuten mm. puiden ravistelijat ja korjuukoneet ovat suurena apuna sadon korjuussa on puiden karsinta kuitenkin vielä suoritettava käsin. Maataloustekniikan instituutissa työskentelevä tohtori David Reiser työskentelee yhdessä tohtoriksi opiskelevan tutkimusavustaja, Jonas Boysenin kanssa tekoälyprojektissa, jossa robottia kehitetään niin, että se voi suorittaa puunleikkauksen suurelta osin itsenäisesti. (Scott, 2021) (Stuhlemmer, 2021)​ 
@@ -1046,6 +1019,7 @@ Monista yksittäisistä etäisyysmittauksista luodaan pistepilvi, joka kuvaa puu
 
 Erikoisvalmisteisen aisan (Kuva  ) avulla teleskooppivarteen kiinnitetyn moottorisahan asentoa voidaan siirtää oikeaan leikkausasentoon. Tutkijat opettavat parhaillaan tietokonetta sijoittamaan saha oikeaan paikkaan. Puulajista ja määräpaikasta riippuen on olemassa erilaisia leikkaustapoja. Käyttäjän pitäisi myöhemmin kyetä valitsemaan karsitaanko vain oksia vai lyhennetäänkö runkoa, jolloin saadaan puu haarautumaan enemmän. Robottia on edelleen ohjattava manuaalisesti, mutta pitkän aikavälin tavoite on, että se toimisi itsenäisesti ja kykenisi leikkaamaan oksia jopa 7 m korkeudesta. (Scott, 2021)  (Stuhlemmer, 2021) 
 
+<p>&nbsp;</p> 
 ## Forschungszentrum Informatik (FZI) 
 
 Saksan Karlsruhessa sijaitsee voittoa tavoittelematon tietotekniikan tutkimuskeskus, joka on perustettu vuonna 1985 ja joka tekee läheistä yhteistyötä paikallisen yliopiston KIT:n (Karlsruhe Institute of Technology) kanssa. ROS-Industrialin jäsenenä he kehittävät ja integroivat uusimpia ratkaisuja reaalimaailman sovelluksiin. (FZIChannel, 2021) (FZI, n.d.)​ 
