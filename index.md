@@ -1092,10 +1092,162 @@ Työvoiman tarve on suuri ja työllä on suuri fyysinen vaikutus sen tekijöihin
 
 Projektin haasteita olivat mm. miten tuetaan TRI:n yritysstrategiaa kasvattamalla joustavuutta ja vähentämällä tuotantokustannuksia, työntekijäportaan visuaalinen hallinta, mikäli MES (Manufacturing Execution System) ei riitä, Pick & Place yksikön korvaaminen aidattomalla älyrobotilla, raskaan työn kuormituksen vähentäminen korvaamalla ihmiset robotilla sekä miten vähentää työkalujen valmistelun vaatimaa kokemusta AR:n avulla. Ongelmiin kehitettiin ratkaisuja kuten eri osien automatisoitu koukkuihin ripustus samanaikaisesti ihmisen kanssa, AR-tuki tuotantotyökalujen kokoamiseen ilman kokemusta, seuranta, organisointi sekä suunnittelutuki joustavan ja tehokkaan tuotannon mahdollistamiseksi. Tapauskohtaisia hyötyjä ovat olleet lyhentyneet vaihdot ja vaihtoon kuluva kokonaisaika, tehostunut tuotannon hallinta sekä ihmisten vähentynyt työmäärä. Kokonaisuudessaan projekti on tuonut säästöjä kehitysvaiheeseen, vähentänyt kehityshankkeiden taloudellista riskiä ja luonut pääsyn korkean teknologian tietoon. (HORSE, n.d.) 
 
+
+### Sim2Log VR Mixed Reality Logistic Automation 
+
+Kasvaneen verkkokaupan myötä logistiikkateollisuus kasvaa dynaamisesti. Siksi niiden on alettava yhä enenevässä määrin automatisoimaan toimintaansa. Yksi keskeisimpiä ratkaisuja ongelmaan on työntekijöiden mahdollisuus suunnitella, ohjelmoida ja validoida robottisovelluksia nopeasti. Osittain Saksan BMBF:n (Bundesministerium für Bildung und Forschung) rahoittama Sim2Log-projekti on yhdessä TruPhysics CmbH:n kanssa tehty tutkimus, jossa kehitetään menetelmiä, joilla virtuaalirobottien suunnittelua, ohjelmointia, testausta sekä sovittamista käyttöalueeseen helpotetaan. Työntekijöiden olisi kyettävä toteuttamaan monimutkaisia automaatioratkaisuja valmiiden logistiikkamoduulien sekä VR- (Virtual Reality) ja AR-simulaatioympäristöjen avulla. (BMBF, n.d.)​ 
+
+![sim2log](/assets/images/VR_AR.png)
+##### Ohjelmointi VR / AR-simulointiympäristössä. (Sim2Log VR, n.d.)
+
+Intuitiivisten ohjelmointikonseptien ja innovatiivisten syötemetodien, kuten TruGlove-ohjelmointikäsineen avulla robotit voidaan ohjelmoida ilman paljoakaan ennakko-osaamista. VR-simulaatiossa sovelluksia voidaan ensin suunnitella ja samalla arvioida niiden toteutettavuus (Kuva  ). Ajoitusta säätämällä voidaan määrittää jaksonaika ja siten simuloida kokonaisia prosesseja. Näin kehitetty ratkaisu voidaan siirtää suoraan todelliseen robottiin ja myöhemmin mukauttaa intuitiivisesti AR:n avulla. VR:ssä määriteltyjen liikeratojen toteutus oikeassa robotissa tehdään käyttämällä FZI Motion Pipelinea, ROS-ohjelmistoa, joka on kehitetty helpommaksi ja joustavammaksi roboteille, joissa on ROS-rajapinta. FZI Motion Pipeline tarjoaa käyttäjälle graafisen käyttöliittymän, jossa käytettävissä olevat liikeradat on lueteltu käyttöliittymään ja käyttäjä voi käyttää yksinkertaisia painikkeita liikeratojen lataamiseen, suorittamiseen ja muokkaamiseen. Mikäli liikeradan pistettä on muutettava voi käyttäjä syöttää halutun paikkatiedon tai käyttää robotin pendanttia asettamaan muutettu arvo ja tallentamaan se. Korkean tason määrittelyä varten on integroitu avoimen lähdekoodin käyttäytymismoottori FlexBE joka on myös toteutettu ROS:lla. FlexBE:ssä on graafinen käyttöliittymä, jonka avulla käyttäjän on helppo määrittää robotin työkulku yhdistämällä rakennuspalikat ilman ohjelmointia. Määrityksen tulosta voidaan käyttää oikealla robotilla. (BMBF, n.d.) 
+
+![sim2log](/assets/images/sim2log_tiedonsiirto.png)
+##### Järjestelmän ohjelmistoarkkitehtuuri ja komponenttien välinen tiedonsiirto. (Bolano, & al., 2020)
+
+AR-sovellus on pääosin toteutettu Unityssä ja robottikomponenttien ohjauksessa on käytetty ROS:ia. Näiden kahden välinen viestintä on toteutettu käyttäen avoimen lähdekoodin ROS-ohjelmistokirjastoa. Kokonaisarkkitehtuuri näkyy kuvassa ____. Järjestelmässä on mahdollista myös simuloida vain kuljetinhihnalla liikkuvia osia, jolloin todellinen robotti reagoi sovelluksen käyttöliittymässä asetettujen muutosten mukaisesti. Mahdollisuus sisällyttää virtuaalirobotteja simulaatioon antaa käyttäjän arvioida lisävarusteiden tarvetta arvioimalla paras sijainti saavutettavuuden ja hyvien tulosten perusteella. (Bolano, et al., 2020) 
+
+![sim2log](/assets/images/semi_virt.png)
+##### Sim2Log VR: Uusien robottisovellusten semi-virtuaalinen suunnittelu ja validointi. (FZIChannel, 2020)
+
+Järjestelmä on otettu käyttöön kokoonpanossa, jossa oli kuljetushihna sekä 6-DOF-käsivarsirobotti 2-sormitarttujalla (Kuva  ). Kiinteästi sijoitetusta kamerasta saatiin reaaliaikaista kuvaa halutusta kohdasta. Kokonaisuuden eteen asetettiin kosketusnäyttö, jotta käyttäjälle kyettiin visualisoimaan lisätty tapahtumapaikka yhdessä GUI:in kanssa. Näin saatiin linjan parametrejä helposti muutettua ja simuloitu robotti lisättyä asetuksiin. Jokaisesta muutoksesta laskettiin ja visualisoitiin tuloksena olevan linjan suorituskyky. Järjestelmää voitaisiin parantaa lisäämällä joustavuutta virtuaalikohteiden määrittelyyn sekä laajentamalla simulaatiossa käytettävää laitteistokirjastoa. AR-kuulokkeiden käyttö voisi tehdä virtuaalikoneiden esityksestä tehokkaamman ilman, että näyttöjä tai kädessä pidettäviä laitteita tarvittaisiin. (Bolano, et al., 2020) 
+
+### intelliRISK - Risk Aware Autonomous Robots 
+
+Vuodesta 2017 saakka on Arne Rönnaun johtama tiimi tutkinut järjestelmää, jonka avulla robotit kykenevät tekemään itsenäisiä päätöksiä avaruusoperaatioissa. Projektissa käytetään FZI:ssä kehitettyä LAURON V (Legged Autonomous Robot Neural Controlled) robottia, joka pystyy liikkumaan turvallisesti jopa epätasaisessa maastossa. Tähän saakka työryhmät ovat päättäneet robotin toiminnoista perustuen robotilta saatuihin tietoihin. Nykyisessä järjestelmässä kaikkia robotin käytettävissä olevia tietoja ei siirretä työryhmälle, joten niitä ei voida ottaa huomioon päätöksenteossa. IntelliRISK-projektin tarkoitus on kehittää järjestelmä, jonka avulla voidaan arvioida riskejä ja vaikuttaa tilanteisiin itsenäisesti. Järjestelmän älykkyys on äärimmäisen tärkeää varsinkin työtehtävissä, joissa tehtävän onnistuminen on tärkeämpää kuin laitteistolle mahdollisesti aiheutuvat vahingot.  Haasteena ei ole vain ulkoisten vaarojen havaitseminen vaan myös robotin itsensä kuluminen.  Järjestelmän avulla robotti kykenee tunnistamaan, arvioimaan ja ottamaan tietoisia riskejä sekä ilmoittamaan aikeistaan valvontaryhmälle. Ollessaan tehtävänsä alussa robotti voi toimia varovaisesti, mutta ollessaan tehtäviensä lopussa se saattaa tehdä rohkeampia päätöksiä. Järjestelmää voidaan käyttää myös muualla kuin avaruusmatkoilla. Riskitietoisuutta voidaan tulevaisuudessa käyttää myös Industrial 4.0-sovelluksissa, jolloin ihmisten ja robottien yhteistyöstä saadaan turvallisempaa ja onnettomuuksia estettyä. Katastrofien torjunnassa ja niistä toipumisessa robotti voi laittaa ihmisen hyvinvoinnin omansa edelle, jotta pelastaminen olisi mahdollista myös vaikeissa olosuhteissa. Tehtävän onnistumisen kannalta tärkeintä on siis tietää mitkä riskeistä ovat suurimpia. (FZI Research Center for Information Technology, n.d.) 
+
+### LAURON V Bio-Inspired Walking Robot 
+
+Luonnosta inspiraation saaneen LAURON:in kehitys alkoi jo vuonna 1994. Robotti esiteltiin ensimmäisen kerran yleisölle CeBIT:ssä (Centrum der Büro- und Informationstechnik) Hannoverissa (Kuva  ). Tämän kuusijalkaisen Intian ruskosauvasirkan (Carausius morosus) muodon omaavan robotin tutkimus keskittyi aluksi itse kävelyprosessiin epätasaisessa ja vaikeassa maastossa. Ohjausohjelmistoa ja mekatroniikkaa on jatkuvasti paranneltu. (FZI , n.d.) 
+
+![lauron](/assets/images/lauron.png)
+##### LAURON I vuodelta 1994. (ROBOTS, 2021)
+
+Vuonna 2013 valmistui nykyisen sukupolven LAURON V (Kuva  ), joka esiteltiin IEEE ICRA:ssa (International Conference on Robotics and Automation) Karlsruhessa. Nykyisen työn kohteena ovat luonnon inspiroima kävelyanalyysi, navigointistrategia, autonomia, eturaajojen manipulointi sekä energiatehokkuus. Robotin 6 alkaa on kiinnitetty keskusrunkoon sisäisellä alumiinirungolla, johon mahtuu kaikki tarvittava elektroniikka. Se on kooltaan 0.9 m x 0.8 m x 0.84 m (pituus x leveys x korkeus). Jokaisessa jalassa on 4 niveltä mikä mahdollistaa jalkojen taivutuksen eteenpäin. Se kykenee suoriutumaan esteistä, joiden kaltevuus on 25° ja säilyttämään tasapainonsa 43° kaltevuudella. Etujalkoja voidaan käyttää myös manipulaattoreina, jolloin varsinaista käsivarsitarttujaa ei tarvita. Jaloissa on 4 tehokasta DC-moottoria ja sen kokonaispaino on 42 kg. Hyötykuorma robotilla on 10 kg ja se mahdollistaa huipputason prosessorin ja tehtäväkohtaiset anturit. Siinä on sisäisiä antureita kuten mm. mittatilauksena valmistettujen moottoriohjaimien virtamittaus, jousitettujen jalkojen potentiometrit sekä erittäin tarkka IMU vartalon asennon havaitsemiseen. Pääsensoreina toimivat ”Pan-Tilt Unit”:iin kiinnitetyt kaksi korkean resoluution kameraa ja kinect. Laite tosin kykenee suuren kokonsa vuoksi kantamaan melkein minkä tahansa anturin, jota tarvitaan suoriutumaan tietystä tehtävästä. Päätä voidaan liikuttaa pituus- ja sivuttaiskallistuksella, jolloin LAURON:lla on 26 vapausastetta. Käyttäytymiseen perustuvan hallintajärjestelmän avulla robotti kykenee selviytymään muuttuvasta ympäristöstä ja odottamattomista tapahtumista kuten liukastuminen tai jokin este. (Heppner, et al., 2015) (FZI , n.d.) (He & Gao, 2020) 
+
+![lauron](/assets/images/lauronV.png)
+##### LAURON V (He & Gao, 2020)
+
+PlexNav (Planetary Exploration and Navigation Framework) on hybridiarkkitehtuuri, jossa FZI:in oman MCA2 (Modular Controler Architecture) kehyksen mukana käytetään ROS:ia. ROS:in tarjoama julkaisija/tilaaja kommunikointityyli helpottaa suuresti erilaisten komponenttien integrointia järjestelmään, jopa ajon aikana.  (Heppner, et al., 2015) 
+
+![lauron](/assets/images/PlexNav.png)
+##### PlexNav arkkitehtuurin rakenne. (Heppner, & al., 2015)
+
+PlexNav koostuu kolmesta kerroksesta (Kuva ), joista ensimmäinen kerros koostuu robottikohtaisesta toteutuksesta joka LAURON:in tapauksessa on käyttäytymisperusteinen hallinta. Tähän kuuluu jalan liikkeiden hallinta, anturin antaman tiedon tulkinta sekä turvallisuuden seuranta. Siihen sisältyy myös abstraktiokerros, joka paljastaa ROS-rajapinnat ylemmille kerroksille ja mahdollistaa turvallisen pääsyn matalan tason toimintoihin. Toinen kerros puolestaan koostuu robotin yksilöllisistä taidoista. PlexNav:in jokainen taito on komponentti, joka tarjoaa tietyn osajärjestelmän kuten manipulointi tai ympäristön kartoitus. Viimeinen taso hoitaa tehtävän kokonaisuuden. Se tarjoaa komponentit, jotka hallitsevat tehtävän tilaa ja kutsuu paljastuneet ominaisuudet taitotasolta. Kaikki tasot voivat käyttää tai julkaista maailmanlaajuisesti saatavilla olevia tietoja. (Heppner, et al., 2015) 
+
+### ROBDEKON - Autonomous Handling of Hazardous Materials 
+
+Ihmiset joutuvat työskentelemään terveydelle haitallisissa ympäristöissä käsitellessään myrkyllisiä jätteitä, puhdistaessaan kemiallisesti saastuneita alueita tai vanhoja kaatopaikkoja sekä suljettaessa ydinvoimaloita. He ovat tekemisissä epäpuhtauksien sekä tulipalo-, räjähdys- tai ydinsäteily vaaran kanssa. Heidän suojaamisensa edellyttää monimutkaisia ja usein raskaitakin suojatoimenpiteitä. ROBDEKON tulee sanoista: ”Robotersysteme für die Dekontamination in menschenfeindlichen Umgebungen”, ja se tarkoittaa vapaasti käännettynä vihamielisen ympäristön puhdistamista robottien avulla. Se on osaamiskeskus, joka on omistettu autonomisten ja puoliautonomisten robottijärjestelmien tutkimukselle. Keskus kehittää robotteja, jotka voivat suorittaa ihmiselle vaarallisia tehtäviä itsenäisesti, jolloin ihmiset voivat pysyä poissa vaara-alueelta. Vuoden 2018 kesäkuussa alkanut projekti on saanut BMBF:ltä 12 miljoonan euron rahoituksen siviiliturvallisuuden hyväksi. Alkuperäinen toiminta on suunniteltu jatkuvan vuoteen 2022, mutta tavoite toki on, että osaamiskeskuksen toiminta voisi jatkua vielä tämänkin jälkeen. Projektissa ovat mukana Fraunhofer Institute for Optronics, System Technology and Image Exploitation IOSB sekä näiden lisäksi Karksruhen teknillinen instituutti (KIT), Saksan tekoälyn tutkimuskeskus (DFKI) ja FZI:n tietojenkäsittelytieteen tutkimuskeskus. (BMBF, n.d.) (FZI, 2019) 
+
+Tutkimuskohteita ovat mm. mobiilirobotit epätasaisessa maastossa, autonomiset rakennuslaitteet / koneet, manipulaattorien käyttö dekontaminaatioon, suunnittelualgoritmit, ympäristön monisensorinen 3D-kartoitus sekä teleoperointi VR:n avulla. Tekoälyn avulla robotit voivat suoriutua tehtävistä joko autonomisesti tai semiautonomisesti. Työ keskittyy aluksi kolmeen relevanttiin aihealueeseen: kaatopaikkojen ja pilaantuneiden alueiden kunnostamiseen, ydinlaitosten purkamiseen sekä laitoksen osien puhdistamiseen.  (BMBF, n.d.) 
+
+### Human Brain Project - Event-based Vision with Spiking Neural Networks 
+
+Euroopan komission rahoittaman tulevaisuuden ja kehittyvien teknologioiden (Future and Emerging Technologies, FET) lippulaivan ”Human Brain Project” (HBP) päätavoite on selvittää ihmisen aivojen toimintaa ja sitä mikä ”tekee meistä ihmisen”. Hankkeessa on mukana yli 120 instituutiota 24 eri maasta. Aivojen syvemmän ymmärtämisen saavuttamiseksi instituutiot tekevät yhteistyötä neurotieteellisen tiedon integroimiseksi käyttäen eri tieteenaloja kuten lääke-, informaatio ja tietotekniikka- (Information and Computer Technologies, ICT) sekä neurotiede. Nämä tulokset tulevat näyttämään tietä uusien aivosairauksien hoitoon ja uusien biologian inspiroimien teknologioiden kuten neuromorfisten laitteistojen ja ihmisen kaltaisesti käyttäytyvien robottien käyttämiseen. (FZI, n.d.) 
+
+FZI:stä mukana ovat tutkimusosastot IDS (Interaktive Diagnose und Servicesysteme) ja SE (Software Engineering) jotka keskittyivät projektin ensimmäisessä vaiheessa ohjelmistoinfrastruktuurin kehittämiseen tutkijoille sekä kehittäjille, jotta he voisivat luoda ja toteuttaa toistettavia neurorobottikokeita. Myöhemmissä vaiheissa projektissa keskityttiin teoreettisen neurotieteen inspiroimien robottitekniikoiden kehittämiseen. (FZI, n.d.) 
+
+Neuro-Robotics-aliprojektin tavoite on tarjota tiedeyhteisölle yhtenäinen alusta, jolla suunnitella ja yhdistää teoreettisen neurotieteen periaatteet ja tiedot robottien realistisiin ja interaktiivisiin simulaatioihin. Tulokset voidaan helposti tutkia ja arvioida tietokantojen ja tietokonesimulaatioiden avulla (in silico). Alusta tarjoaa pääsyn laskentakeskusten korkean suorituskyvyn laskentaresursseihin ja erikoistuneisiin neuromorfisiin laitteistoarkkitehtuureihin, joiden avulla tutkijat voivat simuloida kokonaisia aivomalleja realistisesti ja yksityiskohtaisesti. (FZI, n.d.) 
+
+Työn tuloksia ovat mm. järjestelmä, jolla ohjataan robottikättä (Schunk SVH) ihmisen lihaksista saaduilla signaaleilla, jotka on tallennettu ei-invasiivisella EMG-anturilla (Elektromyografia) joka on yleinen työkalu lääketieteessä ja biomekaniikassa Työssä keskityttiin yhden sormen aktivointiin anturista saaduilla ärsykkeillä. (Tieck, et al., 2018) (Tieck, et al., 2020). 
+
+![human_brain](/assets/images/paakomponentit.png)
+##### Pääkomponenttien konseptiarkkitehtuuri. (Tieck et al., 2018)
  
+SNN:lla (Spiking Neural Network) luokiteltiin EMG-data ja laukaistiin liike refleksinä. Dataa saatiin tallentamalla ihmisen lihasten toimintaa Myo-liikkeentunnistimella (Kuva  ) , joka koostuu 8 tasavälein sijoitetusta lohkosta, joissa on 200 Hz näytetaajuuden omaavat EMG-anturit. (Tieck, et al., 2018) 
 
+![human_brain](/assets/images/myo-liiketunnistin.png)
+##### Myo-liikkeentunnistin ja 8 anturin aktiivisuus. (Tieck, et al., 2020)
 
+Anturissa on indikaattori, jotta se voidaan sijoittaa aina samalla tavalla. Johdonmukaisen datan tallentamiseksi LED-valoilla varustettu segmentti on sijoitettava suunnilleen samaan asentoon. Pienillä vaihteluilla ei ole merkitystä koulutetun verkon käyttökelpoisuuteen. Raakojen sEMG-signaalien haku tapahtuu Python API:in avulla. Data muunnetaan piikeiksi ja signaalit luokitellaan, jotta aktiivinen sormi voidaan tunnistaa (Kuva  ). (Tieck, et al., 2018) 
 
+![human_brain](/assets/images/datasetti.png)
+##### Datasetti näyte 5 sormen harjoittelusta. Vasemmalta oikealle huiput kertovat sEMG:n aktivoitumisesta. (Tieck, et al., 2018)
+
+Motorisen primitiivin avulla aktivointisignaalia käytetään laukaisemaan oskillaattori ja generoimaan liike. Tämän jälkeen primitiivillä kartoitetaan robotin kinematiikka ja piikit muunnetaan robotin moottorikomennoiksi (Kuva  ) Robotin käden ohjaamiseen käytetään virallista Schunk ROS-ajuria (Kuva  ). (Tieck, et al., 2018) 
+
+![human_brain](/assets/images/arkkitehtuuri_sEMG.png)
+##### Arkkitehtuuri sEMG-luokittelulla ja liikkeen aliverkoistoilla. Jokainen ympyrä edustaa piikkihermosolujen populaatiota. (Tieck et al., 2020)
+
+Hermosolujen mallien luomiseen käytettiin NEF:ia (Neural Engineerin Framework) sekä Nengon ohjelmistopakettia. Ohjelmisto mahdollistaa laajojen SNN:ien luomisen hajottamalla verkot pienempiin osiin. Yhdistämällä kaikki erikseen optimoidut aliosat saadaan yksi suuri hermoverkko. (Tieck, et al., 2018) 
+
+### SeRoNet - B2B Plattform for Service Robotics  
+
+SeRoNet on 11:den tutkimus- ja teollisuuskumppanin verkosto, jota on vuodesta 2017 lähtien rahoittanut Saksan BMWi (Bundesministerium für Wirtschaft und Energie) n. 6.5 miljoonalla eurolla. Hankkeen on tarkoitus jatkua vuoden 2021 marraskuuhun saakka. (Paderborn University, 2021) 
+
+Palvelurobottien käyttöalueet ovat moninaiset ja niiden sovelluksia on laidasta laitaan kuten esim. logistiikassa, hoitotyössä, terveydenhuollossa ja kokoonpanon tuessa. Komponenttien yhteensopimattomuus ja epäselvät markkinat johtavat suhteettoman korkeisiin kustannuksiin tarvittavien ohjelmistojen ja laitteistojen kehittämisessä. SeRoNet kehittää avointa IT-alustaa palvelurobotiikan käyttäjille, järjestelmäpalvelujen tarjoajille sekä robotiikan ja komponenttien valmistajille.  Sen tavoite on vähentää ohjelmistojen kehitystyötä käyttäen modulaarisia, yhteistyöhön perustuvia ja kokoonpanolähtöisiä valmiita moduuleita. Alustan kautta järjestelmäintegraattorit voivat avata uusia markkinoita ja loppukäyttäjät voivat tarjota omia ohjelmistopalvelujaan muille yrityksille. Järjestelmien välisen yhteistyön perusta on mallipohjaisilla työkaluilla isOPCUA (Open Platform Communications Unified Architecture) (Kuva  ) (Buchholz, et al., 2018). (Paderborn University, 2021) 
+
+![seronet](/assets/images/SeRoNet.png)
+##### SeRoNet ekosysteemi (Buchholz, et al., 2018) 
+
+Robot.one ja xito.one sovellusalustalla laitteisto- ja ohjelmistovalmistajat voivat tulevaisuudessa kehittää komponentteja palvelurobotiikkaa varten ollen yhteydessä kaikkiin alan toimijoihin. Näin yritykset voivat verkostoitua ja työskennellä yhdessä ongelmien ratkaisemiseksi. (Buchholz, et al., 2018)
+
+### CAD-2-PATH - Intuitive Robot Teach in 
+
+Robotin liikkeiden ohjelmointi on usein monimutkaista ja aikaa vievää. 2018 Hannoverissa esiteltiin web-pohjainen CAD-2-PATH työkalu, jonka avulla 2D:ssä piirretty polku voidaan siirtää monimutkaisen komponentin kuten auton oven pinnalle. Polku on robotista riippumaton ja sitä voidaan säätää helposti suoraan tabletilta. Käyttäjä ”piirtää” 3D-malliin, joka luodaan työkappaleen CAD-tiedoista. (FZI, n.d.) (FZI, 2018) 
+
+![cad-2-path](/assets/images/cad-2-path.png)
+##### CAD-2-PATH piirretyn polun piirto (youtube FZIchannel, 2018)
+
+Teollisten ROS-rajapintojen avulla voidaan ajaa pitkin luotuja polkuja kevyellä robotilla, jonka adaptiivisen, voimaan perustuvan säätelyn ansioista myös epätasaiset ja voimakkaasti kaarevat pinnat voidaan työstää.  Innovaatio nopeuttaa erityisesti hitsauksen, purseenpoiston sekä liimauksen toteutuksissa.  Intuitiivisessa verkkosovelluksessa ei tarvita CAD-tietoa vaan polkuja voidaan luoda ja säätää suoraan tuotannossa. (FZI, n.d.) (FZI, 2018) 
+
+### VIPER
+
+olfauton kokoinen NASA:n kuumönkijä VIPER (Volaties Investigating Polar Exploration Rover) mobiilirobotin on suunniteltu laskeutuvan Kuun etelänavalle 2023 (Kuva  ). Sen tarkoitus on suorittaa 100 päivän työtehtävä, jossa se etsii vesijäätä ja muita potentiaalisia resursseja. Saatu tieto opettaa veden alkuperästä ja jakautumisesta kuussa ja auttaa määrittämään miten kuun resursseja saadaan ihmiskunnan tulevien avaruustutkimusten käyttöön. Ensimmäiset vesikartat merkitsevät kriittisiä askeleita NASA:n Artemis-ohjelmassa, jonka tarkoitus on luoda ihmiselle kestävät olosuhteet kuun pinnalle vuoteen 2028 mennessä. Aikaisemmista kuuta kiertävistä satelliiteista on saatu tietoa, että kuun pinnalla on vesijäätä. Jotta vesijäätä voidaan joskus hyödyntää, on VIPER:in vaellettava kuussa varusteinaan NSS (Neutron Spectrometer System), NIRVSS (Near-Infrared Volatiles Spectrometer System) sekä MSolo (Mass Spectrometer Observing Lunar Operations) ja kyettävä havaitsemaan, analysoimaan sekä suorittamaan metrin syvyisiä porauksia eri maaperistä, syvyyksistä ja lämpötiloista. Mönkijän on tarkoitus mennä pysyvästi varjoisiin kraattereihin, joissa vesijäävarastot ovat säilyneet miljoonia vuosia. (VIPER Mission Overview, 2020) (VIPER: The Rover and Its Onboard Toolkit, 2020) 
+
+![viper](/assets/images/viper.png)
+##### VIPER liikkuvuustestissä. (NASA, 2019)
+
+Mönkijällä on edessään äärimmäisiä lämpötiloja ja sen laitteiston on kestettävä 260 °C vaihtelua auringonvalon ja varjon välillä. Akku, lämpöputket ja radiaattori auttavat estämään mönkijän osien jäätymisen tai ylikuumenemisen. Kuun ollessa paljon lähempänä maata kuin Mars, ei komentojen lähettämisessä mönkijälle ole paljoakaan viivettä. Marsin komennon viiveet ovat 10–20 minuutin luokkaa, kuuhun vie vain 6–10 sekuntia. Maan päällä olevat kuljettajat voivat siten käyttää VIPER:ia vuorovaikutteisesti. Koska tarkoitus on läpikäydä suuria alueita vaikeassa maastossa, ilman hyviä tiedustelukuvia kiertoradasta, antaa operaation tietokonesimulaatio (Kuva ) mahdollisuuden harjoitella kriittistä operaatiota ennen käynnistystä. Kuun maaperästä ei ole täyttä varmuutta eikä siis ole tarkkaa tietoa siitä onko maaperää kovaa, pehmeää vai jotain siltä väliltä. Siksi mönkijä on suunniteltu ennennäkemättömän ketteräksi. Se voi ajaa sivuttain, vinottain, pyöriä ympyrää tai liikkua mihin tahansa muuttamatta katsanto suuntaa. Mikäli se joutuu pehmeään maastoon, kykenee se liikuttamaan renkaitaan kuin se kävelisi. Kuussa on äärimmäiset valon ja pimeyden vaihtelut, ja ne tuottavat erittäin pitkiä ja nopeasti liikkuvia varjoja. Aurinkoenergialla toimivan mönkijän on vetäydyttävä näistä varjoista ja etsittävä oikeanlaista aluetta samaan aikaan kun se ylläpitää yhteyttä maahan. Pimeä jakso voi olla jopa yhden viikon mittainen, jolloin mönkijän on pysähdyttävä tunnistettavaan turvapaikkaan, jonka pimeys kestää vain 4 päivää. Tämä tekee reittien suunnittelusta monimutkaista. Mönkijän suunnittelijoilla onkin aivan uusi haaste rakentaa valaistus – ja kamerajärjestelmä, joka toimii kuun ankarissa olosuhteissa. (VIPER Mission Overview, 2020) 
+
+![viper](/assets/images/Perseverance.png)
+##### Mars Perseverance Rover Ignition Gazebossa. (Open Robotics: Posts| Linkedin, 2021)
+
+Yhdessä mönkijältä saatujen tietojen kanssa MOC-tiimi (Mission Operations Center) käyttää NASA:n kehittämää verkkopohjaista tietojen visualisointialustaa nimeltä Open Mission Control Technologies. Open MCT-ohjelmisto on avointa lähdekoodia, joten se on vapaasti käytettävissä niin julkisen kuin yksityisen sektorin sovelluksissa. Tämä on yksi innovaatioista, joita VIPER tukee kehittyvässä avaruustaloudessa ja muualla, tarjoten näin kykynsä yritysten käyttöön. Ohjelmisto on jo lentänyt useilla NASA:n operatiivisilla missioilla ja se on tehty yhteistyössä NASA:n Pasadenassa Kaliforniassa sijaitsevan suihkumoottorilaboratorion Advanced Multi-Mission Operations System-järjestelmän kanssa. Yhteistyö teollisuuden kanssa vaikuttaa ohjelmiston käyttöjärjestelmän keskeisiin osa-alueisiin. Mukautetun koodin luomisen sijaan mönkijän lento- ja maanpintaohjelmistot käyttävät laajasti avoimen lähdekoodin ohjelmistoja kuten ROS 2. Kun tehtävä on ohi, VIPER-tiimin tarkoitus on julkaista mönkijän ohjelmisto vapaaseen käyttöön. Lähestymistapa mahdollistaa nopean, ketterän sekä kustannustehokkaan tavan kehittää mönkijän ohjelmistojärjestelmää, josta on hyötyä myös tulevaisuudessa. (VIPER, 2021) 
+
+### Näkövammaisten Smart Glass-älylasit 
+
+Näkövammaisten on vaikeaa havaita lähellä olevia kohteita. Näkövammaisen valkoisen kepin avulla voi tunnustella vain pienen matkan päähän. Suresh, Arora, Laha, Gaba ja Bhambri ovat kehittäneet Smart Glass-älylasit, joiden avulla näkövammaisten elämänlaatua on mahdollista parantaa. Ne on tarkoitettu näkövammaisille, jotka eivät halua erottua muista apuvälineitä käyttäessään ja niille, joiden on tunnettava olonsa sosiaalisesti mukavaksi ja turvalliseksi itsenäisesti navigoidessaan. Älylasit koostuvat ultraääniantureista, joiden avulla edessä oleva kohde havaitaan reaaliajassa. Tieto syötetään Raspberryyn jossa analysoidaan onko kyseessä este vaiko henkilö. Tiedon avulla voidaan myös antaa tärinävaroitus kohteen suunnasta. Hätätilanteessa GSM-lisäominaisuus auttaa soittamaan apua. Koko järjestelmän ohjelmistokehystä hallitaan ROS:sin avulla. Se kehitettiin käyttäen ROS catkin työtilaa ja tarvittavia paketteja ja solmuja. ROS ladattiin Raspberry Pi:lle käyttäen Ubuntu Matea. (Suresh, et al., 2018) 
+
+Laskelmien mukaan maailmassa on lähes 16,3 miljoonaa näkövammaista ja heidän määränsä on kasvussa (Kuva  ). (Suresh, et al., 2018) 
+
+![smartglass](/assets/images/nakovammaisvaesto.png)
+##### Näkövammaisväestö Pohjois-Amerikassa, Euroopassa ja Japanissa. (Suresh, et al., 2018)
+
+Antamalla älylasien avulla näkövammaisille käsityksen ympäröivästä maailmasta he voivat elää helpompaa, terveempää ja onnellisempaa elämää. Lasien prototyyppi koostuu Raspberry Pi Zerosta, luujohtovärähdyksellisestä kuulokkeesta, 1080p 25 FPS HD kamerasta, 2500 mAh akusta, ultraäänietäisyysmittarista, värinänauhasta, GSM-, GPS-, Bluethoot-Wi-fi-moduulista. Kaikkien laitteiden on oltava kytkettynä toisiinsa, jotta kommunikointi tapahtuu ilman merkittäviä viiveitä. (Suresh, et al., 2018) 
+
+![smartglass](/assets/images/toimintaperiaate.png)
+##### Älylasien toimintaperiaate. (Suresh, et al., 2018)
+
+Lasien suunnittelu tehtiin PTC Creolla ja CAD-malli (Computer Aided Design) tallennettiin STL-muotoon (Standard Triangle Language), jonka jälkeen se viipaloitiin Ultimaker Cura-ohjelmalla. Tulostimena toimi Ultimaker 2+ ja materiaaliksi valikoitui ABS (akryylinitriilibutadieenistyreeni). (Suresh, et al., 2018) 
+
+Ultraäänianturien toiminta perustuu ääniaaltojen heijastumiseen. Etäisyys lasketaan kertomalla ääniaallon vastaanottamiseen kulunut aika ja äänen nopeus ja jakamalla saatu tulos kahdella. Aikaa tähän menee vain mikrosekunteja. Näkövammaisen molemmissa käsissä on värähtelynauha, jolla on yhteys Raspberry Pi:hin ja jotka värisevät ultraäänisensoreista saadun syötteen mukaan. Jokainen nauha koostuu kahdesta värähtelyliuskasta, joista yksi on edessä ja toinen takana. Mikäli esine tai este on henkilön edessä, värähtelevät molemmat käsien edessä olevat liuskat, kun taas jos esine on henkilön vasemmalla tai oikealla puolella värähtely tapahtuu kyseisellä puolella. Mikäli esine liikkuu kohti, antaa se varoituksen käyttäjän korvaan. (Suresh, et al., 2018) 
+
+Toinen päälaitteiston komponenteista Raspberry Pi:in lisäksi on HD-kamera. Kamera toimii tuloanturina, joka ohjaa reaaliaikaisen syötteen Raspberrylle joka puolestaan laskee kaikki algoritmit sekä havaitsee ja tunnistaa ympäristön kohteet. Tunnistuksen jälkeen käyttäjälle annetaan palautetta ääntä käyttämällä. (Suresh, et al., 2018) 
+
+Projektissa käytetään syväoppimista MobileNetsin ja Single Shot Detectorin kanssa. Resurssirajoitetuista laitteista kuten Raspberry Pi tai älypuhelin saadaan moduulit yhdistettäessä nopea reaaliaikainen tunnistus. (Suresh, et al., 2018) 
+
+Syväoppimisen kolme ensisijaista menetelmää ovat: Faster R-CNNs, (YOLO) sekä Single Shot Detectors (SSDs). Projektissa käytetään viimeksi mainittua, sillä se on tasapainossa CNNn ja YOLOn välillä. Tämä siksi, että se sisältää kaikki laskennalliset tiedot yhdessä verkossa, jolloin kohteen tunnistuksen vaativaa järjestelmää on helppo kouluttaa ja integroida. (Suresh, et al., 2018) 
+
+Käyttämällä MobileNetsiä vältetään perinteisten tapojen kuten ResNetin suuri koko (200–500 Mt). Perinteisen CNN:n ja MobileNetsin erona on MobileNetsiin sisällytetty syvyyssuuntaan erottuva konvoluutio. Konvoluutio jakautuu kahteen osaan: 3 * 3 syvyyskonvoluutio ja 1 * 1 pistekonvoluutio, joka vähentää verkon parametrien määrää, jolloin resurssitehokkuus säilyy. Arduinoon liitetyn GSM-, GPS- sekä puheentunnistusmoduulin avulla näkövammainen voi nopeasti hälyttää ennalta määrätyn kontaktin sekä ottaa yhteyttä hätäkeskukseen. Toteutusta aiotaan parantaa käyttämällä älypuhelinta, jolloin voidaan välttää GSM-, GPS- ja Raspberry Pi zero-moduulien käyttö. Käyttämällä jotain käytettävissä olevista alustoista kuten Google Assist, Siri, Cortana, Bixby tai Alexa voidaan äänikomennot toteuttaa edistyneemmin. Myös älylasien mallia ja kehystä aiotaan parantaa, jotta saavutetaan kompaktimpi muoto. (Suresh, et al., 2018) 
+
+### Neuroverkon ja ROS:in käyttö uhkien havainnointiin ja partiontiin 
+
+Kaupungistumisen, digitalisaation sekä lisääntyneen varallisuuden myötä väestön pakkaantuminen ostoskeskuksiin, teattereihin, huvipuistoihin yms. on lisääntynyt valtavasti. Robotiikka integroituna täydelliseen ohjelmistoarkkitehtuuriin mahdollistaa tehokkaan ratkaisun torjua joukkoteloitukset (vai lynkkaus?), terrorismi, taskuvarkaudet, varkaudet sekä sieppaukset (kidnappaukset?). Nykyiset sisätiloissa partioivat mobiilirobotit toimivat vain tarkkailukameroina, jotka liikkuvat ennalta määrätyillä alueilla tai ovat kauko-ohjattavia. Tämä järjestelmä ei kykene estämään rikollisuutta. (Maram, et al., 2019) 
+
+Maramin, Vishnoin ja Pandeyn ohjelmistoarkkitehtuurin tavoitteena on kehittää robotti, joka kykenee tekemään älykkäitä päätöksiä konenäön avulla samalla kun se strategisoi liikkeitään tutustuessaan ympäristöönsä. ROS:in reitin suunnittelun, ympäristön havainnoinnin sekä neuroverkkojen avulla kehittäjien on mahdollista luoda robotti, joka jäljittelee ihmisen käyttäytymistä partioinnin aikana. Neuropohjaisen uhkien havaitsemispaketin tiedosto koostuu kuvista, jotka sisältävät aseita, räjähteitä ja esineitä, jotka voivat häiritä yleistä järjestystä. Käytetty tietoaineisto sisältää pistoolitietokannan, joka on saatu Soft Computing and Intelligent Information-järjestelmästä sekä Terravic Weapon Infrared-tietokannasta. Aineisto sisältää merkittyjä kuvia aseista ja räjähteistä. Riittävän kuvamateriaalin koonnin jälkeen data prosessoidaan käyttäen YOLO-arkkitehtuuria (Kuva   ). (Maram, et al., 2019) 
+
+![uhat](/assets/images/YOLO.png)
+##### YOLO arkkitehtuurin käyttö (Maram, et al., 2019)
+
+Neuroverkon opetus perustuu esikäsittelyvaiheessa piirrettyihin rajauslaatikkoihin. Opetus voidaan suorittaa joko kolmannen osapuolen pilviympäristössä tai GPU:lla, joka kykenee käsittelemään tietoja. Tuloksena saadaan painotettu tiedosto joka ajettuna rinnakkain YOLO:n kanssa, antaa mahdollisuuden välittää kuvia tai kehyksiä ja saada tietoa yleistä järjestystä häiritsevistä esineistä. YOLO algoritmilla stressitestattiin myös muita kognitiivisia palveluita kuten Tensorflowta sekä Microsoft Vision:ia käyttäen julkisesti verkosta saatavilla olevaa videota. Kuvasta __ nähdään vertailun tuloksia. (Maram, et al., 2019)  
+
+![uhat](/assets/images/stressitestit.png)
+##### Stressitestien vertailutuloksia (Maram, et al., 2019)
+
+Johtopäätös oli, että YOLO-algoritmi antoi tarkempia ja luotettavimpia ennusteita eri olosuhteissa. Joissakin olosuhteissa tarkkuus on saattanut kyseenalaistua, mutta nopeus on reaaliaikaisen ennustamisen päätavoite. Simulaatio toteutettiin käyttäen ROS yhteensopivaa Turtlebottia, mutta mukautettu robotti toteutettaisiin käyttämällä kooderi DC-moottoreita, Kinectiä, haluttua pyörämäärää sekä yhtä Adafruit-moottorin ohjainta. (Maram, et al., 2019) 
+
+SLAM:in avulla robotti luo kartan ja lokalisoi itsensä käyttäen Adaptive Monte Carlo lokalisointialgoritmia. Koska Kinectia käytetään lähteenä, on tärkeää, että se muunnetaan vastaanottamaan data siten, että se on yhteensopiva ROS:in navigointipinon kanssa. Oletuksena ROS-kirjasto tarjoaa ros-perception paketin, jota kutsutaan ”pointcloud to laserscan”. Pointcloud-laserscan-solmu tilaa PointCloud-tiedot, jotka se julkaisee vastaavina Laser scan-tietoina. (Pitääks noi suomentaa?) Julkaisun jälkeen SLAM:ista vastuussa oleva gmapping-paketti tilaa tiedot odometri kalibroinnin perusteella ja liikuttaa robottia nähdäkseen kartan muodostumisen, joka voidaan nähdä RVIZ:ssa. Robotin käyttö ei rajoitu vain sisätiloihin vaan se voidaan mukauttaa myös ulkotiloihin, jolloin tutkimustuloksia voidaan käyttää estämään salametsästys ja tunkeutuminen sekä tarkistaa laittomat maahanmuuttajat. (Maram, et al., 2019) 
 
 
 
@@ -1109,7 +1261,7 @@ Projektin haasteita olivat mm. miten tuetaan TRI:n yritysstrategiaa kasvattamall
 # Yhteenveto
 
 <p>&nbsp;</p>  
-# Lähteet
+# Lähdeluettelo
 
 
 
