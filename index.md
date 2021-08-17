@@ -18,6 +18,7 @@ Vuoden 2019 lopussa maailma kohtasi maailmanlaajuisen COVID-19-pandemian. Pandem
 
 ![Taulukko](/assets/images/OECD.png)
 ##### Palautuminen pandemiaa edeltävälle tasolle (The OECD Economic Outlook, 2021)
+ <p>&nbsp;</p> 
 
 
 Satakuntaliiton keväällä vuonna 2017 tekemä seutukierros Satakunnan kunnissa kertoo kuntien painottavan koulutusta, saavutettavuutta sekä kasvun mahdollisuutta. Kyselyssä nousivat esiin koulutuksen saatavuus, koulutuksen ja työvoiman kysynnän vastaavuus sekä korkeakoulutuksen turvaaminen ja kehittäminen. (Satakuntaliitto, 2017) Robotiikan koulutus kasvuyritysten ohjenuorana- hanke paneutuu kuntien esille nostamiin seikkoihin ja auttaa omalta osaltaan luomaan uutta osaamispääomaa ja levittämään sitä ajan myötä koko Satakuntaan. Hankkeessa kehitetty ROS-robottiekosysteemiin keskittyvä täydennyskoulutuskokonaisuus tuo merkittävän lisän alueen aikuiskoulutustarjontaan. Vastaavaa täysin maksutonta koulutusta ei Suomessa ole tarjolla. Muuntuvilla robotiikkaratkaisuilla luodaan yrityksille kaivattua kustannustehokkuutta sekä helpotetaan robotiikan kehittämistä tekemällä siitä nopeampaa ja yhteisöllisempää. Hankkeessa käytetty SAMK Yhteistyö Moodle on sähköinen koulutusalusta, joka mahdollistaa ajasta ja paikasta riippumattoman opiskelun, jolloin opiskelijat eivät ole sidottuja pendelöimään oman asuinalueensa ja Porin korkeakoulujen välillä.  
@@ -65,8 +66,9 @@ Vuonna 2007 Stanfordin Artificial Intelligence laboratoriossa ja Willow Garagen 
 
 ![Taulukko](/assets/images/Kasvuodotukset.png)
 ##### ROS kasvuodotukset vuoteen 2027 (Researchandmarkets, 2021)
+ <p>&nbsp;</p> 
 
-ROS markkinoiden odotetaan kasvavan vuoden 2020 arvioidusta 216,6M $:sta tarkistettuun 356,8M $:iin vuoteen 2027 mennessä (Taulukko  ). Sen vuotuinen CAGR (Compaund Annual Growth Rate) tällä aikajaksolla olisi täten 7.4 %. COVID-19 pandemian aiheuttaman ekonomisen kriisin vuoksi CAGR:in on arvioitu tippuvan 7.1 %. Tutkimus- ja kehitystyöhön liittyvät teollisuus automaation varat, yhteistyössä toimivien modulaaristen robottien lisääntyvä käyttö sekä RaaS (Robotics-as-a-Service) kasvava kysyntä ennustavat edullisten ROS teollisuusrobottien käyttöönottoa.
+ROS markkinoiden odotetaan kasvavan vuoden 2020 arvioidusta 216,6M $:sta tarkistettuun 356,8M $:iin vuoteen 2027 mennessä (Taulukko  ). Sen vuotuinen CAGR (Compaund Annual Growth Rate) tällä aikajaksolla olisi täten 7.4 %. COVID-19 pandemian aiheuttaman ekonomisen kriisin vuoksi CAGR:in on arvioitu tippuvan 7.1 %. Tutkimus- ja kehitystyöhön liittyvät teollisuus automaation varat, yhteistyössä toimivien modulaaristen robottien lisääntyvä käyttö sekä RaaS (Robotics-as-a-Service) kasvava kysyntä ennustavat edullisten ROS teollisuusrobottien käyttöönottoa. (Markets and markets, 2019) (researchandmarkets, 2021) 
 
 <p>&nbsp;</p> 
 ## ROS 1
@@ -74,7 +76,8 @@ ROS markkinoiden odotetaan kasvavan vuoden 2020 arvioidusta 216,6M $:sta tarkist
 Kun lähdetään toteuttamaan uutta robottisovellusta, on viestintäjärjestelmä yksi ensimmäisistä tarpeista. ROS:ia käytetään monissa robottiympäristöissä ja monien antureiden, ohjaimien ja moottoreiden on kommunikoitava keskenään, lähetettävä ja vastaanotettava tietoja haluttujen tehtävien suorittamiseksi. ROS:in sisäänrakennetulla ja hyvin testatulla viestintäjärjestelmällä säästetään aikaa ROS:in toimiessa hajautettuna arkkitehtuurina, joka käyttää julkaisija (engl. publisher)/tilaaja (engl. subscriber) -viestejä solmujen (engl. node) välillä. Jokaisella solmulla on yksi, tai useampia aiheita (engl. topic) tai palveluita (engl. service), jotka ovat irtautuneet ja joita voidaan käyttää uudelleen. Esimerkki julkaisijasta on 3D-kamera, joka tuottaa striimattua kuvadataa, ja tilaajana on tiedon käyttäjä. Palvelu puolestaan on asiakas/palvelin malli, jossa käytetään pyyntö/vastaus viestejä. Esimerkkinä voidaan käyttää kuvatietoja, jotka muotoillaan toiseen muotoon ja saatu vastaus saadaan pakattuna datana. ROS-viestinnässä käytetään kuvan 1 esimerkin mukaista tapaa solmujen välillä, missä Talker on julkaisijana ja Listener on tilaajana. ROS master edesauttaa aiheita löytämään toisensa. Tätä kutsutaan sentraaliseksi viestinvälitykseksi, jossa kommunikaatio alustetaan, jonka jälkeen jokainen aihe voi kommunikoida suoraan keskenään. Näiden viestirajapintojen rakenne on määritelty IDL-sanomassa (Interface Description Language). 
 
 ![ROS1](/assets/images/ROS1.png)
-#### ROS viestintä (DiLuoffo;Michalson;& Sunar, 2017)
+##### ROS viestintä (DiLuoffo;Michalson;& Sunar, 2017)
+ <p>&nbsp;</p> 
 
 Julkaisija/tilaaja järjestelmän ollessa anonyymi ja asynkroninen voidaan dataa tallentaa ja toistaa ilman mitään muutoksia koodiin. Rosbag record tilaa aiheet/topicit ja kirjoittaa niistä bag-tiedoston, jossa on kaikki julkaistut viestisisällöt. Tiedosto sisältää lomitetut ja sarjoitetut ROS-viestit, joista on suoraan tehty yksi tiedosto niiden tulohetkellä. Tämä on tehokkain ja levy ystävällisin tallennusmuoto. Bag-tiedostoa luodessa voi halutessaan vielä pakata tiedosto levytilan säästämiseksi. 
 
@@ -141,13 +144,13 @@ Sen johtospesifikaatio DDSI-RTPS, toiselta nimeltään RTPS (The REAL-time Publi
 Jotta DDS:stä voisi tulla ROS 2:sen toteutuksen yksityiskohta on kaikki DDS-spesifiset ohjelmointirajapinnat ja sanomamäärittelyt piilotettava. DDS tarjoaa etsinnän, viestin määrittelyn sekä julkaisu- ja tilausliikenteen. ROS 2 tarjoaa vastaavanlaisen käyttöliittymän kuin ROS 1, jolloin suuri osa DDS:n monimutkaisuudesta olisi piilotettuna osalta ROS-käyttäjiä tarjoten erikseen pääsyn DDS-toteutukseen käyttäjille, joilla on äärimmäisiä käyttötapauksia tai joiden tarvitsee integroitua muiden olemassa olevien DDS-järjestelmien kanssa (Kuva   ) (Woodall, n.d.) 
 
  ![ROS2](/assets/images/DDS ja ROS API.png)
-#### DDS ja ROS API (Application Programming Interface) pohja (Woodall, n.d.)
+##### DDS ja ROS API (Application Programming Interface) pohja (Woodall, n.d.)
  <p>&nbsp;</p> 
 
  DDS-toteutuksen käyttöön tarvitaan lisäpaketti, jota ei normaalisti ole käytössä. Pakettiriippuvuuksien avulla selvitetään, onko paketti sitonut itsensä tiettyyn DDS-myyjään. ROS:lle on tulossa yksi parhaiten tuettu DDS-toteutus, jonka avulla voidaan löytää ratkaisuja reaaliaikaisiin ympäristöihin ja pieniin sulautettuihin järjestelmiin vähentämällä kirjastojen kokoa ja muistijälkiä. (Woodall, n.d.) 
 
  ![ROS2](/assets/images/ROS1_ROS2 arkkitehtuuri.png)
-#### ROS1/ROS2 arkkitehtuuri (Maruyma & al., 2016)
+##### ROS1/ROS2 arkkitehtuuri (Maruyma & al., 2016)
 <p>&nbsp;</p> 
 
 ROS 2:ssa on enemmän kerroksia kuin edeltäjällään. (Kuva  ) Peruskirjastoja on vain yksi, C:llä toteutettu rcl (ROS Client Libraries). Tämä sisältää kaikki ROS 2 ydinominaisuudet. Kirjastoa ei käytetä suoraan ohjelmissa vaan siinä käytetään toista asiakaskirjastoa, joka on rakennettu rcl:n päälle. Kehittäjille tämä tarkoittaa siis sitä, että muiden asiakaskirjastojen luominen ja käyttö on helpompaa ja tarvitsee tehdä vain C-sidos rcl:llä. Oletusarvoisesti käytetään Cpp 11:tä ja 14:ää ja suunnitelmissa on myös Cpp 17:ää. Nämä uudet Cpp-versiot omaavat hyödyllisiä toimintoja, joilla kehityksestä tulee helpompaa, nopeampaa ja turvallisempaa. Solmuja kirjoitettaessa on luotava luokka joka perii solmuobjektilta esim. rclcpp::Node Cpp:ssä ja rclpy.node.Node Pythonissa. Python versioista on käytössä vähintään 3.5. Luokassa on kaikki ROS 2 funktionaalisuudet. Nodelettien toiminnallisuus on sisällytetty ytimeen ja sitä kutsutaan komponentiksi. Käynnistysohjelmien kirjoittamiseen käytetään Pythonia. On myös olemassa ohjelmistorajapinta, jonka avulla voidaan käynnistää solmut, hakea määritystiedostoja, lisätä parametreja jne. Halutessaan voi toki käyttää myös XML:ia, mutta Pythonia suositellaan käytettävän sen modulaarisuuden ja suuremman dokumentaatio määrän vuoksi. ROS 2:ssa ei enää käytetä ROS-isäntää vaan jokainen solmu kykenee löytämään muut solmut itsenäisesti. Käynnistys onnistuu, oli isäntää tai ei. Tämän avulla voidaan luoda täysin hajautettu järjestelmä. Globaaleja parametrejä ei enää ole, vaan jokainen parametri on solmulle spesifi. Palvelut ovat asynkronisia. (The Robotics Back-End, n.d) 
@@ -164,14 +167,16 @@ Uutta ROS 2 on myös se, että sitä voidaan käyttää Ubuntun lisäksi myös M
 Yksi suurimmista eroista ROS 1 ja ROS 2 välillä on simulaatiokyky. ROS 1:llä on Gazebo ja siinä muutamia simulaatiomahdollisuuksia, mutta integrointi on hankalaa ja Gazebo itsessään melko monoliittinen. Ignition Gazebo ja ROS 2 taas puolestaan tarjoavat täydennetyn robotin ja täysin toimivan dynaamisen ympäristön. Erilaiset kilpailut, kuten DARPA SubT (DARPA Subterranean Challenge), RobotX Challenge ja AWS JPL Open Source Rover Challenge ovat osoittaneet, että malli on onnistunut. Gazebon nykyinen versio on nimeltään Ignition Citadel ja sillä voi simuloida fysiikkaa, ympäristörajoituksia sekä antureita. Siihen on kiinnitetty kaikki ROS-elementit, eli mikäli simulaatiossa on virtuaalikamera ja virtuaalinen LiDAR (Ligth Detection and Ranging) eli lasertutka, ovat saadut numerot melko samanlaisia, kuin mitä ne olisivat todellisessa maailmassa. (Quetzalli, 2020) 
 
 ROS 1-koodipohjan siirto ROS 2:seen onnistuu yhteensopimattomasta kommunikaatiosta huolimatta ROS 1-bridge-pakettiadaptaatiolla. Siirron voi suorittaa aluksi muutamalla paketilla ja vähitellen lisätä yhä enemmän paketteja, kunnes ROS 1:ssä ei ole paketteja jäljellä. Sovellus toimii odotetusti koko siirron ajan. (The Robotics Back-End, n.d) 
+<p>&nbsp;</p> 
 
 ### micro-ROS
 Mikro-ROS on räätälöity erityisesti sulautetuille ja resurssirajoitteisille alustoille kuten mikrokontrollerit. Suurin osan ominaisuuksista ja arkkitehtuurista periytyy ROS 2:lta yhdistäen saumattomasti ’makro’ ja ’mikro’ robotiikan. Se toimii RTOS:ssä (Real-Time Operating System) ja käyttää DDS-väliohjelmistoa Micro XRCE-DDS (eXtremly Resource Constrained Environment), eli DDS:ää äärimmäisen resurssirajoitetuissa ympäristöissä. Käytettävissä on tehokkaita kehitystyökaluja kuten täydellinen koontijärjestelmä eri laitteistoalustoille ja koko robottiohjelmien joukko, joka on saatavilla ROS 2-ympäristössä. Kustannusten aleneminen on yksi hyödyistä siirryttäessä vähemmän resursseja vaativiin robotiikkasovelluksiin, jolloin se on erityisen kätevä teollisen massatuotannon kilpailukyvylle. (eProsima, n.d.) (Zephyr, 2020)
 
- ![mikro](/assets/images/Micro_ROS.png)
- #### Micro-ROS:in arkkitehtuuri. Tummansiniset kerrokset ja komponentit on kehitetty mikro-ROS-laitteille. Vaalean siniset kerrrokset rmw ja rlc uudelleenkäytetään ROS 2:sta. (Lange, 2021) 
+![mikro](/assets/images/Micro_ROS.png)
+##### Micro-ROS:in arkkitehtuuri. Tummansiniset kerrokset ja komponentit on kehitetty mikro-ROS-laitteille. Vaalean siniset kerrrokset rmw ja rlc uudelleenkäytetään ROS 2:sta. (Lange, 2021) 
+<p>&nbsp;</p> 
 
- Seitsemän keskeistä ominaisuutta tekee mikro-ROS:sta käyttövalmiin mikrokontrolleripohjan erilaisiin robottiprojekteihin.
+Seitsemän keskeistä ominaisuutta tekee mikro-ROS:sta käyttövalmiin mikrokontrolleripohjan erilaisiin robottiprojekteihin.
 
 - Optimoitu asiakasrajapinta, joka tukee kaikkia tärkeimpiä ROS-konsepteja
 
@@ -202,50 +207,50 @@ Mikro-ROS on räätälöity erityisesti sulautetuille ja resurssirajoitteisille 
   Pitkäaikaisen ylläpidettävyyden takaamiseksi mikro-ROS-spesifisen koodin määrää minimoitiin käyttäen avoimen lähdekoodin RTOS:ia, standardoitua väliohjelmistoa sekä vakio ROS 2 Client Support kirjastoa. SOSS (System-Of-Systems Synthesizer), nopea ja kevyt OMG DDS-XTYPES-integraatiotyökalu voi liittää muita väliohjelmistoprotokollia. (micro-ROS, 2021)
 
 <p>&nbsp;</p> 
-## OpenCV
+
+### OpenCV
 
 OpenCV (Open Source Computer Vision Library) on avoimen lähdekoodin koneoppimisen ja -näön ohjelmisto kirjasto. Se kehitettiin tarjoamaan yhteinen infrastruktuuri konenäön sovelluksille, jotta kaupallisten tuotteiden koneellinen tunnistus nopeutuisi. OpenCV on BSD-lisensioitu (Berkeley Software Distribution) tuote mikä merkitsee sitä, että yritysten on helppo käyttää ja muokata koodia. Kirjastossa on yli 2500 optimoitua algoritmia. Algoritmeja voidaan käyttää kasvojen sekä esineiden havaitsemiseen ja tunnistamiseen. Niillä voidaan luokitella mm. ihmisten erilaisia toimia, seurata liikkuvaa kohdetta, erotella 3D-mallit kohteista, yhdistää kuvia korkean resoluution aikaansaamiseksi, tunnistaa maisemat ja luoda merkkejä, joiden avulla maisema peitetään lisätyllä todellisuudella (Augmented Reality, AR). Monet yritykset, tutkimusryhmät ja valtiolliset elimet käyttävät kirjastoa. ROS käyttää omaa sensor_msgs / Image viestimuotoaan. CvBridge on ROS-kirjasto, joka tarjoaa käyttöliittymän ROS:in ja OpenCV:n välillä. (OpenCV, 2021) (Open Robotics, 2017)
 
-OpenCV:tä käytetään monenlaisissa eri sovelluksissa, joita ovat mm. katunäkymien kuvien yhdistäminen, automaattinen tarkistus ja valvonta, autonomisen auton navigointi ja hallinta sekä lääketieteellinen kuva-analyysi. (nvidia developer, n.d.
+OpenCV:tä käytetään monenlaisissa eri sovelluksissa, joita ovat mm. katunäkymien kuvien yhdistäminen, automaattinen tarkistus ja valvonta, autonomisen auton navigointi ja hallinta sekä lääketieteellinen kuva-analyysi. (nvidia developer, n.d.)
 
 <p>&nbsp;</p> 
 ### Docker
 
-Docker on yritys, joka esitteli palan ilmaisia ohjelmistoja avoimen lähdekoodin yhteisölle. Dockerissa voi luoda eristettyjä ympäristöjä projekteille ja asentaa riippuvuuksia, jotka eivät
+Docker on yritys, joka esitteli palan ilmaisia ohjelmistoja avoimen lähdekoodin yhteisölle. Dockerissa voi luoda eristettyjä ympäristöjä projekteille ja asentaa riippuvuuksia, jotka eivät toisissa ympäristöissä aiheuta ongelmia muiden projektien kanssa. Näitä ympäristöjä kutsutaan konteiksi, jotka toimivat kuin virtuaalikoneet vaikka eivät sellaisia olekaan. Kontit eivät tarvitse erillistä käyttöjärjestelmää, vaan ne toimivat itsenäisesti laitteistokerroksen päällä jakaen isäntälaitteen resurssit. Muistia tarvitaan vähemmän ja nopeuttakin saattaa olla enemmän kuin virtuaalikoneella. Dockerin ja virtuaalikoneen eroavaisuus näkyy kuvassa (Kuva ). (Lentin & Ramkumar , 2019)
+  
+![docker](/assets/images/Docker.png)
+##### Virtuaalikoneen ja Dockerin eroavaisuuksia (Lentin & Ramkumar, 2019)
+<p>&nbsp;</p>  
 
-toisissa ympäristöissä aiheuta ongelmia muiden projektien kanssa. Näitä ympäristöjä kutsutaan konteiksi, jotka toimivat kuin virtuaalikoneet vaikka eivät sellaisia olekaan. Kontit eivät tarvitse erillistä käyttöjärjestelmää, vaan ne toimivat itsenäisesti laitteistokerroksen päällä jakaen isäntälaitteen resurssit. Muistia tarvitaan vähemmän ja nopeuttakin saattaa olla enemmän kuin virtuaalikoneella. Dockerin ja virtuaalikoneen eroavaisuus näkyy kuvassa (Kuva ). (Lentin & Ramkumar , 2019)
-
- ![docker](/assets/images/Docker.png)
- #### Virtuaalikoneen ja Dockerin eroavaisuuksia (Lentin & Ramkumar, 2019)
+ ROS-projekti saattaa koostua useista alapaketteja sisältävistä metapaketeista, joiden toimivuuteen tarvitaan riippuvuuksia. Voi olla ärsyttävää asentaa paketteja ROS:siin sillä eri paketit saattavat käyttää joko samoja tai eri riippuvuuksia eri versioista johtaen näin kääntämisongelmiin. Kontit ovat käytännöllinen tapa ratkaista riippuvuusversiomuutosten vuoksi ilmaantuneita ongelmia. Ne ovat nopeita ja toisin kuin käyttöjärjestelmän prosessi voivat käynnistyä tai pysähtyä muutamassa sekunnissa. Laitteiston päivitykset tai paketit eivät vaikuta sisällä oleviin kontteihin tai muihin paikallaan oleviin kontteihin. (Lentin & Ramkumar , 2019) 
 
 <p>&nbsp;</p>  
 ### Matlab & Simulink
 
-Matlabilla on tehokas tietojenkäsittelykyky ja graafinen ohjelmointi, jolla voidaan käyttää suurta määrää kehittyneitä algoritmeja. Se on varustettu tehokkailla työkaluilla kuten konenäkö, ohjausjärjestelmä sekä signaalinkäsittely. Näin ollen se on varsin hyödyllinen käyttöliittymä tutkijoille ja opiskelijoille. Matlab ja Simulink voidaan yhdistää ROS 1 ja ROS 2 verkkoon käyttämällä ROS Toolbox käyttöliittymää, jolloin voidaan vuorovaikutteisesti tutkia robotin ominaisuuksia ja visualisoida anturitietoja. ROS-yhteensopivilla roboteilla ja robottisimulaattorilla (esim. Gazebo) voidaan testata, kehittää ja tarkastaa robotiikan
-
-algoritmeja. Matlab:lla ja Simulink:lla voidaan myös luoda itsenäinen ROS-verkko ja tuoda ROS-lokitiedostoja (rosbags) jolloin dataa voidaan visualisoida, analysoida tai jälkikäsitellä. (MathWorks, n.d.) (Mahtani, et al., 2018) 
+Matlabilla on tehokas tietojenkäsittelykyky ja graafinen ohjelmointi, jolla voidaan käyttää suurta määrää kehittyneitä algoritmeja. Se on varustettu tehokkailla työkaluilla kuten konenäkö, ohjausjärjestelmä sekä signaalinkäsittely. Näin ollen se on varsin hyödyllinen käyttöliittymä tutkijoille ja opiskelijoille. Matlab ja Simulink voidaan yhdistää ROS 1 ja ROS 2 verkkoon käyttämällä ROS Toolbox käyttöliittymää, jolloin voidaan vuorovaikutteisesti tutkia robotin ominaisuuksia ja visualisoida anturitietoja. ROS-yhteensopivilla roboteilla ja robottisimulaattorilla (esim. Gazebo) voidaan testata, kehittää ja tarkastaa robotiikan algoritmeja. Matlab:lla ja Simulink:lla voidaan myös luoda itsenäinen ROS-verkko ja tuoda ROS-lokitiedostoja (rosbags) jolloin dataa voidaan visualisoida, analysoida tai jälkikäsitellä. (MathWorks, n.d.) (Mahtani, et al., 2018) 
 
 ![matlab](/assets/images/Matlab.png)
 #### ROS MATLAB ja Simulink tuki (MathWorks, n.d.) 
+<p>&nbsp;</p>  
 
 Jotta kommunikointi muiden solmujen kanssa onnistuu, voidaan Matlab:ssa ja Simulink:ssa määrittää omat mukautetut viesti- ja palvelutyypit. Muiden Matlab-käyttäjien kanssa voidaan jakaa mukautettuja viestirajapintoja. Simulink Coder-sovelluksella voidaan luoda C++ koodi erilliselle ROS-sovellukselle, joka toimii millä tahansa Linux-alustalla. (MathWorks, n.d.)
 
 
 <p>&nbsp;</p>  
-## Tekoäly
+### Tekoäly
 
 Vuoteen 2000 saakka ihmisen tieto tallennettiin analogisiin laiteisiin, kuten kirjoihin, sanomalehtiin ja magneettinauhoihin. Vuonna 1993 tiedon pakkaamiseen olisi tarvittu 15.8 eksatavua tilaa eli 15.8 miljardia gigatavua. 2018 tiedon määrä oli kasvanut 33 zetatavuun joka taas on 33 000 miljardia gigatavua. Suurten tietomäärien lataamiseksi pilvipalveluntarjoajien on turvauduttava kuljettamaan kontinkokoisia kiintolevyjä. Kaiken tämän tiedon analysoimiseen tarvitaan myös laskentatehoa. Tietomäärän ja laskentatehon yhdistymisen myötä vuoden 2010 aikoihin tuli sekä mahdolliseksi että tarpeelliseksi opettaa koneita oppimaan. Yhdistämällä tekoäly robotiikkaan saadaan luotua älykkäämpiä autonomisia järjestelmiä. (Winder, 2021)
 
 Sana tekoäly (Artificial Intelligence, AI) aiheuttaa suurimmalle osalle ihmisistä paljon hämmennystä, josta suurin osa juontuu termien tekoäly ja koneoppiminen (Machine Learning, ML) väärinkäytöstä. Lyhyesti ilmaistuna, tekoäly on tieteen ala, joka kattaa tietokoneiden kyvyn tehdä päätöksiä ja oppia kuten ihminen. Kun taas koneoppimisessa luodaan ohjelmisto, joka oppii sille annetusta datasta. Koneoppimistyyppejä ovat: ohjattu oppiminen (engl. Supervised), valvomaton oppiminen (engl. Unsupervised) sekä vahvistusoppiminen (engl. Reinforcement) (Kuva ). (Olson, 2018)
 
 ![AI](/assets/images/AI-kaavio.png)
-#### Kaaviossa nähdään intuitiivinen kuva tekoälyn kentästä (Palanisamy, 2018) 
+##### Kaaviossa nähdään intuitiivinen kuva tekoälyn kentästä (Palanisamy, 2018) 
+<p>&nbsp;</p>  
 
 Terminologia on hämmentävä, koska niihin liittyy sekoitus eri tekniikoita ja monessa on mukana sana ”oppiminen”. Esimerkkinä kolme koneoppimisen ydintyyppiä: Reinforcement Learning (RL), Deep Reinforcement Learning (DRL) sekä Deep Learning (DL). (Olson, 2018)
 
-Reinforcement Learning, vahvistusoppimisessa ei ole tarpeen tietää jokaista oikeaa askelta, riittää kun päämäärä on selvillä. Päätöksentekijä oppii kokeilemalla ja erehtymällä, vuorovaikutuksesta ympäristön kanssa. Ts. sen on itse opittava yrityksen ja erehdyksen kautta. Tekoäly saa joko palkkioita tai rangaistuksia suorittamistaan toimista samaan tapaan kuin esim. koiraa palkitaan herkuilla onnistuneesta suoritteesta. Ihmisen tehtävät rajoittuvat lähinnä ympäristön muuttamiseen ja palkitsemis- ja rangaistusjärjestelmän säätämiseen. Vahvistava
-
-oppiminen on tällä hetkellä tehokkain tapa ymmärtää koneen luovuutta. (Brown & Zai, 2020) (Osiński & Budek, 2018) (Winder, 2021)
+Reinforcement Learning, vahvistusoppimisessa ei ole tarpeen tietää jokaista oikeaa askelta, riittää kun päämäärä on selvillä. Päätöksentekijä oppii kokeilemalla ja erehtymällä, vuorovaikutuksesta ympäristön kanssa. Ts. sen on itse opittava yrityksen ja erehdyksen kautta. Tekoäly saa joko palkkioita tai rangaistuksia suorittamistaan toimista samaan tapaan kuin esim. koiraa palkitaan herkuilla onnistuneesta suoritteesta. Ihmisen tehtävät rajoittuvat lähinnä ympäristön muuttamiseen ja palkitsemis- ja rangaistusjärjestelmän säätämiseen. Vahvistava oppiminen on tällä hetkellä tehokkain tapa ymmärtää koneen luovuutta. (Brown & Zai, 2020) (Osiński & Budek, 2018) (Winder, 2021)
 
 Robotiikan alalla on monia erilaisia sovelluksia, jotka käyttävät vahvistusoppimista. Näistä esimerkkejä ovat mm. robotin liikkeiden, teollisen valmistuksen parantaminen ja pannukakkujen kääntäminen. RL:n avulla voidaan parantaa pilvipalveluita, vähentää rakennusten käyttämän energian määrää, parantaa liikennevalojen hallintaa ja aktiivista kaistanhallintaa. Myös rahoitusala käyttää RL:ia kauppojen tekemiseen ja sijoitussalkkujen kohdentamiseen. Autonomiset ajoneuvot ovat myös hyvin aktiivisen tutkimuksen kohteena ja viime aikoina terveydenhuollossa on esiintynyt kiinnostusta vahvistusoppimiseen. Mikään ala ei siis jää koskemattomaksi. (Osiński & Budek, 2018)
 
@@ -273,16 +278,17 @@ Käytäntöperusteisia menetelmiä käytetään, kun on mahdollista toimia eritt
 
 ![AI](/assets/images/deepsense.png)
 #### Suunnikkaan – suorakulmion – neliön suhde (Osiński & Budek, 2018)
+<p>&nbsp;</p>  
 
 Minkään näiden koneoppimisten välissä ei itseasiassa ole mitään selvää eroa (Kuva ). Laajin luokka on ML ja kapein puolestaan DRL. RL puolestaan on kone- ja syväopetustekniikoiden erikoissovellus, joka on suunniteltu ratkaisemaan ongelmia tietyllä tapaa. Erilaisissa projekteissa malleja ei ole suunniteltu pitämään kiinni vain yhdestä tietystä tyypistä vaan suorittamaan annettu tehtävä mahdollisimman tehokkaasti. Mitkään näistä eivät kuitenkaan korvaa toisiaan. (Osiński & Budek, 2018)
 
 <p>&nbsp;</p> 
-## OpenAI
+### OpenAI
 
 OpenAI on San Franciscon lahden alueella sijaitseva tekoälyn tutkimuslaitos ja yksi heidän suurimmista panoksistaan on avoimen lähdekoodin OpenAI ”Gym”. Pythonille julkaistu paketti tarjoaa monia ympäristöjä, joissa käyttäjät voivat aloittaa vahvistavien oppimisalgoritmien käytön. Työkalupakki esittelee standardi ohjelmointirajapinnan liitännän RL oppimiseen suunnattujen ympäristöjen kanssa. Jokaisessa ympäristössä on versio, joka takaa tähdelliset vertailut ja toistettavat tulokset kehittyvien algoritmien ja ympäristön kanssa. RL:n yhteydessä ympäristöllä viitataan varsinaiseen tehtävään, Markovin päätöksentekoprosessiin (engl. Markov decision provess, MDP), joka ratkaistaan algoritmin avulla. Ympäristö määrittää tehtävän tilan ja toimintavälin. (Beysolow II, 2019) (Habib, 2019) (Palanisamy, 2018) 
 
 <p>&nbsp;</p>  
-## ROS Industrial
+### ROS Industrial
 
 Vuonna 2012 Yaskawa Motoman Robotics, Willow Garage ja Southwest Research Institute (SwRI) aloittivat ROS-Industrial projektin. ROS-Industrial laajentaa ROS-ohjelmiston kehittyneitä ominaisuuksia teollisuusrobotteihin. Se koostuu monista ohjelmistopaketeista, joita voidaan käyttää teollisuusrobottien rajapinnassa. Paketit ovat BSD/Apache 2.0 lisensioituja ja ne pitävät sisällään kirjastoja, ohjaimia ja työkaluja teollisuuslaitteille. (Mahtani, et al., 2018)
 
@@ -297,6 +303,7 @@ MoveIt on avoimen lähdekoodin projekti, joka on saatu aikaan suuren kansainväl
 
 ![moveit](/assets/images/MoveIt.png)
 ####  MoveIt! arkkitehtuuri (Martinez, et al., 2018)
+<p>&nbsp;</p>  
 
 Move_group-elementin ajatuksena on, että liitäntäryhmät ja muut elementit määritellään liikkeensuunnittelualgoritmien avulla, jotta liiketoiminnot saadaan suoritettua. Nämä algoritmit käsittelevät paikan ja ryhmän liitäntöjen ominaisuudet, joissa kohteet ovat vuorovaikutuksessa. Ryhmä määritetään käyttäen ROS:sin vakio työkaluja ja määrityskieliä kuten YAML (YAML Ain’t Markup Language), URDF (Specific Unified Robot Description Formats) ja SDF (Simple Data Format). Ryhmään kuuluvat nivelet on siis määriteltävä niiden liitäntärajoilla. MoveIt! tarjoaa GUI-toiminnon (Graphical User Interface), jolla määrittely tietylle robotille voidaan tehdä. Määrittelyn jälkeen voidaan suorittaa liittyminen C++ ja Python rajapinnan avulla. MoveIt! sallii erilaisten kirjastojen käytön liikkeen suunnitteluun, kuten OMPL (Open Motion Planning Library), käyttäen ROS-toimintoja tai -palveluja. (Martinez, et al., 2018)
 
@@ -304,6 +311,39 @@ Yksi MoveIt:in tärkeimmistä ominaisuuksista on törmäyksien ja niiden vältt�
 
 OctoMap-kirjasto muodostaa 3D-varauksellisen ruudukon, jota kutsutaan ”octreeksi”. Se koostuu ympäristön esteiden tilastomatemaattisesta tiedosta. MoveIt-paketti rakentaa
 OctoMapin käyttämällä 3D-pistepilveä ja siirtämällä se suoraan FCL:lle törmäyksen tarkistusta varten. (Martinez, et al., 2018) 
+
+
+
+<p>&nbsp;</p> 
+### SROS
+
+Kehitteillä oleva ja kokeellinen SROS (Secure ROS) tukee alkuperäistä TLS (Transport Layer Security) -toimintoa tarjoten näin ROS-ohjelmointirajapintaan ja ekosysteemiin lisäystä, jolla tuetaan nykyaikaisia salauksia ja turvatoimia. Ominaisuuksiin kuuluvat mm. natiivi TLS-tuki kaikille IP/liitäntä tason viestinnälle, luottamusketjujen salliminen x.509-sertifikaattien avulla, määriteltävissä oleva nimitila ROS-solmujen rajoituksille ja sallituille rooleille sekä kätevä käyttäjätilan työkalu solmujen avainparien automaattiseen luomiseen sekä ROS-verkkojen tarkistus, pääsynvalvonnan rakentaminen ja kouluttaminen. (Portugal, et al., 2018) (White, et al., 2016)
+
+TLS:n käyttö kahden kommunikoivan sovelluksen välillä edesauttaa yksityisyyttä, henkilöllisyyden todennusta sekä datan eheyttä. Käynnistyksen yhteydessä SROS tarjoaa ROS-riippumattoman avainpalvelimen, joka luo ja jakaa avaimia ja sertifikaatteja ROS-solmuille. Saumattomasti integroitu SROS:in avainpalvelin yksinkertaistaa käyttäjien kokemuksia ja kehitystä. (Portugal, et al., 2018) 
+
+<p>&nbsp;</p>  
+### Rosbridge
+
+Rosbridge tarjoaa robotiikkaan ylimääräisen sovelluskerroksen (Kuva ), joka mahdollistaa muidenkin kuin ROS-asiakasprosessien toiminnan yhdessä ROS-prosessien kanssa, mukaan lukien Web-rajapinnat. Rosbridge suhtautuu ROS:iin palvelinpuolena (back-end). Näin sovelluskehittäjät eivät tarvitse intiimejä tietoja matalan tason ohjausrajapinnoista, väliohjelmien koontijärjestelmistä tai monimutkaisista robotintunnistus ja ohjausalgoritmeista. Minimissään heidän on kuitenkin ymmärrettävä väliohjelmistopaketin rakenne ja kuljetusmekanismit. (Crick, et al., 2016)
+
+![rosbridge](assets/images/Rosbridge.png)
+##### Rodbridgea käyttävän verkkosovelluksen rakenne (Alexander & al., 2012) 
+<p>&nbsp;</p> 
+
+Rosbridgen avulla asiakkaat voivat julkaista ja tilata ROS-aiheita ja käynnistää ROS-palveluita palvelimen ajonaikaisessa ympäristössä kuljettamalla JSON-muotoiset (JavaScript Object Notation) viestit TCP- ja Websockettien kautta. Rosbridgen asiakkaat ovat kieliriippumattomia, tarkoittaen sitä, että voidaan käyttää mitä tahansa Websocketin tukemaa kieltä. Se ei myöskään rajoita asiakkaita ROS:een. Rosbridge mahdollistaa yksinkertaisen viestinkäsittelyn sekä HTML5-verkkosovitteissa (Hypertext Markup Language), että standardeissa POSIX (Portable Operating System Interface) IP suoritinkannoissa. Esimerkkinä ”/sensorPacket” niminen ROS-aihe jonka julkaisijana on yksinkertainen Python-asiakas (Kuva ). (Alexander, et al., 2012) (Crick, et al., 2016)
+
+![rosbridge](assets/images/sensorPacket.png)
+##### "sensorPacket", ROS-topic (Crick & al., 2016)
+<p>&nbsp;</p> 
+
+JSON-pohjainen rosbridge protokolla on suunniteltu mahdollistamaan datan julkaisu, tilaaminen ja palveluiden hyödyntäminen minkä tahansa asiakkaan ja palvelimen välillä alustasta riippumatta. Onnistuneita toteutuksia on tehty mm. Linuxilla, Windowsilla, iOS:lla, Androidilla ja yleisillä Web-selaimilla. Vakaa ROS rosbridge-palvelin ja protokolla löytyvät ROS.org sivuilta: http://wiki.ros.org/rosbridge_suite (Alexander, et al., 2012) 
+
+<p>&nbsp;</p> 
+### ROSJS
+
+Vuosien varrella laskentaparadigmat ovat kehittyneet ja nykyinen tekniikka mahdollistaa avoimen hallinnon, ylimääräisen muistin ja välittömän heterogeenisillä alustoilla toimivien ohjelmistojen käyttöönoton älypuhelimista moniytimisiin pöytäkoneisiin. Tämä on synnyttänyt joukon käyttäjiä, jotka ymmärtävät perusverkkoteknologiat, kuten HTML ja JavaScript. Osaaminen ulottuu ammattimaisten sovelluskehittäjien ulkopuolelle, käyttäjiin, jotka eivät ehkä kutsu itseään ohjelmoijiksi, mutta kuitenkin käyttävät verkkoa kaikkeen luovaan. Rosbridgen tavoitteena onkin laajentaa robotiikkaa kirjailijoiden, artistien, opiskelijoiden ja suunnittelijoiden joukkoon. JavaScriptistä on tullut verkon oletuskieli ja se onkin yksi maailman suosituimmista kielistä. (Crick, et al., 2016)
+
+JavaScript kirjasto nimeltään ros.js rakennettiin helpottamaan viestintää selaimen ja rosbridgen välillä. Käyttäen ros.js ja rosbridgea selaimessa käynnissä oleva JavaScript sovellus kykenee kommunikoimaan etärobotilla- tai palvelimella olevan ROS-sovelluksen kanssa. Ros.js on suunniteltu kevyeksi ja tapahtumapohjaiseksi. Sen kevyt koodi sallii helpomman integraation jo olemassa oleviin, laajamittaisiin JavaScript sovelluksiin. Tapahtumapohjainen ros.js mahdollistaa responsiivisemman käyttöliittymän ja irrottaa ros.js moduulin muista JavaScript-moduuleista. (Alexander, et al., 2012) 
 
 <p>&nbsp;</p>  
 # Turvallisuus verkossa
@@ -316,9 +356,7 @@ ROS 1 käyttää myös anonyymia julkaisu/tilaussemantiikkaa. Solmut eivät tät
 
 Käynnistettäessä ROS-isäntä aukeavat portit mille tahansa verkkokoneelle. Nämä koneet voivat kysellä ROS-isännältä kriittisiä tehtäviä kuten ROS TCP/UDP yhteyksien asettamista muiden solmujen kanssa, minkä tahansa aiheen tilaamista, lopettaa verkon solmun jne. Samassa verkossa oleva pahansuopa entiteetti voi päästä hyväksikäyttämään kaikkea robotin dataa kuten esim. lähettää komentoja, tukkia verkkoyhteyksiä, käyttää kameraa yms. (Portugal, et al., 2018)
 
-Ilman lisätoimia järjestelmän käytön rajoittamiseksi ROS.org sivuilla suositellaankin, ettei ROS-isäntää pidä koskaan yhdistää julkiseen Internettiin tai verkkoon, johon on pääsy käyttäjillä, joilla ei ole lupaa siihen. Sivuilla suositellaan kahta erilaista tapaa, joilla rajoittaa pääsyä ROS isäntä solmuun: verkon käyttämisen rajoittaminen kute
-
-luominen tai palomuurin käyttö sekä erilaiset ROS laajennukset, jotka voivat todentaa käyttäjät ennen komentojen sallimista. (Security, 2020)
+Ilman lisätoimia järjestelmän käytön rajoittamiseksi ROS.org sivuilla suositellaankin, ettei ROS-isäntää pidä koskaan yhdistää julkiseen Internettiin tai verkkoon, johon on pääsy käyttäjillä, joilla ei ole lupaa siihen. Sivuilla suositellaan kahta erilaista tapaa, joilla rajoittaa pääsyä ROS isäntä solmuun: verkon käyttämisen rajoittaminen kuten eristetyn verkon luominen tai palomuurin käyttö sekä erilaiset ROS laajennukset, jotka voivat todentaa käyttäjät ennen komentojen sallimista. (Security, 2020)
 
 #### Verkon käyttö suojauksessa
 
@@ -343,11 +381,13 @@ Tyypillisesti teollisuusrobotit ovat yhdistettyinä tietokoneeseen, jossa on ase
 
 ![security](/assets/images/kytkenta.png)
 ##### Teollisuusrobotin yleinen kytkentä ja mahdollinen hyökkäys (wiki.ros.org/Security, 2020)
+<p>&nbsp;</p> 
 
 Jotta minimoidaan riskit hyökkäyksille, on verkko määritettävä oikein. ROS-koneen ja robotin kontrollerin yhteys on oltava eristettynä muista verkoista. Tämä voidaan tehdä käyttämällä esimerkiksi kahta verkkoadapteria, jotka on yhdistetty kahteen eri verkkoon (Kuva ). (Security, 2020) 
 
 ![security](/assets/images/verkko.png)
 ##### Esimerkki verkon konfiguraatiosta (wiki.ros.org/Security) 
+<p>&nbsp;</p> 
 
 Toinen adapteri on yhdistettynä teollisuusrobotin kontrolleriin (Net2 adapteri) ja toinen yhdistettynä paikallisen verkon reitittimeen (Net1 adapteri). Nämä adapterit on määritettävä eri aliverkko osoitteilla ja edelleen lähetystä pitäisi välttää. (Security, 2020)
 
@@ -357,40 +397,10 @@ Eräät tutkijat ovat jakaneet ROS 2:sen haavoittuvuudet kolmeen eri kategoriaan
 
 ![security](/assets/images/haavoittuvuudet.png)
 ##### ROS-tekniikkaa käyttävien robottien haavoittuvuudet (Basheer & al.,2019)
+<p>&nbsp;</p> 
 
 On tärkeä ymmärtää, että erilaisilla roboteilla kuten esim. herkkien esineiden manipulointiin tarkoitetuilla ja julkisilla teillä liikkuvilla autonomisilla ajoneuvoilla on erilaiset käyttöympäristöt ja siten hyvin erilaiset turvallisuusvaatimukset. Riippuen robottien tyypistä ja toiminnoista PKI-komponenteille (Public Key Infrastructure) ja yksittäisten vahvistuksien suorittamiselle tulisi asettaa suojauskäytäntö. ROS 2 mahdollistaa eri robottijärjestelmien suojaustekniikat joustavalla toimialueiden ja osallistujien segmentoinnilla. Robottijärjestelmän turvallisuuden määrittäminen voidaan ratkaista käyttämällä kaksitasoista pääsynvalvontaa eli hallinto- ja käyttöoikeuskäytäntöä. Välttämätöntä on kuitenkin suorittaa haavoittuvuusanalyysi, jotta riskit ja niiden vähentäminen voidaan määrittää. Kokonaiskuvasta nähdään, että ROS 2:ssa on parannettu turvallisuutta, mutta monet tasot ovat edelleen alttiina. (DiLuoffo, et al., 2018)
 
-
-<p>&nbsp;</p> 
-# SROS
-
-Kehitteillä oleva ja kokeellinen SROS (Secure ROS) tukee alkuperäistä TLS (Transport Layer Security) -toimintoa tarjoten näin ROS-ohjelmointirajapintaan ja ekosysteemiin lisäystä, jolla tuetaan nykyaikaisia salauksia ja turvatoimia. Ominaisuuksiin kuuluvat mm. natiivi TLS-tuki kaikille IP/liitäntä tason viestinnälle, luottamusketjujen salliminen x.509-sertifikaattien avulla, määriteltävissä oleva nimitila ROS-solmujen rajoituksille ja sallituille rooleille sekä kätevä käyttäjätilan työkalu solmujen avainparien automaattiseen luomiseen sekä ROS-verkkojen tarkistus, pääsynvalvonnan rakentaminen ja kouluttaminen. (Portugal, et al., 2018) (White, et al., 2016)
-
-TLS:n käyttö kahden kommunikoivan sovelluksen välillä edesauttaa yksityisyyttä, henkilöllisyyden todennusta sekä datan eheyttä. Käynnistyksen yhteydessä SROS tarjoaa ROS-riippumattoman avainpalvelimen, joka luo ja jakaa avaimia ja sertifikaatteja ROS-solmuille. Saumattomasti integroitu SROS:in avainpalvelin yksinkertaistaa käyttäjien kokemuksia ja kehitystä. (Portugal, et al., 2018) 
-
-<p>&nbsp;</p>  
-# Rosbridge
-
-Rosbridge tarjoaa robotiikkaan ylimääräisen sovelluskerroksen (Kuva ), joka mahdollistaa muidenkin kuin ROS-asiakasprosessien toiminnan yhdessä ROS-prosessien kanssa, mukaan lukien Web-rajapinnat. Rosbridge suhtautuu ROS:iin palvelinpuolena (back-end). Näin sovelluskehittäjät eivät tarvitse intiimejä tietoja matalan tason ohjausrajapinnoista, väliohjelmien koontijärjestelmistä tai monimutkaisista robotintunnistus ja ohjausalgoritmeista. Minimissään heidän on kuitenkin ymmärrettävä väliohjelmistopaketin rakenne ja kuljetusmekanismit. (Crick, et al., 2016)
-
-![rosbridge](assets/images/Rosbridge.png)
-##### Rodbridgea käyttävän verkkosovelluksen rakenne (Alexander & al., 2012) 
-
-Rosbridgen avulla asiakkaat voivat julkaista ja tilata ROS-aiheita ja käynnistää ROS-palveluita palvelimen ajonaikaisessa ympäristössä kuljettamalla JSON-muotoiset (JavaScript Object Notation) viestit TCP- ja Websockettien kautta. Rosbridgen asiakkaat ovat kieliriippumattomia, tarkoittaen sitä, että voidaan käyttää mitä tahansa Websocketin tukemaa kieltä. Se ei myöskään rajoita asiakkaita ROS:een. Rosbridge mahdollistaa yksinkertaisen viestinkäsittelyn sekä HTML5-verkkosovitteissa (Hypertext Markup Language), että standardeissa POSIX (Portable Operating System Interface) IP suoritinkannoissa. Esimerkkinä ”/sensorPacket” niminen ROS-aihe jonka julkaisijana on yksinkertainen Python-asiakas (Kuva ). (Alexander, et al., 2012) (Crick, et al., 2016)
-
-![rosbridge](assets/images/sensorPacket.png)
-##### "sensorPacket", ROS-topic (Crick & al., 2016)
-
-JSON-pohjainen rosbridge protokolla on suunniteltu mahdollistamaan datan julkaisu, tilaaminen ja palveluiden hyödyntäminen minkä tahansa asiakkaan ja palvelimen välillä alustasta riippumatta. Onnistuneita toteutuksia on tehty mm. Linuxilla, Windowsilla, iOS:lla,
-
-Androidilla ja yleisillä Web-selaimilla. Vakaa ROS rosbridge-palvelin ja protokolla löytyvät ROS.org sivuilta: http://wiki.ros.org/rosbridge_suite (Alexander, et al., 2012) 
-
-<p>&nbsp;</p> 
-## ROSJS
-
-Vuosien varrella laskentaparadigmat ovat kehittyneet ja nykyinen tekniikka mahdollistaa avoimen hallinnon, ylimääräisen muistin ja välittömän heterogeenisillä alustoilla toimivien ohjelmistojen käyttöönoton älypuhelimista moniytimisiin pöytäkoneisiin. Tämä on synnyttänyt joukon käyttäjiä, jotka ymmärtävät perusverkkoteknologiat, kuten HTML ja JavaScript. Osaaminen ulottuu ammattimaisten sovelluskehittäjien ulkopuolelle, käyttäjiin, jotka eivät ehkä kutsu itseään ohjelmoijiksi, mutta kuitenkin käyttävät verkkoa kaikkeen luovaan. Rosbridgen tavoitteena onkin laajentaa robotiikkaa kirjailijoiden, artistien, opiskelijoiden ja suunnittelijoiden joukkoon. JavaScriptistä on tullut verkon oletuskieli ja se onkin yksi maailman suosituimmista kielistä. (Crick, et al., 2016)
-
-JavaScript kirjasto nimeltään ros.js rakennettiin helpottamaan viestintää selaimen ja rosbridgen välillä. Käyttäen ros.js ja rosbridgea selaimessa käynnissä oleva JavaScript sovellus kykenee kommunikoimaan etärobotilla- tai palvelimella olevan ROS-sovelluksen kanssa. Ros.js on suunniteltu kevyeksi ja tapahtumapohjaiseksi. Sen kevyt koodi sallii helpomman integraation jo olemassa oleviin, laajamittaisiin JavaScript sovelluksiin. Tapahtumapohjainen ros.js mahdollistaa responsiivisemman käyttöliittymän ja irrottaa ros.js moduulin muista JavaScript-moduuleista. (Alexander, et al., 2012) 
 
 
 <p>&nbsp;</p>  
@@ -440,6 +450,7 @@ Hokuyo perustettiin vuonna 1946 Japanin Osakassa. Yritys tarjoaa automaatiotekno
 
 ![hokuyo](/assets/images/Hokuyo.png)
 ##### Hokuyo UST-20LX (ROS Components, 2016)
+<p>&nbsp;</p> 
 
 Esimerkiksi Hokuyo UST-20LX (Kuva ) on pieni, tarkka suurinopeuksinen skannauslaseri esteiden havaitsemiseen ja autonomisten robottien ja materiaalinkäsittelyjärjestelmiin. UST-20LX on tarkoitettu sisätiloihin ja sen kantama on 20 m, tunnistuskulma 270°, valaistusteho 15.000 luxia ja paino vain 130 g. (ROS components, 2016) 
 
@@ -450,14 +461,15 @@ Azure Kinect on viimeisintä teknologiaa edustava spatiaalinen laskentasetti keh
 
 ![Azure](/assets/images/Azure.png)
 ##### Microsoft ® Azure Kinect™ (ROS-Industrial.org)
-
 <p>&nbsp;</p>  
+
 ## Intel RealSense
 
 Intel® RealSense™ D400-sarjan syvyyskamerat käyttävät stereonäkymää laskeakseen syvyyden. Stereokuva toteutetaan käyttämällä vasenta ja oikeaa kuvanninta sekä valinnaista infrapunaprojektoria. Matala tekstuurisissa näkymissä infrapunaprojektori heijastaa näkymätöntä staattista IR (Infrared) kuvioita parantaakseen syvyystarkkuutta. 
 
 ![Hokuyo](/assets/images/Intel_Realsense.png)
 ##### Aktiivinen IR Stereonäkö teknologia
+<p>&nbsp;</p> 
 
 Kuvantimet tallentavat näkymän ja lähettävät datan syvyysnäköprosessorille, joka laskee kuvan jokaiselle pikselille syvyysarvot korreloimalla pisteitä keskenään ja siirtämällä pisteitä kuvien välillä. Syvyyspikseliarvot prosessoidaan syvyyskehyksen luomiseksi. Perättäisistä syvyyskehyksistä saadaan luotua syvyysvideostriimaus (Kuva  ). (InteI realsense, 2020) 
 
@@ -490,14 +502,18 @@ Odroid-XU4 on yhden piirilevyn tietokone. Siinä on Samsung Exynos 5422 (4x Cort
 
 ![ROS](/assets/images/yksikoiden_maara.png)
 ##### ROS käyttöjärjestelmiä käyttävien robottien maailmanlaajuisten yksiköiden määrän kasvu vuosina 2018–2024 (statista.com, 2021)
+<p>&nbsp;</p> 
 
 Yhteinen tietokanta on myös yksi avaintekijöistä ROS:in suosioon. Kuvasta --- nähdään ROS:iä käyttävien robottien maailmanlaajuisten käyttömäärien nousu vuodesta 2018 vuoteen 2024. (Statista.com, 2018) 
+<p>&nbsp;</p> 
 
 ## Case-esimerkkejä maailmalta
+<p>&nbsp;</p> 
 
 ### Teollisuusrobotit
 
 ISO 8373:2012 mukaan teollisuusrobotti on autonomisesti ohjautuva, uudelleen ohjelmoitavissa oleva, moneen tarkoitukseen sopiva kolme tai useampi akselinen manipulaattori, joka voidaan asentaa joko kiinteästi tai käyttää mobiilina teollisuuden automaatiosovelluksissa. Näitä ovat mm. lineaari-, SCARA-, delta-, ja nivelrobotit. Koneoppiminen, tekoäly, IIoT (Industrial Internet of Things) sekä ihmisen ja koneen yhteistyö sekä autonomiset mobiilijärjestelmät ovat tätä päivää. Edessä on kuitenkin suuria haasteita, kuten nopeasti muuttuvat kuluttajasuuntaukset, resurssien puute, ammattitaitoisten työtekijöiden puute, ikääntyvä yhteiskunta ja paikallisten tuotteiden kysyntä. Joustava teollisuusrobotiikka mahdollistaa ratkaisun näihin haasteisiin. (IFR Statistical department, 2020) (Mueller, 2019) 
+<p>&nbsp;</p> 
 
  
 ### MotoPlus ™ SDK ohjain 
@@ -506,6 +522,7 @@ Japanilainen Yaskawa Motoman oli yksi ensimmäisistä yhteistyö-, ja teollisuus
 
 ![Liikepaketti](/assets/images/Liikepaketin_kerrostumat.png)
 ##### Ros-Industrial liikepaketin kerrostumat sekä miten MotoROS ja Yaskawa Motoman ohjain liittyvät toisiinsa
+<p>&nbsp;</p> 
 
 Rajoitettujen sovellusten kehittäminen voimanhallintaan, visuaaliseen robotin ohjaukseen sekä geneeriseen anturien integrointiin mahdollistuu. (Specific Unified Robot Description Formats (URDF) on saatavana robottien käsivarsien simulointiin. (Vozel, 2019) 
 
@@ -518,6 +535,7 @@ Tanskalainen Universal Robots on hallitseva kevyiden käsivarsirobottien toimitt
 
 ![Universal](/assets/images/Universal.png)
 ##### Universal robots:in e-sarjalaiset
+<p>&nbsp;</p> 
 
 Jotta Universal Robots: in parhaita ominaisuuksia hyödynnettäisiin, kehittivät he yhteistyössä saksalaisen tutkimuslaitoksen, FZI (Forschungszentrum Informatik, Research Center for Information Technology) kanssa Universal Robots: in tukeman ROS-ohjaimen, jotta siitä saatiin vakaa ja kestävä. Ohjain julkaistiin markkinoille lokakuussa 2019. Tämä on ”plug’n’play”-tyylinen, helppokäyttöinen ohjain UR roboteille. Se hyödyntää robotin pääominaisuuksia, jotta se kykenee parhaaseen suorituskykykyynsä ja tarjoaa parhaimman teollisuusluokan rajapinnan, jonka nykyinen ROS käytäntö mahdollistaa. Ohjain sisältää spesifit robotin kalibrointidatat parhaaseen tarkkuuteen. Ohjain tulee olemaan avoin lähdekoodi ja nojaa tulevaisuuden yhteisökehitykseen. Ohjain on tarkoitettu CB3 ja e-sarjalaisille, joissa RTDE (Real-Time Data Exhange) on saatavilla (Kuva  ). (Madsen, 2019; Universal Robots ROS driver, 2020) 
 
@@ -543,10 +561,11 @@ Limor Schweitzer perusti portugalilaisen MOV.AI:in vuonna 2016. Yritys keskittyy
 
 Lokakuun 13. päivä 2020 MOV.AI ilmoitti keränneensä 4 M$ rahoituksen yhteistyörobottien käyttöjärjestelmien kehittämiseen. Kokonaisuudessaan yrityksen pääoma on 8 M$. Varainhankintaa johti SOMV (State of Mind Ventures) ja lisärahoitusta myönsivät nykyiset sijoittajat NFX ja Viola Ventures. Yrityksen asiakkaista suurin osa tulee Länsi-Euroopasta, kuten Saksasta, Tanskasta, Ruotsista, Irlannista, Ranskasta sekä Yhdistyneistä kuningaskunnista. Sillä on myös joitakin asiakkaita Singaporessa sekä Yhdysvalloissa. (Ingham, 2020) 
 
- ![mov](/assets/images/mov.ai.png)
- ##### MOV.AI ROS. (mov.ai, n.d)
+![mov](/assets/images/mov.ai.png)
+##### MOV.AI ROS. (mov.ai, n.d)
+<p>&nbsp;</p> 
 
- MOV.AI tekee useita parannuksia ROS:iin, nopeuttaen näin robottien käyttäytymisen ja kaluston automatisointiin tarvittavaa kehitysaikaa. Alla MOV.AI:in esittelemät muutokset: 
+MOV.AI tekee useita parannuksia ROS:iin, nopeuttaen näin robottien käyttäytymisen ja kaluston automatisointiin tarvittavaa kehitysaikaa. Alla MOV.AI:in esittelemät muutokset: 
 
 Visual ROS Launch system (Kuva  ) 
 
@@ -560,6 +579,7 @@ Visual ROS Launch system (Kuva  )
 
   ![mov](/assets/images/visual_system.png)
   ##### ROS Visual Launch system (mov.ai, n.d)
+  <p>&nbsp;</p> 
 
 MOV.AI Nodes – IDE in Browser (Kuva  ) 
 
@@ -577,6 +597,7 @@ MOV.AI Nodes – IDE in Browser (Kuva  )
 
   ![mov](/assets/images/IDE.png)
   ##### IDE selaimessa (mov.ai, n.d)
+  <p>&nbsp;</p> 
 
 Customizable UI (Kuva  ) 
 
@@ -597,8 +618,9 @@ Customizable UI (Kuva  )
 
   ![mov](/assets/images/muunneltava_UI.png)
   ##### Muunneltava UI (mov.ai, n.d)
+  <p>&nbsp;</p> 
 
-- State Transitions 
+State Transitions 
 
   - Mix Nodes and State Machine in single view 
   - Visual Launch Diagrams can act as State Machine Diagrams 
@@ -631,6 +653,7 @@ Vielä tänä päivänä on kaikissa itseajavissa autoissa oltava mukana ihmisku
 
 ![Komponentit](/assets/images/Autonomisen auton komp.png)
 ##### Autonomisen auton tärkeitä komponentteja (Mahtani & al., 2018)
+<p>&nbsp;</p> 
 
 Volvo Car Group:in teknologiajohtaja Henrik Green:in mukaan täysin autonomisilla ajoneuvoilla on potentiaalia parantaa liikenneturvallisuutta tasoon, jota ei ole aiemmin nähty ja mullistaa tapa, jolla ihmiset elävät, työskentelevät ja matkustavat. (Cuneo, 2020) 
 
@@ -641,6 +664,7 @@ Yhdysvaltalainen Embark on vuonna 2016 perustettu kahden nuoren kanadalaisen tie
 
 ![Embark](/assets/images/Autonominen kuorma-auto.png)
 ##### Embark kuorma-auto
+<p>&nbsp;</p> 
 
 Embark Trucks toimii nykyisin tason kaksi autonomiana. Erikoisvalmisteinen, kaksoisredundantti tietokone, joka testaa itsensä satoja kertoja sekunnissa tarkkailee jokaista komentoa reaaliajassa. (Sushant, 2019) 
 
@@ -651,6 +675,7 @@ Yhdysvaltalainen Ford Motor Company on vuonna 1903 perustettu yhtiö, joka on va
 
 ![Rosbag](/assets/images/Rosbag.png)
 ##### Yhteenveto Rosbag-viesteistä
+<p>&nbsp;</p> 
 
 Aineiston jälkikäsittely suoritettiin kannettavalla Dell Precision 7710 tietokoneella. Kaikki tieto on saatavissa Rosbag-muodossa (Kuva  ), jota voidaan visualisoida ja muokata ROS:sin avulla. He toivovat, että tämä monen vuodenajan aineisto tulisi olemaan hyödyllinen robotiikalle ja AI-yhteisölle sekä tarjoamaan uusia tutkimusmahdollisuuksia. (Wiggers, 2020) 
 
@@ -668,6 +693,7 @@ Yhdysvaltalainen Savioke on vuonna 2013 perustettu yritys, joka kehittää ja va
 
 ![Relay](/assets/images/Relay.png)
 ##### Savioke, Relay
+<p>&nbsp;</p> 
 
 Yhtiö sai vuonna 2018 13.4M $ rahoituksen laajentaakseen tuotteensa sairaaloihin, joissa Relay voi auttaa sairaanhoitajia, laboratorioteknikoita ja muita terveydenhuollon ammattilaisia toimittamalla esim. näytteitä, lääkkeitä ja tarvikkeita. (Johnson, 2018)  
 
@@ -678,6 +704,7 @@ Yhdysvaltalainen Diligent Robotics perustettiin vuonna 2017 sosiaalisen robottit
 
 ![Moxi](/assets/images/Moxi.png)
 ##### Moxi-mobiilirobotti manipulaattorilla
+<p>&nbsp;</p> 
 
 Moxi parantaa tehokkuutta, lisää työntekijöiden tyytyväisyyttä sekä parantaa hoidon laatua. Robotti käyttää koneoppimista kohteiden tunnistukseen ja tarttumiseen sekä ROS:iin perustuvaa navigaatio-ohjelmistoa. Siinä on osia eri laitevalmistajilta kuten Fetch Robotics, Velodyne Lidar, Intel, Kinova ja Robotiq. (Kara, 2020) (Diligent robotics, n.d) 
 
@@ -688,6 +715,7 @@ Kanadalainen Cleatpath Robotics on neljän yliopistokaveruksen kellarista vuonna
 
 ![Jackal](/assets/images/Clearpath Robots, JACKAL.png)
 ##### Clearpath Robots, JACKAL
+<p>&nbsp;</p> 
 
 Windows 10 Enterprise tuo mukanaan hyötyjä kuten yritysluokan suojauksen, helpon yhdistettävyyden pilveen, enemmän älykkyyttä Windows:in ML ROS noden kautta sekä nopeamman kehityksen. (Microsoft Corporation, 2020)   
 
@@ -698,6 +726,7 @@ Starship Technologiesin kuusipyöräinen, ostoskorin kokoinen mobiilirobotti toi
 
 ![starship](/assets/images/Starship.png)
 ##### Starship robotti (theverge.com, 2019)
+<p>&nbsp;</p> 
 
 Skypen perustajat Ahti Heinla ja Janus Friis perustivat Starship:in vuonna 2014. Yrityksen päämaja on San Franciscossa ja pääkonttori Virossa. Sillä on myös konttori Helsingissä, jossa on mm. ohjelmistotuotantoa. Viimeisen rahoituskierroksen päätyttyä Starship on kerännyt yhteensä 85 M$. Sijoittajia ovat mm. Morpheus Ventures, Shasta Ventures, Matrix Partners, MetaPlanet Holdings, TDK Ventures sekä Qu Ventures (Starship, n.d) (Hawkins, 2019) 
 
@@ -705,6 +734,7 @@ Robotti käyttää vähintään 9 kameraa mukaan lukien 6 spektri kameraa sekä 
 
 ![starship](/assets/images/starship_maailma.png)
 ##### Starshipin toimitukset maailmanlaajuisesti (Heinla, 2021)
+<p>&nbsp;</p> 
 
 Kuusi vuotta perustamisensa jälkeen Starship on toimittanut jo yli miljoona tilausta ja heillä on useita toimialueita Yhdysvalloissa ja Euroopassa (Kuva  ). (Heinla, 2021) 
 
@@ -715,11 +745,13 @@ Puutarhayritysten tarvitsema työvoima on merkittävä kustannuserä ja työvoim
 
 ![kompano](/assets/images/Kompano.png)
 ##### Kompano Deleaf-line robot ( (Phil by Priva, 2019)
+<p>&nbsp;</p> 
 
 Robotti esiteltiin GreenTechissä 2016. Yksi robotti kykenee suoriutumaan 0.75–1 hehtaarin alueesta, riippuen varsien tiheydestä. Se kulkee kasvihuoneeseen asennettuja putkikiskoja pitkin ja kykenee tunnistamaan poistettavat lehdet stereoskooppikameraparilla, toimien monenlaisissa eri valaistuksissa. Kamerat räätälöitiin tarpeisiin sopivaksi kahdesta FLIR Integrated Imaging Solutions Chameleon3 kameraparista. Kameroissa on 1,3 megapikselin puolijohde PYTHON 1300 CMOS -kenno 4,8 µm pikselikoko ja se voi ottaa jopa 149 kuvaa sekunnissa (Kuva   ). (Priva, n.d) (Phil by Priva, 2019) (Vision Systems Design, 2017) 
 
 ![kompano](/assets/images/kompano_kamera.png)
 #####  Robotin käyttämä pari stereoskooppi kameroita asennettuna liikkuvalle alustalle. (www.flir.eu)
+<p>&nbsp;</p> 
 
 Niillä saadaan laaja näkökenttä sekä tomaatin oikealta, että vasemmalta puolelta. Järjestelmässä käytetään Xenon strobe valoa valaisemaan kasveja. Strobo lähettää valoa 2 sekunnin välein, jolloin se laukaisee stereokamerat 30 mikrosekunnin välein. Tämä mahdollistaa yhtenäisen kuvajoukon. Kuvien ottamisen jälkeen ne siirretään USB-liitännän kautta tietokoneelle, jossa käytetään Ubuntu-käyttöjärjestelmää ja ROS:sia. OpenCV:ssä olevia kustomoituja kuvankäsittelyalgoritmeja käytetään molempien kameroiden kuvasarjojen käsittelyyn, jotta tomaattikasvien lehdet tunnistetaan tietyltä korkeusalueelta. Sijainnin tunnistamisen jälkeen ohjelmisto laskee katkaistavien lehtiruotien 3D-koordinaatit. Tämä koordinaattidata siirretään ROS:lle ja sitä kautta älykkäille servomoottoreille, jotka ohjaavat robotin teleskooppikäsivarren oikeaan paikkaan kasvia, missä se leikkaa lehtiruodin poistaen näin tomaatin lehdet. Koska kamerat ovat samalla alustalla kuin käsivarsi ne ottavat kuvia samaan aikaan kun käsivarsi liikkuu. Järjestelmä poistaa lehtiä, kunnes ei kykene enää tunnistamaan enempää lehtiä. (Priva, n.d) (Phil by Priva, 2019) (Vision Systems Design, 2017) 
 
@@ -730,11 +762,13 @@ HIT-ryhmän (Harbin Institute of Technology, Kiina) perustama STEM-koulutustekno
 
 ![XGO](/assets/images/XGO-Mini.png)
 ##### XGO-Mini (Introducing XGO-Mini, 2021)
+<p>&nbsp;</p> 
 
 Robotin nivelet muodostuvat DC-moottoreista, alennusvaihteistosta, antureista ja ohjauspiireistä, joissa on servo-ohjaus PID-algoritmi järjestelmä. Sisäänrakennetut IMU:t tallentavat XGO:n liikedataa ja tuottavat erittäin joustavan ja vakaan liikkeen. Robottia voidaan ohjelmoida ROS:in ja Python AI-järjestelmän avulla (Kuva  ).  (Introducing XGO-Mini, 2021) 
 
 ![XGO](/assets/images/XGO-jarjestelma.png)
 ##### XGO-Mini järjestelmä (Introducing XGO-Mini, 2021)
+<p>&nbsp;</p> 
 
 Robotti on heti käyttövalmis ja sitä voidaan käyttää erityisen sovelluksen avulla. Edge Computing Chipin avulla tekoäly voi toimia paikallisissa järjestelmissä ja sitä voidaan ohjata ilman Internettiä tai matkapuhelinta. Robottia voidaan käyttää luomaan omia toimintoja koulutukseen, viihteeseen sekä kaupalliseen käyttöön. (Introducing XGO-Mini, 2021) Tästä tai vastaavasta robotista saattaa olla iloa ja hyötyä tutustuttaessa robottien, tekoälyn ja ohjelmoinnin ihmeelliseen maailmaan. Luwu Intelligence Technology-tuotepäällikön Pengfei Liun sanoin: <em>
 "Robotiikkaan ja STEM-koulutukseen keskittyvänä teknologiayrityksenä ymmärrämme robotiikan ja tekoälyopetuksen merkityksen nuorille. Nämä tekniikat ovat avain tulevaisuuteen. XGO Mini, bioninen nelijalkainen robottikoira nuorten tekoälyopetukseen, on täydellinen foorumi robotiikan ja ohjelmointitaitojen kehittämiseen hauskalla tavalla. 12 DOF: n, monisuuntaisen liikkeen ja edistyneen tason tekoälyn ansiosta se pystyy käytännössä mihin tahansa liikkeeseen tai tehtävään ja tarjoaa käyttäjille rajattomat ohjelmointimahdollisuudet, jotka auttavat käyttäjiä tutkimaan, oppimaan ja pitämään hauskaa ".</em> (Introducing XGO-Mini, 2021) 
@@ -755,11 +789,13 @@ Robonaut 2 on kooltaan hieman yli metrin ja painaa 150 kg. Sillä on kaksi 7 DoF
 
 ![robonaut](/assets/images/Robonaut.png)
 ##### Robonaut 2 (NASAfacts, n.d.)
+<p>&nbsp;</p> 
 
 Elokuussa 2014 sille asennettiin kaksi n. 2.7 m pitkää 7 DoF:in jalkaa (Kuva  ), jotta se pystyy kiipeämään ISS:n sisällä. Molemmissa jaloissa on tarttujapää, jolla R2 ottaa kiinni ISS:ssä oleviin kaiteisiin. Tarttujassa on keskuslukitusmekanismi, jossa on manuaalinen vapautus hätätilanteita varten sekä anturipaketti, joka sisältää GigE-kameran, 3D ToF:in sekä kuuden akselin punnituskennon (Gooding, et al., 2016) (Jerry Wright, 2014) 
 
 ![robonaut](/assets/images/robonaut_mobiili.png)
 ##### Robonaut 2 mobiili päivityksellä (Gooding, et al., 2016)
+<p>&nbsp;</p> 
 
 Ominaisuuksien lisääntyminen vaati uuden ohjelmistoarkkitehtuurin sekä ohjaus- ja turvajärjestelmän. Tämä on toteutettu ROS:ia käyttäen. R2 pyrkii vähentämään astronauttien rutiinitehtäviin käyttämää aikaa suorittamalla huolto- ja siivoustöitä esim. varastonhallinta, kaiteiden puhdistus, suodattimien imurointi ja tiedonkeruu, kuten ilmavirran mittaus. Lisäksi sen käyttökokemukset tulevat olemaan välttämättömiä suunniteltaessa ulkona toimivaa Robonaut-yksikköä (Extravehicular Activity, EVA,) ts. tehtävissä, joita ei ole suunniteltu roboteille. (Bibby & Necessary, 2008) (Gooding, et al., 2016) 
 
@@ -774,6 +810,7 @@ Ficht, Farazi, Rodriguez, Pavlichenko, Allgeuer, Brandenburger ja Behnke ovat ke
 
 ![nimbro](/assets/images/NimbRo.png)
 ##### NimbRo-OP2X ja sen kinematiikka. (Ficht, et al., 2020)
+<p>&nbsp;</p> 
 
 Suunnittelun lähtökohtana oli luoda minimalistinen, mutta suorituskykyinen robotti, jossa modulaarisuus on avainasemassa sekä robotin laitteistossa että ohjelmistossa. Laitteiston modulaarisuus ja kustannustehokkuus saavutetaan maksimoimalla valmiiden komponenttien käyttö. Tätä täydentää 3D-tulostettavien osien joustavuus muunneltaessa ja vaihdettaessa osia. Osia voidaan muuntaa tiettyihin tarpeisiin sopiviksi kuten esim. lisäten tarttujia tai muuttaa jalan muotoa. Toimilaitteita voidaan ostaa tukkuna ja tietokoneyksikkö voidaan valita käyttäjän kriteerien mukaan. Kriteereitä voivat olla laskentateho, lämpöominaisuus, hinta ja saatavuus. Laitteiston joustavuus vaati myös mukautuvan ohjelmiston, jotta kaikki mahdollisuudet voidaan hyödyntää. Käyttämällä ROS-väliohjelmistoa saadaan kehysympäristö, joka selvästi erottaa ja toteuttaa yleisesti käytetyn alemman tason laiteohjauksen ja useita abstraktiokerroksia. (Ficht, et al., 2020) 
 
@@ -785,6 +822,7 @@ ROS 20-pohjainen ohjelmisto (Kuva  ) kehitettiin humanoidijalkapallo sovelluksek
 
 ![nimbro](/assets/images/nimbro_arkkitehtuuri.png)
 ##### Yksinkertaistettu ROS arkkitehtuuri (Ficht, et al., 2020)
+<p>&nbsp;</p> 
 
 Jokainen robotti voidaan käynnistää ja konfiguroida suoraan robotin tietokoneen SSH-istunnon (Secure Shell) komentoriviltä. Toiminnan yksinkertaistamiseksi robotti isännöi hostaa? verkkosovellusta ja siihen pääsee minkä tahansa laitteen verkkoselaimen kautta. Sisäänrakennetun päätelaitteen avulla robotin täysi hallinta voidaan saada riippumatta käyttöjärjestelmästä. (Ficht, et al., 2020) 
 
@@ -805,6 +843,7 @@ Kasvojentunnistusohjelmistot PoseNet sekä OpenCV tunnistavat henkilön ja ohjaa
 
 ![sophia](/assets/images/Sophia.png)
 ##### Sophian avainkomponentit (Imran, 2021)
+<p>&nbsp;</p> 
 
 Uusin sovellusalusta Sophia2020 (Kuva  ) käyttää avoimessa luovassa työkalusarjassa ilmeikkäitä ihmisen kaltaisia robottikasvoja, käsivarsia, liikkumiskykyä sekä ML:n neurosymbolisia AI-vuoropuheludialogeja, NLP- (Neuro-Linguistic Programming) ja NLG-työkaluja (Natural-language Generation). (Imran, 2021) 
 
@@ -812,11 +851,13 @@ Kehitettäessä uusia ihmisen innoittamia kognitiivisia koneoppimisen neuroarkki
 
  ![sophia](/assets/images/keinoiho.png)
  ##### Spontaanisti kasaantuva huokoinen polysiloksaani emulsio keinoiho (Imran, 2021)
+ <p>&nbsp;</p> 
 
  Perinteisten jäykkien kosketusanturien koettiin estävän Flubberin joustavuutta, joten uuden Flubber-ihon myötä kehitettiin yhteensopiva polymeerinen pehmeä venymä- ja paineanturi, joustavilla suorakulmaisilla polymeerimikronestekanavilla (Kuva  ). Resistiivisyyden muodostamiseksi polysilokaanialusta on täytetty nestemäisellä metallilla. Anturia painettaessa tai venyttäessä muuttaa mikrofluidikanavien muodonmuutos vastusta suhteellisesti. (Imran, 2021) 
 
 ![sophia](/assets/images/flubber.png)
 ##### Flubber-polysiloksaaniemulsioon upotettu mikrofluidinen paineanturi (Imran, 2021)
+<p>&nbsp;</p> 
 
 Alustalle kehitettiin suhteellisen edullisesti uudenlaiset 14 DoF-robottikäsivarret inhimillisillä mittasuhteilla ja sijainnilla, jokaisen nivelen voimantakaisinkytkennällä sekä kaikilla käden vapausasteen elastisilla toimilaitteilla. Käsivarsille ja käsille kehitettyjä toimintoja ovat mm. PID-säätö (Proportional-integral-derivate), servomoottorit 360° asennon ohjauksella, URDF-mallit useissa liikkeenohjausympäristöissä kuten Roodle, Gazebo sekä MoveIt, sekä ROS API:iin sidotut voimantakaisinkytkentä ohjaimet, IK (Inverse Kinematic) ratkaisimet sekä PID-silmukat yhdistäen klassisen liikkeenohjauksen tietokoneanimaatioon. (Imran, 2021) 
 
@@ -866,6 +907,7 @@ Sensible 4 on Espoossa sijaitseva palkittu start-up joka suunnittelee ja kehitt�
 
 ![Gacha](/assets/images/Gacha bussi.png)
 ##### Gacha, autonominen linja-auto
+<p>&nbsp;</p> 
 
 LiDAR-pohjainen paikannusohjelmisto suodattaa poikkeukset kuten lumen, sateen tai sumun, sallien näin etenemisen ilman kaista- tai maamerkkejä. Jotta saavutetaan todella tarkka paikannus olosuhteista riippumatta, käytetään omaa 3D-kartoitusta ja karttapohjaista lokalisointialgoritmia. LiDAR:in antamista 3D-tiedoista luodaan ympäristökartta, mutta sen sijaan, että käytettäisiin raakaa valotutkan antamaa dataa tai tunnistettaisiin datan antamat fyysiset piirteet, esitetään ympäristö nk. ”tilastomatemaattisena tilavuusjakautumana”. Erilaisia antureita käyttämällä havaitaan ja tunnistetaan esteet jopa näkyvyyden ollessa heikko. Esteiden havaitseminen perustuu monimuotoantureiden dataan ja omaan paikannusjärjestelmään, joka antaa sekä ajoneuvon tarkan sijainnin että 3D-mallin ympäristöstä. Havaitut esteet luokitellaan syväoppimisen avulla omiin kategorioihinsa sijainnin, koon tai nopeuden mukaan samalla ennustaen tulevan liikkeen. Lopuksi havainnot integroidaan monikohdeliikenteenseurantaan tarjoten näin parhaan mahdollisen tilannetietoisuusennusteen ohjausjärjestelmälle. (sensible4, 2019) 
 
@@ -887,6 +929,7 @@ Kotipaikkaa Vantaalla pitävä pohjoismainen ohjelmistokonserni Solteq Oyj on vu
 
 <img src="/assets/images/retail-robo.PNG" width="350" height="300"/>
 ##### Solteq Retail Robot  
+<p>&nbsp;</p> 
 
 Toinen Solteqin ROS-projekti on Helsingin ja Uudenmaan sairaanhoitopiirin (HUS) pilotoima ohjelmistorobotti, joka lukee urologian lähetekeskukseen saapuneita lähetteitä. Kannustavien tuloksien mukaan koneoppimiseen perustuvan lajittelun avulla hoitajien työaikaa säästyy 2-3 tuntiä päivässä. HUS:in mukaan tämä auttaa potilaita pääsemään nopeammin hoitoon. (Sallinen, 2020)
 
@@ -897,17 +940,20 @@ ZenRobotics Ltd. perustettiin vuonna 2007 ja se on maailman johtava älykkäiden
 
 <img src="/assets/images/Zenrobotics.PNG" width="550" height="400"/>
 ##### Zenrobotics lajitteluaseman infografiikka (Zenrobotics)
+<p>&nbsp;</p> 
 
 Heavy Picker käyttää NIR-antureita (Near-Infrared), 3D-lasertunnistinjärjestelmää, korkea resoluutioista RGB-kameraa, kuvantavaa metallinpaljastinta ja valosensoreita. Tämä markkinoiden vahvin jätteenkäsittely robotti on tarkoitettu raskaille ja isoille esineille kuten rakennusmateriaalit, puu, metalli ja jäykkä muovi. Robotti kykenee erottamaan jopa 30 kg painavat esineet ja sen tarttuja aukeaa 500 mm. Se voidaan myös varustaa yhdestä kolmeen robottikäsivarrella, joiden yksilöllinen poimintanopeus on 2 000 kpl/h. (Bogue, 2019)​ 
 
 <!-- <img src="/assets/images/heavy_picker.PNG" width="550" height="400"/>-->
 ![zenrobot](/assets/images/heavy_picker.png)
 ##### Heavy Picker (ZenRobots)
+<p>&nbsp;</p> 
 
 Fast Picker puolestaan käyttää RGB-kameraa ja LED:ä. Fast Picker lajittelee kevyitä materiaaleja kuten paperi, muovi, pahvi ja pakkausmateriaalit. Siinä on vain yksi robottikäsivarsi, jonka hyötykuorma on 1 kg ja maksimi poimintanopeus on 4 000 kpl/h. (Bogue, 2019) 
 
 ![zenrobot](/assets/images/fast_picker.png)
 ##### Fast Picker (ZenRobots)
+<p>&nbsp;</p> 
 
 Jätteenkäsittelyrobotin käyttöliittymästä vastasi Vincit Oy, joka tuotti myös simulaation robotin toiminnasta. Vincit Oy puolestaan taas on Pirkanmaalainen yritys, jonka toimitusjohtaja Mikko Kuitunen voitti vuonna 2012 Työ- ja elinkeinoministeriön Timangi-kilpailussa vuoden nuoren yrittäjän tittelin ja 30 000 €. (Tervola, 2012) (Kuitunen, n.d) 
 
@@ -920,6 +966,7 @@ Autojen telematiikkaa, sähköistä ohjaustehostinta, automaattivaihteistoa sek�
 
 ![unikie](/assets/images/Unikie.png)
 ##### Unikie AI Vision toimii antureiden ja sovellusten aivoina (Unikie AI vision)
+<p>&nbsp;</p> 
 
 Unikien autonomiset ajo- ja ohjausratkaisut mahdollistuvat AI Visionin joustavilla ja monipuolisilla sovellusohjelmointirajapinnoilla. (Automated factory parking, n.d) 
 
@@ -934,11 +981,13 @@ ROS 2 ei ole saatavilla puhdasta RustDDS:seä (Rust Data Distribution Service)  
 
 ![rust](/assets/images/RustDDS.png)
 ##### Esimerkki ROS2-liitännästä DDS-moduulia käyttäen (Docs.rs, n.d.)
+<p>&nbsp;</p> 
 
 Rust tarjoaa saman suorituskyvyn kuin C++, mutta on huomattavasti vähemmän altis ohjelmointivirheille, mikä tekee siitä ideaalin robotiikan kriittisiin sovelluksiin. RustDDS julkaistaan Apache 2.0-lisenssinä, joka antaa oikeuden käyttää, kopioida, jaella, muokata, myydä, alilisensoida sekä tehdä johdannaisia. Ainoana vaatimuksena on tekijänoikeuksien sisällyttäminen ja muokattujen tiedostojen merkitseminen. RustDDS on saatavilla GitHubista, https://github.com/jhelovuo/RustDDS sekä crates.io:sta, https://crates.io/crates/rustdds 
 
 ![rust](/assets/images/rust_koodi.png)
 ##### Rustdds :: ros2::RosNode (docs.rs, n.d)
+<p>&nbsp;</p> 
 
 Koodi (Kuva ) sisältää tarvittavat lukijat ja kirjoittajat rosout- ja parametritapahtumien aiheisiin sisäisesti luoden ROS2 aiheen ja hoitaa tarvittavat konversiot DDS:sestä ROS2. Atostekilla on omat ROS 2 konsultointipalvelunsa, joihin kuuluvat ohjelmistokehitys, etenemissuunnittelu, käyttöönottoavustus, konseptitodistus sekä demo sovellus. (Atostek , n.d) 
 
@@ -965,11 +1014,13 @@ The Hamlyn Centre for Robotics Surgery, Imperial College Lontoossa on yksi kuude
 
 ![Kirurgirobo](assets/images/Kirurgirobot.png)
 ##### Orjarobotin CAD malli MRRP:lle (Zhang & al., 2019)
+<p>&nbsp;</p> 
 
 Orjarobotin kinemaattinen ohjaus perustuu SmarPod API:iin (Application Programming Interface) (Kuva   ). Modulaarista ohjausjärjestelmää käytetään ohjaamaan orjarobottimanipulaattorien pietsomoottoreita samalla kun alemman tason muodostavat kaksi harjatonta DC moottorinohjainta käytetään ohjaamaan moottoroituja mikroatuloita. Suuntauksen ohjaamiseksi ohjausjärjestelmällä voi olla 1 kHz näytteenottotaajuus. 
 
 ![Ohjelmistoarkkitehtuuri](/assets/images/Ohjelmistoarkkitehtuuri.png)
 ##### Ohjelmistoarkkitehtuuri MRRP:lle (Zhang & al., 2019)
+<p>&nbsp;</p> 
 
 Järjestelmässä käytetään ROS väliohjelmistoa MRRP yhteyden luomiseksi. He kehittivät ROS-to-SmarPod API-sillan komponenteilla, jotka julkaisevat robotin tilat ROS-sanomina. Reaaliaikainen kinemaattinen ja visuaalinen data voidaan tilata ROS-viesteinä korkeatasoisen apuprosessin saamiseksi. Päämanipulaattorin ohjauskomennot, joita järjestelmä tuottaa ihmisten tai älykkään järjestelmän välityksellä voidaan julkaista ROS topiceina jotta MRRP- robotin päätelaite saadaan asetettua haluttuun asentoon karteesisessa tilassa. Kädessä pidettävällä isäntäohjaimella operatiiviset käskyt generoidaan OpenCV:hen perustuvalla liikkeenseuranta moduulilla. Laskenta ja käsittely on toteutettavissa Python, C++ ja C-ohjelmointikielillä. Käyttöliittymien kehittäminen mahdollistuu QT-pohjaisella GUI:lla. (Zhang, et al., 2019) 
 
@@ -980,11 +1031,13 @@ Saksassa sijaitseva Soutwest Research Institute:n (SwRI) ROS Industrial-tiimi ke
 
 ![Hitsauskoe](/assets/images/Hitsauskoe.png)
 ##### Kokeellinen hitsausmenetelmä (SwRI, 2020)
+<p>&nbsp;</p> 
 
 Järjestelmä etenee käyttäen ROS-työkaluja. Aluksi kameraohjain toimittaa värillisen pistepilven TSDF-solmulle (Truncated Signed Distance Field), joka rekonstruoi ympäristön geometrian. Samalla pistepilviä huomioiva solmu erottelee pikseliin kohdistetun 2D-kuvan pistepilvestä ja lähettää sen ROS-palvelun kautta satunnaisille 2D-tunnistimille, joka palauttaa naamion, jossa on leima jokaiselle kuvapikselille. Näitä leimoja uudelleen värjätään pistepilven merkitsemiseksi. Tulokset voidaan yhdistää avoimen lähdekoodin octomap_serveriä käyttämällä. Skannauksen lopussa YAK-kirjasto toimittaa 3D-verkon ympäristöstä ja octomap antaa octomapin, joka on väritetty semanttisilla leimoilla. Tesseract-törmäyksen tarkistusrajapintoja voidaan käyttää havainnoimaan kolmioverkkoon liittyvät vokselit, jolloin geometrinen verkko lisätään semanttiseen dataan. (Powelson, 2020) 
 
 ![Hitsikuvat](/assets/images/Hitsikuvat.png)
 ##### Vasemmalla näkyy 2D kuva ja havaittu sauma. Oikealla näkyy 3D-verkko ja yhdistetty 3D havaittu hitsaussauma (SwRI, 2020)
+<p>&nbsp;</p> 
 
 <p>&nbsp;</p>  
 ## Ascento: kaksipyöräinen hyppäävä robotti
@@ -996,6 +1049,7 @@ Sveitsissä joukko insinööriopiskelijoita ETH (Eidgenössische Technische Hoch
 
 ![Topologia](/assets/images/Topologiset.png)
 ##### Topologialla optimoitu osa (Ascento, 2020)
+<p>&nbsp;</p> 
 
 Jalkojen optimoitu geometria erottaa ajo- ja hyppyliikkeet antaen näin robotin taipua erilaisissa tippumisskenaarioissa. LQR (Linear Quadratic Regulator) kontrollerilla saavutetaan vakaa ajo. Palautuakseen erilaisista hyppy- tai tippumisliikkeistä robotti käyttää peräkkäismyötäkytkentäistä säätökontrolleria, jossa on takaisinkytkennän seuranta. Ascentossa on keskusyksikkönä Intel NUC i7, IMU (Inertial Measurement Unit) sekä mikrokontrolleri mahdollistamaan yhteydenpito tietokoneen ja IMU:n välillä. Moottorien virrankulutukseen on akku, joka koostuu neljästä sarjaan kytketystä kolmekennoisesta litiuminonipolymeeriakusta (LiPO). Tietokone ja muut elektroniset laitteet saavat virtansa neljäkennoisesta LiPO akusta. Ohjelmiston on oltava laskennallisesti tehokas, jotta suuren kaistanleveyden ohjaimet mahdollistuvat. Kaikki ohjelmistot on kirjoitettu C++:lla. ROS:sia käytetään korkean tason viestintään. Kalman suodatin toimii IMU:n ja moottorin kooderi mittauksista saaduilla anturitiedoilla. Ascentoa voidaan kauko-ohjata, mutta se voi myös operoida täysin autonomisesti käyttäen kameroita ja antureita. Se painaa 10.4 kg ja sen huippunopeus on 8 km/h. Suurin mahdollinen hyppykorkeus on 0.4 m ja operointiaika on n. 1,5 h. (Coxworth, 2020) (Klemm, ym., 2019) 
 
@@ -1006,16 +1060,19 @@ Saksassa sijaitseva Hohenheimin yliopisto kehittää autonomista hedelmäpuiden 
 
 ![hedelma_robo](/assets/images/hedelma_robo.png)
 ###### Hedelmäpuun leikkausrobotti (Universität Hohenheim youtube, 2021)
+<p>&nbsp;</p> 
 
 Kolme tutkijaa asensi jo olemassa olevaan mobiiliprototyyppiin teollisissa tuotantolinjoissa käytetyn robottikäsivarren, jolla on monta vapausastetta. Robottikäsivarteen on asennettu kamera ja erityisiä antureita, jotka auttavat navigoimaan ja tunnistamaan puita ja niiden muotoja. LiDAR:lla skannataan ympäristöä ja mitataan etäisyyttä esineisiin. (Scott, 2021) (Stuhlemmer, 2021) 
 
 ![hedelma_robo](/assets/images/3D-malli.png)
 ##### Robotin ottama 3D-malli (Universität Hohenheim youtube, 2021)
+<p>&nbsp;</p> 
 
 Monista yksittäisistä etäisyysmittauksista luodaan pistepilvi, joka kuvaa puun kolmiulotteista rakennetta. Saatu kuva tallennetaan analysointia varten (Kuva ). 
 
 ![hedelma_robo](/assets/images/erikoisaisa.png)
 ##### Erikoisvalmisteinen aisa (Universität Hohenheim youtube, 2021)
+<p>&nbsp;</p> 
 
 Erikoisvalmisteisen aisan (Kuva  ) avulla teleskooppivarteen kiinnitetyn moottorisahan asentoa voidaan siirtää oikeaan leikkausasentoon. Tutkijat opettavat parhaillaan tietokonetta sijoittamaan saha oikeaan paikkaan. Puulajista ja määräpaikasta riippuen on olemassa erilaisia leikkaustapoja. Käyttäjän pitäisi myöhemmin kyetä valitsemaan karsitaanko vain oksia vai lyhennetäänkö runkoa, jolloin saadaan puu haarautumaan enemmän. Robottia on edelleen ohjattava manuaalisesti, mutta pitkän aikavälin tavoite on, että se toimisi itsenäisesti ja kykenisi leikkaamaan oksia jopa 7 m korkeudesta. (Scott, 2021)  (Stuhlemmer, 2021) 
 
@@ -1032,6 +1089,7 @@ Jotta Euroopan teollisuus pysyy kilpailukykyisenä maailmanlaajuisesti, on sen o
 
 ![horse](/assets/images/horse.png)
 ##### Tuotantolaitokset ympäri Eurooppaa (HORSE, n.d.)
+<p>&nbsp;</p> 
 
 HORSE-kehys perustuu RAMI-arkkitehtuurimäärityksiin (Reference Architectual Model Industrie) ja on yhteensopiva IoT:in arkkitehtuurin ja sen konseptien kanssa. Se tarjoaa viitearkkitehtuurista suunnitelmaa kyberfyysisen järjestelmän sekä teknologisen asemoinnin yhdistämiseen. Hybridituotanto integroi ihmisen ja robotin toimijat saumattomasti pystysuuntaisiin tuotantosoluihin kytkettynä vaakasuoraan alusta loppuun tuotantoprosessiin. (HORSE, n.d.) 
 
@@ -1045,11 +1103,13 @@ Robert Bosch España, Fábrica de Castellet valmistaa lasinpyyhkijöiden kokoonp
 
 ![horse](/assets/images/lasinpyyhkija.png)
 ##### Lasinpyyhkijöiden kokoonpano sekä toimituslaatikko (HORSE, n.d.)
+<p>&nbsp;</p> 
 
 Jokainen tuote on visuaalisesti tarkistettava ja asetettava toimituslaatikkoon (Kuva  ). Prosessi on pysynyt manuaalisena (Kuva  ) työntekijöiden joustavuuden ja sopeutuvuuden vuoksi. Työ aiheuttaa terveysvaaroja ja -ongelmia, jotka vahingoittavat selkää, ranteita sekä vahingoittaa käsivarsia ja sormia. (HORSE, n.d.) 
 
 ![horse](/assets/images/tyoasema.png)
 ##### Manuaalinen työasema (HORSE, n.d.) 
+<p>&nbsp;</p> 
 
 Boschin, KUKA:n, TUE:n (Eindhoven University of Technology), TUM:in (Technical University of Munich) ja TNO:n (the Netherlands Organisation for applied scientific research) asiantuntijat ovat suunnitelleet HORSE-projektiin robottijärjestelmän, jossa ei ole aitoja. Se noutaa tuotteen, tarkistaa laadun ja sijoittaa oikealla tavalla toimituslaatikkoon. Ihmisten ja robottien välistä yhteistyötä ohjataan ja valvotaan valmistusprojektin hallintajärjestelmällä. Järjestelmän avulla varmistetaan oikea toimintajakso. Turvallisuutta on lisätty FZI:n solunvalvontajärjestelmällä. (HORSE, n.d.) 
 
@@ -1057,8 +1117,10 @@ Projektin haasteita olivat mm. käyttäjän turvallisuus ja tuotteiden laatu vaa
 
 ![horse](/assets/images/linjasto.png)
 ##### HORSE ratkaisu linjaston pullonkaulaan (HORSE n.d.)
+<p>&nbsp;</p> 
 
 Ratkaisusta saatuja hyötyjä ovat: pienentyneet stressikuormat käyttäjille, parantuneet työolot, fyysisten vammojen riskien minimointi sekä parantunut joustavuus. HORSE kykenee järjestämään tuotantolinjat nopeasti uudelleen ja vaihtamaan osien kokoonpanon ja niihin liittyvien tuotantotyökalujen sijainnin. Tuotannon seisauksien kesto uudelleenkonfigurointia varten lyhenee. Lisäksi projektin hyötyjä voidaan potentiaalisesti kopioida BOSCH:in tehtailla ympäri maailman. (HORSE, n.d.) 
+<p>&nbsp;</p> 
 
 #### Robot-human hybrid position/force control co-working applications (Odlewnie Polskie SA) 
 
@@ -1066,6 +1128,7 @@ Odlewnie Polskie tuottaa vuosittain n. 16 tuhatta tonnia valurautavaluja, joiden
 
 ![horse](/assets/images/valun_viimeistely.png)
 ##### Valun viimeistelyä manuaalisesti. (HORSE, n.d.)
+<p>&nbsp;</p> 
 
 HORSE-sovelluksen yhtenä haasteena oli automatisoida toiminta ja tehdä prosessista nopeampi, tehokkaampi ja parantaa työtekijöiden oloja. Toinen haaste oli saada automaatio kattamaan tuo yli 900 tuotteen valikoima. Sovelluksen avulla halutaan myös lisätä joustavuutta, konfiguroitavuutta sekä yleistä turvallisuutta. Keskittymällä suoraan tuotanto-organisaation rajapintaan OSGI:n (Open Service Gateway Initiative) ja ROS:n kautta ihmisten ja robottien yhteistyötä pyritään organisoimaan, jotta kriittisimpiä vaiheita voidaan suorittaa turvallisemmin. (HORSE, n.d.) 
 
@@ -1073,6 +1136,7 @@ Projektin haasteita olivat valuraudan leikkausprosessin automatisointi laadun ja
 
 ![horse](/assets/images/autosiistiminen.png)
 ##### Metallivalujen automatisoitu siistiminen (HORSE, n.d.)
+<p>&nbsp;</p> 
 
 Ratkaisun tuomia hyötyjä ovat olleet vähentynyt työntekijöiden tarve, parantunut kappaleiden laatu ja lyhentynyt tuotantoaika, työolojen merkittävä parantuminen sekä korkean teknologian mukanaan tuoma parempi asema valimomarkkinoilla. (HORSE, n.d.)  
 
@@ -1082,16 +1146,18 @@ Thomas Regout International BV on hollantilainen räätälöityjen teleskooppiki
 
 ![horse](/assets/images/teleskooppikisko.png)
 ##### Teleskooppikisko (HORSE, n.d.)
+<p>&nbsp;</p> 
 
 Kiskojen profiilit on valmistettu teräskeloista ja korroosion estämiseksi ne pintakäsitellään. Käsittelyä varten kiskot on kerrostettava yksi kerrallaan. Kiskot asetellaan räkkiin manuaalisesti koska niiden mitat ovat hyvin erilaisia (Kuva  ). (HORSE, n.d.) 
  
 ![horse](/assets/images/pintakasittely.png)
 ##### Kiskojen asettelu pintakäsittelyä varten. (HORSE, n.d.)
+<p>&nbsp;</p> 
 
 Työvoiman tarve on suuri ja työllä on suuri fyysinen vaikutus sen tekijöihin. HORSE-kehys ja robottisovellus toimivat samalla alueella ihmisten kanssa keräten profiileja räkkiin. Yhteistyökumppaneina toimineiden TNO:n ja TRI:n asiantuntijat ovat suunnitelleet ratkaisussa käytetyn KUKA:n robottikäsivarren. Valmistusprosessimalli on suunniteltu seuraamaan tuotantoa ja jakamaan tehtävät vuorotellen työntekijälle ja robotille. Tuotantosolua valvotaan antureilla, jotka varoittavat työntekijää ja turvallisuusinsinööriä, mikäli jokin riski havaitaan. (HORSE, n.d.) 
 
 Projektin haasteita olivat mm. miten tuetaan TRI:n yritysstrategiaa kasvattamalla joustavuutta ja vähentämällä tuotantokustannuksia, työntekijäportaan visuaalinen hallinta, mikäli MES (Manufacturing Execution System) ei riitä, Pick & Place yksikön korvaaminen aidattomalla älyrobotilla, raskaan työn kuormituksen vähentäminen korvaamalla ihmiset robotilla sekä miten vähentää työkalujen valmistelun vaatimaa kokemusta AR:n avulla. Ongelmiin kehitettiin ratkaisuja kuten eri osien automatisoitu koukkuihin ripustus samanaikaisesti ihmisen kanssa, AR-tuki tuotantotyökalujen kokoamiseen ilman kokemusta, seuranta, organisointi sekä suunnittelutuki joustavan ja tehokkaan tuotannon mahdollistamiseksi. Tapauskohtaisia hyötyjä ovat olleet lyhentyneet vaihdot ja vaihtoon kuluva kokonaisaika, tehostunut tuotannon hallinta sekä ihmisten vähentynyt työmäärä. Kokonaisuudessaan projekti on tuonut säästöjä kehitysvaiheeseen, vähentänyt kehityshankkeiden taloudellista riskiä ja luonut pääsyn korkean teknologian tietoon. (HORSE, n.d.) 
-
+<p>&nbsp;</p> 
 
 ### Sim2Log VR Mixed Reality Logistic Automation 
 
@@ -1099,22 +1165,27 @@ Kasvaneen verkkokaupan myötä logistiikkateollisuus kasvaa dynaamisesti. Siksi 
 
 ![sim2log](/assets/images/VR_AR.png)
 ##### Ohjelmointi VR / AR-simulointiympäristössä. (Sim2Log VR, n.d.)
+<p>&nbsp;</p> 
 
 Intuitiivisten ohjelmointikonseptien ja innovatiivisten syötemetodien, kuten TruGlove-ohjelmointikäsineen avulla robotit voidaan ohjelmoida ilman paljoakaan ennakko-osaamista. VR-simulaatiossa sovelluksia voidaan ensin suunnitella ja samalla arvioida niiden toteutettavuus (Kuva  ). Ajoitusta säätämällä voidaan määrittää jaksonaika ja siten simuloida kokonaisia prosesseja. Näin kehitetty ratkaisu voidaan siirtää suoraan todelliseen robottiin ja myöhemmin mukauttaa intuitiivisesti AR:n avulla. VR:ssä määriteltyjen liikeratojen toteutus oikeassa robotissa tehdään käyttämällä FZI Motion Pipelinea, ROS-ohjelmistoa, joka on kehitetty helpommaksi ja joustavammaksi roboteille, joissa on ROS-rajapinta. FZI Motion Pipeline tarjoaa käyttäjälle graafisen käyttöliittymän, jossa käytettävissä olevat liikeradat on lueteltu käyttöliittymään ja käyttäjä voi käyttää yksinkertaisia painikkeita liikeratojen lataamiseen, suorittamiseen ja muokkaamiseen. Mikäli liikeradan pistettä on muutettava voi käyttäjä syöttää halutun paikkatiedon tai käyttää robotin pendanttia asettamaan muutettu arvo ja tallentamaan se. Korkean tason määrittelyä varten on integroitu avoimen lähdekoodin käyttäytymismoottori FlexBE joka on myös toteutettu ROS:lla. FlexBE:ssä on graafinen käyttöliittymä, jonka avulla käyttäjän on helppo määrittää robotin työkulku yhdistämällä rakennuspalikat ilman ohjelmointia. Määrityksen tulosta voidaan käyttää oikealla robotilla. (BMBF, n.d.) 
 
 ![sim2log](/assets/images/sim2log_tiedonsiirto.png)
 ##### Järjestelmän ohjelmistoarkkitehtuuri ja komponenttien välinen tiedonsiirto. (Bolano, & al., 2020)
+<p>&nbsp;</p> 
 
 AR-sovellus on pääosin toteutettu Unityssä ja robottikomponenttien ohjauksessa on käytetty ROS:ia. Näiden kahden välinen viestintä on toteutettu käyttäen avoimen lähdekoodin ROS-ohjelmistokirjastoa. Kokonaisarkkitehtuuri näkyy kuvassa ____. Järjestelmässä on mahdollista myös simuloida vain kuljetinhihnalla liikkuvia osia, jolloin todellinen robotti reagoi sovelluksen käyttöliittymässä asetettujen muutosten mukaisesti. Mahdollisuus sisällyttää virtuaalirobotteja simulaatioon antaa käyttäjän arvioida lisävarusteiden tarvetta arvioimalla paras sijainti saavutettavuuden ja hyvien tulosten perusteella. (Bolano, et al., 2020) 
 
 ![sim2log](/assets/images/semi_virt.png)
 ##### Sim2Log VR: Uusien robottisovellusten semi-virtuaalinen suunnittelu ja validointi. (FZIChannel, 2020)
+<p>&nbsp;</p> 
 
 Järjestelmä on otettu käyttöön kokoonpanossa, jossa oli kuljetushihna sekä 6-DOF-käsivarsirobotti 2-sormitarttujalla (Kuva  ). Kiinteästi sijoitetusta kamerasta saatiin reaaliaikaista kuvaa halutusta kohdasta. Kokonaisuuden eteen asetettiin kosketusnäyttö, jotta käyttäjälle kyettiin visualisoimaan lisätty tapahtumapaikka yhdessä GUI:in kanssa. Näin saatiin linjan parametrejä helposti muutettua ja simuloitu robotti lisättyä asetuksiin. Jokaisesta muutoksesta laskettiin ja visualisoitiin tuloksena olevan linjan suorituskyky. Järjestelmää voitaisiin parantaa lisäämällä joustavuutta virtuaalikohteiden määrittelyyn sekä laajentamalla simulaatiossa käytettävää laitteistokirjastoa. AR-kuulokkeiden käyttö voisi tehdä virtuaalikoneiden esityksestä tehokkaamman ilman, että näyttöjä tai kädessä pidettäviä laitteita tarvittaisiin. (Bolano, et al., 2020) 
+<p>&nbsp;</p> 
 
 ### intelliRISK - Risk Aware Autonomous Robots 
 
 Vuodesta 2017 saakka on Arne Rönnaun johtama tiimi tutkinut järjestelmää, jonka avulla robotit kykenevät tekemään itsenäisiä päätöksiä avaruusoperaatioissa. Projektissa käytetään FZI:ssä kehitettyä LAURON V (Legged Autonomous Robot Neural Controlled) robottia, joka pystyy liikkumaan turvallisesti jopa epätasaisessa maastossa. Tähän saakka työryhmät ovat päättäneet robotin toiminnoista perustuen robotilta saatuihin tietoihin. Nykyisessä järjestelmässä kaikkia robotin käytettävissä olevia tietoja ei siirretä työryhmälle, joten niitä ei voida ottaa huomioon päätöksenteossa. IntelliRISK-projektin tarkoitus on kehittää järjestelmä, jonka avulla voidaan arvioida riskejä ja vaikuttaa tilanteisiin itsenäisesti. Järjestelmän älykkyys on äärimmäisen tärkeää varsinkin työtehtävissä, joissa tehtävän onnistuminen on tärkeämpää kuin laitteistolle mahdollisesti aiheutuvat vahingot.  Haasteena ei ole vain ulkoisten vaarojen havaitseminen vaan myös robotin itsensä kuluminen.  Järjestelmän avulla robotti kykenee tunnistamaan, arvioimaan ja ottamaan tietoisia riskejä sekä ilmoittamaan aikeistaan valvontaryhmälle. Ollessaan tehtävänsä alussa robotti voi toimia varovaisesti, mutta ollessaan tehtäviensä lopussa se saattaa tehdä rohkeampia päätöksiä. Järjestelmää voidaan käyttää myös muualla kuin avaruusmatkoilla. Riskitietoisuutta voidaan tulevaisuudessa käyttää myös Industrial 4.0-sovelluksissa, jolloin ihmisten ja robottien yhteistyöstä saadaan turvallisempaa ja onnettomuuksia estettyä. Katastrofien torjunnassa ja niistä toipumisessa robotti voi laittaa ihmisen hyvinvoinnin omansa edelle, jotta pelastaminen olisi mahdollista myös vaikeissa olosuhteissa. Tehtävän onnistumisen kannalta tärkeintä on siis tietää mitkä riskeistä ovat suurimpia. (FZI Research Center for Information Technology, n.d.) 
+<p>&nbsp;</p> 
 
 ### LAURON V Bio-Inspired Walking Robot 
 
@@ -1122,24 +1193,29 @@ Luonnosta inspiraation saaneen LAURON:in kehitys alkoi jo vuonna 1994. Robotti e
 
 ![lauron](/assets/images/lauron.png)
 ##### LAURON I vuodelta 1994. (ROBOTS, 2021)
+<p>&nbsp;</p> 
 
 Vuonna 2013 valmistui nykyisen sukupolven LAURON V (Kuva  ), joka esiteltiin IEEE ICRA:ssa (International Conference on Robotics and Automation) Karlsruhessa. Nykyisen työn kohteena ovat luonnon inspiroima kävelyanalyysi, navigointistrategia, autonomia, eturaajojen manipulointi sekä energiatehokkuus. Robotin 6 alkaa on kiinnitetty keskusrunkoon sisäisellä alumiinirungolla, johon mahtuu kaikki tarvittava elektroniikka. Se on kooltaan 0.9 m x 0.8 m x 0.84 m (pituus x leveys x korkeus). Jokaisessa jalassa on 4 niveltä mikä mahdollistaa jalkojen taivutuksen eteenpäin. Se kykenee suoriutumaan esteistä, joiden kaltevuus on 25° ja säilyttämään tasapainonsa 43° kaltevuudella. Etujalkoja voidaan käyttää myös manipulaattoreina, jolloin varsinaista käsivarsitarttujaa ei tarvita. Jaloissa on 4 tehokasta DC-moottoria ja sen kokonaispaino on 42 kg. Hyötykuorma robotilla on 10 kg ja se mahdollistaa huipputason prosessorin ja tehtäväkohtaiset anturit. Siinä on sisäisiä antureita kuten mm. mittatilauksena valmistettujen moottoriohjaimien virtamittaus, jousitettujen jalkojen potentiometrit sekä erittäin tarkka IMU vartalon asennon havaitsemiseen. Pääsensoreina toimivat ”Pan-Tilt Unit”:iin kiinnitetyt kaksi korkean resoluution kameraa ja kinect. Laite tosin kykenee suuren kokonsa vuoksi kantamaan melkein minkä tahansa anturin, jota tarvitaan suoriutumaan tietystä tehtävästä. Päätä voidaan liikuttaa pituus- ja sivuttaiskallistuksella, jolloin LAURON:lla on 26 vapausastetta. Käyttäytymiseen perustuvan hallintajärjestelmän avulla robotti kykenee selviytymään muuttuvasta ympäristöstä ja odottamattomista tapahtumista kuten liukastuminen tai jokin este. (Heppner, et al., 2015) (FZI , n.d.) (He & Gao, 2020) 
 
 ![lauron](/assets/images/lauronV.png)
 ##### LAURON V (He & Gao, 2020)
+<p>&nbsp;</p> 
 
 PlexNav (Planetary Exploration and Navigation Framework) on hybridiarkkitehtuuri, jossa FZI:in oman MCA2 (Modular Controler Architecture) kehyksen mukana käytetään ROS:ia. ROS:in tarjoama julkaisija/tilaaja kommunikointityyli helpottaa suuresti erilaisten komponenttien integrointia järjestelmään, jopa ajon aikana.  (Heppner, et al., 2015) 
 
 ![lauron](/assets/images/PlexNav.png)
 ##### PlexNav arkkitehtuurin rakenne. (Heppner, & al., 2015)
+<p>&nbsp;</p> 
 
 PlexNav koostuu kolmesta kerroksesta (Kuva ), joista ensimmäinen kerros koostuu robottikohtaisesta toteutuksesta joka LAURON:in tapauksessa on käyttäytymisperusteinen hallinta. Tähän kuuluu jalan liikkeiden hallinta, anturin antaman tiedon tulkinta sekä turvallisuuden seuranta. Siihen sisältyy myös abstraktiokerros, joka paljastaa ROS-rajapinnat ylemmille kerroksille ja mahdollistaa turvallisen pääsyn matalan tason toimintoihin. Toinen kerros puolestaan koostuu robotin yksilöllisistä taidoista. PlexNav:in jokainen taito on komponentti, joka tarjoaa tietyn osajärjestelmän kuten manipulointi tai ympäristön kartoitus. Viimeinen taso hoitaa tehtävän kokonaisuuden. Se tarjoaa komponentit, jotka hallitsevat tehtävän tilaa ja kutsuu paljastuneet ominaisuudet taitotasolta. Kaikki tasot voivat käyttää tai julkaista maailmanlaajuisesti saatavilla olevia tietoja. (Heppner, et al., 2015) 
+<p>&nbsp;</p> 
 
 ### ROBDEKON - Autonomous Handling of Hazardous Materials 
 
 Ihmiset joutuvat työskentelemään terveydelle haitallisissa ympäristöissä käsitellessään myrkyllisiä jätteitä, puhdistaessaan kemiallisesti saastuneita alueita tai vanhoja kaatopaikkoja sekä suljettaessa ydinvoimaloita. He ovat tekemisissä epäpuhtauksien sekä tulipalo-, räjähdys- tai ydinsäteily vaaran kanssa. Heidän suojaamisensa edellyttää monimutkaisia ja usein raskaitakin suojatoimenpiteitä. ROBDEKON tulee sanoista: ”Robotersysteme für die Dekontamination in menschenfeindlichen Umgebungen”, ja se tarkoittaa vapaasti käännettynä vihamielisen ympäristön puhdistamista robottien avulla. Se on osaamiskeskus, joka on omistettu autonomisten ja puoliautonomisten robottijärjestelmien tutkimukselle. Keskus kehittää robotteja, jotka voivat suorittaa ihmiselle vaarallisia tehtäviä itsenäisesti, jolloin ihmiset voivat pysyä poissa vaara-alueelta. Vuoden 2018 kesäkuussa alkanut projekti on saanut BMBF:ltä 12 miljoonan euron rahoituksen siviiliturvallisuuden hyväksi. Alkuperäinen toiminta on suunniteltu jatkuvan vuoteen 2022, mutta tavoite toki on, että osaamiskeskuksen toiminta voisi jatkua vielä tämänkin jälkeen. Projektissa ovat mukana Fraunhofer Institute for Optronics, System Technology and Image Exploitation IOSB sekä näiden lisäksi Karksruhen teknillinen instituutti (KIT), Saksan tekoälyn tutkimuskeskus (DFKI) ja FZI:n tietojenkäsittelytieteen tutkimuskeskus. (BMBF, n.d.) (FZI, 2019) 
 
 Tutkimuskohteita ovat mm. mobiilirobotit epätasaisessa maastossa, autonomiset rakennuslaitteet / koneet, manipulaattorien käyttö dekontaminaatioon, suunnittelualgoritmit, ympäristön monisensorinen 3D-kartoitus sekä teleoperointi VR:n avulla. Tekoälyn avulla robotit voivat suoriutua tehtävistä joko autonomisesti tai semiautonomisesti. Työ keskittyy aluksi kolmeen relevanttiin aihealueeseen: kaatopaikkojen ja pilaantuneiden alueiden kunnostamiseen, ydinlaitosten purkamiseen sekä laitoksen osien puhdistamiseen.  (BMBF, n.d.) 
+<p>&nbsp;</p> 
 
 ### Human Brain Project - Event-based Vision with Spiking Neural Networks 
 
@@ -1153,23 +1229,29 @@ Työn tuloksia ovat mm. järjestelmä, jolla ohjataan robottikättä (Schunk SVH
 
 ![human_brain](/assets/images/paakomponentit.png)
 ##### Pääkomponenttien konseptiarkkitehtuuri. (Tieck et al., 2018)
+<p>&nbsp;</p> 
  
 SNN:lla (Spiking Neural Network) luokiteltiin EMG-data ja laukaistiin liike refleksinä. Dataa saatiin tallentamalla ihmisen lihasten toimintaa Myo-liikkeentunnistimella (Kuva  ) , joka koostuu 8 tasavälein sijoitetusta lohkosta, joissa on 200 Hz näytetaajuuden omaavat EMG-anturit. (Tieck, et al., 2018) 
 
 ![human_brain](/assets/images/myo-liiketunnistin.png)
 ##### Myo-liikkeentunnistin ja 8 anturin aktiivisuus. (Tieck, et al., 2020)
+<p>&nbsp;</p> 
 
 Anturissa on indikaattori, jotta se voidaan sijoittaa aina samalla tavalla. Johdonmukaisen datan tallentamiseksi LED-valoilla varustettu segmentti on sijoitettava suunnilleen samaan asentoon. Pienillä vaihteluilla ei ole merkitystä koulutetun verkon käyttökelpoisuuteen. Raakojen sEMG-signaalien haku tapahtuu Python API:in avulla. Data muunnetaan piikeiksi ja signaalit luokitellaan, jotta aktiivinen sormi voidaan tunnistaa (Kuva  ). (Tieck, et al., 2018) 
 
 ![human_brain](/assets/images/datasetti.png)
 ##### Datasetti näyte 5 sormen harjoittelusta. Vasemmalta oikealle huiput kertovat sEMG:n aktivoitumisesta. (Tieck, et al., 2018)
+<p>&nbsp;</p> 
 
 Motorisen primitiivin avulla aktivointisignaalia käytetään laukaisemaan oskillaattori ja generoimaan liike. Tämän jälkeen primitiivillä kartoitetaan robotin kinematiikka ja piikit muunnetaan robotin moottorikomennoiksi (Kuva  ) Robotin käden ohjaamiseen käytetään virallista Schunk ROS-ajuria (Kuva  ). (Tieck, et al., 2018) 
 
 ![human_brain](/assets/images/arkkitehtuuri_sEMG.png)
 ##### Arkkitehtuuri sEMG-luokittelulla ja liikkeen aliverkoistoilla. Jokainen ympyrä edustaa piikkihermosolujen populaatiota. (Tieck et al., 2020)
+<p>&nbsp;</p> 
 
 Hermosolujen mallien luomiseen käytettiin NEF:ia (Neural Engineerin Framework) sekä Nengon ohjelmistopakettia. Ohjelmisto mahdollistaa laajojen SNN:ien luomisen hajottamalla verkot pienempiin osiin. Yhdistämällä kaikki erikseen optimoidut aliosat saadaan yksi suuri hermoverkko. (Tieck, et al., 2018) 
+<p>&nbsp;</p> 
+
 
 ### SeRoNet - B2B Plattform for Service Robotics  
 
@@ -1179,8 +1261,10 @@ Palvelurobottien käyttöalueet ovat moninaiset ja niiden sovelluksia on laidast
 
 ![seronet](/assets/images/SeRoNet.png)
 ##### SeRoNet ekosysteemi (Buchholz, et al., 2018) 
+<p>&nbsp;</p> 
 
 Robot.one ja xito.one sovellusalustalla laitteisto- ja ohjelmistovalmistajat voivat tulevaisuudessa kehittää komponentteja palvelurobotiikkaa varten ollen yhteydessä kaikkiin alan toimijoihin. Näin yritykset voivat verkostoitua ja työskennellä yhdessä ongelmien ratkaisemiseksi. (Buchholz, et al., 2018)
+<p>&nbsp;</p> 
 
 ### CAD-2-PATH - Intuitive Robot Teach in 
 
@@ -1188,8 +1272,10 @@ Robotin liikkeiden ohjelmointi on usein monimutkaista ja aikaa vievää. 2018 Ha
 
 ![cad-2-path](/assets/images/cad-2-path.png)
 ##### CAD-2-PATH piirretyn polun piirto (youtube FZIchannel, 2018)
+<p>&nbsp;</p> 
 
 Teollisten ROS-rajapintojen avulla voidaan ajaa pitkin luotuja polkuja kevyellä robotilla, jonka adaptiivisen, voimaan perustuvan säätelyn ansioista myös epätasaiset ja voimakkaasti kaarevat pinnat voidaan työstää.  Innovaatio nopeuttaa erityisesti hitsauksen, purseenpoiston sekä liimauksen toteutuksissa.  Intuitiivisessa verkkosovelluksessa ei tarvita CAD-tietoa vaan polkuja voidaan luoda ja säätää suoraan tuotannossa. (FZI, n.d.) (FZI, 2018) 
+<p>&nbsp;</p> 
 
 ### VIPER
 
@@ -1197,13 +1283,16 @@ olfauton kokoinen NASA:n kuumönkijä VIPER (Volaties Investigating Polar Explor
 
 ![viper](/assets/images/viper.png)
 ##### VIPER liikkuvuustestissä. (NASA, 2019)
+<p>&nbsp;</p> 
 
 Mönkijällä on edessään äärimmäisiä lämpötiloja ja sen laitteiston on kestettävä 260 °C vaihtelua auringonvalon ja varjon välillä. Akku, lämpöputket ja radiaattori auttavat estämään mönkijän osien jäätymisen tai ylikuumenemisen. Kuun ollessa paljon lähempänä maata kuin Mars, ei komentojen lähettämisessä mönkijälle ole paljoakaan viivettä. Marsin komennon viiveet ovat 10–20 minuutin luokkaa, kuuhun vie vain 6–10 sekuntia. Maan päällä olevat kuljettajat voivat siten käyttää VIPER:ia vuorovaikutteisesti. Koska tarkoitus on läpikäydä suuria alueita vaikeassa maastossa, ilman hyviä tiedustelukuvia kiertoradasta, antaa operaation tietokonesimulaatio (Kuva ) mahdollisuuden harjoitella kriittistä operaatiota ennen käynnistystä. Kuun maaperästä ei ole täyttä varmuutta eikä siis ole tarkkaa tietoa siitä onko maaperää kovaa, pehmeää vai jotain siltä väliltä. Siksi mönkijä on suunniteltu ennennäkemättömän ketteräksi. Se voi ajaa sivuttain, vinottain, pyöriä ympyrää tai liikkua mihin tahansa muuttamatta katsanto suuntaa. Mikäli se joutuu pehmeään maastoon, kykenee se liikuttamaan renkaitaan kuin se kävelisi. Kuussa on äärimmäiset valon ja pimeyden vaihtelut, ja ne tuottavat erittäin pitkiä ja nopeasti liikkuvia varjoja. Aurinkoenergialla toimivan mönkijän on vetäydyttävä näistä varjoista ja etsittävä oikeanlaista aluetta samaan aikaan kun se ylläpitää yhteyttä maahan. Pimeä jakso voi olla jopa yhden viikon mittainen, jolloin mönkijän on pysähdyttävä tunnistettavaan turvapaikkaan, jonka pimeys kestää vain 4 päivää. Tämä tekee reittien suunnittelusta monimutkaista. Mönkijän suunnittelijoilla onkin aivan uusi haaste rakentaa valaistus – ja kamerajärjestelmä, joka toimii kuun ankarissa olosuhteissa. (VIPER Mission Overview, 2020) 
 
 ![viper](/assets/images/Perseverance.png)
 ##### Mars Perseverance Rover Ignition Gazebossa. (Open Robotics: Posts| Linkedin, 2021)
+<p>&nbsp;</p> 
 
 Yhdessä mönkijältä saatujen tietojen kanssa MOC-tiimi (Mission Operations Center) käyttää NASA:n kehittämää verkkopohjaista tietojen visualisointialustaa nimeltä Open Mission Control Technologies. Open MCT-ohjelmisto on avointa lähdekoodia, joten se on vapaasti käytettävissä niin julkisen kuin yksityisen sektorin sovelluksissa. Tämä on yksi innovaatioista, joita VIPER tukee kehittyvässä avaruustaloudessa ja muualla, tarjoten näin kykynsä yritysten käyttöön. Ohjelmisto on jo lentänyt useilla NASA:n operatiivisilla missioilla ja se on tehty yhteistyössä NASA:n Pasadenassa Kaliforniassa sijaitsevan suihkumoottorilaboratorion Advanced Multi-Mission Operations System-järjestelmän kanssa. Yhteistyö teollisuuden kanssa vaikuttaa ohjelmiston käyttöjärjestelmän keskeisiin osa-alueisiin. Mukautetun koodin luomisen sijaan mönkijän lento- ja maanpintaohjelmistot käyttävät laajasti avoimen lähdekoodin ohjelmistoja kuten ROS 2. Kun tehtävä on ohi, VIPER-tiimin tarkoitus on julkaista mönkijän ohjelmisto vapaaseen käyttöön. Lähestymistapa mahdollistaa nopean, ketterän sekä kustannustehokkaan tavan kehittää mönkijän ohjelmistojärjestelmää, josta on hyötyä myös tulevaisuudessa. (VIPER, 2021) 
+<p>&nbsp;</p> 
 
 ### Näkövammaisten Smart Glass-älylasit 
 
@@ -1213,11 +1302,13 @@ Laskelmien mukaan maailmassa on lähes 16,3 miljoonaa näkövammaista ja heidän
 
 ![smartglass](/assets/images/nakovammaisvaesto.png)
 ##### Näkövammaisväestö Pohjois-Amerikassa, Euroopassa ja Japanissa. (Suresh, et al., 2018)
+<p>&nbsp;</p> 
 
 Antamalla älylasien avulla näkövammaisille käsityksen ympäröivästä maailmasta he voivat elää helpompaa, terveempää ja onnellisempaa elämää. Lasien prototyyppi koostuu Raspberry Pi Zerosta, luujohtovärähdyksellisestä kuulokkeesta, 1080p 25 FPS HD kamerasta, 2500 mAh akusta, ultraäänietäisyysmittarista, värinänauhasta, GSM-, GPS-, Bluethoot-Wi-fi-moduulista. Kaikkien laitteiden on oltava kytkettynä toisiinsa, jotta kommunikointi tapahtuu ilman merkittäviä viiveitä. (Suresh, et al., 2018) 
 
 ![smartglass](/assets/images/toimintaperiaate.png)
 ##### Älylasien toimintaperiaate. (Suresh, et al., 2018)
+<p>&nbsp;</p> 
 
 Lasien suunnittelu tehtiin PTC Creolla ja CAD-malli (Computer Aided Design) tallennettiin STL-muotoon (Standard Triangle Language), jonka jälkeen se viipaloitiin Ultimaker Cura-ohjelmalla. Tulostimena toimi Ultimaker 2+ ja materiaaliksi valikoitui ABS (akryylinitriilibutadieenistyreeni). (Suresh, et al., 2018) 
 
@@ -1230,6 +1321,7 @@ Projektissa käytetään syväoppimista MobileNetsin ja Single Shot Detectorin k
 Syväoppimisen kolme ensisijaista menetelmää ovat: Faster R-CNNs, (YOLO) sekä Single Shot Detectors (SSDs). Projektissa käytetään viimeksi mainittua, sillä se on tasapainossa CNNn ja YOLOn välillä. Tämä siksi, että se sisältää kaikki laskennalliset tiedot yhdessä verkossa, jolloin kohteen tunnistuksen vaativaa järjestelmää on helppo kouluttaa ja integroida. (Suresh, et al., 2018) 
 
 Käyttämällä MobileNetsiä vältetään perinteisten tapojen kuten ResNetin suuri koko (200–500 Mt). Perinteisen CNN:n ja MobileNetsin erona on MobileNetsiin sisällytetty syvyyssuuntaan erottuva konvoluutio. Konvoluutio jakautuu kahteen osaan: 3 * 3 syvyyskonvoluutio ja 1 * 1 pistekonvoluutio, joka vähentää verkon parametrien määrää, jolloin resurssitehokkuus säilyy. Arduinoon liitetyn GSM-, GPS- sekä puheentunnistusmoduulin avulla näkövammainen voi nopeasti hälyttää ennalta määrätyn kontaktin sekä ottaa yhteyttä hätäkeskukseen. Toteutusta aiotaan parantaa käyttämällä älypuhelinta, jolloin voidaan välttää GSM-, GPS- ja Raspberry Pi zero-moduulien käyttö. Käyttämällä jotain käytettävissä olevista alustoista kuten Google Assist, Siri, Cortana, Bixby tai Alexa voidaan äänikomennot toteuttaa edistyneemmin. Myös älylasien mallia ja kehystä aiotaan parantaa, jotta saavutetaan kompaktimpi muoto. (Suresh, et al., 2018) 
+<p>&nbsp;</p> 
 
 ### Neuroverkon ja ROS:in käyttö uhkien havainnointiin ja partiontiin 
 
@@ -1239,11 +1331,13 @@ Maramin, Vishnoin ja Pandeyn ohjelmistoarkkitehtuurin tavoitteena on kehittää 
 
 ![uhat](/assets/images/YOLO.png)
 ##### YOLO arkkitehtuurin käyttö (Maram, et al., 2019)
+<p>&nbsp;</p> 
 
 Neuroverkon opetus perustuu esikäsittelyvaiheessa piirrettyihin rajauslaatikkoihin. Opetus voidaan suorittaa joko kolmannen osapuolen pilviympäristössä tai GPU:lla, joka kykenee käsittelemään tietoja. Tuloksena saadaan painotettu tiedosto joka ajettuna rinnakkain YOLO:n kanssa, antaa mahdollisuuden välittää kuvia tai kehyksiä ja saada tietoa yleistä järjestystä häiritsevistä esineistä. YOLO algoritmilla stressitestattiin myös muita kognitiivisia palveluita kuten Tensorflowta sekä Microsoft Vision:ia käyttäen julkisesti verkosta saatavilla olevaa videota. Kuvasta __ nähdään vertailun tuloksia. (Maram, et al., 2019)  
 
 ![uhat](/assets/images/stressitestit.png)
 ##### Stressitestien vertailutuloksia (Maram, et al., 2019)
+<p>&nbsp;</p> 
 
 Johtopäätös oli, että YOLO-algoritmi antoi tarkempia ja luotettavimpia ennusteita eri olosuhteissa. Joissakin olosuhteissa tarkkuus on saattanut kyseenalaistua, mutta nopeus on reaaliaikaisen ennustamisen päätavoite. Simulaatio toteutettiin käyttäen ROS yhteensopivaa Turtlebottia, mutta mukautettu robotti toteutettaisiin käyttämällä kooderi DC-moottoreita, Kinectiä, haluttua pyörämäärää sekä yhtä Adafruit-moottorin ohjainta. (Maram, et al., 2019) 
 
