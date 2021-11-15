@@ -9,16 +9,16 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Rokokoo" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
-<meta property="og:description" content="Robotiikan koulutus kasvuyritysten ohjenuorana" />
+<meta name="description" content="SELVITYS ROS-ROBOTTIEKOSYSTEEMISTÄ" />
+<meta property="og:description" content="SELVITYS ROS-ROBOTTIEKOSYSTEEMISTÄ" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Rokokoo" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Rokokoo","description":"Robotiikan koulutus kasvuyritysten ohjenuorana","name":"Rokokoo","@context":"https://schema.org"}</script>
+{"@type":"WebSite","url":"http://localhost:4000/","headline":"Rokokoo","description":"SELVITYS ROS-ROBOTTIEKOSYSTEEMISTÄ","name":"Rokokoo","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=74578b246cb524b79dccc55382bca3f9b41cecec">
+    <link rel="stylesheet" href="/assets/css/style.css?v=88157f3d50c93c3464b841c15910052b491be094">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <!--[if lt IE 9]>
@@ -31,7 +31,7 @@
 
       <header>
         <h1>Rokokoo</h1>
-        <p>Robotiikan koulutus kasvuyritysten ohjenuorana</p>
+        <p>SELVITYS ROS-ROBOTTIEKOSYSTEEMISTÄ</p>
        
       </header>
       
@@ -51,79 +51,35 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <h1 id="johdanto">Johdanto</h1>
 
-<p>Vuoden 2019 lopussa maailma kohtasi maailmanlaajuisen COVID-19-pandemian. Pandemia on levinnyt hälyttävällä nopeudella ja taloudellinen toiminta on lähes pysähtynyt maiden asetettua tiukkoja liikkumisrajoituksia. Maailman kokema taloudellinen shokki on suurin vuosikymmeniin. Marraskuussa 2020 julkaistun Satakunnan-talous katsauksen mukaan 2020 keväällä joka 20.s työpaikka katosi. Satakunnan talouden tila oli kuitenkin alkanut heiketä jo aiemmin. Pandemia on siis syventänyt jo alkanutta taantumaa. Koko teollisuuden liikevaihto laski 3,3 %, viennin arvo laski 5,1 % ja henkilöstömäärä supistui 4,1 %. Automaatio- ja robotiikka-alojen liikevaihto putosi 5,5 % vaikka henkilöstömäärää lisättiin 4,5 %. Supistusta on kuitenkin tapahtunut selvästi vähemmän kuin Suomessa keskimäärin. Merkkejä talouden elpymisestä on kuitenkin jo nähty kuluvana vuonna. OECD:n taulukosta 1 nähdään Suomen ennustettu palautuminen pandemiaa edeltävälle tasolle. (The Global Economic…, 2020) (Vähäsantanen, 2020)</p>
+<p>Vuoden 2019 lopussa maailma kohtasi maailmanlaajuisen COVID-19-pandemian. Pandemia on levinnyt hälyttävällä nopeudella ja taloudellinen toiminta on lähes pysähtynyt maiden asetettua tiukkoja liikkumisrajoituksia. Maailman kokema taloudellinen shokki on suurin vuosikymmeniin. Marraskuussa 2020 julkaistun Satakunnan-talous katsauksen mukaan 2020 keväällä joka 20.s työpaikka katosi. Satakunnan talouden tila oli kuitenkin alkanut heiketä jo aiemmin. Pandemia on siis syventänyt jo alkanutta taantumaa. Koko teollisuuden liikevaihto laski 3,3 %, viennin arvo laski 5,1 % ja henkilöstömäärä supistui 4,1 %.  Automaatio- ja robotiikka-alojen liikevaihto putosi 5,5 % vaikka henkilöstömäärää lisättiin 4,5 %.  Supistusta on kuitenkin tapahtunut selvästi vähemmän kuin Suomessa keskimäärin. Merkkejä talouden elpymisestä on kuitenkin jo nähty kuluvana vuonna 2021. OECD:n taulukosta yksi nähdään Suomen ennustettu palautuminen pandemiaa edeltävälle tasolle. (The Global Economic…, 2020; Vähäsantanen, 2020.)</p>
 
 <p><img src="/assets/images/OECD.png" alt="Taulukko" /></p>
-<h5 id="palautuminen-pandemiaa-edeltävälle-tasolle-the-oecd-economic-outlook-2021">Palautuminen pandemiaa edeltävälle tasolle (The OECD Economic Outlook, 2021)</h5>
-<p>&nbsp;</p>
+<h5 id="taulukko-1-palautuminen-pandemiaa-edeltävälle-tasolle-the-oecd-economic-outlook-2021">Taulukko 1: Palautuminen pandemiaa edeltävälle tasolle (The OECD Economic Outlook, 2021)</h5>
 
-<p>Satakuntaliiton keväällä vuonna 2017 tekemä seutukierros Satakunnan kunnissa kertoo kuntien painottavan koulutusta, saavutettavuutta sekä kasvun mahdollisuutta. Kyselyssä nousivat esiin koulutuksen saatavuus, koulutuksen ja työvoiman kysynnän vastaavuus sekä korkeakoulutuksen turvaaminen ja kehittäminen. (Satakuntaliitto, 2017) Robotiikan koulutus kasvuyritysten ohjenuorana- hanke paneutuu kuntien esille nostamiin seikkoihin ja auttaa omalta osaltaan luomaan uutta osaamispääomaa ja levittämään sitä ajan myötä koko Satakuntaan. Hankkeessa kehitetty ROS-robottiekosysteemiin keskittyvä täydennyskoulutuskokonaisuus tuo merkittävän lisän alueen aikuiskoulutustarjontaan. Vastaavaa täysin maksutonta koulutusta ei Suomessa ole tarjolla. Muuntuvilla robotiikkaratkaisuilla luodaan yrityksille kaivattua kustannustehokkuutta sekä helpotetaan robotiikan kehittämistä tekemällä siitä nopeampaa ja yhteisöllisempää. Hankkeessa käytetty SAMK Yhteistyö Moodle on sähköinen koulutusalusta, joka mahdollistaa ajasta ja paikasta riippumattoman opiskelun, jolloin opiskelijat eivät ole sidottuja pendelöimään oman asuinalueensa ja Porin korkeakoulujen välillä.</p>
+<p>Satakuntaliiton keväällä vuonna 2017 tekemä seutukierros Satakunnan kunnissa kertoo kuntien painottavan koulutusta, saavutettavuutta sekä kasvun mahdollisuutta. Kyselyssä nousivat esiin koulutuksen saatavuus, koulutuksen ja työvoiman kysynnän vastaavuus sekä korkeakoulutuksen turvaaminen ja kehittäminen. (Satakuntaliitto, 2017) Robotiikan koulutus kasvuyritysten ohjenuorana- hanke paneutuu kuntien esille nostamiin seikkoihin ja auttaa omalta osaltaan luomaan uutta osaamispääomaa ja levittämään sitä ajan myötä koko Satakuntaan. Hankkeessa kehitetty ROS-robottiekosysteemiin keskittyvä täydennyskoulutuskokonaisuus tuo merkittävän lisän alueen aikuiskoulutustarjontaan. Vastaavaa täysin maksutonta koulutusta ei Suomessa ole tarjolla. Muuntuvilla robotiikkaratkaisuilla luodaan yrityksille kaivattua kustannustehokkuutta sekä helpotetaan robotiikan kehittämistä tekemällä siitä nopeampaa ja yhteisöllisempää. Hankkeessa käytetty SAMK (Satakunnan ammattikorkeakoulu) Yhteistyö Moodle on sähköinen koulutusalusta, joka mahdollistaa ajasta ja paikasta riippumattoman opiskelun, jolloin opiskelijat eivät ole sidottuja pendelöimään oman asuinalueensa ja Porin korkeakoulujen välillä.</p>
 
-<p>Robottikäyttöjärjestelmän kehittäminen edellyttää järjestelmien suunnittelutekniikoiden perusteellista tuntemusta, suunnittelutavoitteiden tuntemusta ja tiukkojen kehitysprosessien noudattamista. Avoimen lähdekoodin robotiikan syntyminen on mahdollistanut robotiikan kehittäjien ja toteuttajien omien robotiikkajärjestelmien kehityksen. Nämä perustuvat sisäisiin taitoihin sekä julkisesti saatavilla oleviin robotiikan väliohjelmiin, simulaattoreihin, kirjastoihin ja työkalupakkeihin. ROS:n suosio perustuu laajaan yhteensopivuuteen ja toimivuuteen muiden avoimen lähdekoodin hankkeiden kanssa. (Petrara, 2019)</p>
-
-<h4 id="selvityksestä">Selvityksestä</h4>
-
-<p>Selvitys on Satakunnan korkeakoulujen, Satakunnan ammattikorkeakoulun ja Tampereen yliopiston, yhteistyössä toteuttama Rokokoo – Robotiikan koulutus kasvuyritysten ohjenuorana-hanke (engl. The Robotics Training as a Guide for Growth Companies). Satakunnan ammattikorkeakoulua edustaa RoboAI tutkimuskeskus ja Tampereen yliopistoa puolestaan Porin yksikön DAO-tutkimusryhmä. Hankkeen avulla vahvistetaan samalla korkeakoulujen välistä yhteistyötä. Koulutus on suunnattu työssäkäyville tai työttömille työnhakijoille sekä pienille ja keskisuurille yrityksille. Se sisältää neljä eri kokonaisuutta:</p>
-
-<ul>
-  <li>
-    <p>ROS-peruskurssi, opitaan perusteet, joiden pohjalta voi aloittaa ROS-projekteja</p>
-  </li>
-  <li>
-    <p>ROS-tekoäly, esitellään tekoälyn käyttämistä ROS-projekteissa</p>
-  </li>
-  <li>
-    <p>ROS-mobiili, opitaan perustietoja autonomisten ajoneuvojen ohjelmointiin</p>
-  </li>
-  <li>
-    <p>ROS-teollisuus, esitellään perusteet, jotka on tiedettävä käytettäessä ROS-ympäristöä teollisuusrobottien kanssa</p>
-  </li>
-</ul>
-
-<p>Näiden kaikkien kurssien laajuus on 5 op, eli käytyään kaikki neljä eri kurssia opiskelija on voinut suorittaa yhteensä 20 op kokonaisuuden. Selvityksessä pyritään kertomaan koulutuskokonaisuuden järjestämisestä ja toteutuksesta sekä kerrotaan uusimmista liiketoimintamuodoista, alan tutkimuksesta ja kehityksestä. Lisäksi avataan mikä ROS on ja mitä kaikkea se pitää voi pitää sisällään.</p>
-
-<p>Luvussa 2 kerrotaan hankkeessa toteutetuista ROS-kursseista tarkemmin. Siinä avataan, miten hanketta on lähdetty toteuttamaan, mitä siinä on tehty ja selvitetään eri kurssien sisältöä kokonaisuudessaan.</p>
-
-<p>Luku 3 kerrotaan ROS-ekosysteemistä ja mainitaan mm. eri kirjastoista, tekoälystä ja konteista. Luvussa käydään myös läpi erinäisiä turvallisuusseikkoja, joita on syytä ottaa huomioon.</p>
-
-<p>Luvuissa 4 ja 5 mainitaan muutamia ROS-käyttöön soveltuvia antureita ja alustoja. Mainittakoon, että tässä esimerkkinä olevat laitteet eivät suinkaan ole ainoita soveltuvia vaan tarkoitus on antaa käsitys siitä, millaisista laitteista on kyse.</p>
-
-<p>Luku 6 sisältää erilaisia case-esimerkkejä maailmalta ja Suomesta. Luvussa esitellään teollisuusrobotteja, autonomisia ajoneuvoja ja mobiilirobotteja sekä avataan tietoisuutta humanoideista. Lisäksi luvussa mainitaan muutamia kaupalliseen- ja opetuskäyttöön tarkoitettuja robotteja.</p>
-
-<p>Luvussa 7 käydään läpi monenlaisia tutkimus ja kehityskohteita joihin ROS-ekosysteemiä on käytetty.</p>
-
-<p>Luvussa 8</p>
-
-<p>Luvussa 9</p>
-
-<p>Lopuksi luvussa 10 tehdään yhteenveto koko hankkeesta.</p>
-
-<h1 id="hankkeen-eteneminen-ja-toteutus">Hankkeen eteneminen ja toteutus</h1>
-
-<!-- Tähän sit teksti -->
+<p>Robottikäyttöjärjestelmän kehittäminen edellyttää järjestelmien suunnittelutekniikoiden perusteellista tuntemusta, suunnittelutavoitteiden tuntemusta ja tiukkojen kehitysprosessien noudattamista. Avoimen lähdekoodin robotiikan syntyminen on mahdollistanut robotiikan kehittäjien ja toteuttajien omien robotiikkajärjestelmien kehityksen. Nämä perustuvat sisäisiin taitoihin sekä julkisesti saatavilla oleviin robotiikan väliohjelmiin, simulaattoreihin, kirjastoihin ja työkalupakkeihin. ROS:in suosio perustuu laajaan yhteensopivuuteen ja toimivuuteen muiden avoimen lähdekoodin hankkeiden kanssa. (Petrara, 2019.)</p>
 
 <h1 id="robot-operating-system-ros">Robot Operating System, ROS</h1>
 
-<p>Vuonna 2007 Stanfordin Artificial Intelligence laboratoriossa ja Willow Garagen avustuksella kehitetty Robot Operating System (ROS) edustaa avoimen lähdekoodin politiikkaa ja on siten muodostunut yhdeksi suosituimmista ohjelmistokehyksistä robotiikassa. Se on suunniteltu hajautetuksi ja modulaariseksi, jotta käyttäjät voivat käyttää ROS:ia tarpeidensa mukaan. ROS-ekosysteemissä on yli 3000 pakettia ja siinä on vain laskettuna ne, jotka ihmiset ovat julkistaneet. ROS tukee mobiili-, teollisuus-, kirurgia- ja avaruusrobotiikkaa sekä autonomisia autoja. ROS on eräänlainen aarreaitta täynnä algoritmeja, ohjelmistoja, ajureita, toimintoja ja paljon muuta. ROS:in joustavuus pohjautuu sen kykyyn toimia informatiivisena perustana innovatiiviselle kehitykselle. Muokattavuutensa vuoksi ROS mahdollistaa käyttäjien omien suunnittelumallien käytön. Käyttäjäyhteisönsä jatkuvan kehittämisen ja lähdekoodin avoimuuden vuoksi ROS:in käyttö koetaan turvallisena ja luotettavana. (Is ROS For…, n.d.) (Vozel, 2019)</p>
+<p>Vuonna 2007 Stanfordin Artificial Intelligence laboratoriossa ja Willow Garagen avustuksella kehitetty Robot Operating System (ROS) edustaa avoimen lähdekoodin politiikkaa ja on siten muodostunut yhdeksi suosituimmista ohjelmistokehyksistä robotiikassa. Se on suunniteltu hajautetuksi ja modulaariseksi, jotta käyttäjät voivat käyttää ROS:ia tarpeidensa mukaan. ROS-ekosysteemissä on yli 3 000 pakettia ja siinä on laskettuna vain ne, jotka ovat ihmisten julkistamia. ROS tukee mobiili-, teollisuus-, kirurgia- ja avaruusrobotiikkaa sekä autonomisia autoja. ROS on eräänlainen aarreaitta täynnä algoritmeja, ohjelmistoja, ajureita, toimintoja ja paljon muuta. ROS:in joustavuus pohjautuu sen kykyyn toimia informatiivisena perustana innovatiiviselle kehitykselle. Muokattavuutensa vuoksi ROS mahdollistaa käyttäjien omien suunnittelumallien käytön. Käyttäjäyhteisönsä jatkuvan kehittämisen ja lähdekoodin avoimuuden vuoksi ROS:in käyttö koetaan turvallisena ja luotettavana. (Is ROS For…, n.d.; Vozel, 2019.)</p>
 
 <p><img src="/assets/images/Kasvuodotukset.png" alt="Taulukko" /></p>
-<h5 id="ros-kasvuodotukset-vuoteen-2027-researchandmarkets-2021">ROS kasvuodotukset vuoteen 2027 (Researchandmarkets, 2021)</h5>
+<h5 id="taulukko-2-ros-kasvuodotukset-vuoteen-2027-research-and-markets-2021">Taulukko 2: ROS kasvuodotukset vuoteen 2027 (Research and Markets, 2021)</h5>
+
+<p>ROS markkinoiden odotetaan kasvavan vuoden 2020 arvioidusta 216,6 M$:sta tarkistettuun 356,8 M$:iin vuoteen 2027 mennessä (Taulukko 2). Sen vuotuinen CAGR (Compaund Annual Growth Rate) tällä aikajaksolla olisi täten 7,4 %. COVID-19 pandemian aiheuttaman ekonomisen kriisin vuoksi CAGR:in on arvioitu tippuvan 7,1 %. Tutkimus- ja kehitystyöhön liittyvät teollisuus automaation varat, yhteistyössä toimivien modulaaristen robottien lisääntyvä käyttö sekä RaaS (Robotics-as-a-Service) kasvava kysyntä ennustavat edullisten ROS teollisuusrobottien käyttöönottoa. (Markets and markets, 2019; Research and Markets…, 2021.)</p>
 <p>&nbsp;</p>
 
-<p>ROS markkinoiden odotetaan kasvavan vuoden 2020 arvioidusta 216,6M $:sta tarkistettuun 356,8M $:iin vuoteen 2027 mennessä (Taulukko  ). Sen vuotuinen CAGR (Compaund Annual Growth Rate) tällä aikajaksolla olisi täten 7.4 %. COVID-19 pandemian aiheuttaman ekonomisen kriisin vuoksi CAGR:in on arvioitu tippuvan 7.1 %. Tutkimus- ja kehitystyöhön liittyvät teollisuus automaation varat, yhteistyössä toimivien modulaaristen robottien lisääntyvä käyttö sekä RaaS (Robotics-as-a-Service) kasvava kysyntä ennustavat edullisten ROS teollisuusrobottien käyttöönottoa. (Markets and markets, 2019) (Research and Markets…, 2021)</p>
-
-<p>&nbsp;</p>
 <h2 id="ros-1">ROS 1</h2>
 
-<p>Kun lähdetään toteuttamaan uutta robottisovellusta, on viestintäjärjestelmä yksi ensimmäisistä tarpeista. ROS:ia käytetään monissa robottiympäristöissä ja monien antureiden, ohjaimien ja moottoreiden on kommunikoitava keskenään, lähetettävä ja vastaanotettava tietoja haluttujen tehtävien suorittamiseksi. ROS:in sisäänrakennetulla ja hyvin testatulla viestintäjärjestelmällä säästetään aikaa ROS:in toimiessa hajautettuna arkkitehtuurina, joka käyttää julkaisija (engl. publisher)/tilaaja (engl. subscriber) -viestejä solmujen (engl. node) välillä. Jokaisella solmulla on yksi, tai useampia aiheita (engl. topic) tai palveluita (engl. service), jotka ovat irtautuneet ja joita voidaan käyttää uudelleen. Esimerkki julkaisijasta on 3D-kamera, joka tuottaa striimattua kuvadataa, ja tilaajana on tiedon käyttäjä. Palvelu puolestaan on asiakas/palvelin malli, jossa käytetään pyyntö/vastaus viestejä. Esimerkkinä voidaan käyttää kuvatietoja, jotka muotoillaan toiseen muotoon ja saatu vastaus saadaan pakattuna datana. ROS-viestinnässä käytetään kuvan 1 esimerkin mukaista tapaa solmujen välillä, missä Talker on julkaisijana ja Listener on tilaajana. ROS master edesauttaa aiheita löytämään toisensa. Tätä kutsutaan sentraaliseksi viestinvälitykseksi, jossa kommunikaatio alustetaan, jonka jälkeen jokainen aihe voi kommunikoida suoraan keskenään. Näiden viestirajapintojen rakenne on määritelty IDL-sanomassa (Interface Description Language).(Core Components, n.d) (DiLuoffo, et al., 2017)</p>
+<p>Kun lähdetään toteuttamaan uutta robottisovellusta, on viestintäjärjestelmä yksi ensimmäisistä tarpeista. ROS:ia käytetään monissa robottiympäristöissä ja monien antureiden, ohjaimien ja moottoreiden on kommunikoitava keskenään, lähetettävä ja vastaanotettava tietoja haluttujen tehtävien suorittamiseksi. ROS:in sisäänrakennetulla ja hyvin testatulla viestintäjärjestelmällä säästetään aikaa ROS:in toimiessa hajautettuna arkkitehtuurina, joka käyttää julkaisija/tilaaja (engl. publisher/subscriber) -viestejä solmujen (engl. node) välillä. Jokaisella solmulla on yksi, tai useampia aiheita (engl. topic) tai palveluita (engl. service), jotka ovat irtautuneet ja joita voidaan käyttää uudelleen. Esimerkki julkaisijasta on 3D-kamera, joka tuottaa striimattua kuvadataa, ja tilaajana on tiedon käyttäjä. Palvelu puolestaan on asiakas/palvelin malli, jossa käytetään pyyntö/vastaus viestejä. Esimerkkinä voidaan käyttää kuvatietoja, jotka muotoillaan toiseen muotoon ja saatu vastaus saadaan pakattuna datana. ROS-viestinnässä käytetään kuvan yksi esimerkin mukaista tapaa solmujen välillä, missä Talker on julkaisijana ja Listener on tilaajana. ROS master edesauttaa aiheita löytämään toisensa. Tätä kutsutaan sentraaliseksi viestinvälitykseksi, jossa kommunikaatio alustetaan ja jonka jälkeen jokainen aihe voi kommunikoida suoraan keskenään. Näiden viestirajapintojen rakenne on määritelty IDL-sanomassa (Interface Description Language).  (Core Components, n.d; DiLuoffo, et al., 2017.)</p>
 
 <p><img src="/assets/images/ROS1.png" alt="ROS1" /></p>
-<h5 id="ros-viestintä-diluoffomichalson-sunar-2017">ROS viestintä (DiLuoffo;Michalson;&amp; Sunar, 2017)</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-1-ros-viestintä-diluoffo-et-al-2017">Kuva 1: ROS viestintä (DiLuoffo, et al., 2017)</h5>
 
-<p>Julkaisija/tilaaja järjestelmän ollessa anonyymi ja asynkroninen voidaan dataa tallentaa ja toistaa ilman mitään muutoksia koodiin. Rosbag record tilaa aiheet/topicit ja kirjoittaa niistä bag-tiedoston, jossa on kaikki julkaistut viestisisällöt. Tiedosto sisältää lomitetut ja sarjoitetut ROS-viestit, joista on suoraan tehty yksi tiedosto niiden tulohetkellä. Tämä on tehokkain ja levy ystävällisin tallennusmuoto. Bag-tiedostoa luodessa voi halutessaan vielä pakata tiedosto levytilan säästämiseksi. (Core Components, n.d) (rosbag/ Commandline, 2020)</p>
+<p>Julkaisija/tilaaja järjestelmän ollessa anonyymi ja asynkroninen voidaan dataa tallentaa ja toistaa ilman mitään muutoksia koodiin. Rosbag record tilaa aiheet ja kirjoittaa niistä bag-tiedoston, jossa on kaikki julkaistut viestisisällöt. Tiedosto sisältää lomitetut ja sarjoitetut ROS-viestit, joista on suoraan tehty yksi tiedosto niiden tulohetkellä. Tämä on tehokkain ja levy ystävällisin tallennusmuoto. Bag-tiedostoa luodessa voidaan tiedosto vielä pakata, jolloin säästyy levytilaa. (Core Components, n.d ; rosbag/Commandline, 2020.)</p>
 
-<p>ROS 1 käyttää Cpp:lle roscpp:ää ja Pythonille: rospy:ta. Se tukee Python 2:sta. Kirjastot ovat täysin itsenäisiä ja ne on rakennettu tyhjästä, tarkoittaen sitä, ettei ohjelmointirajapinta niiden välillä välttämättä ole sama, jolloin niiden ominaisuudet on kehitetty vain toiselle. ROS 1 ei ole varsinaisesti mitään rakennetta, miten kirjoittaa solmujen toiminnallisuus ja jokaisen toteutus voi olla ainutlaatuinen. Käynnistystiedostojen kirjoittamisessa käytetään XML:ia (Extensible Markup Language). ROS 1 käynnistetään aina ensin ROS-isäntä, roscore, joka toimii solmujen DNS-palvelimena (Domain Name System), jotta ne voivat hakea ja tunnistaa toisensa. Palvelut ovat synkronoituja mikä tarkoittaa sitä, että pyyntö on jumissa, kunnes palvelin vastaa tai epäonnistuu. Solmut rakennetaan käyttämällä catkiniä, joka on ROS:in virallinen rakennusjärjestelmä ja alkuperäisen rosbuildin seuraaja. (The Robotics Back-End, 2021) (catkin/ conceptual_overview, 2020)</p>
+<p>ROS 1 käyttää Cpp:lle roscpp:tä ja Pythonille rospy:ta. Se tukee Python 2:sta. Kirjastot ovat täysin itsenäisiä ja ne on rakennettu tyhjästä, tarkoittaen sitä, ettei ohjelmointirajapinta niiden välillä välttämättä ole sama, jolloin niiden ominaisuudet on kehitetty vain toiselle. ROS 1 ei ole varsinaisesti mitään rakennetta, miten kirjoittaa solmujen toiminnallisuus ja jokaisen toteutus voi olla ainutlaatuinen. Käynnistystiedostojen kirjoittamisessa käytetään XML:ia (Extensible Markup Language). ROS 1 käynnistetään aina ensin ROS-isäntä, roscore, joka toimii solmujen DNS-palvelimena (Domain Name System), jotta ne voivat hakea ja tunnistaa toisensa. Palvelut ovat synkronoituja mikä tarkoittaa sitä, että pyyntö on jumissa, kunnes palvelin joko vastaa tai epäonnistuu. Solmut rakennetaan käyttämällä catkiniä, joka on ROS:in virallinen rakennusjärjestelmä ja alkuperäisen rosbuildin seuraaja. (catkin/ conceptual_overview, 2020; The Robotics Back-End, 2021.)</p>
 
 <p>Väliohjelmiston pääkomponenttien lisäksi ROS:lla on tarjolla robottikohtaisia kirjastoja ja työkaluja, joilla robotti saadaan nopeasti toimintavalmiiksi. Tässä niistä muutama:</p>
 
@@ -141,50 +97,25 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 <p>(Core Components, n.d)</p>
 
-<p>ROS:lla on aktiivinen tukijoukko, johon kuuluvat mm. käyttäjät, ROS ytimen ja pakettien kehittäjät sekä työkalujen ylläpitäjät. He kuuluvat joko vapaaehtoisiin tai Open Source Robotics Foundation:in työntekijöihin. ROS:lla on oma Stack Overflown tyylinen Q&amp;A nettisivusto, ROS Answers 13. Moni käyttäjä kokee tämän olevan luotettava ongelmienratkaisu kanava. Pakettien ylläpitäjät ja yhteisöpäälliköt käyttävät postituslistoja ilmoituksiin kuten tärkeät korjaukset tai julkaisut. Helmikuussa 2016 avattiin ROS Discource foorumi, jossa voi keskustella ROS:sin tulevaisuuteen liittyvistä asioista. Sivusto on kohdistettu lähinnä kokeneemmille käyttäjille, pakettien ylläpitäjille ja yhteisöpäälliköille. Suurin osa paketeista löytyy kuitenkin GitHub-alustalta. (Estefo, et al., 2019)</p>
+<p>ROS:lla on aktiivinen tukijoukko, johon kuuluvat mm. käyttäjät, ROS ytimen ja pakettien kehittäjät sekä työkalujen ylläpitäjät. He kuuluvat joko vapaaehtoisiin tai Open Source Robotics Foundation:in työntekijöihin. ROS:lla on oma Stack Overflown tyylinen Q&amp;A nettisivusto, ROS Answers 13. Moni käyttäjä kokee tämän olevan luotettava ongelmienratkaisukanava. Pakettien ylläpitäjät ja yhteisöpäälliköt käyttävät postituslistoja ilmoituksiin kuten tärkeät korjaukset tai julkaisut. Helmikuussa 2016 avattiin ROS Discource foorumi, jossa voi keskustella ROS:sin tulevaisuuteen liittyvistä asioista. Sivusto on kohdistettu lähinnä kokeneemmille käyttäjille, pakettien ylläpitäjille ja yhteisöpäälliköille. Suurin osa paketeista löytyy kuitenkin GitHub-alustalta. (Estefo, et al., 2019.)</p>
 
-<p>Uusin ja viimeiseksi ROS 1 distribuutioksi jäävä 2020 julkaistu Noetic EOL (End of Life) päättyy 2025. Viimeisen ROS 1 versioon päätavoite on tarjota Python 3 tukea kehittäjille ja organisaatioille. (The Robotics Back-End, n.d)</p>
-
+<p>Uusin ja viimeiseksi ROS 1 distribuutioksi jäävä 2020 julkaistu Noetic EOL (End of Life) päättyy 2025. Viimeisen ROS 1 versioon päätavoite on tarjota Python 3 tukea kehittäjille ja organisaatioille. (The Robotics Back-End, 2021.)</p>
 <p>&nbsp;</p>
+
 <h2 id="ros-2">ROS 2</h2>
 
-<p>Alfa-koodina alun perin ilmestynyt ROS 2 otettiin käyttöön vuonna 2014. Alpha code 3Q2015 versio ei kuitenkaan täyttänyt vaadittuja turvatoimia. Tämän vuoksi kehitettiin seuraajaversio: ROS 2, joka käyttää erilaista lähestymistapaa viestintäkerroksissa ollen nyt OMG:in (Object Management Group) teollisuusstandardi DDS (Data Distribution Service). ROS 2 on alun hankaluuksien jälkeen julkaistu jo monta versiota (Kuva  ). (Maruyama, et al., 2016) (Basheer &amp; Varol, 2019)</p>
+<p>Alfa-koodina alun perin ilmestynyt ROS 2 otettiin käyttöön vuonna 2014. Alpha code 3Q2015 versio ei kuitenkaan täyttänyt vaadittuja turvatoimia. Tämän vuoksi kehitettiin seuraajaversio: ROS 2, joka käyttää erilaista lähestymistapaa viestintäkerroksissa ollen nyt OMG:in (Object Management Group) teollisuusstandardi DDS (Data Distribution Service). ROS 2 on alun hankaluuksien jälkeen julkaistu jo monta versiota (Kuva 2). (Basheer &amp; Varol, 2019; Maruyama, et al., 2016.)</p>
 
-<p>1.alpha1 – alpha 8: Release on August 31st, 2015; EOL on December 2016.</p>
+<p><img src="/assets/images/ROS2_Dist.png" alt="ROS2_Distribution" /></p>
+<h5 id="kuva-2-luettelo-ros-2-julkaisuista-new-version-of-2021">Kuva 2: Luettelo ROS 2 julkaisuista. (New Version of…, 2021)</h5>
 
-<p>2.beta1: Released on December 19th, 2016; EOL on July 2017.</p>
-
-<p>3.beta2: Released on July 5th, 2017; EOL on September 2017.</p>
-
-<p>4.beta3: Released on September 13th, 2017; EOL on December 2017.</p>
-
-<p>5.Ardent Apalone: Released on December 8th, 2017; EOL on December 2018.</p>
-
-<p>6.Bouncy Bolson: Released on July 2nd, 2018; EOL on July 2019.</p>
-
-<p>7.Crystal Clemmys: December 14th, 2018; EOL on December 2019.</p>
-
-<ol>
-  <li>
-    <p>Dashing Diademata; May 31st, 2019; EOL on May 2021.</p>
-  </li>
-  <li>
-    <p>Eloquent Elusor; Nov 22nd, 2019; EOL on November 2020.</p>
-  </li>
-  <li>
-    <p>Foxy Fitzroy; June 5th, 2020; EOL on May 2023.</p>
-  </li>
-</ol>
-
-<p>(ROS Index, 2021)</p>
-
-<p>DDS turvallisuusspesifikaation laajennus julkaistiin 2016. DDS käyttää IDL-määritystä, jonka OMG määritteli sanomien määrittelyyn ja sarjoitukseen. Sen ydin on DCPS (Data-Centric Publish-Subscibe) joka on suunniteltu tarjoamaan tehokas tiedonsiirto jopa hajautetuissa heterogeenisissä alustoissa. Oletuksena oleva hakujärjestelmä on hajautettu etsintäjärjestelmä, joka sallii minkä tahansa kahden DDS-ohjelman kommunikoida ilman ROS masteria ja joka täyttää turvallisuutta, joustavuutta, skaalautuvuutta, vikasietoisuutta ja turvallisuutta koskevat vaatimukset. Moni DDS-toimittaja tosin tarjoaa vaihtoehtoja staattiselle etsinnälle, joten dynaamisen etsintämekanismin käyttö ei ole välttämätöntä. (DiLuoffo, et al., 2017) (Woodall, n.d) (Maruyama, et al., 2016)</p>
+<p>DDS turvallisuusspesifikaation laajennus julkaistiin 2016. DDS käyttää IDL-määritystä, jonka OMG määritteli sanomien määrittelyyn ja sarjoitukseen. Sen ydin on DCPS (Data-Centric Publish-Subscibe) joka on suunniteltu tarjoamaan tehokas tiedonsiirto jopa hajautetuissa heterogeenisissä alustoissa. Oletuksena oleva hakujärjestelmä on hajautettu etsintäjärjestelmä, joka sallii minkä tahansa kahden DDS-ohjelman kommunikoida ilman ROS masteria ja joka täyttää turvallisuutta, joustavuutta, skaalautuvuutta, vikasietoisuutta ja turvallisuutta koskevat vaatimukset. Moni DDS-toimittaja tosin tarjoaa vaihtoehtoja staattiselle etsinnälle, joten dynaamisen etsintämekanismin käyttö ei ole välttämätöntä. (DiLuoffo, et al., 2017; Maruyama, et al., 2016; Woodall, n.d.)</p>
 
 <p>DDS:ää on käytetty monipuolisesti eri asennuksissa kuten:</p>
 
 <ul>
   <li>taistelulaivoissa</li>
-  <li>suurissa hyötylaitoksissa, kuten padoissa
+  <li>suurissa hyötylaitoksissa kuten padoissa
     <ul>
       <li>rahoitusjärjestelmissä</li>
       <li>avaruusjärjestelmissä</li>
@@ -195,303 +126,330 @@ There should be whitespace between paragraphs. We recommend including a README, 
   <li>sekä monissa muissa skenaarioissa</li>
 </ul>
 
-<p>Sen johtospesifikaatio DDSI-RTPS, toiselta nimeltään RTPS (The REAL-time Publish-Subscibe Protocol) on joustavuutensa vuoksi käytettävissä luotettavaan, korkean tason järjestelmäintegraatioon sekä reaaliaikaisiin sovelluksiin sulautetuissa laitteissa. DDSI-RTPS korvaa ROS1:sen TCPROS- (Transmission Control Protocol) ja UDPROS (User Datagram Protocol) johdinprotokollat julkaisuille ja tilauksille. (Woodall, n.d.)</p>
+<p>Sen johtospesifikaatio DDSI-RTPS, toiselta nimeltään RTPS (The REAL-time Publish-Subscibe Protocol) on joustavuutensa vuoksi käytettävissä luotettavaan, korkean tason järjestelmäintegraatioon sekä reaaliaikaisiin sovelluksiin sulautetuissa laitteissa. DDSI-RTPS korvaa ROS 1:sen TCPROS- (Transmission Control Protocol) ja UDPROS (User Datagram Protocol) johdinprotokollat julkaisuille ja tilauksille. (Woodall, n.d.)</p>
 
-<p>Jotta DDS:stä voisi tulla ROS 2:sen toteutuksen yksityiskohta on kaikki DDS-spesifiset ohjelmointirajapinnat ja sanomamäärittelyt piilotettava. DDS tarjoaa etsinnän, viestin määrittelyn sekä julkaisu- ja tilausliikenteen. ROS 2 tarjoaa vastaavanlaisen käyttöliittymän kuin ROS 1, jolloin suuri osa DDS:n monimutkaisuudesta olisi piilotettuna osalta ROS-käyttäjiä tarjoten erikseen pääsyn DDS-toteutukseen käyttäjille, joilla on äärimmäisiä käyttötapauksia tai joiden tarvitsee integroitua muiden olemassa olevien DDS-järjestelmien kanssa (Kuva   ) (Woodall, n.d.)</p>
+<p>Jotta DDS:stä voisi tulla ROS 2:sen toteutuksen yksityiskohta on kaikki DDS-spesifiset ohjelmointirajapinnat ja sanomamäärittelyt piilotettava. DDS tarjoaa etsinnän, viestin määrittelyn sekä julkaisu- ja tilausliikenteen. ROS 2 tarjoaa vastaavanlaisen käyttöliittymän kuin ROS 1, jolloin suuri osa DDS:n monimutkaisuudesta olisi piilotettuna osalta ROS-käyttäjiä tarjoten erikseen pääsyn DDS-toteutukseen käyttäjille, joilla on äärimmäisiä käyttötapauksia tai joiden tarvitsee integroitua muiden olemassa olevien DDS-järjestelmien kanssa (Kuva 3). (Woodall, n.d.)</p>
 
 <p><img src="/assets/images/DDS%20ja%20ROS%20API.png" alt="ROS2" /></p>
-<h5 id="dds-ja-ros-api-application-programming-interface-pohja-woodall-nd">DDS ja ROS API (Application Programming Interface) pohja (Woodall, n.d.)</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-3-dds-ja-ros-api-application-programming-interface-pohja-woodall-nd">Kuva 3: DDS ja ROS API (Application Programming Interface) pohja (Woodall, n.d.)</h5>
 
 <p>DDS-toteutuksen käyttöön tarvitaan lisäpaketti, jota ei normaalisti ole käytössä. Pakettiriippuvuuksien avulla selvitetään, onko paketti sitonut itsensä tiettyyn DDS-myyjään. ROS:lle on tulossa yksi parhaiten tuettu DDS-toteutus, jonka avulla voidaan löytää ratkaisuja reaaliaikaisiin ympäristöihin ja pieniin sulautettuihin järjestelmiin vähentämällä kirjastojen kokoa ja muistijälkiä. (Woodall, n.d.)</p>
 
 <p><img src="/assets/images/ROS1_ROS2%20arkkitehtuuri.png" alt="ROS2" /></p>
-<h5 id="ros1ros2-arkkitehtuuri-maruyma--al-2016">ROS1/ROS2 arkkitehtuuri (Maruyma &amp; al., 2016)</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-4-ros-1--ros-2-arkkitehtuuri-maruyma--al-2016">Kuva 4: ROS 1 / ROS 2 arkkitehtuuri (Maruyma &amp; al., 2016)</h5>
 
-<p>ROS 2:ssa on enemmän kerroksia kuin edeltäjällään. (Kuva  ) Peruskirjastoja on vain yksi, C:llä toteutettu rcl (ROS Client Libraries). Tämä sisältää kaikki ROS 2 ydinominaisuudet. Kirjastoa ei käytetä suoraan ohjelmissa vaan siinä käytetään toista asiakaskirjastoa, joka on rakennettu rcl:n päälle. Kehittäjille tämä tarkoittaa siis sitä, että muiden asiakaskirjastojen luominen ja käyttö on helpompaa ja tarvitsee tehdä vain C-sidos rcl:llä. Oletusarvoisesti käytetään Cpp 11:tä ja 14:ää ja suunnitelmissa on myös Cpp 17:ää. Nämä uudet Cpp-versiot omaavat hyödyllisiä toimintoja, joilla kehityksestä tulee helpompaa, nopeampaa ja turvallisempaa. Solmuja kirjoitettaessa on luotava luokka joka perii solmuobjektilta esim. rclcpp::Node Cpp:ssä ja rclpy.node.Node Pythonissa. Python versioista on käytössä vähintään 3.5. Luokassa on kaikki ROS 2 funktionaalisuudet. Nodelettien toiminnallisuus on sisällytetty ytimeen ja sitä kutsutaan komponentiksi. Käynnistysohjelmien kirjoittamiseen käytetään Pythonia. On myös olemassa ohjelmistorajapinta, jonka avulla voidaan käynnistää solmut, hakea määritystiedostoja, lisätä parametreja jne. Halutessaan voi toki käyttää myös XML:ia, mutta Pythonia suositellaan käytettävän sen modulaarisuuden ja suuremman dokumentaatio määrän vuoksi. ROS 2:ssa ei enää käytetä ROS-isäntää vaan jokainen solmu kykenee löytämään muut solmut itsenäisesti. Käynnistys onnistuu, oli isäntää tai ei. Tämän avulla voidaan luoda täysin hajautettu järjestelmä. Globaaleja parametrejä ei enää ole, vaan jokainen parametri on solmulle spesifi. Palvelut ovat asynkronisia. (The Robotics Back-End, n.d)</p>
+<p>ROS 2:ssa on enemmän kerroksia kuin edeltäjällään (Kuva 4). Peruskirjastoja on vain yksi, C:llä toteutettu rcl (ROS Client Libraries). Tämä sisältää kaikki ROS 2 ydinominaisuudet. Kirjastoa ei käytetä suoraan ohjelmissa vaan siinä käytetään toista asiakaskirjastoa, joka on rakennettu rcl:n päälle. Kehittäjille tämä tarkoittaa siis sitä, että muiden asiakaskirjastojen luominen ja käyttö on helpompaa ja tarvitsee tehdä vain C-sidos rcl:llä. Oletusarvoisesti käytetään Cpp 11:tä ja 14:ää ja suunnitelmissa on myös Cpp 17. Nämä uudet Cpp-versiot omaavat hyödyllisiä toimintoja, joilla kehityksestä tulee helpompaa, nopeampaa ja turvallisempaa. Solmuja kirjoitettaessa on luotava luokka, joka perii solmuobjektin esim. rclcpp::Node Cpp:ssä ja rclpy.node.Node Pythonissa. Python versioista on käytössä vähintään 3.5. Luokassa on kaikki ROS 2 funktionaalisuudet. Nodelettien toiminnallisuus on sisällytetty ytimeen ja sitä kutsutaan komponentiksi. Käynnistysohjelmien kirjoittamiseen käytetään Pythonia. On myös olemassa ohjelmistorajapinta, jonka avulla voidaan käynnistää solmut, hakea määritystiedostoja, lisätä parametreja jne. Halutessaan voi toki käyttää myös XML:ia, mutta Pythonia suositellaan käytettävän sen modulaarisuuden ja suuremman dokumentaatio määrän vuoksi. ROS 2:ssa ei enää käytetä ROS-isäntää vaan jokainen solmu kykenee löytämään muut solmut itsenäisesti. Käynnistys onnistuu, oli isäntää tai ei. Tämän avulla voidaan luoda täysin hajautettu järjestelmä. Globaaleja parametrejä ei enää ole, vaan jokainen parametri on solmulle spesifi. Palvelut ovat asynkronisia. (The Robotics Back-End, 2021.)</p>
 
-<p>ROS 2 mukana tulee QoS (Quolity of Service) jonka avulla voidaan valita miten solmut käsittelevät viestintää. Halutaanko vastaanottaa kaikki viestit vai päivitetäänkö tietoja usein, jolloin voidaan menettää joitakin viestejä. QoS on ROS 2:ssa oletusarvona, joten siltä voidaan olettaa samaa käyttäytymistä kuin ROS 1. Vain tilauksen jälkeiset viestit julkaistaan ja TCP takaa, että viestien toimitus taataan. Mikäli joudutaan käyttämään heikkoa langatonta verkkoyhteyttä tai suurta kaistanleveyttä, on QoS paikallaan. Aloittelijalle tai yksinkertaiselle sovellukselle QoS ei ole ensisijainen valinta. ROS 2:ssa ei enää rakenneta solmuja catkinillä vaan siihen käytetään Amentia jonka mukana tulee colcon (collective construction) komentorivityökalu jolloin kääntämiseen käytetään ”colcon build” komentoa. Syy nimen muuttamiseen on, ettei sen haluttu olevan ristiriidassa catkinin kanssa ja aiheuttavan siten sekaannuksia olemassa olevien catkin dokumentaatioiden kanssa. Ament koostuu muutamasta tärkeästä varastokirjastosta, jotka kaikki ovat ament GitHub-organisaatiossa:</p>
-
+<p>ROS 2 mukana tulee QoS (Quolity of Service) jonka avulla voidaan valita miten solmut käsittelevät viestintää. Halutaanko vastaanottaa kaikki viestit vai päivitetäänkö tietoja usein, jolloin voidaan menettää joitakin viestejä. QoS on ROS 2:ssa oletusarvona, joten siltä voidaan olettaa samaa käyttäytymistä kuin ROS 1. Vain tilauksen jälkeiset viestit julkaistaan ja TCP takaa viestien toimituksen. Mikäli joudutaan käyttämään heikkoa langatonta verkkoyhteyttä tai suurta kaistanleveyttä, on QoS paikallaan. Aloittelijalle tai yksinkertaiselle sovellukselle QoS ei ole ensisijainen valinta. ROS 2:ssa ei enää rakenneta solmuja catkinillä vaan siihen käytetään Amentia, jonka mukana tulee colcon (collective construction) komentorivityökalu, jolloin kääntämiseen käytetään ”colcon build” komentoa. Syy nimen muuttamiseen on, ettei sen haluttu olevan ristiriidassa catkinin kanssa ja aiheuttavan siten sekaannuksia olemassa olevien catkin dokumentaatioiden kanssa. Ament koostuu muutamasta tärkeästä varastokirjastosta, jotka kaikki ovat ament GitHub-organisaatiossa:</p>
 <ul>
   <li>ament_package paketti</li>
   <li>ament_cmake varastokirjasto</li>
   <li>ament_lint varastokirjasto</li>
-  <li>build työkalut</li>
+  <li>build työkalut
+Uutta ROS 2:ssa on myös se, että sitä voidaan käyttää Ubuntun lisäksi myös MacOS:ssa ja Windows:ssä.</li>
 </ul>
 
-<p>Uutta ROS 2 on myös se, että sitä voidaan käyttää Ubuntun lisäksi myös MacOS:ssa ja Windows:ssä. (The Robotics Back-End, 2021) (About the build…, 2021)</p>
+<p>(About the build…, 2021; The Robotics Back-End, 2021.)</p>
 
-<p>Yksi suurimmista eroista ROS 1 ja ROS 2 välillä on simulaatiokyky. ROS 1:llä on Gazebo ja siinä muutamia simulaatiomahdollisuuksia, mutta integrointi on hankalaa ja Gazebo itsessään melko monoliittinen. Ignition Gazebo ja ROS 2 taas puolestaan tarjoavat täydennetyn robotin ja täysin toimivan dynaamisen ympäristön. Erilaiset kilpailut, kuten DARPA SubT (DARPA Subterranean Challenge), RobotX Challenge ja AWS JPL Open Source Rover Challenge ovat osoittaneet, että malli on onnistunut. Gazebon nykyinen versio on nimeltään Ignition Citadel ja sillä voi simuloida fysiikkaa, ympäristörajoituksia sekä antureita. Siihen on kiinnitetty kaikki ROS-elementit, eli mikäli simulaatiossa on virtuaalikamera ja virtuaalinen LiDAR (Ligth Detection and Ranging) eli lasertutka, ovat saadut numerot melko samanlaisia, kuin mitä ne olisivat todellisessa maailmassa. (Quetzalli, 2020)</p>
+<p>Yksi suurimmista eroista ROS 1 ja ROS 2 välillä on simulaatiokyky. ROS 1:llä on Gazebo ja siinä muutamia simulaatiomahdollisuuksia, mutta integrointi on hankalaa ja Gazebo itsessään melko monoliittinen. Ignition Gazebo ja ROS 2 taas puolestaan tarjoavat täydennetyn robotin ja täysin toimivan dynaamisen ympäristön. Erilaiset kilpailut, kuten DARPA SubT (DARPA Subterranean Challenge), RobotX Challenge ja AWS JPL Open Source Rover Challenge ovat osoittaneet, että malli on onnistunut. Gazebon nykyinen versio on nimeltään Ignition Citadel ja sillä voi simuloida fysiikkaa, ympäristörajoituksia sekä antureita. Siihen on kiinnitetty kaikki ROS-elementit, eli mikäli simulaatiossa on virtuaalikamera ja virtuaalinen LiDAR (Ligth Detection and Ranging) eli lasertutka, ovat saadut numerot melko samanlaisia, kuin mitä ne olisivat todellisessa maailmassa. (Quetzalli, 2020.)</p>
 
-<p>ROS 1-koodipohjan siirto ROS 2:seen onnistuu yhteensopimattomasta kommunikaatiosta huolimatta ROS 1-bridge-pakettiadaptaatiolla. Siirron voi suorittaa aluksi muutamalla paketilla ja vähitellen lisätä yhä enemmän paketteja, kunnes ROS 1:ssä ei ole paketteja jäljellä. Sovellus toimii odotetusti koko siirron ajan. (The Robotics Back-End, n.d)</p>
+<p>ROS 1-koodipohjan siirto ROS 2:seen onnistuu yhteensopimattomasta kommunikaatiosta huolimatta ROS 1-bridge-pakettiadaptaatiolla. Siirron voi suorittaa aluksi muutamalla paketilla ja vähitellen lisätä yhä enemmän paketteja, kunnes ROS 1:ssä ei ole enää paketteja jäljellä. Sovellus toimii odotetusti koko siirron ajan. (The Robotics Back-End, 2021.)</p>
 <p>&nbsp;</p>
 
 <h3 id="micro-ros">micro-ROS</h3>
-<p>Mikro-ROS on räätälöity erityisesti sulautetuille ja resurssirajoitteisille alustoille kuten mikrokontrollerit. Suurin osan ominaisuuksista ja arkkitehtuurista periytyy ROS 2:lta yhdistäen saumattomasti ’makro’ ja ’mikro’ robotiikan. Se toimii RTOS:ssä (Real-Time Operating System) ja käyttää DDS-väliohjelmistoa Micro XRCE-DDS (eXtremly Resource Constrained Environment), eli DDS:ää äärimmäisen resurssirajoitetuissa ympäristöissä. Käytettävissä on tehokkaita kehitystyökaluja kuten täydellinen koontijärjestelmä eri laitteistoalustoille ja koko robottiohjelmien joukko, joka on saatavilla ROS 2-ympäristössä. Kustannusten aleneminen on yksi hyödyistä siirryttäessä vähemmän resursseja vaativiin robotiikkasovelluksiin, jolloin se on erityisen kätevä teollisen massatuotannon kilpailukyvylle. (XRCE-DDS, 2021) (Competitive Warehouse Automation…, 2020)</p>
+<p>Mikro-ROS on räätälöity erityisesti sulautetuille ja resurssirajoitteisille alustoille kuten mikrokontrollerit. Suurin osan ominaisuuksista ja arkkitehtuurista periytyy ROS 2:lta yhdistäen saumattomasti ’makro’ ja ’mikro’ robotiikan. Se toimii RTOS:ssä (Real-Time Operating System) ja käyttää DDS-väliohjelmistoa Micro XRCE-DDS (eXtremly Resource Constrained Environment) (Kuva 5), eli DDS:ää äärimmäisen resurssirajoitetuissa ympäristöissä. Käytettävissä on tehokkaita kehitystyökaluja kuten täydellinen koontijärjestelmä eri laitteistoalustoille ja koko robottiohjelmien joukko, joka on saatavilla ROS 2-ympäristössä. Yksi hyödyistä siirryttäessä vähemmän resursseja vaativiin robotiikkasovelluksiin on kustannusten aleneminen, jolloin se on erityisen kätevä teollisen massatuotannon kilpailukyvylle. (Competitive Warehouse Automation…, 2020; XRCE-DDS, 2021.)</p>
 
 <p><img src="/assets/images/Micro_ROS.png" alt="mikro" /></p>
-<h5 id="micro-rosin-arkkitehtuuri-tummansiniset-kerrokset-ja-komponentit-on-kehitetty-mikro-ros-laitteille-vaalean-siniset-kerrrokset-rmw-ja-rlc-uudelleenkäytetään-ros-2sta-lange-2021">Micro-ROS:in arkkitehtuuri. Tummansiniset kerrokset ja komponentit on kehitetty mikro-ROS-laitteille. Vaalean siniset kerrrokset rmw ja rlc uudelleenkäytetään ROS 2:sta. (Lange, 2021)</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-5-micro-rosin-arkkitehtuuri-tummansiniset-kerrokset-ja-komponentit-on-kehitetty-mikro-ros-laitteille-vaalean-siniset-kerrrokset-rmw-ja-rlc-uudelleenkäytetään-ros-2sta-lange-2021">Kuva 5: Micro-ROS:in arkkitehtuuri. Tummansiniset kerrokset ja komponentit on kehitetty mikro-ROS-laitteille. Vaalean siniset kerrrokset rmw ja rlc uudelleenkäytetään ROS 2:sta. (Lange, 2021)</h5>
 
 <p>Seitsemän keskeistä ominaisuutta tekee mikro-ROS:sta käyttövalmiin mikrokontrolleripohjan erilaisiin robottiprojekteihin.</p>
 
 <ul>
-  <li>
-    <p>Optimoitu asiakasrajapinta, joka tukee kaikkia tärkeimpiä ROS-konsepteja</p>
-
-    <p>Mikro-ROS:in avulla kaikki solmut, julkaisu/tilaus, asiakas/palvelu, solmukaavio jne. tuodaan MCU:lle (Microcontroller Unit). Asiakasrajapinta perustuu vakio-ROS 2 rcl-kirjastoon sekä sarjaan laajennuksia ja soveltuvuustoimintoja (sclc). Näiden yhdistelmä on optimoitu MCU:lle. (Features and Architecture, 2021)</p>
-  </li>
-  <li>
-    <p>Saumaton integrointi ROS 2:n kanssa</p>
-
-    <p>Mikro-ROS agentti yhdistää MCU:in mikro-ROS-solmut saumattomasti ROS 2 järjestelmiin mahdollistaen näin pääsyn mikro-ROS-solmuihin ROS 2:sta tunnetuilla työkaluilla ja API:lla tavallisten solmujen tapaan. (Features and Architecture, 2021)</p>
-  </li>
-  <li>
-    <p>Erittäin resurssirajoitettu mutta joustava väliohjelmisto</p>
-
-    <p>eProsiman Mikro XRCE-DDS täyttää kaikki sulautetuille järjestelmille asetetut vaatimukset. Ajon aikaisten muistin allokointien välttämiseksi ROS-väliohjelmiston rajapinnassa otettiin käyttöön staattiset muistivarastot. (Features and Architecture, 2021)</p>
-  </li>
-  <li>
-    <p>Multi-RTOS-tuki yleisellä koontijärjestelmällä</p>
-
-    <p>Mikro-ROS tukee kolmea avoimen lähdekoodin reaaliaikaista käyttöjärjestelmää (RTOS): FreeRTOS, Zephyr ja NuttX. Se voidaan siirtää mihin tahansa POSIX-käyttöliittymän omaavaan RTOS:iin. ROS 2-pakettina toimitettavaan asennusohjelmaan on integroitu RTOS-spesifiset rakennusjärjestelmät. Näin ROS-kehittäjät voivat käyttää tavallisia komento komentorivityökaluja. (Features and Architecture, 2021)</p>
-  </li>
-  <li>
-    <p>Lupalisenssi</p>
-
-    <p>Mikro-ROS kuuluu samaan Apache License 2.0 lisenssiin kuin ROS 2. Tämä koske mikro-ROS-asiakaskirjastoa, väliohjelmistokerrosta sekä työkaluja. RTOS projektia luotaessa on otettava huomioon ROS-projektin tai toimittajan lisenssit. (Features and Architecture, 2021)</p>
-  </li>
-  <li>
-    <p>Vilkas yhteisö ja ekosysteemi</p>
-
-    <p>Jatkuvasti kasvava, itseorganisoitunut yhteisö on kehittänyt mikro-ROS:in ja sitä tukee virallinen ROS 2-työryhmä, Embedded Working Group. Yhteisö jakaa aloitustason opetusohjelmia, tarjoaa tukea Slackin ja GitHubin kautta ja tapaa kuukausittaisissa julkisissa Working Group-videopuheluissa. Yhteisö kehittää myös työkaluja mikro-ROS:in ympärille. Esimerkkinä MCU-laitteistolle kehitetyt benchmarkkaustyökalut joiden avulla voidaan tarkistaa muistin käyttö, suorittimen ajankulutus sekä yleinen suorituskyky. (Features and Architecture, 2021)</p>
-  </li>
-  <li>
-    <p>Pitkäaikainen ylläpito ja yhteentoimivuus</p>
-
-    <p>Pitkäaikaisen ylläpidettävyyden takaamiseksi mikro-ROS-spesifisen koodin määrää minimoitiin käyttäen avoimen lähdekoodin RTOS:ia, standardoitua väliohjelmistoa sekä vakio ROS 2 Client Support kirjastoa. SOSS (System-Of-Systems Synthesizer), nopea ja kevyt OMG DDS-XTYPES-integraatiotyökalu voi liittää muita väliohjelmistoprotokollia.  (Features and Architecture, 2021)</p>
-  </li>
+  <li><em>Optimoitu asiakasrajapinta, joka tukee kaikkia tärkeimpiä ROS-konsepteja</em><br />
+Mikro-ROS:in avulla kaikki solmut, julkaisu/tilaus, asiakas/palvelu, solmukaavio jne. tuodaan MCU:lle (Microcontroller Unit). Asiakasrajapinta perustuu vakio-ROS 2 rcl-kirjastoon sekä sarjaan laajennuksia ja soveltuvuustoimintoja (sclc). Näiden yhdistelmä on optimoitu MCU:lle. (Features and Architecture, 2021.)</li>
+  <li><em>Saumaton integrointi ROS 2:n kanssa</em><br />
+Mikro-ROS agentti yhdistää MCU:in mikro-ROS-solmut saumattomasti ROS 2 järjestelmiin mahdollistaen näin pääsyn mikro-ROS-solmuihin ROS 2:sta tunnetuilla työkaluilla ja API:lla tavallisten solmujen tapaan. (Features and Architecture, 2021.)</li>
+  <li><em>Erittäin resurssirajoitettu mutta joustava väliohjelmisto</em><br />
+eProsiman Mikro XRCE-DDS täyttää kaikki sulautetuille järjestelmille asetetut vaatimukset. Ajon aikaisten muistin allokointien välttämiseksi ROS-väliohjelmiston rajapinnassa otettiin käyttöön staattiset muistivarastot. (Features and Architecture, 2021.)</li>
+  <li><em>Multi-RTOS-tuki yleisellä koontijärjestelmällä</em><br />
+Mikro-ROS tukee kolmea avoimen lähdekoodin reaaliaikaista käyttöjärjestelmää (RTOS): FreeRTOS, Zephyr ja NuttX. Se voidaan siirtää mihin tahansa POSIX-käyttöliittymän omaavaan RTOS:iin. ROS 2-pakettina toimitettavaan asennusohjelmaan on integroitu RTOS-spesifiset rakennusjärjestelmät. Näin ROS-kehittäjät voivat käyttää tavallisia komentorivityökaluja. (Features and Architecture, 2021.)</li>
+  <li><em>Lupalisenssi</em><br />
+Mikro-ROS kuuluu samaan Apache License 2.0 lisenssiin kuin ROS 2. Tämä koskee mikro-ROS-asiakaskirjastoa, väliohjelmistokerrosta sekä työkaluja. RTOS projektia luotaessa on otettava huomioon ROS-projektin tai toimittajan lisenssit. (Features and Architecture, 2021.)</li>
+  <li><em>Vilkas yhteisö ja ekosysteemi</em><br />
+Jatkuvasti kasvava, itseorganisoitunut yhteisö on kehittänyt mikro-ROS:in ja sitä tukee virallinen ROS 2-työryhmä, Embedded Working Group. Yhteisö jakaa aloitustason opetusohjelmia, tarjoaa tukea Slackin ja GitHubin kautta ja tapaa kuukausittaisissa julkisissa Working Group-videopuheluissa. Yhteisö kehittää myös työkaluja mikro-ROS:in ympärille. Esimerkkinä MCU-laitteistolle kehitetyt benchmarkkaustyökalut, joiden avulla voidaan tarkistaa muistin käyttö, suorittimen ajankulutus sekä yleinen suorituskyky. (Features and Architecture, 2021.)</li>
+  <li><em>Pitkäaikainen ylläpito ja yhteentoimivuus</em><br />
+Pitkäaikaisen ylläpidettävyyden takaamiseksi mikro-ROS-spesifisen koodin määrää minimoitiin käyttäen avoimen lähdekoodin RTOS:ia, standardoitua väliohjelmistoa sekä vakio ROS 2 Client Support kirjastoa. SOSS (System-Of-Systems Synthesizer), nopea ja kevyt OMG DDS-XTYPES-integraatiotyökalu voi liittää muita väliohjelmistoprotokollia. (Features and Architecture, 2021.)</li>
 </ul>
-
 <p>&nbsp;</p>
 
 <h3 id="opencv">OpenCV</h3>
 
-<p>OpenCV (Open Source Computer Vision Library) on avoimen lähdekoodin koneoppimisen ja -näön ohjelmisto kirjasto. Se kehitettiin tarjoamaan yhteinen infrastruktuuri konenäön sovelluksille, jotta kaupallisten tuotteiden koneellinen tunnistus nopeutuisi. OpenCV on BSD-lisensioitu (Berkeley Software Distribution) tuote mikä merkitsee sitä, että yritysten on helppo käyttää ja muokata koodia. Kirjastossa on yli 2500 optimoitua algoritmia. Algoritmeja voidaan käyttää kasvojen sekä esineiden havaitsemiseen ja tunnistamiseen. Niillä voidaan luokitella mm. ihmisten erilaisia toimia, seurata liikkuvaa kohdetta, erotella 3D-mallit kohteista, yhdistää kuvia korkean resoluution aikaansaamiseksi, tunnistaa maisemat ja luoda merkkejä, joiden avulla maisema peitetään lisätyllä todellisuudella (Augmented Reality, AR). Monet yritykset, tutkimusryhmät ja valtiolliset elimet käyttävät kirjastoa. ROS käyttää omaa sensor_msgs / Image viestimuotoaan. CvBridge on ROS-kirjasto, joka tarjoaa käyttöliittymän ROS:in ja OpenCV:n välillä. (About, 2021) (cv_bridge/ Tutorials/ Using…, 2017)</p>
+<p>OpenCV (Open Source Computer Vision Library) on avoimen lähdekoodin koneoppimisen ja -näön ohjelmistokirjasto. Se kehitettiin tarjoamaan yhteinen infrastruktuuri konenäön sovelluksille, jotta kaupallisten tuotteiden koneellinen tunnistus nopeutuisi.  OpenCV on BSD-lisensioitu (Berkeley Software Distribution) tuote mikä merkitsee sitä, että yritysten on helppo käyttää ja muokata koodia. Kirjastossa on yli 2 500 optimoitua algoritmia. Algoritmeja voidaan käyttää kasvojen sekä esineiden havaitsemiseen ja tunnistamiseen. Niillä voidaan luokitella mm. ihmisten erilaisia toimia, seurata liikkuvaa kohdetta, erotella 3D-mallit kohteista, yhdistää kuvia korkean resoluution aikaansaamiseksi, tunnistaa maisemat ja luoda merkkejä, joiden avulla maisema peitetään lisätyllä todellisuudella (engl. Augmented Reality, AR). Monet yritykset, tutkimusryhmät ja valtiolliset elimet käyttävät kirjastoa. ROS käyttää omaa sensor_msgs/Image viestimuotoaan. CvBridge on ROS-kirjasto, joka tarjoaa käyttöliittymän ROS:in ja OpenCV:n välillä. (About - OpenCV, 2021; cv_bridge/ Tutorials/ Using…, 2017.)</p>
 
-<p>OpenCV:tä käytetään monenlaisissa eri sovelluksissa, joita ovat mm. katunäkymien kuvien yhdistäminen, automaattinen tarkistus ja valvonta, autonomisen auton navigointi ja hallinta sekä lääketieteellinen kuva-analyysi. (OpenCV, 2021)</p>
-
+<p>OpenCV:tä käytetään monenlaisissa eri sovelluksissa, joita ovat mm. katunäkymien kuvien yhdistäminen, automaattinen tarkistus ja valvonta, autonomisen auton navigointi ja hallinta sekä lääketieteellinen kuva-analyysi (OpenCV, 2021).</p>
 <p>&nbsp;</p>
+
 <h3 id="docker">Docker</h3>
 
-<p>Docker on yritys, joka esitteli palan ilmaisia ohjelmistoja avoimen lähdekoodin yhteisölle. Dockerissa voi luoda eristettyjä ympäristöjä projekteille ja asentaa riippuvuuksia, jotka eivät toisissa ympäristöissä aiheuta ongelmia muiden projektien kanssa. Näitä ympäristöjä kutsutaan konteiksi, jotka toimivat kuin virtuaalikoneet vaikka eivät sellaisia olekaan. Kontit eivät tarvitse erillistä käyttöjärjestelmää, vaan ne toimivat itsenäisesti laitteistokerroksen päällä jakaen isäntälaitteen resurssit. Muistia tarvitaan vähemmän ja nopeuttakin saattaa olla enemmän kuin virtuaalikoneella. Dockerin ja virtuaalikoneen eroavaisuus näkyy kuvassa (Kuva ). (Lentin &amp; Ramkumar , 2019)</p>
+<p>Docker on sekä yritys että ilmainen ohjelmisto avoimen lähdekoodin yhteisölle.  Dockerissa voi luoda eristettyjä ympäristöjä projekteille ja asentaa riippuvuuksia, jotka eivät toisissa ympäristöissä aiheuta ongelmia muiden projektien kanssa. Näitä ympäristöjä kutsutaan konteiksi, jotka toimivat kuin virtuaalikoneet vaikka eivät sellaisia olekaan. Kontit eivät tarvitse erillistä käyttöjärjestelmää, vaan ne toimivat itsenäisesti laitteistokerroksen päällä jakaen isäntälaitteen resurssit. Muistia tarvitaan vähemmän ja nopeuttakin saattaa olla enemmän kuin virtuaalikoneella. Dockerin ja virtuaalikoneen eroavaisuus näkyy kuvassa kuusi. (Lentin &amp; Ramkumar , 2019.)</p>
 
 <p><img src="/assets/images/Docker.png" alt="docker" /></p>
-<h5 id="virtuaalikoneen-ja-dockerin-eroavaisuuksia-lentin--ramkumar-2019">Virtuaalikoneen ja Dockerin eroavaisuuksia (Lentin &amp; Ramkumar, 2019)</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-6-virtuaalikoneen-ja-dockerin-eroavaisuuksia-lentin--ramkumar-2019">Kuva 6: Virtuaalikoneen ja Dockerin eroavaisuuksia (Lentin &amp; Ramkumar, 2019)</h5>
 
-<p>ROS-projekti saattaa koostua useista alapaketteja sisältävistä metapaketeista, joiden toimivuuteen tarvitaan riippuvuuksia. Voi olla ärsyttävää asentaa paketteja ROS:siin sillä eri paketit saattavat käyttää joko samoja tai eri riippuvuuksia eri versioista johtaen näin kääntämisongelmiin. Kontit ovat käytännöllinen tapa ratkaista riippuvuusversiomuutosten vuoksi ilmaantuneita ongelmia. Ne ovat nopeita ja toisin kuin käyttöjärjestelmän prosessi voivat käynnistyä tai pysähtyä muutamassa sekunnissa. Laitteiston päivitykset tai paketit eivät vaikuta sisällä oleviin kontteihin tai muihin paikallaan oleviin kontteihin. (Lentin &amp; Ramkumar , 2019)</p>
+<p>ROS-projekti saattaa koostua useista alapaketteja sisältävistä metapaketeista, joiden toimivuuteen tarvitaan riippuvuuksia. Voi olla ärsyttävää asentaa paketteja ROS:iin, sillä eri paketit saattavat käyttää joko samoja tai eri riippuvuuksia eri versioista johtaen näin kääntämisongelmiin. Kontit ovat käytännöllinen tapa ratkaista riippuvuusversiomuutosten vuoksi ilmaantuneita ongelmia. Ne ovat nopeita ja toisin kuin käyttöjärjestelmän prosessi voivat käynnistyä tai pysähtyä muutamassa sekunnissa. Laitteiston päivitykset tai paketit eivät vaikuta sisällä oleviin kontteihin tai muihin paikallaan oleviin kontteihin. (Lentin &amp; Ramkumar , 2019.)</p>
 
 <p>&nbsp;</p>
 <h3 id="matlab--simulink">Matlab &amp; Simulink</h3>
 
-<p>Matlabilla on tehokas tietojenkäsittelykyky ja graafinen ohjelmointi, jolla voidaan käyttää suurta määrää kehittyneitä algoritmeja. Se on varustettu tehokkailla työkaluilla kuten konenäkö, ohjausjärjestelmä sekä signaalinkäsittely. Näin ollen se on varsin hyödyllinen käyttöliittymä tutkijoille ja opiskelijoille. Matlab ja Simulink voidaan yhdistää ROS 1 ja ROS 2 verkkoon käyttämällä ROS Toolbox käyttöliittymää, jolloin voidaan vuorovaikutteisesti tutkia robotin ominaisuuksia ja visualisoida anturitietoja. ROS-yhteensopivilla roboteilla ja robottisimulaattorilla (esim. Gazebo) voidaan testata, kehittää ja tarkastaa robotiikan algoritmeja. Matlab:lla ja Simulink:lla voidaan myös luoda itsenäinen ROS-verkko ja tuoda ROS-lokitiedostoja (rosbags) jolloin dataa voidaan visualisoida, analysoida tai jälkikäsitellä. (MathWorks, n.d.) (Mahtani, et al., 2018)</p>
+<p>Matlabilla on tehokas tietojenkäsittelykyky ja graafinen ohjelmointi, jolla voidaan käyttää suurta määrää kehittyneitä algoritmeja. Se on varustettu tehokkailla työkaluilla, kuten konenäkö, ohjausjärjestelmä sekä signaalinkäsittely. Näin ollen se on varsin hyödyllinen käyttöliittymä tutkijoille ja opiskelijoille. Matlab ja Simulink voidaan yhdistää ROS 1 ja ROS 2 verkkoon käyttämällä ROS Toolbox käyttöliittymää, jolloin voidaan vuorovaikutteisesti tutkia robotin ominaisuuksia ja visualisoida anturitietoja. ROS-yhteensopivilla roboteilla ja robottisimulaattorilla (esim. Gazebo) voidaan testata, kehittää ja tarkastaa robotiikan algoritmeja. Matlabilla ja Simulinkilla voidaan myös luoda itsenäinen ROS-verkko ja tuoda ROS-lokitiedostoja (rosbags) jolloin dataa voidaan visualisoida, analysoida tai jälkikäsitellä (Kuva 7). (Mahtani, et al., 2018; MathWorks, 2021.)</p>
 
 <p><img src="/assets/images/Matlab.png" alt="matlab" /></p>
-<h4 id="ros-matlab-ja-simulink-tuki-mathworks-nd">ROS MATLAB ja Simulink tuki (MathWorks, n.d.)</h4>
-<p>&nbsp;</p>
+<h5 id="kuva-7-ros-matlab-ja-simulink-tuki-mathworks-nd">Kuva 7: ROS MATLAB ja Simulink tuki (MathWorks, n.d.)</h5>
 
-<p>Jotta kommunikointi muiden solmujen kanssa onnistuu, voidaan Matlab:ssa ja Simulink:ssa määrittää omat mukautetut viesti- ja palvelutyypit. Muiden Matlab-käyttäjien kanssa voidaan jakaa mukautettuja viestirajapintoja. Simulink Coder-sovelluksella voidaan luoda C++ koodi erilliselle ROS-sovellukselle, joka toimii millä tahansa Linux-alustalla. (MathWorks, n.d.)</p>
+<p>Jotta kommunikointi muiden solmujen kanssa onnistuu, voidaan Matlabissa ja Simulinkissa määrittää omat mukautetut viesti- ja palvelutyypit. Muiden Matlab-käyttäjien kanssa voidaan jakaa mukautettuja viestirajapintoja. Simulink Coder-sovelluksella voidaan luoda C++ koodi erilliselle ROS-sovellukselle, joka toimii millä tahansa Linux-alustalla. (MathWorks, 2021.)</p>
 
 <p>&nbsp;</p>
 <h3 id="tekoäly">Tekoäly</h3>
 
-<p>Vuoteen 2000 saakka ihmisen tieto tallennettiin analogisiin laiteisiin, kuten kirjoihin, sanomalehtiin ja magneettinauhoihin. Vuonna 1993 tiedon pakkaamiseen olisi tarvittu 15.8 eksatavua tilaa eli 15.8 miljardia gigatavua. 2018 tiedon määrä oli kasvanut 33 zetatavuun joka taas on 33 000 miljardia gigatavua. Suurten tietomäärien lataamiseksi pilvipalveluntarjoajien on turvauduttava kuljettamaan kontinkokoisia kiintolevyjä. Kaiken tämän tiedon analysoimiseen tarvitaan myös laskentatehoa. Tietomäärän ja laskentatehon yhdistymisen myötä vuoden 2010 aikoihin tuli sekä mahdolliseksi että tarpeelliseksi opettaa koneita oppimaan. Yhdistämällä tekoäly robotiikkaan saadaan luotua älykkäämpiä autonomisia järjestelmiä. (Winder, 2021)</p>
+<p>Vuoteen 2000 saakka ihmisen tieto tallennettiin analogisiin laiteisiin, kuten kirjoihin, sanomalehtiin ja magneettinauhoihin. Vuonna 1993 tiedon pakkaamiseen olisi tarvittu 15,8 eksatavua tilaa eli 15,8 miljardia gigatavua. Vuonna 2018 tiedon määrä oli kasvanut 33 zetatavuun, joka taas on 33 000 miljardia gigatavua. Suurten tietomäärien lataamiseksi pilvipalveluntarjoajien on turvauduttava kuljettamaan kontinkokoisia kiintolevyjä. Kaiken tämän tiedon analysoimiseen tarvitaan myös laskentatehoa. Tietomäärän ja laskentatehon yhdistymisen myötä vuoden 2010 aikoihin tuli sekä mahdolliseksi että tarpeelliseksi opettaa koneita oppimaan. Yhdistämällä tekoäly robotiikkaan saadaan luotua älykkäämpiä autonomisia järjestelmiä. (Winder, 2021.)</p>
 
-<p>Sana tekoäly (Artificial Intelligence, AI) aiheuttaa suurimmalle osalle ihmisistä paljon hämmennystä, josta suurin osa juontuu termien tekoäly ja koneoppiminen (Machine Learning, ML) väärinkäytöstä. Lyhyesti ilmaistuna, tekoäly on tieteen ala, joka kattaa tietokoneiden kyvyn tehdä päätöksiä ja oppia kuten ihminen. Kun taas koneoppimisessa luodaan ohjelmisto, joka oppii sille annetusta datasta. Koneoppimistyyppejä ovat: ohjattu oppiminen (engl. Supervised), valvomaton oppiminen (engl. Unsupervised) sekä vahvistusoppiminen (engl. Reinforcement) (Kuva ). (Olson, 2018)</p>
+<p>Suuren yleisön suhtautuminen tekoälyyn ja yleiseen robotisaation kehitykseen on edelleen epäröivä ja ahdistunut, sillä luullaan niiden vievän työpaikat. Tosiasiahan on, että osa perinteisistä työpaikoista häviää ja osa muuttuu, mutta sen myötä syntyy myös uusia työpaikkoja. Tähän haasteeseen on vastattava opetuksen ja koulutuksen avulla. Taulukosta kahdeksan nähdään tekoälyn käyttötapauksia vuonna 2020. Tekoälytaitoja Euroopassa on kehitettävä ja edistettävä erilaisilla koulutusohjelmilla. Digitaalisia taitoja, tieteen, teknologian, tekniikan ja matematiikan taitoja, yrittäjyyttä ja luovuutta olisi tuettava. Yhteiskunnilla on edessään valtava muutos ja tekoälyn myönteisistä vaikutuksista olisi saatava tietoa kansan keskuuteen.  (Artificial Intelligence for…, 2020.)</p>
+
+<p><img src="/assets/images/Kayttotapaukset.png" alt="AI-kaytto" /></p>
+<h5 id="taulukko-3-tekoälyn-johtavat-käyttötapaukset-vuonna-2020-mehta--senn-kalb--2021">Taulukko 3: Tekoälyn johtavat käyttötapaukset vuonna 2020. (Mehta &amp; Senn-Kalb , 2021)</h5>
+
+<p>Sana tekoäly (engl. Artificial Intelligence, AI) aiheuttaa suurimmalle osalle ihmisistä paljon hämmennystä, josta suurin osa juontuu termien tekoäly ja koneoppiminen (engl. Machine Learning, ML) väärinkäytöstä. Lyhyesti ilmaistuna, tekoäly on tieteen ala, joka kattaa tietokoneiden kyvyn tehdä päätöksiä ja oppia kuten ihminen. Koneoppimisessa taas luodaan ohjelmisto, joka oppii sille annetusta datasta. Koneoppimistyyppejä ovat: valvottu oppiminen (engl. Supervised Learning), valvomaton oppiminen (engl. Unsupervised Learning) sekä vahvistusoppiminen (engl. Reinforcement Learning) (Kuva 8). (Olson, 2018.)</p>
 
 <p><img src="/assets/images/AI-kaavio.png" alt="AI" /></p>
-<h5 id="kaaviossa-nähdään-intuitiivinen-kuva-tekoälyn-kentästä-palanisamy-2018">Kaaviossa nähdään intuitiivinen kuva tekoälyn kentästä (Palanisamy, 2018)</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-8-kaaviossa-nähdään-intuitiivinen-kuva-tekoälyn-kentästä-palanisamy-2018">Kuva 8: Kaaviossa nähdään intuitiivinen kuva tekoälyn kentästä (Palanisamy, 2018)</h5>
 
-<p>Terminologia on hämmentävä, koska niihin liittyy sekoitus eri tekniikoita ja monessa on mukana sana ”oppiminen”. Esimerkkinä kolme koneoppimisen ydintyyppiä: Reinforcement Learning (RL), Deep Reinforcement Learning (DRL) sekä Deep Learning (DL). (Olson, 2018)</p>
+<p>Terminologia on hämmentävä, koska niihin liittyy sekoitus eri tekniikoita ja monessa on mukana sana ”oppiminen”. Esimerkkinä kolme koneoppimisen ydintyyppiä: Reinforcement Learning (RL), Deep Reinforcement Learning (DRL) sekä Deep Learning (DL). (Olson, 2018.)</p>
 
-<p>Reinforcement Learning, vahvistusoppimisessa ei ole tarpeen tietää jokaista oikeaa askelta, riittää kun päämäärä on selvillä. Päätöksentekijä oppii kokeilemalla ja erehtymällä, vuorovaikutuksesta ympäristön kanssa. Ts. sen on itse opittava yrityksen ja erehdyksen kautta. Tekoäly saa joko palkkioita tai rangaistuksia suorittamistaan toimista samaan tapaan kuin esim. koiraa palkitaan herkuilla onnistuneesta suoritteesta. Ihmisen tehtävät rajoittuvat lähinnä ympäristön muuttamiseen ja palkitsemis- ja rangaistusjärjestelmän säätämiseen. Vahvistava oppiminen on tällä hetkellä tehokkain tapa ymmärtää koneen luovuutta. (Brown &amp; Zai, 2020) (Osiński &amp; Budek, 2018) (Winder, 2021)</p>
+<p><em>Reinforcement Learning</em>, vahvistusoppimisessa ei ole tarpeen tietää jokaista oikeaa askelta, riittää kun päämäärä on selvillä. Päätöksentekijä oppii kokeilemalla ja erehtymällä, vuorovaikutuksesta ympäristön kanssa. Ts. sen on itse opittava yrityksen ja erehdyksen kautta. Tekoäly saa joko palkkioita tai rangaistuksia suorittamistaan toimista samaan tapaan kuin esim. koiraa palkitaan herkuilla onnistuneesta suoritteesta. Ihmisen tehtävät rajoittuvat lähinnä ympäristön muuttamiseen ja palkitsemis- ja rangaistusjärjestelmän säätämiseen. Vahvistusoppiminen on tällä hetkellä tehokkain tapa ymmärtää koneen luovuutta. (Brown &amp; Zai, 2020; Osiński &amp; Budek, 2018; Winder, 2021.)</p>
 
-<p>Robotiikan alalla on monia erilaisia sovelluksia, jotka käyttävät vahvistusoppimista. Näistä esimerkkejä ovat mm. robotin liikkeiden, teollisen valmistuksen parantaminen ja pannukakkujen kääntäminen. RL:n avulla voidaan parantaa pilvipalveluita, vähentää rakennusten käyttämän energian määrää, parantaa liikennevalojen hallintaa ja aktiivista kaistanhallintaa. Myös rahoitusala käyttää RL:ia kauppojen tekemiseen ja sijoitussalkkujen kohdentamiseen. Autonomiset ajoneuvot ovat myös hyvin aktiivisen tutkimuksen kohteena ja viime aikoina terveydenhuollossa on esiintynyt kiinnostusta vahvistusoppimiseen. Mikään ala ei siis jää koskemattomaksi. (Osiński &amp; Budek, 2018)</p>
+<p>Robotiikan alalla on monia erilaisia sovelluksia, jotka käyttävät vahvistusoppimista. Näistä esimerkkejä ovat mm. robotin liikkeiden, teollisen valmistuksen parantaminen ja pannukakkujen kääntäminen. RL:n avulla voidaan parantaa pilvipalveluita, vähentää rakennusten käyttämän energian määrää, parantaa liikennevalojen hallintaa ja aktiivista kaistanhallintaa. Myös rahoitusala käyttää RL:ää kauppojen tekemiseen ja sijoitussalkkujen kohdentamiseen. Autonomiset ajoneuvot ovat myös hyvin aktiivisen tutkimuksen kohteena ja viime aikoina terveydenhuollossa on esiintynyt kiinnostusta vahvistusoppimiseen. Mikään ala ei siis jää koskemattomaksi. (Osiński &amp; Budek, 2018.)</p>
 
-<p>Deep Learning, syväoppiminen on suunniteltu kehittyneempien tehtävien suorittamiseen ja se koostuu useiden neuroverkkojen (Neural Network, NN) kerroksista. Syväoppimisen malli on lähtöisin yksinkertaistetuista ihmisen aivoista. Nämä mallit koostuvat muutamista neuroverkoista, jotka periaatteessa oppivat tietystä datasta abstrakteja toimintoja asteittain. Jokainen neuroverkon kerros käyttää edellisen kerroksen tulosta syötteenä ja siten koko verkko koulutetaan yhtenä kokonaisuutena. Kehysympäristöt kuten Tensoflow, Keras ja PyTorch ovat tehneet koneoppismallien kehittämisestä paljon helpompaa. Syväoppimisen ratkaisut hienoudestaan huolimatta eivät vastaa ihmisen aivoja. (Osiński &amp; Budek, 2018)</p>
+<p><em>Deep Learning</em>, syväoppiminen on suunniteltu kehittyneempien tehtävien suorittamiseen ja se koostuu useiden neuroverkkojen (engl. Neural Network, NN) kerroksista. Syväoppimisen malli on lähtöisin yksinkertaistetuista ihmisen aivoista. Nämä mallit koostuvat muutamista neuroverkoista, jotka periaatteessa oppivat tietystä datasta abstrakteja toimintoja asteittain. Jokainen neuroverkon kerros käyttää edellisen kerroksen tulosta syötteenä ja siten koko verkko koulutetaan yhtenä kokonaisuutena. Kehysympäristöt kuten Tensorflow, Keras ja PyTorch ovat tehneet koneoppismallien kehittämisestä paljon helpompaa. Hienoudestaan huolimatta syväoppimisen ratkaisut eivät vastaa ihmisen aivoja. (Osiński &amp; Budek, 2018.)</p>
 
-<p>Syviä neuroverkkoja on eri muotoisia ja kokoisia. Kaikki ne kuitenkin pohjimmiltaan perustuvat neuronien pinoamiseen. Sanaan ”syvä” viitataan suureen määrään piilotettuja kerroksia, joita tarvitaan abstraktien käsitteiden mallintamiseen. (Winder, 2021)</p>
-
+<p>Syviä neuroverkkoja on eri muotoisia ja kokoisia. Kaikki ne kuitenkin pohjimmiltaan perustuvat neuronien pinoamiseen. Sanalla ”syvä” viitataan suureen määrään piilotettuja kerroksia, joita tarvitaan abstraktien käsitteiden mallintamiseen. (Winder, 2021.)<br /></p>
 <ul>
-  <li>
-    <p>Monikerroksiset perseptroniverkot (engl. Multilayer perceprions, MLPs), ovat syvistä neuroverkoista yksinkertaisimpia ja perinteisimpiä arkkitehtuureja. Täysin kytkettyjen NN-kerroksien ylimmän kerroksen neuronin tuotos ohjataan jokaisen alla olevan kerroksen neuroniin. Neuronien määrä syöttökerroksessa on sama kuin datan koko. Todennäköisyysjakauma luokkien välillä saadaan usein johtamalla neuronit softmax-funktion (monen luokan logistinen regressio) läpi. (Winder, 2021) (Wood, n.d.)</p>
-  </li>
-  <li>
-    <p>Syväluotettavat verkot (engl. Deep belief networks suomeks?, DBNs), ovat kuin MLP:t, paitsi, että ylimmän kerroksen väliset tiedot voivat siirtyä takaisin toiselta kerrokselta ensimmäiselle. Ne ovat siis suuntaamattomia. Suuntaamattomat kerrokset ovat rajoitettuja Boltzmann-koneita (engl. Restricted Boltzmann Machines, RBMs). RBM sallii tiedon mallintamisen ja MLP kerrokset mahdollistavat luokittelun mallin mukaan. (Winder, 2021)</p>
-  </li>
-  <li>
-    <p>Autoenkoodaja (engl. Autoencoder) arkkitehtuuri kaventuu keskikohtaa kohti kuten tiimalasi ja sen tavoitteena on tuottaa syötedataa mahdollisimman hyvin ottaen huomioon kavennuksen rajoitteet, ollen näin eräänlainen puristusmuotti. Monissa arkkitehtuureissa autoenkoodaajat ovat eräänlaisia autonomisia ominaisuuksien poimijoita. (Winder, 2021)</p>
-  </li>
-  <li>
-    <p>Konvoluutioneuroverkot (engl. Convolutional Neural Networks, CNNs), toimivat hyvin alueilla, joilla yksittäiset havainnot korreloituvat paikallisesti. Oletuksena CNN esiprosessoi datan konvoluutioksi kutsuttujen suodattimien avulla. Monien suodatinkerrosten jälkeen tulos syötetään MLP:hen. (Winder, 2021)</p>
-  </li>
-  <li>
-    <p>Toistuvat NN:t (engl. Recurrent NNs), ovat arkkitehtuuriluokka, joka palauttaa yhden aika-askeleen seuraavaan syötteeseen. RNN:t ”muistavat” menneisyyden ja voivat siten hyödyntää tietoja päätösten tekemisessä. Takaisinkytkennästä johtuen ovat RNN:t pahamaineisen tunnettuja vaikeasti koulutettavina. Pitkä lyhytkestomuisti (engl. Long short-term memory, LSTM) ja porteilla rajatut toistuvuusyksiköt (engl. Gated Recurrent Units, GRUs) parantavat RNN-arvoja katkaisten tuhoisan takaisinkytkennän. (Winder, 2021)</p>
-  </li>
-  <li>
-    <p>Kaikutilaverkot (engl. Echo state networks, ESNs), käyttävät satunnaisesti alustettua RNN-varantoa muuntaakseen tulot suurempiin dimensioihin. ESN avulla RNN:ia ei tarvitse kouluttaa, jolloin siihen liittyvät ongelmat poistuvat. (Winder, 2021)</p>
-  </li>
+  <li><em>Multilayer perceprions (MLPs)</em>, ovat syvistä neuroverkoista yksinkertaisimpia ja perinteisimpiä arkkitehtuureja. Täysin kytkettyjen NN-kerroksien ylimmän kerroksen neuronin tuotos ohjataan jokaisen alla olevan kerroksen neuroniin. Neuronien määrä syöttökerroksessa on sama kuin datan koko. Todennäköisyysjakauma luokkien välillä saadaan usein johtamalla neuronit softmax-funktion (monen luokan logistinen regressio) läpi. (Winder, 2021; Wood, n.d.)<br /></li>
+  <li><em>Deep belief networks (DBNs)</em>, ovat kuin MLP:t, paitsi, että ylimmän kerroksen väliset tiedot voivat siirtyä takaisin toiselta kerrokselta ensimmäiselle. Ne ovat siis suuntaamattomia. Suuntaamattomat kerrokset ovat rajoitettuja Boltzmann-koneita (engl. Restricted Boltzmann Machines, RBMs). RBM sallii tiedon mallintamisen ja MLP kerrokset mahdollistavat luokittelun mallin mukaan. (Winder, 2021.)<br /></li>
+  <li><em>Autoencoder</em> arkkitehtuuri kaventuu keskikohtaa kohti kuten tiimalasi ja sen tavoitteena on tuottaa syötedataa mahdollisimman hyvin ottaen huomioon kavennuksen rajoitteet, ollen näin eräänlainen puristusmuotti. Monissa arkkitehtuureissa ”autoenkoodaajat” ovat eräänlaisia autonomisia ominaisuuksien poimijoita. (Winder, 2021.)<br /></li>
+  <li><em>Convolutional Neural Networks (CNNs)</em>, toimivat hyvin alueilla, joilla yksittäiset havainnot korreloituvat paikallisesti. Oletuksena CNN esiprosessoi datan konvoluutioksi kutsuttujen suodattimien avulla. Monien suodatinkerrosten jälkeen tulos syötetään MLP:hen. (Winder, 2021.)<br /></li>
+  <li><em>Recurrent NNs</em>, ovat arkkitehtuuriluokka, joka palauttaa yhden aika-askeleen seuraavaan syötteeseen. RNN:t ”muistavat” menneisyyden ja voivat siten hyödyntää tietoja päätösten tekemisessä. Takaisinkytkennästä johtuen ovat RNN:t pahamaineisen tunnettuja vaikeasti koulutettavina. Pitkä lyhytkestomuisti (engl. Long short-term memory, LSTM) ja porteilla rajatut toistuvuusyksiköt (engl. Gated Recurrent Units, GRUs) parantavat RNN-arvoja katkaisten tuhoisan takaisinkytkennän. (Winder, 2021.)<br /></li>
+  <li><em>Echo state networks (ESNs)</em>, käyttävät satunnaisesti alustettua RNN-varantoa muuntaakseen tulot suurempiin dimensioihin. ESN avulla RNN:ia ei tarvitse kouluttaa, jolloin siihen liittyvät ongelmat poistuvat. (Winder, 2021.)</li>
 </ul>
 
-<p>Deep Reinforcement Learning, syvävahvistusoppiminen on kahden edellä mainitun yhdistelmä, yhdistäen niiden parhaat puolet. NN on vastuussa kokemusten tallentamisesta ja siten parantaa tehtävän suorittamista. Tyypillisesti DRL:ssä ympäristö on kuvattu kuvilla. Kuvat analysoidaan ja niistä poimitaan asiaankuuluvat tiedot. Saatuja tietoja käytetään informoimaan mitä toimintoja tulisi suorittaa. Syvävahvistusoppiminen suoritetaan yleensä joko arvopohjaisena tai käytäntöperusteisena oppimisena. DRL:in ja DL:in ero on siinä, että ensimmäisessä syötteet muuttuvat jatkuvasti, kun taas jälkimmäisessä näin ei ole. (Nelson, 2021)</p>
+<p><em>Deep Reinforcement Learning</em>, syvävahvistusoppiminen yhdistää kahden edellä mainitun parhaat puolet.  NN on vastuussa kokemusten tallentamisesta ja siten parantaa tehtävän suorittamista. Tyypillisesti DRL:ssä ympäristö on kuvattu kuvilla. Kuvat analysoidaan ja niistä poimitaan asiaankuuluvat tiedot. Saatuja tietoja käytetään informoimaan mitä toimintoja tulisi suorittaa. Syvävahvistusoppiminen suoritetaan yleensä joko arvopohjaisena tai käytäntöperusteisena oppimisena. DRL:n ja DL:n ero on siinä, että ensimmäisessä syötteet muuttuvat jatkuvasti, kun taas jälkimmäisessä näin ei ole.  (Nelson, 2021.)</p>
 
-<p>Arvopohjaiset oppimistekniikat käyttävät algoritmeja ja arkkitehtuureja kuten konvoluutio neuroverkkoja ja Deep-Q-Networks:ia. Algoritmi muuntaa kuvan harmaasävyiseksi ja rajaa kuvasta tarpeettomat osat. Kuvan olennaisimmat osat käyvät läpi erilaisia konvoluutio- ja yhdistämisoperaatioita. Tärkeistä osista lasketaan Q-arvo eri toiminnoille, jotka voidaan suorittaa. (Nelson, 2021)</p>
+<p>Arvopohjaiset oppimistekniikat käyttävät algoritmeja ja arkkitehtuureja kuten konvoluutio neuroverkkoja ja Deep-Q-Networksia. Algoritmi muuntaa kuvan harmaasävyiseksi ja rajaa kuvasta tarpeettomat osat. Kuvan olennaisimmat osat käyvät läpi erilaisia konvoluutio- ja yhdistämisoperaatioita. Tärkeistä osista lasketaan Q-arvo eri toiminnoille, jotka voidaan suorittaa. (Nelson, 2021.)</p>
 
-<p>Käytäntöperusteisia menetelmiä käytetään, kun on mahdollista toimia erittäin monella eri tavalla. Q-arvojen laskeminen jokaiselle yksittäiselle toimelle ei ole käytännöllistä, siksi tarvitaan erilainen lähestymistapa. Yksittäisen arvon laskemisen sijaan käytännöt opitaan suoraan usein ”Policy Gradient”-tekniikoilla. Nämä tekniikat vastaanottavat tilan ja laskevat toiminnan todennäköisyydet aiempien kokemusten perusteella. Todennäköisin toimita valitaan. Tätä toistetaan arviointijakson loppuun saakka, jolloin palkinnot jaetaan ja verkon parametrit päivitetään vastavirta-algoritmilla. (Nelson, 2021)</p>
+<p>Käytäntöperusteisia menetelmiä käytetään, kun on mahdollista toimia erittäin monella eri tavalla. Q-arvojen laskeminen jokaiselle yksittäiselle toimelle ei ole käytännöllistä, siksi tarvitaan erilainen lähestymistapa. Yksittäisen arvon laskemisen sijaan käytännöt opitaan usein suoraan ”Policy Gradient”-tekniikoilla. Nämä tekniikat vastaanottavat tilan ja laskevat toiminnan todennäköisyydet aiempien kokemusten perusteella. Todennäköisin toiminta valitaan. Tätä toistetaan arviointijakson loppuun saakka, jolloin palkinnot jaetaan ja verkon parametrit päivitetään vastavirta-algoritmilla. (Nelson, 2021.)</p>
 
 <p><img src="/assets/images/deepsense.png" alt="AI" /></p>
-<h4 id="suunnikkaan--suorakulmion--neliön-suhde-osiński--budek-2018">Suunnikkaan – suorakulmion – neliön suhde (Osiński &amp; Budek, 2018)</h4>
-<p>&nbsp;</p>
+<h5 id="kuva-9-suunnikkaan--suorakulmion--neliön-suhde-osiński--budek-2018">Kuva 9: Suunnikkaan – suorakulmion – neliön suhde (Osiński &amp; Budek, 2018)</h5>
 
-<p>Minkään näiden koneoppimisten välissä ei itseasiassa ole mitään selvää eroa (Kuva ). Laajin luokka on ML ja kapein puolestaan DRL. RL puolestaan on kone- ja syväopetustekniikoiden erikoissovellus, joka on suunniteltu ratkaisemaan ongelmia tietyllä tapaa. Erilaisissa projekteissa malleja ei ole suunniteltu pitämään kiinni vain yhdestä tietystä tyypistä vaan suorittamaan annettu tehtävä mahdollisimman tehokkaasti. Mitkään näistä eivät kuitenkaan korvaa toisiaan. (Osiński &amp; Budek, 2018)</p>
+<p>Kuvasta 9 nähdään, ettei näiden koneoppimisten välissä ole itseasiassa mitään selvää eroa. Laajin luokka on ML ja kapein puolestaan DRL. RL puolestaan on kone- ja syväopetustekniikoiden erikoissovellus, joka on suunniteltu ratkaisemaan ongelmia tietyllä tapaa. Erilaisissa projekteissa malleja ei ole suunniteltu pitämään kiinni vain yhdestä tietystä tyypistä vaan suorittamaan annettu tehtävä mahdollisimman tehokkaasti. Mitkään näistä eivät kuitenkaan korvaa toisiaan.  (Osiński &amp; Budek, 2018.)<br />
+Vuosien saatossa tekoäly on kehittynyt reaktiivisuudesta tietoisuuteen (Kuva 12). Tekoälyn soveltaminen edistää kasvua yksilö-, yritys- ja taloustasolla. Se tukee ja nopeuttaa tuottavuuden kasvua mikro- ja makrotasolla. (Mehta &amp; Senn-Kalb , 2021.)</p>
 
-<p>&nbsp;</p>
-<h3 id="openai">OpenAI</h3>
+<p><img src="/assets/images/assets.png" alt="Evolution" /></p>
+<h5 id="kuva-10-tekoälyn-kehityskulku-mehta--senn-kalb--2021">Kuva 10: Tekoälyn kehityskulku (Mehta &amp; Senn-Kalb , 2021)</h5>
 
-<p>OpenAI on San Franciscon lahden alueella sijaitseva tekoälyn tutkimuslaitos ja yksi heidän suurimmista panoksistaan on avoimen lähdekoodin OpenAI ”Gym”. Pythonille julkaistu paketti tarjoaa monia ympäristöjä, joissa käyttäjät voivat aloittaa vahvistavien oppimisalgoritmien käytön. Työkalupakki esittelee standardi ohjelmointirajapinnan liitännän RL oppimiseen suunnattujen ympäristöjen kanssa. Jokaisessa ympäristössä on versio, joka takaa tähdelliset vertailut ja toistettavat tulokset kehittyvien algoritmien ja ympäristön kanssa. RL:n yhteydessä ympäristöllä viitataan varsinaiseen tehtävään, Markovin päätöksentekoprosessiin (engl. Markov decision provess, MDP), joka ratkaistaan algoritmin avulla. Ympäristö määrittää tehtävän tilan ja toimintavälin. (Beysolow II, 2019) (Habib, 2019) (Palanisamy, 2018)</p>
+<p>Mikrotasolla hyötyjä odotetaan olevan mm. alentuneet työvoimakustannukset, lisääntynyt suorituskyky, parempi laatu ja lyhyemmät seisonta-ajat. Makrotasolla taas puolestaan automaation odotetaan johtavan tuottavuuden kasvuun (Taulukko 4).</p>
 
-<p>&nbsp;</p>
-<h3 id="ros-industrial">ROS Industrial</h3>
+<p><img src="/assets/images/tuottavuus.png" alt="Tuottavuus" /></p>
+<h5 id="taulukko-4-tekoälyn-vaikutus-työn-tuottavuuteen-kehittyneissä-maissa-vuonna-2035-mehta--senn-kalb--2021">Taulukko 4: Tekoälyn vaikutus työn tuottavuuteen kehittyneissä maissa vuonna 2035. (Mehta &amp; Senn-Kalb , 2021)</h5>
 
-<p>Vuonna 2012 Yaskawa Motoman Robotics, Willow Garage ja Southwest Research Institute (SwRI) aloittivat ROS-Industrial projektin. ROS-Industrial laajentaa ROS-ohjelmiston kehittyneitä ominaisuuksia teollisuusrobotteihin. Se koostuu monista ohjelmistopaketeista, joita voidaan käyttää teollisuusrobottien rajapinnassa. Paketit ovat BSD/Apache 2.0 lisensioituja ja ne pitävät sisällään kirjastoja, ohjaimia ja työkaluja teollisuuslaitteille. (Mahtani, et al., 2018)</p>
+<p>Hyödyistään huolimatta koneet ovat improvisoinnin suhteen edelleen rajallisia. Ne seuraavat enimmäkseen valmiiksi ohjelmoituja algoritmeja, jotka sallivat niiden toimia vain ennalta määrätyillä tavoilla. Uuden tilanteen edessä ja ”terveen järjen” puuttuessa ne ovat mahdottoman edessä. Koneet alkavat kuitenkin pikkuhiljaa voittaa ihmiset eri aloilla, jopa niillä, jotka vaativat kognitiivisia kykyjä. (Mehta &amp; Senn-Kalb , 2021.)</p>
 
-<p>ROS-Industrial mahdollistaa laitteiden käytön langattomissa verkoissa, edistyneen 2D-näön sekä 3D-pistepilvisensorien käsittelyn. Ohjelmiston kehitystyökaluihin kuuluu yleinen tiedonkeruu, virheiden tarkastus sekä automatisoitu koodaus. Monien robotin reitin suunnittelijoiden ja optimoijien avulla kehittäjät voivat valita ja mukauttaa korkean tason vapausasteen omaavia järjestelmiä. (Southwest Research Institute… , 2012)</p>
-
-<p>ROS-Industrial konsortio käyttää laajasti MoveIt:ia jo olemassa olevien kaupallisten robottien hallintaan, kuten Kuka, Universal Robots, Motoman, ABB tai Fanuc. ROS-Industrial paketit tarjoavat sekä yhteyden MoveIt:iin että robottien ROS-ohjaimet, joiden avulla hallita robotteja. (Tellez, 2018)</p>
-
-<p>&nbsp;</p>
-<h3 id="moveit">MoveIt</h3>
-
-<p>MoveIt on avoimen lähdekoodin projekti, joka on saatu aikaan suuren kansainvälisen yhteisön ja useiden organisaatioiden yhteistyöllä. Se on joukko työkaluja, jotka on tarkoitettu mobiilikäyttöön. Internet-sivusto sisältää dokumentaatiota, opetus- ja asennusohjelmia sekä esimerkkiesittelyjä monilla käsivarsiroboteilla tai roboteilla, jotka käyttävät MoveIt:a manipulointiin. Kirjasto sisältää nopean käänteisen kinematiikan ratkaisijan, huipputason algoritmeja manipulointiin, 3D-havainnollistuksen, kinematiikan, kontrolloinnin sekä navigoinnin. Lisäksi se tarjoaa helppokäyttöisen käyttöliittymän uusien käsivarsirobottien määrittämiseen ja Rviz-liitännät liikkeiden suunnitteluun. Sitä on käytetty yli 150 eri robottiin. (Martinez, et al., 2018) (Moving robots into…, n.d.)</p>
-
-<p><img src="/assets/images/MoveIt.png" alt="moveit" /></p>
-<h4 id="moveit-arkkitehtuuri-martinez-et-al-2018">MoveIt! arkkitehtuuri (Martinez, et al., 2018)</h4>
-<p>&nbsp;</p>
-
-<p>Move_group-elementin ajatuksena on, että liitäntäryhmät ja muut elementit määritellään liikkeensuunnittelualgoritmien avulla, jotta liiketoiminnot saadaan suoritettua. Nämä algoritmit käsittelevät paikan ja ryhmän liitäntöjen ominaisuudet, joissa kohteet ovat vuorovaikutuksessa. Ryhmä määritetään käyttäen ROS:sin vakio työkaluja ja määrityskieliä kuten YAML (YAML Ain’t Markup Language), URDF (Specific Unified Robot Description Formats) ja SDF (Simple Data Format). Ryhmään kuuluvat nivelet on siis määriteltävä niiden liitäntärajoilla. MoveIt! tarjoaa GUI-toiminnon (Graphical User Interface), jolla määrittely tietylle robotille voidaan tehdä. Määrittelyn jälkeen voidaan suorittaa liittyminen C++ ja Python rajapinnan avulla. MoveIt! sallii erilaisten kirjastojen käytön liikkeen suunnitteluun, kuten OMPL (Open Motion Planning Library), käyttäen ROS-toimintoja tai -palveluja. (Martinez, et al., 2018)</p>
-
-<p>Yksi MoveIt:in tärkeimmistä ominaisuuksista on törmäyksien ja niiden välttämisen tarkistus. Tämä tehdään rinnakkain liikesuunnittelun ja IK-algoritmi (Inverse Kinematics) ratkaisun kanssa. Robotti voi törmätä itsensä (mallista riippuen) tai ympäristön kanssa. MoveIt kykenee hallitsemaan molemmat tapaukset. Pakettiin on sisällytetty avoimen lähdekoodin FCL (Flexible Collision Library), joka suorittaa erilaiset törmäyksen havainnointi- ja välttämisalgoritmit. Törmäyksen tarkistukseen kuuluu objekteja kuten mesh-verkko, primitiiviset muodot, kuten laatikot ja sylinterit sekä OctoMap. (Martinez, et al., 2018)</p>
-
-<p>OctoMap-kirjasto muodostaa 3D-varauksellisen ruudukon, jota kutsutaan ”octreeksi”. Se koostuu ympäristön esteiden tilastomatemaattisesta tiedosta. MoveIt-paketti rakentaa
-OctoMapin käyttämällä 3D-pistepilveä ja siirtämällä se suoraan FCL:lle törmäyksen tarkistusta varten. (Martinez, et al., 2018)</p>
-
-<p>&nbsp;</p>
-<h3 id="sros">SROS</h3>
-
-<p>Kehitteillä oleva ja kokeellinen SROS (Secure ROS) tukee alkuperäistä TLS (Transport Layer Security) -toimintoa tarjoten näin ROS-ohjelmointirajapintaan ja ekosysteemiin lisäystä, jolla tuetaan nykyaikaisia salauksia ja turvatoimia. Ominaisuuksiin kuuluvat mm. natiivi TLS-tuki kaikille IP/liitäntä tason viestinnälle, luottamusketjujen salliminen x.509-sertifikaattien avulla, määriteltävissä oleva nimitila ROS-solmujen rajoituksille ja sallituille rooleille sekä kätevä käyttäjätilan työkalu solmujen avainparien automaattiseen luomiseen sekä ROS-verkkojen tarkistus, pääsynvalvonnan rakentaminen ja kouluttaminen. (Portugal, et al., 2018) (White, et al., 2016)</p>
-
-<p>TLS:n käyttö kahden kommunikoivan sovelluksen välillä edesauttaa yksityisyyttä, henkilöllisyyden todennusta sekä datan eheyttä. Käynnistyksen yhteydessä SROS tarjoaa ROS-riippumattoman avainpalvelimen, joka luo ja jakaa avaimia ja sertifikaatteja ROS-solmuille. Saumattomasti integroitu SROS:in avainpalvelin yksinkertaistaa käyttäjien kokemuksia ja kehitystä. (Portugal, et al., 2018)</p>
-
-<p>&nbsp;</p>
-<h3 id="rosbridge">Rosbridge</h3>
-
-<p>Rosbridge tarjoaa robotiikkaan ylimääräisen sovelluskerroksen (Kuva ), joka mahdollistaa muidenkin kuin ROS-asiakasprosessien toiminnan yhdessä ROS-prosessien kanssa, mukaan lukien Web-rajapinnat. Rosbridge suhtautuu ROS:iin palvelinpuolena (back-end). Näin sovelluskehittäjät eivät tarvitse intiimejä tietoja matalan tason ohjausrajapinnoista, väliohjelmien koontijärjestelmistä tai monimutkaisista robotintunnistus ja ohjausalgoritmeista. Minimissään heidän on kuitenkin ymmärrettävä väliohjelmistopaketin rakenne ja kuljetusmekanismit. (Crick, et al., 2016)</p>
-
-<p><img src="/assets/images/Rosbridge.png" alt="rosbridge" /></p>
-<h5 id="rodbridgea-käyttävän-verkkosovelluksen-rakenne-alexander--al-2012">Rodbridgea käyttävän verkkosovelluksen rakenne (Alexander &amp; al., 2012)</h5>
-<p>&nbsp;</p>
-
-<p>Rosbridgen avulla asiakkaat voivat julkaista ja tilata ROS-aiheita ja käynnistää ROS-palveluita palvelimen ajonaikaisessa ympäristössä kuljettamalla JSON-muotoiset (JavaScript Object Notation) viestit TCP- ja Websockettien kautta. Rosbridgen asiakkaat ovat kieliriippumattomia, tarkoittaen sitä, että voidaan käyttää mitä tahansa Websocketin tukemaa kieltä. Se ei myöskään rajoita asiakkaita ROS:een. Rosbridge mahdollistaa yksinkertaisen viestinkäsittelyn sekä HTML5-verkkosovitteissa (Hypertext Markup Language), että standardeissa POSIX (Portable Operating System Interface) IP suoritinkannoissa. Esimerkkinä ”/sensorPacket” niminen ROS-aihe jonka julkaisijana on yksinkertainen Python-asiakas (Kuva ). (Alexander, et al., 2012) (Crick, et al., 2016)</p>
-
-<p><img src="/assets/images/sensorPacket.png" alt="rosbridge" /></p>
-<h5 id="sensorpacket-ros-topic-crick--al-2016">“sensorPacket”, ROS-topic (Crick &amp; al., 2016)</h5>
-<p>&nbsp;</p>
-
-<p>JSON-pohjainen rosbridge protokolla on suunniteltu mahdollistamaan datan julkaisu, tilaaminen ja palveluiden hyödyntäminen minkä tahansa asiakkaan ja palvelimen välillä alustasta riippumatta. Onnistuneita toteutuksia on tehty mm. Linuxilla, Windowsilla, iOS:lla, Androidilla ja yleisillä Web-selaimilla. Vakaa ROS rosbridge-palvelin ja protokolla löytyvät ROS.org sivuilta: http://wiki.ros.org/rosbridge_suite (Alexander, et al., 2012)</p>
-
-<p>&nbsp;</p>
-<h3 id="rosjs">ROSJS</h3>
-
-<p>Vuosien varrella laskentaparadigmat ovat kehittyneet ja nykyinen tekniikka mahdollistaa avoimen hallinnon, ylimääräisen muistin ja välittömän heterogeenisillä alustoilla toimivien ohjelmistojen käyttöönoton älypuhelimista moniytimisiin pöytäkoneisiin. Tämä on synnyttänyt joukon käyttäjiä, jotka ymmärtävät perusverkkoteknologiat, kuten HTML ja JavaScript. Osaaminen ulottuu ammattimaisten sovelluskehittäjien ulkopuolelle, käyttäjiin, jotka eivät ehkä kutsu itseään ohjelmoijiksi, mutta kuitenkin käyttävät verkkoa kaikkeen luovaan. Rosbridgen tavoitteena onkin laajentaa robotiikkaa kirjailijoiden, artistien, opiskelijoiden ja suunnittelijoiden joukkoon. JavaScriptistä on tullut verkon oletuskieli ja se onkin yksi maailman suosituimmista kielistä. (Crick, et al., 2016)</p>
-
-<p>JavaScript kirjasto nimeltään ros.js rakennettiin helpottamaan viestintää selaimen ja rosbridgen välillä. Käyttäen ros.js ja rosbridgea selaimessa käynnissä oleva JavaScript sovellus kykenee kommunikoimaan etärobotilla- tai palvelimella olevan ROS-sovelluksen kanssa. Ros.js on suunniteltu kevyeksi ja tapahtumapohjaiseksi. Sen kevyt koodi sallii helpomman integraation jo olemassa oleviin, laajamittaisiin JavaScript sovelluksiin. Tapahtumapohjainen ros.js mahdollistaa responsiivisemman käyttöliittymän ja irrottaa ros.js moduulin muista JavaScript-moduuleista. (Alexander, et al., 2012)</p>
-
-<p>&nbsp;</p>
-<h1 id="turvallisuus-verkossa">Turvallisuus verkossa</h1>
-
-<p>Robottien laaja lisääntyminen useilla eri aloilla on herättänyt keskustelua niiden käytön turvallisuudesta. Turvallisuus onkin ollut usein unohdettu ongelma robottijärjestelmissä, sillä painopiste on yleisesti ollut vain niiden toiminnallisuudessa ja innovaatioissa. Vaikka robottien käytön hyödyt on laajalti tiedostettu ja dokumentoitu, aiheuttavat nämä uusia turvallisuus- ja yksityisyydensuoja ongelmia. Aikaisemmin teollisuusrobotteja käytettiin pääsääntöisesti vain tehdasympäristöissä, joissa niiden suojana oli seinät ja suljettu verkko. Järjestelmien kehittyessä robotit siirtyvät pois suljetuista ympäristöistä. Yhdistettynä internettiin ja rakennettuna perinteisille tietokonealustoille ne ovat alttiina kyberhyökkäyksille sekä kokonaan uudelle joukolle turvallisuusriskejä, jotka voivat hakkeroinnin kohteeksi joutuessaan aiheuttaa tietoturvaongelmia tai jopa fyysisiä vahinkoja. (DiLuoffo, et al., 2018) (Portugal, et al., 2018)</p>
-
-<p>Oletusarvoisesti tietoturvasuojaus ei kuulu ROS 1:seen. Tämä altistaa robotit haitallisille hyökkäyksille. Luvaton kuuntelija voi helposti siepata ja tulkita viestiä, kerätä tietoja ja väärentää tietoja järjestelmään, sillä ROS 1 käyttää solmujen väliseen kommunikaatioon selkotekstiä (clear text) TCP/IP:n (Internet Protocol) ja UDP/IP:n kautta. ROS 1 tarkistaa vain viestin sanarakenteen MD5 (Message Digest algorithm 5) summasta ovatko osapuolten väliset asettelut samanlaisia. ROS 1:sen modulaarisuus aiheuttaa joitakin haittoja, kuten TCP-porttien altistumisen, nämä kun eivät vaadi mitään todennusta. Varmistamattomien ja suojaamattomien TCP-porttien käyttö sekä todennusmekanismin puute voivat johtaa pahansuopiin puhujiin, jotka sotkevat järjestelmän. (Brookes, 2011) (Portugal, et al., 2018)</p>
-
-<p>ROS 1 käyttää myös anonyymia julkaisu/tilaussemantiikkaa. Solmut eivät täten ole tietoisia kenen kanssa ne ovat yhteydessä. Järjestelmä käyttää heikkoa auktorisointirakennetta, joilla ei ole lähettäjän, tietojen rehellisyyden tai aitouden varmistusta eikä käyttöoikeuksien tason määritystä. Kommunikoidakseen ROS 1 tarvitsee kaksisuuntaisen verkon kaikkien tietokoneiden välillä. Tällöin solmujen palomuurien asetuksien pitää olla vähemmän tiukkoja aiheuttaen ylimääräisen turvallisuusriskin ja ylimääräisen verkon resurssien käytön, kuten esim. kaistanleveys, energia, muisti tai aika ROS 1:ssä ole QoS. Jokainen solmu vastaa omasta kommunikaatioistaan, viestejä ei tiivistetä eikä verkkokommunikaatiota vähennetä. (Portugal, et al., 2018) (What is Network…, n.d).</p>
-
-<p>Käynnistettäessä ROS-isäntä aukeavat portit mille tahansa verkkokoneelle. Nämä koneet voivat kysellä ROS-isännältä kriittisiä tehtäviä kuten ROS TCP/UDP yhteyksien asettamista muiden solmujen kanssa, minkä tahansa aiheen tilaamista, lopettaa verkon solmun jne. Samassa verkossa oleva pahansuopa entiteetti voi päästä hyväksikäyttämään kaikkea robotin dataa kuten esim. lähettää komentoja, tukkia verkkoyhteyksiä, käyttää kameraa yms. (Portugal, et al., 2018)</p>
-
-<p>Ilman lisätoimia järjestelmän käytön rajoittamiseksi ROS.org sivuilla suositellaankin, ettei ROS-isäntää pidä koskaan yhdistää julkiseen Internettiin tai verkkoon, johon on pääsy käyttäjillä, joilla ei ole lupaa siihen. Sivuilla suositellaan kahta erilaista tapaa, joilla rajoittaa pääsyä ROS isäntä solmuun: verkon käyttämisen rajoittaminen kuten eristetyn verkon luominen tai palomuurin käyttö sekä erilaiset ROS laajennukset, jotka voivat todentaa käyttäjät ennen komentojen sallimista. (Security, 2020)</p>
-
-<h4 id="verkon-käyttö-suojauksessa">Verkon käyttö suojauksessa</h4>
-
-<p>Suositeltavinta on käyttää ROS:sia verkossa, joka ei ole yhdistetty Internettiin tai joka on verkossa palomuurilla määritetty estämään ROS-pääpostista (TCP 11311) saapuva liikenne. Yleinen asetus on ajaa ROS isännät erillisessä verkossa kuluttaja reitittimen takana, joka suorittaa Network Address Translation (NAT) jotta useat laitteet voivat jakaa saman julkisen IP osoitteen. NAT estää saapuvat yhteydet joita sisäiset isännät eivät ole käynnistäneet jolloin NAT:nin takana oleva isäntä ei ole oletusarvoisesti näkyvissä Internetissä. NAT ei kuitenkaan ole turvallisuuslaitteisto. Se voidaan määrittää väärin tai sillä voidaan avata portit ulkopuolista käyttöä varten. Käytettäessä eristettyä verkkoa tai NAT:nia, ulkopuolisille verkon käyttäjille voidaan antaa pääsy käyttäen Virtual Private Networkia (VPN) tai jotain muuta vastaavaa ratkaisua. Käytettäessä ROS:sia kannettavalla tietokoneella tai jollain muulla mobiilijärjestelmällä olisi tärkeää tiedostaa mitä verkkoa ollaan käyttämässä, jottei vahingossa käy niin, että siirrytään eristetystä verkosta avoimeen, jolloin päälle jäänyt isäntä pääsee vaarantumaan. (Security, 2020)</p>
-
-<h4 id="palomuurin-määritys">Palomuurin määritys</h4>
-
-<p>Palomuurin määrittämiseksi on päätettävä mikä IP-osoitealue edustaa IP-osoitteita, joille sallitaan yhteyden muodostus. Tähän sisäiseen verkkoon voi halutessaan liittää yhden tai useampia IP-osoitteita. (Security, 2020)</p>
-
-<p>Palomuurin olisi kuitenkin suotavaa toimia seuraavasti:</p>
-
+<p>Alla muutama esimerkki:</p>
 <ul>
-  <li>Sallia kaikki liikenne sisäisestä verkosta ROS isäntäporttiin, jotta ROS isäntä liikenne mahdollistuu</li>
-  <li>Sallia kaikki sisäisen verkon uudet TCP ja UDP yhteydet mistä tahansa portista tilaajia varten</li>
-  <li>Sallia liikenne muista porteista muita palveluita varten</li>
-  <li>Estää muista verkoista tulevia uusia TCP ja UDP yhteyksiä</li>
+  <li>Libratus: Carnegie Mellonin yliopiston kehittämä tekoäly. Ensimmäinen tietokone, joka voitti neljä pokerin ammattilaista.</li>
+  <li>AlphaGo: Googlen DeepMindin kehittämä tekoälyjärjestelmä, joka voitti maailman parhaana Go-pelin pelaajana pidetyn Lee Sedolin. Go on muinainen kiinalainen lautapeli, jossa on lukemattomia permutaatioita ja yhdistelmiä.</li>
+  <li>Tekoälykone nimeltä Dr. Fill voitti toukokuussa 2021 lähes 1 300 ihmistä amerikkalaisessa ristisanatehtäväturnauksessa.</li>
 </ul>
 
-<p>(Security, 2020)</p>
-
-<h4 id="verkkoyhteyden-luominen-teollisuusroboteilla">Verkkoyhteyden luominen teollisuusroboteilla</h4>
-
-<p>Tyypillisesti teollisuusrobotit ovat yhdistettyinä tietokoneeseen, jossa on asennettuna ROS ja joka käyttää ns. liikepalvelinta (Kuva ). Ohjelmat on kirjoitettu OEM kielellä (Original Equipment Manufacturer) jotka ovat käytössä teollisuusrobottien kontrollereissa ja mahdollistavat akseleiden paikkatietojen vastaanottamisen ja todellisten tietojen sekä tilan lähettämisen robottien ROS-ohjaimelle. OEM kielissä on eroja riippuen valmistajasta. Tällä hetkellä valmistajat eivät tarjoa käyttöliittymiä, jotka mahdollistavat salauksen tai oikeuksien todentamisen eikä toimenpidettä voida lisätä robotin kontrollerissa ajettuun liikepalvelinohjelmiin. Tämä mahdollistaa ROS-robottiohjaimeen ja siinä toimivaan liikepalvelinohjelmaan kohdistuvat hyökkäykset. (Security, 2020)</p>
-
-<p><img src="/assets/images/kytkenta.png" alt="security" /></p>
-<h5 id="teollisuusrobotin-yleinen-kytkentä-ja-mahdollinen-hyökkäys-wikirosorgsecurity-2020">Teollisuusrobotin yleinen kytkentä ja mahdollinen hyökkäys (wiki.ros.org/Security, 2020)</h5>
+<p>(Mehta &amp; Senn-Kalb , 2021.)</p>
 <p>&nbsp;</p>
 
-<p>Jotta minimoidaan riskit hyökkäyksille, on verkko määritettävä oikein. ROS-koneen ja robotin kontrollerin yhteys on oltava eristettynä muista verkoista. Tämä voidaan tehdä käyttämällä esimerkiksi kahta verkkoadapteria, jotka on yhdistetty kahteen eri verkkoon (Kuva ). (Security, 2020)</p>
+<h3 id="openai">OpenAI</h3>
+
+<p>OpenAI on San Franciscon lahden alueella sijaitseva tekoälyn tutkimuslaitos ja yksi heidän suurimmista panoksistaan on avoimen lähdekoodin OpenAI ”Gym”. Pythonille julkaistu paketti tarjoaa monia ympäristöjä, joissa käyttäjät voivat aloittaa vahvistavien oppimisalgoritmien käytön. Työkalupakki esittelee standardin ohjelmointirajapinnan liitännän RL oppimiseen suunnattujen ympäristöjen kanssa. Jokaisessa ympäristössä on versio, joka takaa tähdelliset vertailut ja toistettavat tulokset kehittyvien algoritmien ja ympäristön kanssa. RL:n yhteydessä ympäristöllä viitataan varsinaiseen tehtävään, Markovin päätöksentekoprosessiin (engl. Markov Decision Process, MDP), joka ratkaistaan algoritmin avulla. Ympäristö määrittää tehtävän tilan ja toimintavälin. (Beysolow II, 2019; Habib, 2019; Palanisamy, 2018.)</p>
+<p>&nbsp;</p>
+
+<h3 id="ros-industrial">ROS Industrial</h3>
+
+<p>Vuonna 2012 Yaskawa Motoman Robotics, Willow Garage ja saksalainen Southwest Research Institute (SwRI) aloittivat ROS-Industrial projektin. ROS-Industrial laajentaa ROS-ohjelmiston kehittyneitä ominaisuuksia teollisuusrobotteihin. Se koostuu monista ohjelmistopaketeista, joita voidaan käyttää teollisuusrobottien rajapinnassa. Paketit ovat BSD/Apache 2.0 lisensioituja ja ne pitävät sisällään kirjastoja, ohjaimia ja työkaluja teollisuuslaitteille. (Mahtani, et al., 2018.)<br />
+ROS-Industrial mahdollistaa laitteiden käytön langattomissa verkoissa, edistyneen 2D-näön sekä 3D-pistepilvisensorien käsittelyn. Ohjelmiston kehitystyökaluihin kuuluu yleinen tiedonkeruu, virheiden tarkastus sekä automatisoitu koodaus. Monien robotin reitin suunnittelijoiden ja optimoijien avulla kehittäjät voivat valita ja mukauttaa korkean tason vapausasteen omaavia järjestelmiä. (Southwest Research Institute…, 2012.)<br />
+ROS-Industrial konsortio käyttää laajasti MoveItia jo olemassa olevien kaupallisten robottien hallintaan, kuten Kuka, Universal Robots, Motoman, ABB sekä Fanuc. ROS-Industrial paketit tarjoavat sekä yhteyden MoveItiin että robottien ROS-ohjaimet, joiden avulla hallita robotteja. (Tellez, 2018.)</p>
+<p>&nbsp;</p>
+
+<h3 id="moveit">MoveIt</h3>
+
+<p>MoveIt on avoimen lähdekoodin projekti, joka on saatu aikaan suuren kansainvälisen yhteisön ja useiden organisaatioiden yhteistyöllä. Se on joukko työkaluja, jotka on tarkoitettu mobiilikäyttöön. Internet-sivusto sisältää dokumentaatiota, opetus- ja asennusohjelmia sekä esimerkkiesittelyjä monilla käsivarsiroboteilla tai roboteilla, jotka käyttävät MoveItia manipulointiin. Kirjasto sisältää nopean käänteisen kinematiikan ratkaisijan, huipputason algoritmeja manipulointiin, 3D-havainnollistuksen, kinematiikan, kontrolloinnin sekä navigoinnin. Lisäksi se tarjoaa helppokäyttöisen käyttöliittymän uusien käsivarsirobottien määrittämiseen ja Rviz-liitännät liikkeiden suunnitteluun. Sitä on käytetty yli 150 eri robottiin. (Martinez, et al., 2018; Moving robots into…, n.d.)</p>
+
+<p><img src="/assets/images/MoveIt.png" alt="moveit" /></p>
+<h5 id="kuva-11-moveit-arkkitehtuuri-martinez-et-al-2018">Kuva 11: MoveIt! arkkitehtuuri (Martinez, et al., 2018)</h5>
+
+<p>Move_group-elementin ajatuksena on, että liitäntäryhmät ja muut elementit määritellään liikkeensuunnittelualgoritmien avulla (Kuva 11), jotta liiketoiminnot saadaan suoritettua. Nämä algoritmit käsittelevät paikan ja ryhmän liitäntöjen ominaisuudet, joissa kohteet ovat vuorovaikutuksessa. Ryhmä määritetään käyttäen ROS:in vakio työkaluja ja määrityskieliä kuten YAML (YAML Ain’t Markup Language), URDF ja SDF (Simple Data Format). Ryhmään kuuluvat nivelet on siis määriteltävä niiden liitäntärajoilla. MoveIt tarjoaa GUI-toiminnon (Graphical User Interface), jolla määrittely tietylle robotille voidaan tehdä. Määrittelyn jälkeen voidaan suorittaa liittyminen C++ ja Python rajapinnan avulla. MoveIt sallii erilaisten kirjastojen käytön liikkeen suunnitteluun, kuten OMPL (Open Motion Planning Library), käyttäen ROS-toimintoja tai -palveluita. (Martinez, et al., 2018.)</p>
+
+<p>Yksi MoveItin tärkeimmistä ominaisuuksista on törmäyksien ja niiden välttämisen tarkistus. Tämä tehdään rinnakkain liikesuunnittelun ja IK-algoritmi (Inverse Kinematics) ratkaisun kanssa. Robotti voi törmätä joko itsensä (mallista riippuen) tai jonkin ympäristössä olevan kanssa. MoveIt kykenee hallitsemaan molemmat tapaukset. Pakettiin on sisällytetty avoimen lähdekoodin FCL (Flexible Collision Library), joka suorittaa erilaiset törmäyksen havainnointi- ja välttämisalgoritmit. Törmäyksen tarkistukseen kuuluu objekteja kuten mesh-verkko, primitiiviset muodot, kuten laatikot ja sylinterit sekä OctoMap. (Martinez, et al., 2018.)</p>
+
+<p>OctoMap-kirjasto muodostaa 3D-varauksellisen ruudukon, jota kutsutaan ”octreeksi”. Se koostuu ympäristön esteiden tilastomatemaattisesta tiedosta. MoveIt-paketti rakentaa OctoMapin käyttämällä 3D-pistepilveä ja siirtämällä se suoraan FCL:lle törmäyksen tarkistusta varten. (Martinez, et al., 2018.)</p>
+<p>&nbsp;</p>
+
+<h3 id="sros">SROS</h3>
+
+<p>Kehitteillä oleva ja kokeellinen SROS (Secure ROS) tukee alkuperäistä TLS-toimintoa (Transport Layer Security) tarjoten näin ROS-ohjelmointirajapintaan ja ekosysteemiin lisäystä, jolla tuetaan nykyaikaisia salauksia ja turvatoimia. Ominaisuuksiin kuuluvat mm. natiivi TLS-tuki kaikille IP/liitäntä tason viestinnälle, luottamusketjujen salliminen x.509-sertifikaattien avulla, määriteltävissä oleva nimitila ROS-solmujen rajoituksille ja sallituille rooleille sekä kätevä käyttäjätilan työkalu solmujen avainparien automaattiseen luomiseen sekä ROS-verkkojen tarkistus, pääsynvalvonnan rakentaminen ja kouluttaminen. (Portugal, et al., 2018; White, et al., 2016.)</p>
+
+<p>TLS:n käyttö kahden kommunikoivan sovelluksen välillä edesauttaa yksityisyyttä, henkilöllisyyden todennusta sekä datan eheyttä. Käynnistyksen yhteydessä SROS tarjoaa ROS-riippumattoman avainpalvelimen, joka luo ja jakaa avaimia ja sertifikaatteja ROS-solmuille. Saumattomasti integroitu SROS:in avainpalvelin yksinkertaistaa käyttäjien kokemuksia ja kehitystä. (Portugal, et al., 2018.)</p>
+<p>&nbsp;</p>
+
+<h3 id="rosbridge">Rosbridge</h3>
+
+<p>Rosbridge tarjoaa robotiikkaan ylimääräisen sovelluskerroksen (Kuva 12), joka mahdollistaa muidenkin kuin ROS-asiakasprosessien toiminnan yhdessä ROS-prosessien kanssa, mukaan lukien Web-rajapinnat. Rosbridge suhtautuu ROS:iin palvelinpuolena. Näin sovelluskehittäjät eivät tarvitse intiimejä tietoja matalan tason ohjausrajapinnoista, väliohjelmien koontijärjestelmistä tai monimutkaisista robotintunnistus- ja ohjausalgoritmeista. Minimissään heidän on kuitenkin ymmärrettävä väliohjelmistopaketin rakenne ja kuljetusmekanismit. (Crick, et al., 2016.)</p>
+
+<p><img src="/assets/images/Rosbridge.png" alt="rosbridge" /></p>
+<h5 id="kuva-12-rodbridgea-käyttävän-verkkosovelluksen-rakenne-alexander--al-2012">Kuva 12: Rodbridgea käyttävän verkkosovelluksen rakenne (Alexander &amp; al., 2012)</h5>
+
+<p>Rosbridgen avulla asiakkaat voivat julkaista ja tilata ROS-aiheita ja käynnistää ROS-palveluita palvelimen ajonaikaisessa ympäristössä kuljettamalla JSON-muotoiset (JavaScript Object Notation) viestit TCP- ja Websockettien kautta. Rosbridgen asiakkaat ovat kieliriippumattomia, tarkoittaen sitä, että voidaan käyttää mitä tahansa Websocketin tukemaa kieltä. Se ei myöskään rajoita asiakkaita ROS:iin. Rosbridge mahdollistaa yksinkertaisen viestinkäsittelyn sekä HTML5-verkkosovitteissa (Hypertext Markup Language) että standardeissa POSIX IP (Portable Operating System Interface) suoritinkannoissa. Esimerkkinä ”/sensorPacket” niminen ROS-aihe, jonka julkaisijana on yksinkertainen Python-asiakas (Kuva 13). (Alexander, et al., 2012; Crick, et al., 2016.)</p>
+
+<p><img src="/assets/images/sensorPacket.png" alt="rosbridge" /></p>
+<h5 id="kuva-13-sensorpacket-ros-topic-crick--al-2016">Kuva 13: “sensorPacket”, ROS-topic (Crick &amp; al., 2016)</h5>
+
+<p>JSON-pohjainen rosbridge protokolla on suunniteltu mahdollistamaan datan julkaisu, tilaaminen ja palveluiden hyödyntäminen minkä tahansa asiakkaan ja palvelimen välillä alustasta riippumatta. Onnistuneita toteutuksia on tehty mm. Linuxilla, Windowsilla, iOS:lla, Androidilla ja yleisillä Web-selaimilla. Vakaa ROS rosbridge-palvelin ja protokolla löytyvät ROS.org sivuilta: http://wiki.ros.org/rosbridge_suite (Alexander, et al., 2012.)</p>
+<p>&nbsp;</p>
+
+<h3 id="rosjs">ROSJS</h3>
+
+<p>Vuosien varrella laskentaparadigmat ovat kehittyneet ja nykyinen tekniikka mahdollistaa avoimen hallinnon, ylimääräisen muistin ja välittömän heterogeenisillä alustoilla toimivien ohjelmistojen käyttöönoton älypuhelimista moniytimisiin pöytäkoneisiin. Tämä on synnyttänyt joukon käyttäjiä, jotka ymmärtävät perusverkkoteknologiat, kuten HTML ja JavaScript. Osaaminen ulottuu ammattimaisten sovelluskehittäjien ulkopuolelle, käyttäjiin, jotka eivät ehkä kutsu itseään ohjelmoijiksi, mutta kuitenkin käyttävät verkkoa kaikkeen luovaan. Rosbridgen tavoitteena onkin laajentaa robotiikkaa kirjailijoiden, artistien, opiskelijoiden ja suunnittelijoiden joukkoon. JavaScriptistä on tullut verkon oletuskieli ja se onkin yksi maailman suosituimmista kielistä. (Crick, et al., 2016.)</p>
+
+<p>JavaScript kirjasto nimeltään ros.js rakennettiin helpottamaan viestintää selaimen ja rosbridgen välillä. Käyttäen ros.js ja rosbridgea selaimessa käynnissä oleva JavaScript sovellus kykenee kommunikoimaan etärobotilla tai palvelimella olevan ROS-sovelluksen kanssa. Ros.js on suunniteltu kevyeksi ja tapahtumapohjaiseksi. Sen kevyt koodi sallii helpomman integraation jo olemassa oleviin, laajamittaisiin JavaScript sovelluksiin. Tapahtumapohjainen ros.js mahdollistaa responsiivisemman käyttöliittymän ja erottaa ros.js moduulin muista JavaScript-moduuleista. (Alexander, et al., 2012.)</p>
+<p>&nbsp;</p>
+
+<h1 id="turvallisuus-verkossa">Turvallisuus verkossa</h1>
+
+<p>Robottien laaja lisääntyminen useilla eri aloilla on herättänyt keskustelua niiden käytön turvallisuudesta. Turvallisuus onkin ollut usein unohdettu ongelma robottijärjestelmissä, sillä painopiste on yleisesti ollut vain niiden toiminnallisuudessa ja innovaatioissa. Vaikka robottien käytön hyödyt on laajalti tiedostettu ja dokumentoitu, aiheuttavat nämä uusia turvallisuus- ja yksityisyydensuoja ongelmia. Aikaisemmin teollisuusrobotteja käytettiin pääsääntöisesti vain tehdasympäristöissä, joissa niiden suojana oli seinät ja suljettu verkko. Järjestelmien kehittyessä robotit siirtyvät pois suljetuista ympäristöistä. Yhdistettynä internettiin ja rakennettuna perinteisille tietokonealustoille ne ovat alttiina kyberhyökkäyksille sekä kokonaan uudelle joukolle turvallisuusriskejä, jotka voivat hakkeroinnin kohteeksi joutuessaan aiheuttaa tietoturvaongelmia tai jopa fyysisiä vahinkoja. (DiLuoffo, et al., 2018; Portugal, et al., 2018.)</p>
+
+<p>Oletusarvoisesti tietoturvasuojaus ei kuulu ROS 1:seen. Tämä altistaa robotit haitallisille hyökkäyksille. Luvaton kuuntelija voi helposti siepata ja tulkita viestiä, kerätä tietoja ja väärentää tietoja järjestelmään, sillä ROS 1 käyttää solmujen väliseen kommunikaatioon selkotekstiä (clear text) TCP/IP:n (Internet Protocol) ja UDP/IP:n kautta. ROS 1 tarkistaa vain viestin sanarakenteen MD5 (Message Digest algorithm 5) summasta ovatko osapuolten väliset asettelut samanlaisia. ROS 1:sen modulaarisuus aiheuttaa joitakin haittoja, kuten TCP-porttien altistumisen, nämä kun eivät vaadi mitään todennusta. Varmistamattomien ja suojaamattomien TCP-porttien käyttö sekä todennusmekanismin puute voivat johtaa pahansuopiin puhujiin, jotka sotkevat järjestelmän. (Brookes, 2011; Portugal, et al., 2018.)</p>
+
+<p>ROS 1 käyttää myös anonyymia julkaisu/tilaussemantiikkaa. Solmut eivät täten ole tietoisia kenen kanssa ne ovat yhteydessä. Järjestelmä käyttää heikkoa auktorisointirakennetta, joilla ei ole lähettäjän, tietojen rehellisyyden tai aitouden varmistusta eikä käyttöoikeuksien tason määritystä. Kommunikoidakseen ROS 1 tarvitsee kaksisuuntaisen verkon kaikkien tietokoneiden välillä. Tällöin solmujen palomuurien asetuksien pitää olla vähemmän tiukkoja aiheuttaen ylimääräisen turvallisuusriskin ja ylimääräisen verkon resurssien käytön, kuten esim. kaistanleveys, energia, muisti tai aika. Jokainen solmu vastaa omasta kommunikaatioistaan, viestejä ei tiivistetä eikä verkkokommunikaatiota vähennetä. (Portugal, et al., 2018; What is Network…, 2021).</p>
+
+<p>Käynnistettäessä ROS-isäntä aukeavat portit mille tahansa verkkokoneelle. Nämä koneet voivat kysellä ROS-isännältä kriittisiä tehtäviä kuten ROS TCP/UDP yhteyksien asettamista muiden solmujen kanssa, minkä tahansa aiheen tilaamista, verkon solmun lopettamista jne. Samassa verkossa oleva pahansuopa entiteetti voi päästä hyväksikäyttämään kaikkea robotin dataa kuten esim. lähettää komentoja, tukkia verkkoyhteyksiä, käyttää kameraa yms. (Portugal, et al., 2018.)</p>
+
+<p>Ilman lisätoimia järjestelmän käytön rajoittamiseksi ROS.org sivuilla suositellaankin, ettei ROS-isäntää pidä koskaan yhdistää julkiseen Internettiin tai verkkoon, johon on pääsy käyttäjillä, joilla ei ole siihen lupaa.  Sivuilla suositellaan kahta erilaista tapaa, joilla rajoittaa pääsyä ROS-isäntä solmuun: verkon käyttämisen rajoittaminen kuten eristetyn verkon luominen tai palomuurin käyttö sekä erilaiset ROS laajennukset, jotka voivat todentaa käyttäjät ennen komentojen sallimista. (Security, 2020.)</p>
+
+<h3 id="verkon-käyttö-suojauksessa">Verkon käyttö suojauksessa</h3>
+
+<p>Suositeltavinta on käyttää ROS:sia verkossa, joka ei ole yhdistetty Internettiin tai joka on verkossa palomuurilla määritetty estämään ROS-pääportista (TCP 11311) saapuva liikenne. Yleinen asetus on ajaa ROS-isännät erillisessä verkossa kuluttajareitittimen takana, joka suorittaa Network Address Translation (NAT) jotta useat laitteet voivat jakaa saman julkisen IP-osoitteen.  NAT estää saapuvat yhteydet, joita sisäiset isännät eivät ole käynnistäneet, jolloin NAT:in takana oleva isäntä ei ole oletusarvoisesti näkyvissä Internetissä. NAT ei kuitenkaan ole turvallisuuslaitteisto. Se voidaan määrittää väärin tai sillä voidaan avata portit ulkopuolista käyttöä varten. Käytettäessä eristettyä verkkoa tai NAT:ia, ulkopuolisille verkon käyttäjille voidaan antaa pääsy käyttäen VPN:ää (Virtual Private Network) tai jotain muuta vastaavaa ratkaisua. Käytettäessä ROS:ia kannettavalla tietokoneella tai jollain muulla mobiilijärjestelmällä olisi tärkeää tiedostaa mitä verkkoa ollaan käyttämässä, jottei vahingossa käy niin, että siirrytään eristetystä verkosta avoimeen, jolloin päälle jäänyt isäntä pääsee vaarantumaan. (Security, 2020.)</p>
+
+<h3 id="palomuurin-määritys">Palomuurin määritys</h3>
+
+<p>Palomuurin määrittämiseksi on päätettävä mikä IP-osoitealue edustaa IP-osoitteita, joille sallitaan yhteyden muodostus. Tähän sisäiseen verkkoon voi halutessaan liittää yhden tai useampia IP-osoitteita. (Security, 2020.)</p>
+
+<p>Palomuurin olisi kuitenkin suotavaa toimia seuraavasti:</p>
+<ul>
+  <li><em>Sallia kaikki liikenne sisäisestä verkosta ROS-isäntäporttiin, jotta ROS-isäntä liikenne mahdollistuu</em></li>
+  <li><em>Sallia kaikki sisäisen verkon uudet TCP ja UDP yhteydet mistä tahansa portista tilaajia varten</em></li>
+  <li><em>Sallia liikenne muista porteista muita palveluita varten</em></li>
+  <li><em>Estää muista verkoista tulevia uusia TCP ja UDP yhteyksiä</em></li>
+</ul>
+
+<p>(Security, 2020.)</p>
+
+<h3 id="verkkoyhteyden-luominen-teollisuusroboteilla">Verkkoyhteyden luominen teollisuusroboteilla</h3>
+
+<p>Tyypillisesti teollisuusrobotit ovat yhdistettyinä tietokoneeseen, jossa on ROS asennettuna ja joka käyttää ns. liikepalvelinta (Kuva 14). Ohjelmat on kirjoitettu OEM kielellä (Original Equipment Manufacturer) jotka ovat käytössä teollisuusrobottien kontrollereissa ja mahdollistavat akseleiden paikkatietojen vastaanottamisen ja todellisten tietojen sekä tilan lähettämisen robottien ROS-ohjaimelle. OEM kielissä on eroja riippuen valmistajasta. Tällä hetkellä valmistajat eivät tarjoa käyttöliittymiä, jotka mahdollistavat salauksen tai oikeuksien todentamisen eikä toimenpidettä voida lisätä robotin kontrollerissa ajettuun liikepalvelinohjelmiin. Tämä mahdollistaa ROS-robottiohjaimeen ja siinä toimivaan liikepalvelinohjelmaan kohdistuvat hyökkäykset. (Security, 2020.)
+<img src="/assets/images/kytkenta.png" alt="security" /></p>
+
+<h5 id="kuva-14-teollisuusrobotin-yleinen-kytkentä-ja-mahdollinen-hyökkäys-wikirosorgsecurity-2020">Kuva 14: Teollisuusrobotin yleinen kytkentä ja mahdollinen hyökkäys (wiki.ros.org/Security, 2020)</h5>
+
+<p>Jotta minimoidaan riskit hyökkäyksille, on verkko määritettävä oikein. ROS-koneen ja robotin kontrollerin yhteys on oltava eristettynä muista verkoista. Tämä voidaan tehdä käyttämällä esimerkiksi kahta verkkoadapteria, jotka on yhdistetty kahteen eri verkkoon (Kuva 15). (Security, 2020.)</p>
 
 <p><img src="/assets/images/verkko.png" alt="security" /></p>
-<h5 id="esimerkki-verkon-konfiguraatiosta-wikirosorgsecurity">Esimerkki verkon konfiguraatiosta (wiki.ros.org/Security)</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-15-esimerkki-verkon-konfiguraatiosta-wikirosorgsecurity">Kuva 15: Esimerkki verkon konfiguraatiosta (wiki.ros.org/Security)</h5>
 
-<p>Toinen adapteri on yhdistettynä teollisuusrobotin kontrolleriin (Net2 adapteri) ja toinen yhdistettynä paikallisen verkon reitittimeen (Net1 adapteri). Nämä adapterit on määritettävä eri aliverkko osoitteilla ja edelleen lähetystä pitäisi välttää. (Security, 2020)</p>
+<p>Toinen adapteri on yhdistettynä teollisuusrobotin kontrolleriin (Net2 adapteri) ja toinen yhdistettynä paikallisen verkon reitittimeen (Net1 adapteri). Nämä adapterit on määritettävä eri aliverkko-osoitteilla ja edelleenlähetystä pitäisi välttää. (Security, 2020.)</p>
 
-<p>DDS:n lisääminen yksinään ei ole kokonaisvaltainen robotiikan suojausmalli sillä järjestelmän osat voivat ali- tai ylikuormittua. Seurauksena voi olla heikentynyt suorituskyky tai odottamattomia haavoittuvuuksia. Robottijärjestelmien yhteydessä DDS:n lisääminen aiheuttaa sekä turvallisuus- että mahdollisia suorituskykyhuolia, jotka johtuvat ROS:n pub – sub paradigman aiheuttamasta suuresta viestiliikenteestä sekä muista kompromisseista liittyen laitteisto- ja ohjelmistojärjestelmien elementteihin. (DiLuoffo, et al., 2018)</p>
+<p>DDS:n lisääminen yksinään ei ole kokonaisvaltainen robotiikan suojausmalli sillä järjestelmän osat voivat ali- tai ylikuormittua. Seurauksena voi olla heikentynyt suorituskyky tai odottamattomia haavoittuvuuksia. Robottijärjestelmien yhteydessä DDS:n lisääminen aiheuttaa sekä turvallisuus- että mahdollisia suorituskykyhuolia, jotka johtuvat ROS:n pub – sub paradigman aiheuttamasta suuresta viestiliikenteestä sekä muista kompromisseista liittyen laitteisto- ja ohjelmistojärjestelmien elementteihin. (DiLuoffo, et al., 2018.)</p>
 
-<p>Eräät tutkijat ovat jakaneet ROS 2:sen haavoittuvuudet kolmeen eri kategoriaan: invasiivinen, ei-invasiivinen sekä puoli-invasiivinen. Näiden haavoittuvuuksien yhteenveto ja suhde sovellettavaan kerroksen on esitetty kuvassa ????. (Basheer &amp; Varol, 2019)</p>
+<p>Eräät tutkijat ovat jakaneet ROS 2:sen haavoittuvuudet kolmeen eri kategoriaan: invasiivinen, ei-invasiivinen sekä puoli-invasiivinen. Näiden haavoittuvuuksien yhteenveto ja suhde sovellettavaan kerrokseen on esitetty kuvassa 16. (Basheer &amp; Varol, 2019.)</p>
 
 <p><img src="/assets/images/haavoittuvuudet.png" alt="security" /></p>
-<h5 id="ros-tekniikkaa-käyttävien-robottien-haavoittuvuudet-basheer--al2019">ROS-tekniikkaa käyttävien robottien haavoittuvuudet (Basheer &amp; al.,2019)</h5>
+<h5 id="kuva-16-ros-tekniikkaa-käyttävien-robottien-haavoittuvuudet-basheer--al2019">Kuva 16: ROS-tekniikkaa käyttävien robottien haavoittuvuudet (Basheer &amp; al.,2019)</h5>
+
+<p>On tärkeä ymmärtää, että erilaisilla roboteilla kuten esim. herkkien esineiden manipulointiin tarkoitetuilla ja julkisilla teillä liikkuvilla autonomisilla ajoneuvoilla on erilaiset käyttöympäristöt ja siten hyvin erilaiset turvallisuusvaatimukset. Riippuen robottien tyypistä ja toiminnoista PKI-komponenteille (Public Key Infrastructure) ja yksittäisten vahvistuksien suorittamiselle tulisi asettaa suojauskäytäntö. ROS 2 mahdollistaa eri robottijärjestelmien suojaustekniikat joustavalla toimialueiden ja osallistujien segmentoinnilla. Robottijärjestelmän turvallisuuden määrittäminen voidaan ratkaista käyttämällä kaksitasoista pääsynvalvontaa eli hallinto- ja käyttöoikeuskäytäntöä. Välttämätöntä on kuitenkin suorittaa haavoittuvuusanalyysi, jotta riskit ja niiden vähentäminen voidaan määrittää. Kokonaiskuvasta nähdään, että ROS 2:ssa on parannettu turvallisuutta, mutta monet tasot ovat edelleen alttiina. (DiLuoffo, et al., 2018.)</p>
 <p>&nbsp;</p>
 
-<p>On tärkeä ymmärtää, että erilaisilla roboteilla kuten esim. herkkien esineiden manipulointiin tarkoitetuilla ja julkisilla teillä liikkuvilla autonomisilla ajoneuvoilla on erilaiset käyttöympäristöt ja siten hyvin erilaiset turvallisuusvaatimukset. Riippuen robottien tyypistä ja toiminnoista PKI-komponenteille (Public Key Infrastructure) ja yksittäisten vahvistuksien suorittamiselle tulisi asettaa suojauskäytäntö. ROS 2 mahdollistaa eri robottijärjestelmien suojaustekniikat joustavalla toimialueiden ja osallistujien segmentoinnilla. Robottijärjestelmän turvallisuuden määrittäminen voidaan ratkaista käyttämällä kaksitasoista pääsynvalvontaa eli hallinto- ja käyttöoikeuskäytäntöä. Välttämätöntä on kuitenkin suorittaa haavoittuvuusanalyysi, jotta riskit ja niiden vähentäminen voidaan määrittää. Kokonaiskuvasta nähdään, että ROS 2:ssa on parannettu turvallisuutta, mutta monet tasot ovat edelleen alttiina. (DiLuoffo, et al., 2018)</p>
+<h1 id="ethernet">Ethernet</h1>
 
+<p>Ethernet kehitettiin Xeroxin Palo Alto-tutkimuskeskuksessa (Palo Alto Reseach Center, PARC) 1970-luvulla edulliseksi ja vikasietoiseksi verkkoliittymäksi sekä lähi- (engl. Local Area Network, LAN) että alueverkoille (engl. Wide Area Network, WAN). Ethernet julkaistiin virallisesti vuonna 1985. Sen nopeus oli 10 Mb/s, joka oli siihen aikaan erittäin nopea. Vuonna 1995 kehitettiin 100 Mb/s Fast Ethernet (FE), jonka verkkokortit (engl. Network Interface Controller, NIC) kykenevät automaattisesti säätämään nopeutta 10–100 Mb/s välillä. Gigabit Ethernet (GE) julkaistiin vuonna 1999, mutta sen käyttö yleistyi vasta vuoden 2010 paikkeilla. Sekä Fast Ethernetia, että Gigabit Ethernetia käytetään verkkoyhteyksissä. Ne voivat toimia kuitukytkimen, valokuitukaapelin, Ethernet kaapelin ja joidenkin vastaavien laitteiden kanssa. (Fast Ethernet vs…, 2018; Smith, 2020; Spurgeon &amp; Zimmerman, 2014.)</p>
+
+<p><img src="/assets/images/Ethernet.png" alt="Ethernet" /></p>
+<h5 id="kuva-17-ethernet-kommunikointi-kenttäväylän-kautta-what-is-fieldbus-nd">Kuva 17: Ethernet kommunikointi kenttäväylän kautta. (What is Fieldbus?, n.d.)</h5>
+
+<p>Kenttäväylä on yksinkertainen tapa kommunikoida syöttö- ja tulostuslaitteiden kanssa ilman, että jokainen laite on kytkettävä takaisin ohjaimeen (Kuva 19) ts. se on digitaalinen kaksisuuntainen monipistekommunikaatioyhteys älykkäiden kenttälaitteiden välillä. Näitä kenttäväylävaihtoehtoja on useita erilaisia. Tämä johtuu siitä, että automaatiolaitteiden valmistajat ovat kehittäneet omia kenttäväyliään, joilla on erilaiset ominaisuudet ja toiminnot ja joilla kilpailla keskenään teknisellä tasolla. Laitteistorajapinnat ovat tärkeitä ROS:in integroinnissa tuotantojärjestelmiin. (Sen, 2014; What is Fieldbus?, n.d.)</p>
+
+<h3 id="ethetcat">EthetCAT</h3>
+
+<p>Vuonna 2003 merkittävä teollisuusautomaation ja ohjelmoitavien logiikkaohjainten valmistaja Beckhoff Automation kehitti EtherCAT:n (Ethernet for Control Automation Technology). Heti seuraavana vuonna he lahjoittivat oikeudet ETG:lle (EtherCAT Technology Group) jotka ovat vastuussa standardin edistämisestä.  (Smith, 2020.)</p>
+
+<p>EtherCAT on suurin ja nopein Ethernet-tekniikka, jonka synkronointi tapahtuu nanosekunnin tarkkuudella. Tästä hyötyvät sovellukset, joiden kohdejärjestelmää ohjataan tai mitataan väyläjärjestelmän kautta. Odotusaikojen vähentyminen parantaa sovelluksien tehokkuutta merkittävästi. EtherCAT:n järjestelmäarkkitehtuuri vähentää CPU:n (Central Processing Unit) kuormitusta jopa 25–30 % verrattuna muihin väyläjärjestelmiin. Näin ollen myös kustannukset alentuvat. Perinteisissä Etherneteissa verkon topologia on rajoittunutta, mutta EtherCAT:ssa ei tarvita keskittimiä eikä kytkimiä, jolloin se on käytännössä rajaton verkon topologian suhteen. Viiva-, puu-, tähtitopologiat ja erilaiset yhdistelmät ovat kaikki mahdollisia lähes rajattomalla määrällä solmuja (Kuva 18). (Why use EtherCAT?, n.d.)</p>
+
+<p><img src="/assets/images/ethercat.png" alt="ethercat" /></p>
+<h5 id="kuva-18-ethercat-verkko-rengastopologialla-smith-2020">Kuva 18: EtherCAT verkko rengastopologialla. (Smith, 2020)</h5>
+
+<p>EtherCAT voidaan asettaa määrittämään osoitteet automaattisesti. Sen pieni väyläkuorma ja vertaisfysiikka auttavat sietämään sähkömagneettisen kohinan aiheuttamia häiriötä. Verkon tunnistaessa mahdolliset häiriöt, vähenee vianetsintään käytettävä aika. EtherCAT:in suorituskyky poistaa tarpeen virittää verkkoa ja sen suuri kaistanleveys mahdollistaa TCP/IP:n ja ohjaustiedon lähettämisen samanaikaisesti. Functional Safety over EtherCAT:n (FSoE) ansiosta toiminnallinen turvallisuus integroituna osana verkkoarkkitehtuuria on todistetusti käytössä TÛV-sertifioiduilla (Technischer Überwachungsverein, engl. Technical Inspection Association) laitteilla. Protokolla sopii sekä keskitetyille että hajautetuille järjestelmille ja sitä voidaan käyttää myös muissa väyläjärjestelmissä. Toimiakseen EtherCAT:n päälaite vaatii vain Ethernet-portin, liitäntäkortit tai rinnakkaisprosessorit eivät ole tarpeen. Orjaohjaimia on saatavilla eri valmistajilta eri muodoissa: ASIC (Application Specific Integrated Circuit), FGPA (Field Programmable Gate Array), tai vaihtoehtona standardi mikroprosessorisarjoille. (Singh, 2018; TUV Rheinland Certificate, 2019; Why use EtherCAT?, n.d.)</p>
+
+<h3 id="modbus">Modbus</h3>
+
+<p>Modbus protokolla kehitettiin vuonna 1979 Modicon (nyk. Schneider Electric) nimisen yhtiön toimesta. Sen tarkoitus oli jakaa tietoja heidän omien PLC:sä (Programmable Logic Controller) välillä. Se julkaistiin avoimena ja kuka tahansa voi käyttää sitä ilman oikeudellisia seuraamuksia. Tämän johdosta siitä tuli yleisesti hyväksytty ”de facto”-standardi, ja se on nyt yleisimmin saatavilla oleva keino yhdistää teollisuuden elektroniset laitteet. Vuodesta 2004 sen hallinta on ollut käyttäjien ja toimittajien yhteisöllä, joka tunnetaan nimellä Modbus-IDA. (Sousa &amp; Portugal, 2011; What is Modbus…, n.d.)</p>
+
+<p>Modbus on tietoliikenneprotokolla, jolla voidaan lähettää ja vastaanottaa tietoja sarjaliikenneväylien, kuten RS232 ja RS485 kautta. Vuonna 1999 julkaistu Modbus/TCP-spesifikaatio määrittää IP-pohjaisen linkkikerroksen Modbus-kehyksille. Modbus TCP/IP-protokollan käyttämisellä on useita etuja, kuten yksinkertaisuus, standardi Ethernetin käyttö sekä avoimuus. Modbus käyttää isäntä-orja-arkkitehtuuria, jossa yksi solmu on konfiguroitu isännäksi ja muuta laitteet orjiksi. Näitä laitteita ovat esim. lämpö-, kosteus- ja valoanturit.   RS485 koostuu monipisteverkosta, joka tukee useita laitteita. Yhtä isäntää kohden voi olla jopa 247 orjaa ja sitä voidaan käyttää jopa 1000 m etäisyyksillä korkeilla siirtonopeuksilla. RS232 puolestaan on ns. ”point-to-point” ratkaisu eli siinä on vain yksi isäntä ja yksi orja. Sen etäisyydet ovat alle 20 m ja siinä käytetään alhaisia tai keskisuuria nopeuksia. Kaikkien laitteiden on tuettava RS485-liitäntää, kun taas RS232 on valinnainen. (Hersent, et al., 2012; Sen, 2014; Seneviratne, 2017; Sousa &amp; Portugal, 2011.)</p>
+
+<p>Lähetysmuoto, joko RTU (Remote Terminal Unit) tai ASCII (American Standard Code for Information Interchange) määrittää Modbus-verkossa siirrettävien viestien rajauksen ja bittien koodauksen. Määrätyssä verkossa kaikkien solmujen on käytettävä samoja tila- ja sarjaparametreja. Molemmat sekä RTU-tila että ASCII-tila käyttävät tiedonsiirtoon asynkronista lähestymistapaa. Erona on kuitenkin se, että RTU:ssa jokainen kehyksen sisällä oleva tavu lähetetään käyttämällä 11-bittistä merkkiä, kun taas ASCII:ssa jokainen tavu lähetetään kahtena ASCII-merkkinä. RTU-tila on nopeampi kuin ASCII-tila ja siten se löytää enemmän sovelluksia viestien lähettämiseen kuin ASCII-tila. Modbus/TCP huolehtii pääsystä Modbus-toimintoihin. Jokainen pyyntö/vastaus lähetetään tunnetun 502 portin kautta, käyttäen isännän ja orjan välille muodostettua TCP-yhteyttä. Yhteys on uudelleenkäytettävissä.  (Hersent, et al., 2012; Sen, 2014; Sousa &amp; Portugal, 2011.)</p>
+
+<h3 id="profinet">Profinet</h3>
+
+<p>Vuonna 1989 aloittanut ja yli 20 vuotta markkinajohtajana ollut PROFIBUS &amp; PROFINET Internationalin (PI) kehittämä Profinet on avoin teollisuuden Ethernet-standardi, joka kattaa kaikki automaatioteknologian vaatimukset. Profinet koostuu monista aiheista, kuten automaation distribuutiosta (Profinet CBA), kenttälaitteiden desentralisaatiosta (Profinet IO), verkon hallinnasta, asennusohjeistuksesta sekä verkkointegraatiosta. Alueellisesti ja maailmanlaajuisesti n. 1 700 jäsenyritystä tekee yhteistyötä automaation parantamiseksi. Vuodesta 2019 lähtien maailmassa on asennettu yli 32 miljoonaa Profinet-solmua. (About PI, 2020; J.Field, 2004; Henning, 2020; Wenzel, 2017.)</p>
+
+<p>PROFINET CBA:ssa koneet ja järjestelmät on jaettu teknologisiin moduuleihin, jotka koostuvat mekaanisista ja elektronisista komponenteista, elektroniikasta sekä ohjelmistosta. Toiminnallisuus on koteloitu PROFINET CBA-komponentteihin. Standardisoitujen rajapintojen kautta saadaan yhteys näihin komponentteihin. Niitä voidaan yhdistellä tarpeen mukaan ja niitä voidaan helposti uudelleenkäyttää. PROFINET IO:n avulla desentralisoituja kenttälaitteita voidaan käyttää Ethernetin kanssa. Näin automaatiolaitteita voidaan helposti käyttää homogeenisessä verkkoinfrastruktuurissa (J.Field, 2004.)</p>
+
+<p>Profinet-verkot saavuttavat 100 Mbit/s – 1Gbit/s (tai enemmän) suuruisia nopeuksia. Sanoman koko voi olla jopa 1 440 tavua, eikä osoiteavaruutta ole rajoitettu. Toisaalta ohjaimen suoritin ja muisti asettavat rajoituksia yksittäisille ohjaimille. Profinetin käyttämä kuluttuja- palvelumalli on joustavampi kuin isäntä/orja arkkitehtuuri. Sen verkossa sekä ohjaimet että IO-laitteet voivat ottaa kuluttajan ja palvelutarjoajan roolin hyödyntäen Ethernetin kaksisuuntaisuutta. Toimittajan roolissa ohjain toimittaa lähteviä tietoja konfiguroiduille IO-laitteille ollen IO-laitteiden syöttötietojen kuluttaja ja vastaavasti IO-laite on syöttötietojen toimittaja ja lähtevien tietojen kuluttaja. (Henning, 2020.)</p>
+
+<p>Suorituskyvyn varmistamiseksi Profinet toimittaa tietoa seuraavien viestikanavien kautta:</p>
+<ul>
+  <li>TCP/IP (tai UDP/IP)</li>
+  <li>PROFINET Real-Time (RT)</li>
+  <li>PROFINET Isochronous Real-Time (IRT)</li>
+  <li>Time Sensitive Networking (TSN)</li>
+</ul>
+
+<p>TCP/IP:tä käytetään ei-kriittisiin tehtäviin, kuten kokoonpanoon sekä parametrisointiin. Aikakriittisiin tehtäviin tämä menetelmä ei sovellu sillä IP-pohjaiseen viestintään liittyy lisäviivettä ja värinää. RT:ssa standardi Ethernet kehyksessä on EtherType-niminen kenttä, joka ilmaisee käytettävän protokollan tyypin, joka on 0x8892. Viestinnän nopeus ja determinismi paranevat huomattavasti sillä tiedot menevät suoraan Ethernetin 2. kerroksesta 7. kerrokseen ohittaen näin TCP/IP-kerrokset (Kuva 19). (Ayllon, 2021.)</p>
+
+<p><img src="/assets/images/profinet.png" alt="profinet" /></p>
+<h5 id="kuva-19-profinet-kerrokset-ayllon-2021">Kuva 19: Profinet kerrokset. (Ayllon, 2021)</h5>
+
+<p>Profinet-tuotteet on varustettu siten, ettei mitään erityistä laitteistoa tai kokoonpanoa reaaliaikaisen mekanismin käyttämiseen tarvita. Suorituskykyä voi parantaa käyttämällä IRT:tä, joka eliminoi muuttujatiedon viiveet parantamalla Ethernet-liikenteen siirtämiseen käytettyjä sääntöjä ja luomalla erityissäännöt Profinet-liikenteelle. IRT on valinnainen ja se vaaditaan vain erityisissä korkean suorituskyvyn sovelluksissa, kuten pakkaus- ja painokoneissa. TNS on lupaavaa uutta tekniikkaa, jonka etuja ovat lähentyminen, skaalautuvuus sekä joustavuus. Se kykenee käsittelemään jopa 1 024 laitetta ja saavuttamaan 31.35 µs jaksonaikoja. Sen tavoitteena on yhdistää laaja valikoima IT-verkkoja automaatioverkkojen varmuuteen ja determinismiin. TSN:ää ei kuitenkaan vielä ole otettu käyttöön Profinet-komponenteissa. (Ayllon, 2021; Time Sensitive Networking… , 2021.)</p>
 <p>&nbsp;</p>
+
 <h1 id="ros-tuettuja-antureita">ROS tuettuja antureita</h1>
 
-<p>Erilaiset anturit kuuluvat jo melkein jokaisen arkeen. Antureilla mitataan lämpötilaa, etäisyyttä, ilman kosteutta, tasataan paineita ja havaitaan mahdollinen tulipalon aiheuttama savu tai häkä. Käyttökohteita ja tarkoituksia on lukemattomia. Anturit ovat laitteita, jotka mittaavat fyysistä syötettä ja muuntavat ne tiedoksi, jonka joko ihminen tai kone voi tulkita. ROS:sin avulla robotti kehittää tietoisuutta ympäristöstään käyttämällä esim. stereonäköä, inertiamittausta sekä 3D-laserskannausta. Robotti yhdistää keräämänsä tiedot, jotta se tietää missä se on, minne se on menossa tai mitä mahdollisia esteitä on matkalla. (Stanley Innovation, 2020) Hyvä listaus ROS antureita löytyy ROS wiki sivistolta: http://wiki.ros.org/Sensors.</p>
-
+<p>Erilaiset anturit kuuluvat jo melkein jokaisen arkeen. Antureilla mitataan lämpötilaa, etäisyyttä, ilman kosteutta, tasataan paineita ja havaitaan mahdollinen tulipalon aiheuttama savu tai häkä. Käyttökohteita ja tarkoituksia on lukemattomia. Anturit ovat laitteita, jotka mittaavat fyysistä syötettä ja muuntavat ne tiedoksi, jonka joko ihminen tai kone voi tulkita. ROS:in avulla robotti kehittää tietoisuutta ympäristöstään käyttämällä esim. stereonäköä, inertiamittausta sekä 3D-laserskannausta. Robotti yhdistää keräämänsä tiedot, jotta se tietää missä se on, minne se on menossa tai mitä mahdollisia esteitä on matkalla. (Stanley Innovation, 2020.) Hyvä listaus ROS antureita löytyy ROS wiki sivustolta: http://wiki.ros.org/Sensors.</p>
 <p>&nbsp;</p>
+
 <h2 id="velodyne-lidar-velodyne">Velodyne Lidar (Velodyne)</h2>
 
-<p>Velodyne on 1983 perustettu yritys, joka tarjoaa tehokkaimpia ja älykkäimpiä markkinoilla olevia etäisyydenmittauslaitteita autonomiaan ja kuljettajan avustukseen. LiDAR:a kutsutaan usein myös laserskannaukseksi tai 3D-skannaukseksi. LiDAR käyttää silmille turvallisia lasersäteitä muodostaakseen 3D-esityksen ympäristöstään. Se laskee etäisyyksiä lähettämällä laservalopulssin ympäristöönsä ja laskee ajan, joka pulssilta kuluu heijastua kohteesta takaisin. Toistamalla prosessia miljoonia kertoja sekunnissa saadaan tarkka reaaliaikainen 3D kartta. Velodyne voidaan liittää ROS:iin ja generoida pilveen pistetietoja raakadatasta.(Velodyne Lidar, n.d) (What is LIDAR?, 2020)</p>
+<p>Velodyne on 1983 perustettu yritys, joka tarjoaa tehokkaimpia ja älykkäimpiä markkinoilla olevia etäisyydenmittauslaitteita autonomiaan ja kuljettajan avustukseen. LiDAR:a kutsutaan usein myös laserskannaukseksi tai 3D-skannaukseksi. LiDAR käyttää silmille turvallisia lasersäteitä muodostaakseen 3D-esityksen ympäristöstään (Kuva 20). (Velodyne Lidar, n.d.; What is LIDAR?, 2020.)</p>
 
 <p><img src="/assets/images/Velodyne.png" alt="Velodyne1" /></p>
-<h5 id="velodyne-simulointi-gazebolla">Velodyne simulointi Gazebolla</h5>
-<p>&nbsp;</p>
+<h5 id="kuva-20velodyne-simulointi-gazebolla">Kuva 20:Velodyne simulointi Gazebolla</h5>
+
 <p><img src="/assets/images/Velodyne_Rviz.png" alt="Velodyne2" /></p>
-<h5 id="velodyne-anturi-visualisaatio-rvizlla">Velodyne anturi visualisaatio Rviz:lla</h5>
+<h5 id="kuva-21-velodyne-anturi-visualisaatio-rvizlla">Kuva 21: Velodyne anturi visualisaatio Rviz:lla</h5>
+
+<p>Se laskee etäisyyksiä lähettämällä laservalopulssin ympäristöönsä ja laskee ajan, joka pulssilta kuluu heijastua kohteesta takaisin (Kuva 21). Toistamalla prosessia miljoonia kertoja sekunnissa saadaan tarkka reaaliaikainen 3D kartta. Velodyne voidaan liittää ROS:iin ja generoida pilveen pistetietoja raakadatasta. (Velodyne Lidar, n.d.; What is LIDAR?, 2020.)</p>
 
 <p>&nbsp;</p>
 <h2 id="zed-2-kamera-stereolabs">ZED 2 kamera (Stereolabs)</h2>
