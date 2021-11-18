@@ -1380,7 +1380,10 @@ Johtopäätös oli, että YOLO-algoritmi antoi tarkempia ja luotettavimpia ennus
 
 SLAM:in avulla robotti luo kartan ja lokalisoi itsensä käyttäen Adaptive Monte Carlo lokalisointialgoritmia. Koska Kinectia käytetään lähteenä, on tärkeää, että se muunnetaan vastaanottamaan data siten, että se on yhteensopiva ROS:in navigointipinon kanssa. Oletuksena ROS-kirjasto tarjoaa ros-perception paketin, jota kutsutaan ”pointcloud to laserscan”. Pointcloud-laserscan-solmu tilaa PointCloud-tiedot, jotka se julkaisee vastaavina Laser scan-tietoina. Julkaisun jälkeen SLAM:sta vastuussa oleva gmapping-paketti tilaa tiedot odometri kalibroinnin perusteella ja liikuttaa robottia nähdäkseen kartan muodostumisen. Kartta voidaan nähdä RVIZ:ssa. Robotin käyttö ei rajoitu vain sisätiloihin vaan se voidaan mukauttaa myös ulkotiloihin, jolloin tutkimustuloksia voidaan käyttää estämään salametsästys ja tunkeutuminen sekä tarkistaa laittomat maahanmuuttajat. (Maram, et al., 2019.)
 <p>&nbsp;</p>  
- 
+<p>&nbsp;</p>  
+<p>&nbsp;</p>  
+
+
 # Lähdeluettelo
 
 - A Comprehensive List..., 2016. A Comprehensive List of 3D Sensors Commonly Leveraged in ROS Development. [Online] 
@@ -1393,745 +1396,653 @@ Available at: [starship](https://www.starship.xyz/company/)
 Available at: [opencv](https://opencv.org/about/)
 [Haettu 1. 2. 2021].
 - About HORSE, 2017. About HORSE. [Online] 
-Available at: <http://www.horse-project.eu/About-HORSE>
+Available at: [about Horse](http://www.horse-project.eu/About-HORSE)
 [Haettu 19. 2. 2021].
 - About PI, 2020. About PI. [Online] 
-Available at: <https://www.profibus.com/pi-organization/about-pi>
+Available at: [profibus](https://www.profibus.com/pi-organization/about-pi)
 [Haettu 22. 9. 2021].
 - About the build..., 2021. About the build system. [Online] 
-Available at: <https://docs.ros.org/en/foxy/Concepts/About-Build-System.html>
+Available at: [foxy](https://docs.ros.org/en/foxy/Concepts/About-Build-System.html)
 [Haettu 30. 7. 2021].
 - Alexander, B. ym., 2012. Robot Web Tools. IEEE Robotics & Automation magazine, pp. 20-22.
-Artificial Intelligence for..., 2020. Periodic Reporting for period 1 - AI4DI (Artificial Intelligence for Digitizing Industry). [Online] 
-- Available at: <https://cordis.europa.eu/project/id/826060/reporting>
+- Artificial Intelligence for..., 2020. Periodic Reporting for period 1 - AI4DI (Artificial Intelligence for Digitizing Industry). [Online] 
+Available at: [cordis -20](https://cordis.europa.eu/project/id/826060/reporting)
 [Haettu 13. 9. 2021].
 - Artificial Intelligence for..., 2021. Artificial Intelligence for Digitizing Industry. [Online] 
-Available at: <https://cordis.europa.eu/project/id/826060>
+Available at: [cordis -21](https://cordis.europa.eu/project/id/826060)
 [Haettu 13. 9. 2021].
 - Ascento Indoor Mobility..., 2020. Ascento Indoor Mobility Robot. [Online] 
-Available at: <https://www.ascento.ethz.ch/>
+Available at: [ascento]https://www.ascento.ethz.ch/)
 [Haettu 23. 7. 2020].
 - Astrobee Robot Software, 2017. Github. [Online] 
-Available at: <https://github.com/nasa/astrobee>
+Available at: [astrobee](https://github.com/nasa/astrobee)
 [Haettu 20. 10. 2021].
 - Atostek Oy, n.d. Yritystiedot. Taloussanomat.
-Automated factory parking, n.d. Factory parking. [Online] 
-Available at: <https://www.unikie.com/en/solution/factory-parking/#technology>
+- Automated factory parking, n.d. Factory parking. [Online] 
+Available at: [atostek](https://www.unikie.com/en/solution/factory-parking/#technology)
 [Haettu 31. 8. 2020].
 - Autonomous robot successfully..., 2017. Autonomous robot successfully delivers takeout for the first time. February 2017 snapshots: Robots for food delivery, greenhouse harvesting, disaster relief, and autonomous vehicles , 14 2.. 
 - Autoware.AI, 2021. Autoware.AI. [Online] 
-Available at: <https://www.autoware.org/autoware-ai>
+Available at: [autoware.AI](https://www.autoware.org/autoware-ai)
 [Haettu 30. 8. 2021].
 - Autoware.Auto, n.d.. Autoware.Auto. [Online] 
-Available at: <https://autowarefoundation.gitlab.io/autoware.auto/AutowareAuto/>
+Available at: [autoware.Auto](https://autowarefoundation.gitlab.io/autoware.auto/AutowareAuto/)
 [Haettu 31. 8. 2021].
 - Ayllon, n., 2021. What is PROFINET? – PROFINET Explained. [Online] 
-Available at: <https://us.profinet.com/profinet-explained/>
+Available at: [profinet](https://us.profinet.com/profinet-explained/)
 [Haettu 24. 9. 2021].
 - Azure Kinect DK, 2020. Azure Kinect DK. [Online] 
-Available at: <https://azure.microsoft.com/en-us/services/kinect-dk/>
+Available at: [kinect](https://azure.microsoft.com/en-us/services/kinect-dk/)
 [Haettu 3. 9. 2020].
 - Badger, J., 2019. Robonaut 2 Technology Suite Offers Opportunities in Vast Range of Industries. [Online] 
-Available at: <https://robonaut.jsc.nasa.gov/R2/>
+Available at: [robonaut](https://robonaut.jsc.nasa.gov/R2/)
 [Haettu 4. 6. 2021].
 - Basemark is a..., n.d.. Basemark is a software company offering tools for those developing next generation autonomous and connected vehicles. [Online] 
-Available at: <https://www.basemark.com/company/>
+Available at: [basemark](https://www.basemark.com/company/)
 [Haettu 31. 8. 2021].
 - Basheer, M. M. & Varol, A., 2019. An Overview of Robot Operating System Forensics. s.l., IEEE Xplore.
-BATS the essential..., n.d.. BATS the essential performance evaluation tool for anyone choosing or developing an automotive soc. [Online] 
-Available at: <https://www.basemark.com/bats/>
+- BATS the essential..., n.d.. BATS the essential performance evaluation tool for anyone choosing or developing an automotive soc. [Online] 
+Available at: [bats](https://www.basemark.com/bats/)
 [Haettu 31. 8. 2021].
 - Benchmarks & tests, n.d.. Benchmarks & tests. [Online] 
-Available at: <https://www.basemark.com/benchmarks/>
+Available at: [benchmarks](https://www.basemark.com/benchmarks/)
 [Haettu 1. 9. 2021].
 - Best Single Board..., 2020. Best Single Board Computers/ Raspberry Pi Alternatives. [Online] 
-Available at: <https://all3dp.com/1/single-board-computer-raspberry-pi-alternative/>
+Available at: [raspberry](https://all3dp.com/1/single-board-computer-raspberry-pi-alternative/)
 [Haettu 9. 7. 2020].
 - Beysolow II, T., 2019. Applied Reinforcement Learning with Python: With OpenAI Gym, Tensorflow, and Keras. s.l.:Berkeley, CA: Apress L. P.
-Bibby, J. & Necessary, R., 2008. Robonaut 1. [Online] 
-Available at: <https://robonaut.jsc.nasa.gov/R1/index.asp>
+- Bibby, J. & Necessary, R., 2008. Robonaut 1. [Online] 
+Available at: [robonaut 1](https://robonaut.jsc.nasa.gov/R1/index.asp)
 [Haettu 2. 6. 2021].
 - Bogue, R., 2019. Robots in recycling and disassembly. Scholarly Journals, Vol. 46(4), pp. 461-462.
-Bolano, G., Roennau, A. & Dillman Ruediger, 2020. Planning and Evaluation of Robotic Solutions in a Logistic Line Through Augmented Reality. Taichung, Taiwan , 2020 Fourth IEEE International Conference on Robotic Computing (IRC).
-Bring Robots to..., 2021. Bring Robots to Everyone.. [Online] 
-Available at: <https://www.elephantrobotics.com/en/our-company/#>
+- Bolano, G., Roennau, A. & Dillman Ruediger, 2020. Planning and Evaluation of Robotic Solutions in a Logistic Line Through Augmented Reality. Taichung, Taiwan , 2020 Fourth IEEE International Conference on Robotic Computing (IRC).
+- Bring Robots to..., 2021. Bring Robots to Everyone.. [Online] 
+Available at: [elephant robotics](https://www.elephantrobotics.com/en/our-company/#)
 [Haettu 18. 8. 2021].
 - Brookes, T., 2011. What All This MD5 Hash Stuff Actually Means [Technology Explained]. [Online] 
-Available at: <https://www.makeuseof.com/tag/md5-hash-stuff-means-technology-explained/>
+Available at: [technology explained](https://www.makeuseof.com/tag/md5-hash-stuff-means-technology-explained/)
 [Haettu 30. 12. 2020].
 - Brown, B. & Zai, A., 2020. Deep Reinforcement Learning in Action. 1st edition toim. s.l.:Manning Publications.
-Buchholz, B. ym., 2018. PAiCE MONITOR Market, Technology, Innovation. [Online] 
+- Buchholz, B. ym., 2018. PAiCE MONITOR Market, Technology, Innovation. [Online] 
 Available at: [Paice Monitor](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj9zdeDkeryAhU-SfEDHdYNASoQFnoECAkQAQ&url=https%3A%2F%2Fwww.digitale-technologien.de%2FDT%2FRedaktion%2FEN%2FDownloads%2FPublikation%2FPAiCE_Monitor_en.pdf%3F__blob%3DpublicationFile)
 [Haettu 19. 3. 2021].
 - Built for the... , 2020. Built for the Spatial AI era. [Online] 
-Available at: <https://www.stereolabs.com/zed-2/>
+Available at: [stereolabs](https://www.stereolabs.com/zed-2/)
 [Haettu 6. 7. 2020].
 - CAD-2-PATH: Intuitive..., n.d.. CAD-2-PATH: Intuitive Creation of Complex Robot Paths. [Online] 
-Available at: <https://www.fzi.de/en/research/projekt-details/cad-2-path/>
+Available at: [cad-2-path](https://www.fzi.de/en/research/projekt-details/cad-2-path/)
 [Haettu 31. 3. 2021].
 - catkin/ conceptual_overview, 2020. catkin/ conceptual_overview. [Online] 
-Available at: <http://wiki.ros.org/catkin/conceptual_overview>
+Available at: [catkin](http://wiki.ros.org/catkin/conceptual_overview)
 [Haettu 30. 7. 2021].
 - Chen, R., 2020a. VIPER Mission Overview. [Online] 
-Available at: <https://www.nasa.gov/viper/overview>
+Available at: [viper overview](https://www.nasa.gov/viper/overview)
 [Haettu 24. 2. 2021].
 - Chen, R., 2020b. VIPER: The Rover and Its Onboard Toolkit. [Online] 
-Available at: <https://www.nasa.gov/viper/rover>
+Available at: [viper rover](https://www.nasa.gov/viper/rover)
 [Haettu 24. 2. 2021].
 - Chen, R., 2021. VIPER. [Online] 
-Available at: [viper](https://www.nasa.gov/viper/lunar-operations)
+Available at: [viper lunar](https://www.nasa.gov/viper/lunar-operations)
 [Haettu 24. 2. 2021].
-Clearpath robots on..., 2020. Clearpath robots on Windows 10. [Online] 
-Available at: https://microsoft.github.io/Win-RoS-Landing-Page/clearpath_case_study.html#
+- Clearpath robots on..., 2020. Clearpath robots on Windows 10. [Online] 
+Available at: [clearpath](https://microsoft.github.io/Win-RoS-Landing-Page/clearpath_case_study.html#)
 [Haettu 6. 7. 2020].
-Competitive Warehouse Automation..., 2020. Competitive Warehouse Automation with micro-ROS. [Online] 
-Available at: https://www.zephyrproject.org/competitive-warehouse-automation-with-micro-ros/
+- Competitive Warehouse Automation..., 2020. Competitive Warehouse Automation with micro-ROS. [Online] 
+Available at: [warehouse automation](https://www.zephyrproject.org/competitive-warehouse-automation-with-micro-ros/)
 [Haettu 18. 3. 2021].
-Core Components, n.d. Core Components. [Online] 
-Available at: https://www.ros.org/core-components/
+- Core Components, n.d. Core Components. [Online] 
+Available at: [core components](https://www.ros.org/core-components/)
 [Haettu 24. 8. 2020].
-Coxworth, B., 2020. Two-wheeled, two-legged robot rolls and jumps. [Online] 
-Available at: https://newatlas.com/robotics/ascento-wheeled-legged-robot/
+- Coxworth, B., 2020. Two-wheeled, two-legged robot rolls and jumps. [Online] 
+Available at: [ascento-wheeled-legged-robot](https://newatlas.com/robotics/ascento-wheeled-legged-robot/)
 [Haettu 23. 7. 2020].
-Crick, C. ym., 2016. Rosbridge: ROS for Non-ROS Users. Teoksessa: Robotics Research. s.l.:Springer, pp. 496-498.
-Crowe, S., 2021. Embark taking autonomous trucks public via SPAC deal. [Online] 
-Available at: https://www.therobotreport.com/embark-taking-autonomous-trucks-public-via-spac-deal/
+- Crick, C. ym., 2016. Rosbridge: ROS for Non-ROS Users. Teoksessa: Robotics Research. s.l.:Springer, pp. 496-498.
+- Crowe, S., 2021. Embark taking autonomous trucks public via SPAC deal. [Online] 
+Available at: [embark public](https://www.therobotreport.com/embark-taking-autonomous-trucks-public-via-spac-deal/)
 [Haettu 10. 9. 2021].
-Cuneo, E., 2020. Waymo to partner with Volvo Car Group to scale the Waymo Driver. [Online] 
-Available at: https://www.autonomousvehicletech.com/articles/2527-waymo-to-partner-with-volvo-car-group-to-scale-the-waymo-driver
+- Cuneo, E., 2020. Waymo to partner with Volvo Car Group to scale the Waymo Driver. [Online] 
+Available at: [waymo](https://www.autonomousvehicletech.com/articles/2527-waymo-to-partner-with-volvo-car-group-to-scale-the-waymo-driver)
 [Haettu 2. 7. 2020].
-cv_bridge/ Tutorials/ Using..., 2017. cv_bridge/ Tutorials/ UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages. [Online] 
-Available at: http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages
+- cv_bridge/ Tutorials/ Using..., 2017. cv_bridge/ Tutorials/ UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages. [Online] 
+Available at: [cv_bridge](http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages)
 [Haettu 15. 4. 2021].
-Dabrowski, A., 2021. Open-source release of ROS2 For Unity. [Online] 
-Available at: https://robotec.ai/open-source-release-of-ros2-for-unity/
+- Dabrowski, A., 2021. Open-source release of ROS2 For Unity. [Online] 
+Available at: [ROS2 for unity](https://robotec.ai/open-source-release-of-ros2-for-unity/)
 [Haettu 30. 8. 2021].
-Dabrowski, A., 2021. Robotec.ai has contributed significant work to ROS 2. [Online] 
-Available at: https://robotec.ai/robotec-ai-has-contributed-significant-work-to-ros-2/
+- Dabrowski, A., 2021. Robotec.ai has contributed significant work to ROS 2. [Online] 
+Available at: [robotec.ai](https://robotec.ai/robotec-ai-has-contributed-significant-work-to-ros-2/)
 [Haettu 30. 8. 2021].
-DASA awards £2-million..., 2020. DASA awards £2-million to fast track autonomous vehicles in harsh conditions. [Online] 
-Available at: https://www.gov.uk/government/news/dasa-awards-2m-to-fast-track-autonomous-vehicles-in-harsh-conditions
+- DASA awards £2-million..., 2020. DASA awards £2-million to fast track autonomous vehicles in harsh conditions. [Online] 
+Available at: [dasa](https://www.gov.uk/government/news/dasa-awards-2m-to-fast-track-autonomous-vehicles-in-harsh-conditions)
 [Haettu 7. 8. 2020].
-Depth camera D415, 2020. Intel® RealSenseTM Product Family D400 Series. [Online] 
-Available at: https://www.intelrealsense.com/depth-camera-d415/?utm_source=intelcom_website&utm_medium=button&utm_campaign=day-to-day&utm_content=D415_link
+- Depth camera D415, 2020. Intel® RealSenseTM Product Family D400 Series. [Online] 
+Available at: [depth camera](https://www.intelrealsense.com/depth-camera-d415/?utm_source=intelcom_website&utm_medium=button&utm_campaign=day-to-day&utm_content=D415_link)
 [Haettu 8. 7. 2020].
-Diligent robotics..., n.d.. Diligent Robotics transforming the meaning of "work". s.l.:s.n.
-DiLuoffo, V., Michalson, W. R. & Sunar, B., 2017. The transition from ROS 1 to ROS 2. [Online] 
-Available at: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwijsb36srPrAhWpmIsKHcDVAqo4FBAWMAh6BAgKEAE&url=https%3A%2F%2Finfo.rti.com%2Fhubfs%2Fpodcast%2Frti%2520site%2Ftile%2FWhite%2520paper%2520on%2520ROS%25201%2520to%2520ROS%25202%2520Tran
+- Diligent robotics..., n.d.. Diligent Robotics transforming the meaning of "work". s.l.:s.n.
+- DiLuoffo, V., Michalson, W. R. & Sunar, B., 2017. The transition from ROS 1 to ROS 2. [Online] 
+Available at: [diligent robotics](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwijsb36srPrAhWpmIsKHcDVAqo4FBAWMAh6BAgKEAE&url=https%3A%2F%2Finfo.rti.com%2Fhubfs%2Fpodcast%2Frti%2520site%2Ftile%2FWhite%2520paper%2520on%2520ROS%25201%2520to%2520ROS%25202%2520Tran)
 [Haettu 24. 8. 2020].
-DiLuoffo, V., Michalson, W. R. & Sunar, B., 2018. Robot Operating System 2: The need for a holistic security approach to robotic architectures. [Online] 
-Available at: https://journals.sagepub.com/doi/pdf/10.1177/1729881418770011
+- DiLuoffo, V., Michalson, W. R. & Sunar, B., 2018. Robot Operating System 2: The need for a holistic security approach to robotic architectures. [Online] 
+Available at: [holistic security](https://journals.sagepub.com/doi/pdf/10.1177/1729881418770011)
 [Haettu 1. 2. 2021].
-Distributions, 2021. Distributions. [Online] 
-Available at: https://index.ros.org/doc/ros2/Releases/
+- Distributions, 2021. Distributions. [Online] 
+Available at: [ros2 releases](https://index.ros.org/doc/ros2/Releases/)
 [Haettu 22. 1. 2021].
-Dunbar, B., 2012. What is Robonaut?. [Online] 
-Available at: https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-robonaut-58.html
+- Dunbar, B., 2012. What is Robonaut?. [Online] 
+Available at: [what is robonaut](https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-is-robonaut-58.html)
 [Haettu 2. 6. 2021].
-Elephant Robotics, 2021. Elephant Robotics. [Online] 
-Available at: https://www.crunchbase.com/organization/elephant-robotics
+- Elephant Robotics, 2021. Elephant Robotics. [Online] 
+Available at: [elephant-robotics](https://www.crunchbase.com/organization/elephant-robotics)
 [Haettu 18. 8. 2021].
-Elephant Robotics, 2021. Elephant Robotics Expands Lightweight Robot Arm Product Line > The company's myCobot series now features payloads from 250 g to 2 kg. IEEE Spectrum.
-Embark unveils self-driving..., 2017. Embark unveils self-driving truck. [Online] 
-Available at: https://www.fleetowner.com/technology/article/21695478/embark-unveils-selfdriving-truck
+- Elephant Robotics, 2021. Elephant Robotics Expands Lightweight Robot Arm Product Line > The company's myCobot series now features payloads from 250 g to 2 kg. IEEE Spectrum.
+- Embark unveils self-driving..., 2017. Embark unveils self-driving truck. [Online] 
+Available at: [embark unveils](https://www.fleetowner.com/technology/article/21695478/embark-unveils-selfdriving-truck)
 [Haettu 18. 6. 2020].
-Embedded Systems for..., 2020. Embedded Systems for Next-Generation Autonomous Machines. [Online] 
-Available at: https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/
+- Embedded Systems for..., 2020. Embedded Systems for Next-Generation Autonomous Machines. [Online] 
+Available at: [nvidia](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/)
 [Haettu 8. 7. 2020].
-Estefo, P., Simmonds, J., Robbes, R. & Fabry, J., 2019. The Robot Operating System: Package reuse and community dynamics. Journal of Systems and Software, 11 2., Osa/vuosikerta 151, pp. 228-229.
-Expertise Horticulture, n.d. Expertise Horticulture. [Online] 
-Available at: https://www.priva.com/expertise/horticulture
+- Estefo, P., Simmonds, J., Robbes, R. & Fabry, J., 2019. The Robot Operating System: Package reuse and community dynamics. Journal of Systems and Software, 11 2., Osa/vuosikerta 151, pp. 228-229.
+- Expertise Horticulture, n.d. Expertise Horticulture. [Online] 
+Available at: [horticulture](https://www.priva.com/expertise/horticulture)
 [Haettu 23. 11. 2020].
-Fast Ethernet vs..., 2018. Fast Ethernet vs Gigabit Ethernet. [Online] 
-Available at: http://www.fiber-optic-solutions.com/fast-ethernet-vs-gigabit-ethernet.html
+-Fast Ethernet vs..., 2018. Fast Ethernet vs Gigabit Ethernet. [Online] 
+Available at: [fast ethernet](http://www.fiber-optic-solutions.com/fast-ethernet-vs-gigabit-ethernet.html)
 [Haettu 15. 9. 2021].
-Features and Architecture, 2021. Features and Architecture. [Online] 
-Available at: https://micro.ros.org/docs/overview/features/
+- Features and Architecture, 2021. Features and Architecture. [Online] 
+Available at: [micro.ros features](https://micro.ros.org/docs/overview/features/)
 [Haettu 15. 4. 2021].
-Ficht, G. ym., 2020. NIMBRO-OP2X: AFFORDABLE ADULT-SIZED 3D-PRINTED. s.l., International Journal of Humanoid Robotics@World Scientific Publishing Company.
-Figliozzi, G., 2019. NASA’s New Flying Robots: Bee-ing in Space for the First Time. [Online] 
-Available at: https://www.nasa.gov/feature/ames/nasa-s-new-flying-robots-bee-ing-in-space-for-the-first-time
+- Ficht, G. ym., 2020. NIMBRO-OP2X: AFFORDABLE ADULT-SIZED 3D-PRINTED. s.l., International Journal of Humanoid Robotics@World Scientific Publishing Company.
+- Figliozzi, G., 2019. NASA’s New Flying Robots: Bee-ing in Space for the First Time. [Online] 
+Available at: [nasa.gov](https://www.nasa.gov/feature/ames/nasa-s-new-flying-robots-bee-ing-in-space-for-the-first-time)
 [Haettu 20. 10. 2021].
-Finnish Sensible 4..., 2020. Finnish Sensible 4 raises $7 million to support expansion of autonomous driving system specialised for harsh weather conditions. [Online] 
-Available at: https://sensible4.fi/2020/02/28/finnish-sensible-4-raises-7-million-to-support-expansion-of-autonomous-driving-system-specialised-for-harsh-weather-conditions/
+- Finnish Sensible 4..., 2020. Finnish Sensible 4 raises $7 million to support expansion of autonomous driving system specialised for harsh weather conditions. [Online] 
+Available at: [sensible 4](https://sensible4.fi/2020/02/28/finnish-sensible-4-raises-7-million-to-support-expansion-of-autonomous-driving-system-specialised-for-harsh-weather-conditions/)
 [Haettu 21. 7. 2020].
-Fleetonomy.ai Oy, n.d. Fleetonomy.ai Oy. [Online] 
-Available at: https://www.finder.fi/IT-konsultointi+IT-palvelut/Fleetonomy+ai+Oy/Helsinki/yhteystiedot/3155728
+- Fleetonomy.ai Oy, n.d. Fleetonomy.ai Oy. [Online] 
+Available at: [fleetonomy.ai](https://www.finder.fi/IT-konsultointi+IT-palvelut/Fleetonomy+ai+Oy/Helsinki/yhteystiedot/3155728)
 [Haettu 7. 8. 2020].
-Flexible assembly with..., 2017. Pilot Experiment 3: Flexible assembly with mobile robot (Thomas Regout International) You are here:. [Online] 
-Available at: http://www.horse-project.eu/Pilot-Experiment-3
+- Flexible assembly with..., 2017. Pilot Experiment 3: Flexible assembly with mobile robot (Thomas Regout International) You are here:. [Online] 
+Available at: [horse pilot-experiment](http://www.horse-project.eu/Pilot-Experiment-3)
 [Haettu 22. 2. 2021].
-Fortum GO, n.d. Fortum GO. [Online] 
-Available at: https://www.fortum.com/GO
+- Fortum GO, n.d. Fortum GO. [Online] 
+Available at: [fortum go](https://www.fortum.com/GO)
 [Haettu 7. 8. 2020].
-Foust, J., 2019. Robonaut to return to ISS. [Online] 
-Available at: https://spacenews.com/robonaut-to-return-to-iss/
+- Foust, J., 2019. Robonaut to return to ISS. [Online] 
+Available at: [robonaut return to iss](https://spacenews.com/robonaut-to-return-to-iss/)
 [Haettu 7. 6. 2021].
-Fridman, L. ym., 2017. MIT Autonomous Vehicle Technology Study: Large-Scale Deep Learning Based Analysis of Driver Behavior and Interaction with Automation, s.l.: s.n.
-FZIChannel, 2021. ROS Applications 2020 @FZI. [Online] 
-Available at: https://www.youtube.com/watch?v=7yHI7aj-n4Y&feature=youtu.be
-[Haettu 19 2. 2021].
-FZI, n.d.. FZI Forschungszentrum Informatik. [Online] 
-Available at: https://www.linkedin.com/company/fzi-official/about/
-[Haettu 19 2. 2021].
-FZI, n.d.. SeRoNet - Service Robotics Network. [Online] 
-Available at: https://www.fzi.de/en/research/projekt-details/seronet-service-robotics-network/
+- Fridman, L. ym., 2017. MIT Autonomous Vehicle Technology Study: Large-Scale Deep Learning Based Analysis of Driver Behavior and Interaction with Automation, s.l.: s.n.
+- FZIChannel, 2021. ROS Applications 2020 @FZI. [Online] 
+Available at: [ros applications](https://www.youtube.com/watch?v=7yHI7aj-n4Y&feature=youtu.be)
+[Haettu 19. 2. 2021].
+- FZI, n.d.. FZI Forschungszentrum Informatik. [Online] 
+Available at: [fzi-official](https://www.linkedin.com/company/fzi-official/about/)
+[Haettu 19. 2. 2021].
+- FZI, n.d.. SeRoNet - Service Robotics Network. [Online] 
+Available at: [seronet](https://www.fzi.de/en/research/projekt-details/seronet-service-robotics-network/)
 [Haettu 19. 3. 2021].
-Gacha autonomous shuttle..., 2019. Gacha autonomous shuttle bus. [Online] 
-Available at: https://sensible4.fi/gacha/
+- Gacha autonomous shuttle..., 2019. Gacha autonomous shuttle bus. [Online] 
+Available at: [gacha](https://sensible4.fi/gacha/)
 [Haettu 24. 7. 2020].
-Gallimore, E., Stokey, R. & Terrill, E., 2018. Robot Operating System (ROS) on the REMUS AUV using RECON. Porto, Portugal, IEEE.
-Gooding, D., Ensley, K., Hambuchen, K. & Thackston, A., 2016. ROS in Space: A Case Study on Robonaut 2. Teoksessa: Robot Operating System (ROS). s.l.:SpringerLink, pp. 343-373.
-GOV.UK, 2020. Transparency data Defence and Security Accelerator funded contracts: 1April 2017 to 31 March 2018. [Online] 
-Available at: https://www.gov.uk/government/publications/accelerator-funded-contracts/accelerator-funded-contracts-1-april-2017-to-31-march-2018
+- Gallimore, E., Stokey, R. & Terrill, E., 2018. Robot Operating System (ROS) on the REMUS AUV using RECON. Porto, Portugal, IEEE.
+- Gooding, D., Ensley, K., Hambuchen, K. & Thackston, A., 2016. ROS in Space: A Case Study on Robonaut 2. Teoksessa: Robot Operating System (ROS). s.l.:SpringerLink, pp. 343-373.
+- GOV.UK, 2020. Transparency data Defence and Security Accelerator funded contracts: 1April 2017 to 31 March 2018. [Online] 
+Available at: [gov.uk](https://www.gov.uk/government/publications/accelerator-funded-contracts/accelerator-funded-contracts-1-april-2017-to-31-march-2018)
 [Haettu 7. 8. 2020].
-Grossman, D., 2019. Meet the New Flying Robots That NASA Is Sending Into Space. [Online] 
-Available at: https://www.popularmechanics.com/technology/robots/a27542297/meet-the-new-flying-robots-that-nasa-is-sending-into-space/
+- Grossman, D., 2019. Meet the New Flying Robots That NASA Is Sending Into Space. [Online] 
+Available at: [nasa flying robot](https://www.popularmechanics.com/technology/robots/a27542297/meet-the-new-flying-robots-that-nasa-is-sending-into-space/)
 [Haettu 20. 10. 2021].
-Habib, N., 2019. Hands-on Q-learning with Python : practical Q-learning with OpenAI Gym, Keras, and TensorFlow. 1st edition toim. s.l.:Birmingham, England ; Mumbai : Packt.
-Hanson, D., Imran, A., Vellanki, A. & Kanagaraj, S., 2020. A Neuro-Symbolic Humanlike Arm Controller for Sophia the Robot. [Online] 
-Available at: https://arxiv.org/abs/2010.13983
+- Habib, N., 2019. Hands-on Q-learning with Python : practical Q-learning with OpenAI Gym, Keras, and TensorFlow. 1st edition toim. s.l.:Birmingham, England ; Mumbai : Packt.
+- Hanson, D., Imran, A., Vellanki, A. & Kanagaraj, S., 2020. A Neuro-Symbolic Humanlike Arm Controller for Sophia the Robot. [Online] 
+Available at: [neuro-symbolic arm](https://arxiv.org/abs/2010.13983)
 [Haettu 14. 6. 2021].
-Hawkins, A. J., 2019. Thousands of autonomous delivery robots are about to descend on US college campuses. The Verge, 20 8.. 
-Heinla, A., 2021. Starship Completes One Million Autonomous Deliveries. [Online] 
-Available at: https://medium.com/starshiptechnologies/one-million-autonomous-deliveries-milestone-65fe56a41e4c
-[Haettu 3 2. 2021].
-He, J. & Gao, F., 2020. Mechanism, Actuation, Perception, and Control of Highly Dynamic Multilegged Robots: A Review. Chinese Journal of Mechanical Engineering, 9. 11..Osa/vuosikerta 33.
-Hennessy, M., 2021. Makers of Sophia the robot plan mass rollout amid pandemic. Reuters.
-Henning, C., 2020. The Difference between PROFIBUS and PROFINET. [Online] 
-Available at: https://us.profinet.com/the-difference-between-profibus-and-profinet/
+- Hawkins, A. J., 2019. Thousands of autonomous delivery robots are about to descend on US college campuses. The Verge, 20 8.. 
+- Heinla, A., 2021. Starship Completes One Million Autonomous Deliveries. [Online] 
+Available at: [starship deliveries](https://medium.com/starshiptechnologies/one-million-autonomous-deliveries-milestone-65fe56a41e4c)
+[Haettu 3. 2. 2021].
+- He, J. & Gao, F., 2020. Mechanism, Actuation, Perception, and Control of Highly Dynamic Multilegged Robots: A Review. Chinese Journal of Mechanical Engineering, 9. 11..Osa/vuosikerta 33.
+- Hennessy, M., 2021. Makers of Sophia the robot plan mass rollout amid pandemic. Reuters.
+- Henning, C., 2020. The Difference between PROFIBUS and PROFINET. [Online] 
+Available at: [profibus vs. profinet](https://us.profinet.com/the-difference-between-profibus-and-profinet/)
 [Haettu 24. 9. 2021].
-Heppner, G. ym., 2015. LAUROPE - SIX LEGGED WALKING ROBOT FOR PLANETARY EXPLORATION. s.l., 13th Symposium on Advanced Space Technologies in Robotics and Automation, At ESA/ESTEC, Noordwijk, the Netherlands.
-Hersent, O., Boswarthick, D. & Elloumi, O., 2012. Modbus. Teoksessa: The internet of things : key applications and protocols. 1st edition toim. s.l.:Chichester, West Sussex : Wiley, pp. 79-82.
-HOKUYO www-sivut, 2014. About Us. [Online] 
-Available at: https://www.hokuyo-aut.jp/company/
+- Heppner, G. ym., 2015. LAUROPE - SIX LEGGED WALKING ROBOT FOR PLANETARY EXPLORATION. s.l., 13th Symposium on Advanced Space Technologies in Robotics and Automation, At ESA/ESTEC, Noordwijk, the Netherlands.
+- Hersent, O., Boswarthick, D. & Elloumi, O., 2012. Modbus. Teoksessa: The internet of things : key applications and protocols. 1st edition toim. s.l.:Chichester, West Sussex : Wiley, pp. 79-82.
+- HOKUYO www-sivut, 2014. About Us. [Online] 
+Available at: [hokuyo](https://www.hokuyo-aut.jp/company/)
 [Haettu 8. 7. 2020].
-Hornyak, T., 2014. An open-source robotics OS is moving from the lab to farms and even into space. [Online] 
-Available at: https://www.computerworld.com/article/2695294/an-open-source-robotics-os-is-moving-from-the-lab-to-farms-and-even-into-space.html
+- Hornyak, T., 2014. An open-source robotics OS is moving from the lab to farms and even into space. [Online] 
+Available at: [computerworld](https://www.computerworld.com/article/2695294/an-open-source-robotics-os-is-moving-from-the-lab-to-farms-and-even-into-space.html)
 [Haettu 1. 9. 2021].
-HORSE Factories, 2017. HORSE Factories. [Online] 
-Available at: http://www.horse-project.eu/HORSE_Factories
+- HORSE Factories, 2017. HORSE Factories. [Online] 
+Available at: [horse factories](http://www.horse-project.eu/HORSE_Factories)
 [Haettu 22. 2. 2021].
-HORSE Framework, 2017. HORSE Framework. [Online] 
-Available at: http://www.horse-project.eu/HORSE_Framework
-[Haettu 19 2. 2021].
-Hydroid Introduces the..., 2016. Hydroid Introduces the New Generation REMUS 100 AUV. [Online] 
-Available at: https://www.kongsberg.com/maritime/about-us/news-and-media/news-archive/2016/hydroid-introduces-the-new-generation-remus-100-auv/
+- HORSE Framework, 2017. HORSE Framework. [Online] 
+Available at: [horse framework](http://www.horse-project.eu/HORSE_Framework)
+[Haettu 19. 2. 2021].
+- Hydroid Introduces the..., 2016. Hydroid Introduces the New Generation REMUS 100 AUV. [Online] 
+Available at: [remus 100 auv](https://www.kongsberg.com/maritime/about-us/news-and-media/news-archive/2016/hydroid-introduces-the-new-generation-remus-100-auv/)
 [Haettu 22. 10. 2021].
-Imperial College London, 2020. About us. [Online] 
-Available at: https://www.imperial.ac.uk/hamlyn-centre/about-us/
+- Imperial College London, 2020. About us. [Online] 
+Available at: [imperial.ac.uk](https://www.imperial.ac.uk/hamlyn-centre/about-us/)
 [Haettu 10. 7. 2020].
-Imran, A., 2021. Building out Sophia 2020: An Integrative Platform for Embodied Cognition. [Online] 
-Available at: https://www.hansonrobotics.com/building-out-sophia-2020-an-integrative-platform-for-embodied-cognition/
+- Imran, A., 2021. Building out Sophia 2020: An Integrative Platform for Embodied Cognition. [Online] 
+Available at: [building sophia](https://www.hansonrobotics.com/building-out-sophia-2020-an-integrative-platform-for-embodied-cognition/)
 [Haettu 14. 6. 2021].
-Ingham, L., 2020. MOV.AI nets $4m funding to expand operating system for cobots. VERDICT, 13. 10..
-Intel NUC Ostajan..., 2020. Intel NUC Ostajan Opas 2019. [Online] 
-Available at: https://terastore.fi/intel-nuc/intel-nuc-ostajan-opas/
+- Ingham, L., 2020. MOV.AI nets $4m funding to expand operating system for cobots. VERDICT, 13. 10..
+- Intel NUC Ostajan..., 2020. Intel NUC Ostajan Opas 2019. [Online] 
+Available at: [terastore](https://terastore.fi/intel-nuc/intel-nuc-ostajan-opas/)
 [Haettu 8. 7. 2020].
-intelliRISK The odds..., n.d.. intelliRISK The odds for autonomy have never been better. [Online] 
-Available at: http://intellirisk-project.de/
+- intelliRISK The odds..., n.d.. intelliRISK The odds for autonomy have never been better. [Online] 
+Available at: [intellirisk](http://intellirisk-project.de/)
 [Haettu 1. 3. 2021].
-Introducing the revolution..., n.d. Introducing the revolution in local delivery. [Online] 
-Available at: https://www.aivan.fi/portfolio/starship-revolution-in-local-delivery/
-[Haettu 13 11. 2020].
-Introducing XGO-Mini, 2021. XGO-Mini, An Advanced Quadruped Robot With AI Modules. [Online] 
-Available at: https://www.kickstarter.com/projects/xgorobot/xgo-mini-an-advanced-quadruped-robot-with-ai-modules
+- Introducing the revolution..., n.d. Introducing the revolution in local delivery. [Online] 
+Available at: [starship revolution](https://www.aivan.fi/portfolio/starship-revolution-in-local-delivery/)
+[Haettu 13. 11. 2020].
+- Introducing XGO-Mini, 2021. XGO-Mini, An Advanced Quadruped Robot With AI Modules. [Online] 
+Available at: [xgo-mini](https://www.kickstarter.com/projects/xgorobot/xgo-mini-an-advanced-quadruped-robot-with-ai-modules)
 [Haettu 10. 8. 2021].
-Intuitive Creation of..., 2018. Intuitive Creation of Complex Robot Paths Thanks to a Development of the FZI. [Online] 
-Available at: https://www.fzi.de/en/news/press-releases/detail-en/artikel/komplexe-roboterpfade-dank-fzi-entwicklung-intuitiv-erstellen/
+- Intuitive Creation of..., 2018. Intuitive Creation of Complex Robot Paths Thanks to a Development of the FZI. [Online] 
+Available at: [intuitive creation](https://www.fzi.de/en/news/press-releases/detail-en/artikel/komplexe-roboterpfade-dank-fzi-entwicklung-intuitiv-erstellen/)
 [Haettu 31. 3. 2021].
-Is ROS For..., n.d.. Is ROS For Me?. [Online] 
-Available at: https://www.ros.org/is-ros-for-me/
+- Is ROS For..., n.d.. Is ROS For Me?. [Online] 
+Available at: [is-ros-for-me](https://www.ros.org/is-ros-for-me/)
 [Haettu 29. 7. 2021].
-Ives, M., 2021. The Latest Artist Selling NFTs? It’s a Robot.. The New York Times, 25. 3..
-J.Field, 2004. PROFINET - scalable factory communication for all applications. Vienna, Austria, IEEE.
-Jackal unmanned ground..., n.d. Jackal unmanned ground vehicle. [Online] 
-Available at: https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/
+- Ives, M., 2021. The Latest Artist Selling NFTs? It’s a Robot.. The New York Times, 25. 3..
+- J.Field, 2004. PROFINET - scalable factory communication for all applications. Vienna, Austria, IEEE.
+- Jackal unmanned ground..., n.d. Jackal unmanned ground vehicle. [Online] 
+Available at: [jackal](https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/)
 [Haettu 6. 7. 2020].
-Johnson, K., 2018. Delivery robot company Savioke raises $13.4 million to expand into hospitals. [Online] 
-Available at: https://venturebeat.com/2018/06/28/delivery-robot-company-savioke-raises-13-4-million-to-expand-into-hospitals/
+- Johnson, K., 2018. Delivery robot company Savioke raises $13.4 million to expand into hospitals. [Online] 
+Available at: [savioke](https://venturebeat.com/2018/06/28/delivery-robot-company-savioke-raises-13-4-million-to-expand-into-hospitals/)
 [Haettu 2. 7. 2020].
-Kanis, S., 2020. What is Astrobee?. [Online] 
-Available at: https://www.nasa.gov/astrobee
+- Kanis, S., 2020. What is Astrobee?. [Online] 
+Available at: [what is astrobee](https://www.nasa.gov/astrobee)
 [Haettu 20. 10. 2021].
-Kantonen, M., 2020. FortumGO demonstrating autonomy in 18km roadtrip in Helsinki assisted by remote driving from Fleetonomy.ai. s.l.:s.n.
-Kantonen, M., 2020. Toimitusjohtaja [Haastattelu] (5. 8. 2020).
-Kara, D., 2020. RBR50 Robotics Innovation Awards Digital Edition. [Online] 
-Available at: https://www.roboticsbusinessreview.com/rbr50/rbr50-robotics-innovation-awards-digital-edition/
-[Haettu 15 7. 2020].
-Karalekas, G., Vologiannidis, S. & Kalomiros, J., 2020. EUROPA: A Case Study for Teaching Sensors, Data Acquisition and Robotics via a ROS-Based Educational Robot. [Online] 
+- Kantonen, M., 2020. FortumGO demonstrating autonomy in 18km roadtrip in Helsinki assisted by remote driving from Fleetonomy.ai. s.l.:s.n.
+- Kantonen, M., 2020. Toimitusjohtaja [Haastattelu] (5. 8. 2020).
+- Kara, D., 2020. RBR50 Robotics Innovation Awards Digital Edition. [Online] 
+Available at: [robotics innovation](https://www.roboticsbusinessreview.com/rbr50/rbr50-robotics-innovation-awards-digital-edition/)
+[Haettu 15. 7. 2020].
+- Karalekas, G., Vologiannidis, S. & Kalomiros, J., 2020. EUROPA: A Case Study for Teaching Sensors, Data Acquisition and Robotics via a ROS-Based Educational Robot. [Online] [case study](http://dx.doi.org/10.3390/s20092469)
 [Haettu 18. 8. 2021].
-Klemm, V. ym., 2019. Ascento: A Two-Wheeled Jumping Robot. s.l., ResearchGate.
-Kokkonen, E., 2020. Niin mikä oli: mitä eri autonomisen ajamisen tasot tarkoittavat, ja missä nyt mennään?. Moottori, 7. 11.. 
-Koning, A. d., n.d. ROS redesigned. s.l.:s.n.
-Korosec, K., 2020. Starship Technologies is sending its autonomous robots to more cities as demand for contactless delivery rises. [Online] 
-Available at: https://techcrunch.com/2020/04/09/starship-technologies-is-sending-its-autonomous-robots-to-more-cities-as-demand-for-contactless-delivery-rises/
-[Haettu 13 11. 2020].
-Kottasova, I., 2015. Forget drones, here come delivery robots. [Online] 
-Available at: https://money.cnn.com/2015/11/03/technology/starship-delivery-robots/
-[Haettu 13 11. 2020].
-Kuitunen, M., n.d. Vincit on nyt Pirkanmaan vahvin yritys. [Online] 
-Available at: https://www.vincit.fi/fi/tiedotteet/vincit-on-nyt-pirkanmaan-vahvin-yritys/
+- Klemm, V. ym., 2019. Ascento: A Two-Wheeled Jumping Robot. s.l., ResearchGate.
+- Kokkonen, E., 2020. Niin mikä oli: mitä eri autonomisen ajamisen tasot tarkoittavat, ja missä nyt mennään?. Moottori, 7. 11.. 
+- Koning, A. d., n.d. ROS redesigned. s.l.:s.n.
+- Korosec, K., 2020. Starship Technologies is sending its autonomous robots to more cities as demand for contactless delivery rises. [Online] 
+Available at: [techcrunch starship](https://techcrunch.com/2020/04/09/starship-technologies-is-sending-its-autonomous-robots-to-more-cities-as-demand-for-contactless-delivery-rises/)
+[Haettu 13. 11. 2020].
+- Kottasova, I., 2015. Forget drones, here come delivery robots. [Online] 
+Available at: [forget drones](https://money.cnn.com/2015/11/03/technology/starship-delivery-robots/)
+[Haettu 13. 11. 2020].
+- Kuitunen, M., n.d. Vincit on nyt Pirkanmaan vahvin yritys. [Online] 
+Available at: [vincit](https://www.vincit.fi/fi/tiedotteet/vincit-on-nyt-pirkanmaan-vahvin-yritys/)
 [Haettu 21. 8. 2020].
-Lange, R., 2021. Micro-ROS – bringing the most popular robotics middleware onto tiny microcontrollers. [Online] 
-Available at: https://www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers/
+- Lange, R., 2021. Micro-ROS – bringing the most popular robotics middleware onto tiny microcontrollers. [Online] 
+Available at: [micro-ros](https://www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers/)
 [Haettu 14. 4. 2021].
-LAURON V, 2021. LAURON V, s.l.: s.n.
-LAURON, n.d.. LAURON. [Online] 
-Available at: https://www.fzi.de/en/research/projekt-details/lauron/
+- LAURON V, 2021. LAURON V, s.l.: s.n.
+- LAURON, n.d.. LAURON. [Online] 
+Available at: [lauron](https://www.fzi.de/en/research/projekt-details/lauron/)
 [Haettu 1. 3. 2021].
-Learn more about..., n.d. About us Learn more about Terabee. [Online] 
-Available at: https://www.terabee.com/about/
+- Learn more about..., n.d. About us Learn more about Terabee. [Online] 
+Available at: [terabee](https://www.terabee.com/about/)
 [Haettu 7. 7. 2020].
-Lentin, J. & Ramkumar , G., 2019. Introduction to Docker. Teoksessa: ROS Robotics Projects. 2. toim. s.l.:Packt Publishing.
-Limor Schweitzer, MOV.AI’s..., 2019. Limor Schweitzer, MOV.AI’s CEO, Talks About The World-Changing Concept Of Collaborative Robots Replacing Workers. Tech company news, 24. 6..
-Luwu Intelligence Technology..., 2021. Luwu Intelligence Technology Announces Launch of XGO-Mini: An Advanced Quadruped Robot With AI Modules. [Online] 
-Available at: https://robots-blog.com/2021/08/05/luwu-intelligence-technology-announces-launch-of-xgo-mini-an-advanced-quadruped-robot-with-ai-modules/
+- Lentin, J. & Ramkumar , G., 2019. Introduction to Docker. Teoksessa: ROS Robotics Projects. 2. toim. s.l.:Packt Publishing.
+- Limor Schweitzer, MOV.AI’s..., 2019. Limor Schweitzer, MOV.AI’s CEO, Talks About The World-Changing Concept Of Collaborative Robots Replacing Workers. Tech company news, 24. 6..
+- Luwu Intelligence Technology..., 2021. Luwu Intelligence Technology Announces Launch of XGO-Mini: An Advanced Quadruped Robot With AI Modules. [Online] 
+Available at: [luwu intelligence](https://robots-blog.com/2021/08/05/luwu-intelligence-technology-announces-launch-of-xgo-mini-an-advanced-quadruped-robot-with-ai-modules/)
 [Haettu 10. 8. 2021].
-Madsen, J. B., 2019. Announcement: Universa Robots launches ROS driver. [Online] 
-Available at: https://discourse.ros.org/t/announcement-universal-robots-launches-ros-driver/10952
+- Madsen, J. B., 2019. Announcement: Universa Robots launches ROS driver. [Online] 
+Available at: [discourse.ros.org](https://discourse.ros.org/t/announcement-universal-robots-launches-ros-driver/10952)
 [Haettu 1. 7. 2020].
-Mahmoud, M. S., Oyedeji, M. O. & Xia, Y., 2021. Path planning in autonomous aerial vehicles. Teoksessa: Advanced Distributed Consensus for Multiagent Systems. s.l.:Academic Press.
-Mahtani, A. ym., 2018. ROS on MATLAB and Android. Teoksessa: ROS Programming: Building Powerful Robots. s.l.:Packt Publishing.
-Maram, S. S., Vishnoi, T. & Pandey, S., 2019. Neural Network and ROS based Threat Detection and Patrolling Assistance. Gangtok, India, IEEE .
-Markets and markets, 2019. Robot Operating System Market by Robot Type (Articulated, SCARA, Parallel, Cartesian, Collaborative), Industry (Automotive, Electrical and Electronics, Metals and Machinery, Food and Beverages, Healthcare), and Region - Global Forecast to 2024, s.l.: MarketsandMarkets.
-Martinez, A. ym., 2018. ROS Programming: Building Powerful Robots. s.l.:Packt Publishing.
-Maruyama, Y., Kato, S. & Azumi, T., 2016. Exploring the Performance of ROS2. s.l., s.n.
-MathWorks, 2021. Robot Operating System (ROS) Support from ROS Toolbox. [Online] 
-Available at: https://se.mathworks.com/hardware-support/robot-operating-system.html
+- Mahmoud, M. S., Oyedeji, M. O. & Xia, Y., 2021. Path planning in autonomous aerial vehicles. Teoksessa: Advanced Distributed Consensus for Multiagent Systems. s.l.:Academic Press.
+- Mahtani, A. ym., 2018. ROS on MATLAB and Android. Teoksessa: ROS Programming: Building Powerful Robots. s.l.:Packt Publishing.
+- Maram, S. S., Vishnoi, T. & Pandey, S., 2019. Neural Network and ROS based Threat Detection and Patrolling Assistance. Gangtok, India, IEEE .
+- Markets and markets, 2019. Robot Operating System Market by Robot Type (Articulated, SCARA, Parallel, Cartesian, Collaborative), Industry (Automotive, Electrical and Electronics, Metals and Machinery, Food and Beverages, Healthcare), and Region - Global Forecast to 2024, s.l.: MarketsandMarkets.
+- Martinez, A. ym., 2018. ROS Programming: Building Powerful Robots. s.l.:Packt Publishing.
+- Maruyama, Y., Kato, S. & Azumi, T., 2016. Exploring the Performance of ROS2. s.l., s.n.
+- MathWorks, 2021. Robot Operating System (ROS) Support from ROS Toolbox. [Online] 
+Available at: [mathworks](https://se.mathworks.com/hardware-support/robot-operating-system.html)
 [Haettu 16. 4. 2021].
-Mavropolous, A., 2017. Revolutionizing Recycling Pick by Pick. [Online] 
-Available at: https://wastelessfuture.com/revolutionizing-recycling-pick-by-pick/
+- Mavropolous, A., 2017. Revolutionizing Recycling Pick by Pick. [Online] 
+Available at: [wastelessfuture](https://wastelessfuture.com/revolutionizing-recycling-pick-by-pick/)
 [Haettu 21. 8. 2020].
-Max-Fax, 2018. CAD-2_PATH-Intuitive Programming by Simple Paht Drawing on 3D Models, s.l.: s.n.
-Meertens, R., 2019. The Robot Operating System (ROS) Can Make Hospitals Smarter. [Online] 
-Available at: https://www.infoq.com/news/2019/10/ros-smarter-hospitals-robotics/
+- Max-Fax, 2018. CAD-2_PATH-Intuitive Programming by Simple Paht Drawing on 3D Models, s.l.: s.n.
+- Meertens, R., 2019. The Robot Operating System (ROS) Can Make Hospitals Smarter. [Online] 
+Available at: [smartes hospital](https://www.infoq.com/news/2019/10/ros-smarter-hospitals-robotics/)
 [Haettu 5. 8. 2021].
-Meet the e-Series..., 2020. Meet the e-Series Family. [Online] 
-Available at: https://www.universal-robots.com/e-series/
+- Meet the e-Series..., 2020. Meet the e-Series Family. [Online] 
+Available at: [e-series](https://www.universal-robots.com/e-series/)
 [Haettu 1. 7. 2020].
-Mehta, D. & Senn-Kalb , L., 2021. In-depth: Artificial Intelligence. [Online] 
-Available at: https://www.statista.com/study/50485/artificial-intelligence/
+- Mehta, D. & Senn-Kalb , L., 2021. In-depth: Artificial Intelligence. [Online] 
+Available at: [statista](https://www.statista.com/study/50485/artificial-intelligence/)
 [Haettu 26. 10. 2021].
-Merkusheva, D., 2020. 10 Humanoid Robots of 2020. [Online] 
-Available at: https://www.asme.org/topics-resources/content/10-humanoid-robots-of-2020
+- Merkusheva, D., 2020. 10 Humanoid Robots of 2020. [Online] 
+Available at: [10 humanoid](https://www.asme.org/topics-resources/content/10-humanoid-robots-of-2020)
 [Haettu 2. 6. 2021].
-Module rustdds::dds, n.d.. Module rustdds::dds. [Online] 
-Available at: https://docs.rs/rustdds/0.4.7/rustdds/dds/index.html
+- Module rustdds::dds, n.d.. Module rustdds::dds. [Online] 
+Available at: [rustdds](https://docs.rs/rustdds/0.4.7/rustdds/dds/index.html)
 [Haettu 21. 1. 2021].
-Mok, K., 2020. Robotics Operating System Brings Open Source Approach to Robotics Development. [Online] 
-Available at: https://thenewstack.io/robotics-operating-system-brings-open-source-approach-to-robotics-development/
+- Mok, K., 2020. Robotics Operating System Brings Open Source Approach to Robotics Development. [Online] 
+Available at: [ros brings)[https://thenewstack.io/robotics-operating-system-brings-open-source-approach-to-robotics-development/)
 [Haettu 21. 7. 2020].
-More cost-effective robot..., 2021. More cost-effective robot systems: Joint project "SeRoNet" is extended. [Online] 
-Available at: https://cs.uni-paderborn.de/en/cs-news-single-view-en/more-cost-effective-robot-systems-joint-project-seronet-is-extended
+- More cost-effective robot..., 2021. More cost-effective robot systems: Joint project "SeRoNet" is extended. [Online] 
+Available at: [cost-effective robot](https://cs.uni-paderborn.de/en/cs-news-single-view-en/more-cost-effective-robot-systems-joint-project-seronet-is-extended)
 [Haettu 26. 3. 2021].
-MOV.AI - The Robotics..., 2020. MOV.AI - The Robotics Engine Platform™. [Online] 
-Available at: https://www.linkedin.com/company/movai
-[Haettu 27 10. 2020].
-MOV.AI Raises $4M..., 2020. MOV.AI Raises $4M Led by SOMV Together With NFX and Viola Ventures. Robotics Research, 13. 10.. 
-Mov.ai www-sivut, n.d. MOV.AI Technology. [Online] 
-Available at: https://mov.ai/technology/
+- MOV.AI - The Robotics..., 2020. MOV.AI - The Robotics Engine Platform™. [Online] 
+Available at: [mov.ai](https://www.linkedin.com/company/movai)
 [Haettu 27. 10. 2020].
-Moving robots into..., n.d.. Moving robots into the future. [Online] 
-Available at: https://moveit.ros.org/
+- MOV.AI Raises $4M..., 2020. MOV.AI Raises $4M Led by SOMV Together With NFX and Viola Ventures. Robotics Research, 13. 10.. 
+- Mov.ai www-sivut, n.d. MOV.AI Technology. [Online] 
+Available at: [mov.ai technology](https://mov.ai/technology/)
+[Haettu 27. 10. 2020].
+- Moving robots into..., n.d.. Moving robots into the future. [Online] 
+Available at: [moveit.ros.org](https://moveit.ros.org/)
 [Haettu 28. 4. 2021].
-Mueller, C., 2019. WR Industrial Robots 2019 - Sources & Methods, s.l.: IFR.
+- Mueller, C., 2019. WR Industrial Robots 2019 - Sources & Methods, s.l.: IFR.
 myCobot, 2021. myCobot. [Online] 
-Available at: https://www.elephantrobotics.com/en/myCobot-en/
+Available at: [mycobot](https://www.elephantrobotics.com/en/myCobot-en/)
 [Haettu 18. 8. 2021].
-NASA/Johnson Space Center, 2019. Testing VIPER in the Mobility Testbed. [Online] 
-Available at: https://www.nasa.gov/image-feature/ames/testing-viper-in-the-mobility-testbed
+- NASA/Johnson Space Center, 2019. Testing VIPER in the Mobility Testbed. [Online] 
+Available at: [testing viper](https://www.nasa.gov/image-feature/ames/testing-viper-in-the-mobility-testbed)
 [Haettu 24. 2. 2021].
-Nelson, D., 2021. What is Deep Reinforcement Learning?. [Online] 
-Available at: https://www.unite.ai/what-is-deep-reinforcement-learning/
+- Nelson, D., 2021. What is Deep Reinforcement Learning?. [Online] 
+Available at: [deep reinforcement](https://www.unite.ai/what-is-deep-reinforcement-learning/)
 [Haettu 5. 8. 2021].
-New Version of..., 2021. New Version Of Robot Operating System (ROS) Released After 14 Years. What Changed?. [Online] 
-Available at: https://analyticsindiamag.com/robot-operating-system/
+- New Version of..., 2021. New Version Of Robot Operating System (ROS) Released After 14 Years. What Changed?. [Online] 
+Available at: [new version](https://analyticsindiamag.com/robot-operating-system/)
 [Haettu 20. 10. 2021].
-Ohjelmistoalan asiantuntija, n.d. Ohjelmistoalan asiantuntija. [Online] 
-Available at: https://www.atostek.com/yritys/
+- Ohjelmistoalan asiantuntija, n.d. Ohjelmistoalan asiantuntija. [Online] 
+Available at: [atostek yritys](https://www.atostek.com/yritys/)
 [Haettu 21. 1. 2021].
-Ohnsman, A., 2019. Self-Driving Startup Embark Raises $70 Million, Opens Freight Transfer Hubs For Robot Big Rigs. [Online] 
-Available at: https://www.forbes.com/sites/advisoruk/2020/06/16/premier-league-live-and-kicking-again--but-is-your-broadband-up-to-speed/#2e811de62e6d
+- Ohnsman, A., 2019. Self-Driving Startup Embark Raises $70 Million, Opens Freight Transfer Hubs For Robot Big Rigs. [Online] 
+Available at: [embark raises](https://www.forbes.com/sites/advisoruk/2020/06/16/premier-league-live-and-kicking-again--but-is-your-broadband-up-to-speed/#2e811de62e6d)
 [Haettu 18. 6. 2020].
-Olson, P., 2018. A Two – Minute Guide TO Artificial Intelligence. Forbes.
-OpenCV, 2021. OpenCV. [Online] 
-Available at: https://developer.nvidia.com/opencv
+- Olson, P., 2018. A Two – Minute Guide TO Artificial Intelligence. Forbes.
+- OpenCV, 2021. OpenCV. [Online] 
+Available at: [developer.nvidia](https://developer.nvidia.com/opencv)
 [Haettu 15. 4. 2021].
-Osiński, B. & Budek, K., 2018. What is reinforcement learning? The complete guide. [Online] 
-Available at: https://deepsense.ai/what-is-reinforcement-learning-the-complete-guide/
+- Osiński, B. & Budek, K., 2018. What is reinforcement learning? The complete guide. [Online] 
+Available at: [deepsense](https://deepsense.ai/what-is-reinforcement-learning-the-complete-guide/)
 [Haettu 2. 8. 2021].
-Our autonomous driving..., 2019. Our autonomous driving software. [Online] 
-Available at: https://sensible4.fi/technology/
+- Our autonomous driving..., 2019. Our autonomous driving software. [Online] 
+Available at: [sensible 4 technology](https://sensible4.fi/technology/)
 [Haettu 24. 7. 2020].
-Palanisamy, P., 2018. Hands-On Intelligent Agents with OpenAI Gym: Your Guide to Developing AI Agents Using Deep Reinforcement Learning. s.l.:Birmingham: Packt Publishing, Limited.
-Petrara, D., 2019. The Rise of ROS:Nearly 55% of total commercial robots shipped in 2024 Will Have at Least One Robot Operating System package Installed. [Online] 
-Available at: https://www.businesswire.com/news/home/20190516005135/en/Rise-ROS-55-total-commercial-robots-shipped
+- Palanisamy, P., 2018. Hands-On Intelligent Agents with OpenAI Gym: Your Guide to Developing AI Agents Using Deep Reinforcement Learning. s.l.:Birmingham: Packt Publishing, Limited.
+- Petrara, D., 2019. The Rise of ROS:Nearly 55% of total commercial robots shipped in 2024 Will Have at Least One Robot Operating System package Installed. [Online] 
+Available at: [rise of ros](https://www.businesswire.com/news/home/20190516005135/en/Rise-ROS-55-total-commercial-robots-shipped)
 [Haettu 1. 9. 2021].
-Pilots, 2017. Pilots. [Online] 
-Available at: http://www.horse-project.eu/Pilots
-[Haettu 19 2. 2021].
-Portugal, D., Santos, M. A., Pereira, S. & Couceiro, M. S., 2018. On the Security of Robotic Applications Using ROS. Teoksessa: R. V. Yampolskiy, toim. Artificial Intelligence Safety and Security. 1st toim. s.l.:CRC Press © 2019, pp. 273-277.
-Powelson, M., 2020. Hybrid Perception Systems for Process Feature Detection. [Online] 
-Available at: https://rosindustrial.org/news/2020/6/11/hybrid-perception-systems-for-process-feature-detection
+- Pilots, 2017. Pilots. [Online] 
+Available at: [horse pilots](http://www.horse-project.eu/Pilots)
+[Haettu 19. 2. 2021].
+- Portugal, D., Santos, M. A., Pereira, S. & Couceiro, M. S., 2018. On the Security of Robotic Applications Using ROS. Teoksessa: R. V. Yampolskiy, toim. Artificial Intelligence Safety and Security. 1st toim. s.l.:CRC Press © 2019, pp. 273-277.
+- Powelson, M., 2020. Hybrid Perception Systems for Process Feature Detection. [Online] 
+Available at: [hybrid perception](https://rosindustrial.org/news/2020/6/11/hybrid-perception-systems-for-process-feature-detection)
 [Haettu 16. 7. 2020].
-Quetzalli, A., 2020. What’s new with the open source Robot Operating System in 2020. [Online] 
-Available at: https://aws.amazon.com/blogs/opensource/whats-new-with-the-open-source-robot-operating-system-in-2020/
-[Haettu 25 11. 2020].
-Raspberry Pi 4..., 2020. Raspberry Pi 4 Model B. [Online] 
-Available at: https://www.digikey.fi/en/product-highlight/r/raspberry-pi/raspberry-pi-4-model-b
+- Quetzalli, A., 2020. What’s new with the open source Robot Operating System in 2020. [Online] 
+Available at: [what' new in -20](https://aws.amazon.com/blogs/opensource/whats-new-with-the-open-source-robot-operating-system-in-2020/)
+[Haettu 25. 11. 2020].
+-Raspberry Pi 4..., 2020. Raspberry Pi 4 Model B. [Online] 
+Available at: [raspberry pi 4](https://www.digikey.fi/en/product-highlight/r/raspberry-pi/raspberry-pi-4-model-b)
 [Haettu 8. 7. 2020].
-Relay, 2020. Relay. [Online] 
+- Relay, 2020. Relay. [Online] 
 [Haettu 2. 7. 2020].
-REMUS-100 Automatic Underwater..., n.d.. REMUS-100 Automatic Underwater Vehicles. [Online] 
-Available at: https://www.naval-technology.com/projects/remus-100-automatic-underwater-vehicle/
+- REMUS-100 Automatic Underwater..., n.d.. REMUS-100 Automatic Underwater Vehicles. [Online] 
+Available at: [remus-100 automatic](https://www.naval-technology.com/projects/remus-100-automatic-underwater-vehicle/)
 [Haettu 22. 10. 2021].
-Research and Markets..., 2021. Research and Markets, the worlds largest market research store. [Online] 
-Available at: https://www.researchandmarkets.com/reports/5030545/robot-operating-system-ros-global-market
+- Research and Markets..., 2021. Research and Markets, the worlds largest market research store. [Online] 
+Available at: [researchandmarkets](https://www.researchandmarkets.com/reports/5030545/robot-operating-system-ros-global-market)
 [Haettu 29. 7. 2021].
-Retto, J., 2017. SOPHIA, FIRST CITIZEN ROBOT OF THE WORLD. [Online] 
-Available at: https://www.researchgate.net/profile/Jesus_Retto/publication/321319964_SOPHIA_FIRST_CITIZEN_ROBOT_OF_THE_WORLD/links/5a1c8aa2a6fdcc0af3265a44/SOPHIA-FIRST-CITIZEN-ROBOT-OF-THE-WORLD.pdf
+- Retto, J., 2017. SOPHIA, FIRST CITIZEN ROBOT OF THE WORLD. [Online] 
+Available at: [sophia first citizen](https://www.researchgate.net/profile/Jesus_Retto/publication/321319964_SOPHIA_FIRST_CITIZEN_ROBOT_OF_THE_WORLD/links/5a1c8aa2a6fdcc0af3265a44/SOPHIA-FIRST-CITIZEN-ROBOT-OF-THE-WORLD.pdf)
 [Haettu 14. 6. 2021].
-Reuters, 2021. NFT artwork by humanoid robot sells at auction for nearly $700,000. Reuters.
-Reuters, T., 2021. In a first, most North American robots last year didn’t go to automotive plants. [Online] 
-Available at: https://kfgo.com/2021/01/28/in-a-first-most-north-american-robots-last-year-didnt-go-to-automotive-plants/
-[Haettu 3 2. 2021].
-ROBDEKON im Profil, n.d.. ROBDEKON im Profil. [Online] 
-Available at: https://robdekon.de/ueber-uns/profil
+- Reuters, 2021. NFT artwork by humanoid robot sells at auction for nearly $700,000. Reuters.
+- Reuters, T., 2021. In a first, most North American robots last year didn’t go to automotive plants. [Online] 
+Available at: [north american robots](https://kfgo.com/2021/01/28/in-a-first-most-north-american-robots-last-year-didnt-go-to-automotive-plants/)
+[Haettu 3. 2. 2021].
+- ROBDEKON im Profil, n.d.. ROBDEKON im Profil. [Online] 
+Available at: [rodbekon im profil](https://robdekon.de/ueber-uns/profil)
 [Haettu 5. 3. 2021].
-ROBDEKON: Central Contact..., 2019. ROBDEKON: Central Contact Point for the Development of Robots for Decontamination Tasks Launched. [Online] 
-Available at: https://www.fzi.de/en/news/news/detail-en/artikel/robdekon-zentrale-anlaufstelle-fuer-die-entwicklung-von-robotern-fuer-dekontaminationsaufgaben-eroeffn/
+- ROBDEKON: Central Contact..., 2019. ROBDEKON: Central Contact Point for the Development of Robots for Decontamination Tasks Launched. [Online] 
+Available at: [rodbekon central](https://www.fzi.de/en/news/news/detail-en/artikel/robdekon-zentrale-anlaufstelle-fuer-die-entwicklung-von-robotern-fuer-dekontaminationsaufgaben-eroeffn/)
 [Haettu 5. 3. 2021].
-Robonaut 2, n.d.. Robonaut 2. [Online] 
-Available at: http://www.nasa.gov/pdf/469616main_Robonaut2_factsheet.pdf
+- Robonaut 2, n.d.. Robonaut 2. [Online] 
+Available at: [r2 factsheet](http://www.nasa.gov/pdf/469616main_Robonaut2_factsheet.pdf)
 [Haettu 7. 6. 2021].
-Robonaut returns to..., 2021. Robonaut returns to Earth for repairs after seven years on space station. [Online] 
-Available at: http://www.collectspace.com/news/news-050718a-robonaut-r2-return-repair.html
+- Robonaut returns to..., 2021. Robonaut returns to Earth for repairs after seven years on space station. [Online] 
+Available at: [r2 return repair](http://www.collectspace.com/news/news-050718a-robonaut-r2-return-repair.html)
 [Haettu 7. 6. 2021].
-Robot Operating System..., 2021. Robot Operating System (ROS) ROS is the de facto standard for advanced robotic systems today.. [Online] 
-Available at: https://picknik.ai/ros/
+- Robot Operating System..., 2021. Robot Operating System (ROS) ROS is the de facto standard for advanced robotic systems today.. [Online] 
+Available at: [picnik.ai](https://picknik.ai/ros/)
 [Haettu 1. 9. 2021].
-Robot: Robonaut 2, 2015. Robot: Robonaut 2. [Online] 
-Available at: https://www.nationalgeographic.org/article/robot-robonaut-2/
+- Robot: Robonaut 2, 2015. Robot: Robonaut 2. [Online] 
+Available at: [nationalgeographic](https://www.nationalgeographic.org/article/robot-robonaut-2/)
 [Haettu 7. 6. 2021].
-Robotec.ai, 2021. Services. [Online] 
-Available at: https://robotec.ai/services/
+- Robotec.ai, 2021. Services. [Online] 
+Available at: [robotec.ai services](https://robotec.ai/services/)
 [Haettu 30. 8. 2021].
-Robot-human hybrid position/force..., 2017. Pilot Experiment 2: Robot-human hybrid position/force control co-working applications (Odlewnie Polskie SA). [Online] 
-Available at: http://www.horse-project.eu/Pilot-Experiment-2
+- Robot-human hybrid position/force..., 2017. Pilot Experiment 2: Robot-human hybrid position/force control co-working applications (Odlewnie Polskie SA). [Online] 
+Available at: [horse pilot experiment-2](http://www.horse-project.eu/Pilot-Experiment-2)
 [Haettu 22. 2. 2021].
-Robotic based quality..., 2017. Pilot Experiment 1: Robotic based quality (visual) inspection and human-robot co-manipulation (BOSCH). [Online] 
-Available at: http://www.horse-project.eu/Pilot-Experiment-1
-[Haettu 19 2. 2021].
-Rocksolid compute, n.d.. Rocksolid compute. [Online] 
-Available at: https://www.basemark.com/rocksolid-compute/
+- Robotic based quality..., 2017. Pilot Experiment 1: Robotic based quality (visual) inspection and human-robot co-manipulation (BOSCH). [Online] 
+Available at: [horse pilot experiment-1](http://www.horse-project.eu/Pilot-Experiment-1)
+[Haettu 19. 2. 2021].
+- Rocksolid compute, n.d.. Rocksolid compute. [Online] 
+Available at: [rocksolid-compute](https://www.basemark.com/rocksolid-compute/)
 [Haettu 31. 8. 2021].
-rocksolid proving graphics..., n.d.. rocksolid proving graphics rendering engine designed for automotive and industrial use cases. [Online] 
-Available at: https://www.basemark.com/rocksolid-graphics/
+- rocksolid proving graphics..., n.d.. rocksolid proving graphics rendering engine designed for automotive and industrial use cases. [Online] 
+Available at: [rocksolid-graphics](https://www.basemark.com/rocksolid-graphics/)
 [Haettu 31. 8. 2021].
-Roclan automaattitrukkien ohjausjärjestelmän..., 2019. Roclan automaattitrukkien ohjausjärjestelmän kuljetuskapasiteetti kasvoi jopa 38 % – ”Atostekilla oli hyvä pohja domainosaamiselle”. [Online] 
-Available at: https://www.atostek.com/rocla-automaattitrukit-asiakastarina/
-[Haettu 21 1. 2021].
-ROS 2 Consulting, n.d. ROS 2 Consulting. [Online] 
-Available at: https://www.ros2consulting.com/
-[Haettu 22 1. 2021].
-ROS components, 2016. Hokuyo UST-20LX. [Online] 
-Available at: https://www.roscomponents.com/en/lidar-laser-scanner/86-ust-20lx.html
+- Roclan automaattitrukkien ohjausjärjestelmän..., 2019. Roclan automaattitrukkien ohjausjärjestelmän kuljetuskapasiteetti kasvoi jopa 38 % – ”Atostekilla oli hyvä pohja domainosaamiselle”. [Online] 
+Available at: [roclan automaattitrukki](https://www.atostek.com/rocla-automaattitrukit-asiakastarina/)
+[Haettu 21. 1. 2021].
+- ROS 2 Consulting, n.d. ROS 2 Consulting. [Online] 
+Available at: [ros2consulting](https://www.ros2consulting.com/)
+[Haettu 22. 1. 2021].
+- ROS components, 2016. Hokuyo UST-20LX. [Online] 
+Available at: [lidar-laser-scanner](https://www.roscomponents.com/en/lidar-laser-scanner/86-ust-20lx.html)
 [Haettu 8. 7. 2020].
-rosbag/ Commandline, 2020. rosbag/ Commandline. [Online] 
-Available at: http://wiki.ros.org/rosbag/Commandline
+- rosbag/ Commandline, 2020. rosbag/ Commandline. [Online] 
+Available at: [rosbag](http://wiki.ros.org/rosbag/Commandline)
 [Haettu 24. 8. 2020].
-ROS-based robot..., 2018. ROS-based robot market volume worldwide between 2018 and 2024, s.l.: s.n.
-RustDDS - Data Distribution..., 2020. RustDDS – Data Distribution Service implemented in Rust. [Online] 
-Available at: https://atostek.com/rustdds-data-distribution-service-implemented-in-rust/
+- ROS-based robot..., 2018. ROS-based robot market volume worldwide between 2018 and 2024, s.l.: s.n.
+- RustDDS - Data Distribution..., 2020. RustDDS – Data Distribution Service implemented in Rust. [Online] 
+Available at: [rustdds data dist](https://atostek.com/rustdds-data-distribution-service-implemented-in-rust/)
 [Haettu 21. 1. 2021].
-Sallinen, S., 2020. Solteq: Robotiikka voi pian olla arkipäivää kaupoissa ja terveydenhoidossa. [Online] 
-Available at: https://www.businessfinland.fi/ajankohtaista/caset/2020/solteq-robotiikka-voi-pian-olla-arkipaivaa-kaupoissa-ja-terveydenhoidossa/
+- Sallinen, S., 2020. Solteq: Robotiikka voi pian olla arkipäivää kaupoissa ja terveydenhoidossa. [Online] 
+Available at: [businessfinland](https://www.businessfinland.fi/ajankohtaista/caset/2020/solteq-robotiikka-voi-pian-olla-arkipaivaa-kaupoissa-ja-terveydenhoidossa/)
 [Haettu 17. 8. 2020].
-Santos, C. H., 2020. Open source robotics gains traction in manufacturing. [Online] 
-Available at: https://www.imveurope.com/analysis-opinion/open-source-robotics-gains-traction-manufacturing
+- Santos, C. H., 2020. Open source robotics gains traction in manufacturing. [Online] 
+Available at: [imveurope](https://www.imveurope.com/analysis-opinion/open-source-robotics-gains-traction-manufacturing)
 [Haettu 20. 7. 2020].
-Satakuntaliitto, 2017. Satakunnan maakuntaohjelma 2018-2021, s.l.: Satakuntaliitto.
-Schmid, C., 2021. Pflege wertvoller Biotope: Autonomer Agrar-Roboter hilft beim Erhalt von Streuobstwiesen, s.l.: s.n.
-Scott, K., 2021. ROS news for 1/22/2021. [Online] 
-Available at: https://discourse.ros.org/t/ros-news-for-1-22-2021/18728
-[Haettu 3 2. 2021].
-Scott, K., 2021. ROS News for the Week of February 15, 2021, s.l.: s.n.
-Security, 2020. Security. [Online] 
-Available at: http://wiki.ros.org/Security
-[Haettu 30 12. 2020].
-Seneviratne, P., 2017. Modbus. Teoksessa: Building Arduino PLCs: The essential techniques you need to develop Arduino-based PLCs. s.l.:Apress, p. No page numbers.
-Sen, S. K., 2014. Fieldbuses. Teoksessa: Fieldbus and networking in process automation. 1st edition toim. s.l.:Boca Raton : CRC Press, p. 81.
-Sen, S. K., 2014. MODBUS and MODBUS PLUS. Teoksessa: Fieldbus and networking in process automation. 1st edition toim. s.l.:Boca Raton : CRC Press, pp. 185-193.
-Sim2Log VR: Semi-Virtual Planning and Validation of New Robotic Applications. 2020. [Filmi] s.l.: FZIChannel.
-Sim2Log VR, n.d.. Sim2Log VR. [Online] 
-Available at: https://www.interaktive-technologien.de/projekte/sim2logvr
+- Satakuntaliitto, 2017. Satakunnan maakuntaohjelma 2018-2021, s.l.: Satakuntaliitto.
+- Schmid, C., 2021. Pflege wertvoller Biotope: Autonomer Agrar-Roboter hilft beim Erhalt von Streuobstwiesen, s.l.: s.n.
+- Scott, K., 2021. ROS news for 1/22/2021. [Online] 
+Available at: [ros news 1/22/21](https://discourse.ros.org/t/ros-news-for-1-22-2021/18728)
+[Haettu 3. 2. 2021].
+- Scott, K., 2021. ROS News for the Week of February 15, 2021, s.l.: s.n.
+- Security, 2020. Security. [Online] 
+Available at: [ros news feb](http://wiki.ros.org/Security)
+[Haettu 30. 12. 2020].
+- Seneviratne, P., 2017. Modbus. Teoksessa: Building Arduino PLCs: The essential techniques you need to develop Arduino-based PLCs. s.l.:Apress, p. No page numbers.
+- Sen, S. K., 2014. Fieldbuses. Teoksessa: Fieldbus and networking in process automation. 1st edition toim. s.l.:Boca Raton : CRC Press, p. 81.
+- Sen, S. K., 2014. MODBUS and MODBUS PLUS. Teoksessa: Fieldbus and networking in process automation. 1st edition toim. s.l.:Boca Raton : CRC Press, pp. 185-193.
+- Sim2Log VR: Semi-Virtual Planning and Validation of New Robotic Applications. 2020. [Filmi] s.l.: FZIChannel.
+- Sim2Log VR, n.d.. Sim2Log VR. [Online] 
+Available at: [sim2log](https://www.interaktive-technologien.de/projekte/sim2logvr)
 [Haettu 23. 2. 2021].
-Simonite, T., 2017. Why John Deere Just Spent $305 Million on a Lettuce-Farming Robot. [Online] 
-Available at: https://www.wired.com/story/why-john-deere-just-spent-dollar305-million-on-a-lettuce-farming-robot/
+- Simonite, T., 2017. Why John Deere Just Spent $305 Million on a Lettuce-Farming Robot. [Online] 
+Available at: [john deere](https://www.wired.com/story/why-john-deere-just-spent-dollar305-million-on-a-lettuce-farming-robot/)
 [Haettu 1. 9. 2021].
-Singh, R., 2018. FPGA Vs ASIC: Differences Between Them And Which One To Use?. [Online] 
-Available at: https://numato.com/blog/differences-between-fpga-and-asics/
+- Singh, R., 2018. FPGA Vs ASIC: Differences Between Them And Which One To Use?. [Online] 
+Available at: [fpga sv asic](https://numato.com/blog/differences-between-fpga-and-asics/)
 [Haettu 16. 9. 2021].
-Smith, G. M., 2020. What Is EtherCAT Protocol and How Does It Work?. [Online] 
-Available at: https://dewesoft.com/daq/what-is-ethercat-protocol#introduction
+- Smith, G. M., 2020. What Is EtherCAT Protocol and How Does It Work?. [Online] 
+Available at: [ethercat protocol](https://dewesoft.com/daq/what-is-ethercat-protocol#introduction)
 [Haettu 15. 9. 2021].
-Solteq Retail Robot..., 2019. Solteq Retail Robot palkittiin Quality Innovation Award -kilpailussa. [Online] 
-Available at: https://www.solteq.com/fi/uutiset/solteq-retail-robot-palkittiin-quality-innovation-award-kilpailussa
+- Solteq Retail Robot..., 2019. Solteq Retail Robot palkittiin Quality Innovation Award -kilpailussa. [Online] 
+Available at: [solteq retail](https://www.solteq.com/fi/uutiset/solteq-retail-robot-palkittiin-quality-innovation-award-kilpailussa)
 [Haettu 17. 8. 2020].
-Solteq, 2019. Solteq. [Online] 
-Available at: https://fi.wikipedia.org/wiki/Solteq
+- Solteq, 2019. Solteq. [Online] 
+Available at: [solteq](https://fi.wikipedia.org/wiki/Solteq)
 [Haettu 17. 8. 2020].
-Sophia Instantation, n.d.. [Online] 
-Available at: https://niftygateway.com/itemdetail/primary/0xbe60d0a37ebde6f4ad22ceb311a28b3c53efe4e5/1
+- Sophia Instantation, n.d.. [Online] 
+Available at: [sophia instantation](https://niftygateway.com/itemdetail/primary/0xbe60d0a37ebde6f4ad22ceb311a28b3c53efe4e5/1)
 [Haettu 16. 6. 2021].
-Sophia, 2021. Sophia. [Online] 
-Available at: https://www.hansonrobotics.com/sophia/
+- Sophia, 2021. Sophia. [Online]
+Available at: [hanson robotics](https://www.hansonrobotics.com/sophia/)
 [Haettu 14. 6. 2021].
-Sousa, M. d. & Portugal, P., 2011. Modbus. Teoksessa: B. M. Milamowski & J. D. Irwin, toim. Industrial Communication Systems. Boca Raton: s.n., p. 962.
-Southwest Research Institute..., 2012. Southwest Research Institute Launches ROS-Industrial Consortium. [Online] 
-Available at: https://www-proquest-com.libproxy.tuni.fi/docview/1034212396/abstract/5B7D318FEEAD43E0PQ/1?accountid=14242
+- Sousa, M. d. & Portugal, P., 2011. Modbus. Teoksessa: B. M. Milamowski & J. D. Irwin, toim. Industrial Communication Systems. Boca Raton: s.n., p. 962.
+- Southwest Research Institute..., 2012. Southwest Research Institute Launches ROS-Industrial Consortium. [Online] 
+Available at: [southwest research](https://www-proquest-com.libproxy.tuni.fi/docview/1034212396/abstract/5B7D318FEEAD43E0PQ/1?accountid=14242)
 [Haettu 22. 4. 2021].
-Spurgeon, C. E. & Zimmerman, J., 2014. Preface. Teoksessa: Ethernet: The Definitive Guide. s.l.:O'Reilly Media, Inc., p. No page numbers.
-Stanley Innovation, 2020. A Case Study: Developing a ROS Robot with On-Board Computing for a University Robotics Department. [Online] 
-Available at: https://stanleyinnovation.com/ros-robot-bringing-robotics-sensors-together-ros-onboard-computing/
+- Spurgeon, C. E. & Zimmerman, J., 2014. Preface. Teoksessa: Ethernet: The Definitive Guide. s.l.:O'Reilly Media, Inc., p. No page numbers.
+- Stanley Innovation, 2020. A Case Study: Developing a ROS Robot with On-Board Computing for a University Robotics Department. [Online] 
+Available at: [stanley innovation](https://stanleyinnovation.com/ros-robot-bringing-robotics-sensors-together-ros-onboard-computing/)
 [Haettu 20. 7. 2020].
-Starship Technologies, 2021. linkedin. [Online] 
-Available at: https://www.linkedin.com/posts/starshiptechnologies_starship-robots-have-now-completed-2000000-activity-6856293108481622016--Vxy
+- Starship Technologies, 2021. linkedin. [Online] 
+Available at: [starship completed](https://www.linkedin.com/posts/starshiptechnologies_starship-robots-have-now-completed-2000000-activity-6856293108481622016--Vxy)
 [Haettu 26. 10. 2021].
-Starship Technologies-kuljetusrobotti..., 2019. Starship Technologies-kuljetusrobotti, design Aivan. [Online] 
-Available at: https://www.designforum.fi/media/starship-kuljetusrobotti-design-aivan/
-[Haettu 13 11. 2020].
-Steering towards a..., 2019. Steering towards a smarter planet. [Online] 
-Available at: https://sensible4.fi/about-us/
+- Starship Technologies-kuljetusrobotti..., 2019. Starship Technologies-kuljetusrobotti, design Aivan. [Online] 
+Available at: [designforum](https://www.designforum.fi/media/starship-kuljetusrobotti-design-aivan/)
+[Haettu 13. 11. 2020].
+- Steering towards a..., 2019. Steering towards a smarter planet. [Online] 
+Available at: [about sensible 4](https://sensible4.fi/about-us/)
 [Haettu 21. 7. 2020].
-Struct rustdds::ros2::RosNode, n.d.. Struct rustdds::ros2::RosNode. [Online] 
-Available at: https://docs.rs/rustdds/0.4.7/rustdds/ros2/struct.RosNode.html
+- Struct rustdds::ros2::RosNode, n.d.. Struct rustdds::ros2::RosNode. [Online] 
+Available at: [struct rustdds](https://docs.rs/rustdds/0.4.7/rustdds/ros2/struct.RosNode.html)
 [Haettu 21. 1. 2021].
-Stuhlemmer, 2021. Schaufenster Bioökonomie:. [Online] 
-Available at: https://www.uni-hohenheim.de/pressemitteilung?tx_ttnews%5Btt_news%5D=50448&cHash=d9323f903b5f747d2f4bae1673497584
-[Haettu 3 2. 2021].
-Suresh, A. ym., 2019. Intelligent Smart Glass for Visually Impaired Using Deep Learning Machine Vision Techniques and Robot Operating System (ROS). s.l., Springer, Cham.
-Suresh, A. ym., 2018. Design and Development of Intelligent Self-driving Car Using ROS and Machine Vision Algorithm. s.l., Springer Link.
-Sushant, 2019. Embark Trucks: Autonomous trucks getting real. [Online] 
-Available at: https://carbiketech.com/embark-trucks/
+- Stuhlemmer, 2021. Schaufenster Bioökonomie:. [Online] 
+Available at: [uni-hohenheim](https://www.uni-hohenheim.de/pressemitteilung?tx_ttnews%5Btt_news%5D=50448&cHash=d9323f903b5f747d2f4bae1673497584)
+[Haettu 3. 2. 2021].
+- Suresh, A. ym., 2019. Intelligent Smart Glass for Visually Impaired Using Deep Learning Machine Vision Techniques and Robot Operating System (ROS). s.l., Springer, Cham.
+- Suresh, A. ym., 2018. Design and Development of Intelligent Self-driving Car Using ROS and Machine Vision Algorithm. s.l., Springer Link.
+- Sushant, 2019. Embark Trucks: Autonomous trucks getting real. [Online] 
+Available at: [autonomous trucks](https://carbiketech.com/embark-trucks/)
 [Haettu 2. 7. 2020].
-Tehokkuutta ja toimintavarmuutta..., n.d. Tehokkuutta ja toimintavarmuutta konttiterminaalin automatisoinnilla. [Online] 
-Available at: https://www.atostek.com/asiakkaat/cargotec/
+- Tehokkuutta ja toimintavarmuutta..., n.d. Tehokkuutta ja toimintavarmuutta konttiterminaalin automatisoinnilla. [Online] 
+Available at: [atostek cargotek](https://www.atostek.com/asiakkaat/cargotec/)
 [Haettu 21. 1. 2021].
-Tellez, R., 2018. What is moveit_ros? All about Movelt! ROS. [Online] 
-Available at: https://www.theconstructsim.com/ros-movelt/
-[Haettu 29 4. 2021].
-teraranger, 2019. teraranger. [Online] 
-Available at: http://wiki.ros.org/teraranger
+- Tellez, R., 2018. What is moveit_ros? All about Movelt! ROS. [Online] 
+Available at: [ros-moveit](https://www.theconstructsim.com/ros-movelt/)
+[Haettu 29. 4. 2021].
+- teraranger, 2019. teraranger. [Online] 
+Available at: [teraranger](http://wiki.ros.org/teraranger)
 [Haettu 7. 7. 2020].
-Tervola, J., 2012. Mikko Kuitunen nuorten yrittäjien Suomen mestariksi. [Online] 
-Available at: https://www.tekniikkatalous.fi/uutiset/mikko-kuitunen-nuorten-yrittajien-suomen-mestariksi/71746848-5508-39ab-af52-b6ffaed83a1e
+- Tervola, J., 2012. Mikko Kuitunen nuorten yrittäjien Suomen mestariksi. [Online] 
+Available at: [yrittäjien mestari](https://www.tekniikkatalous.fi/uutiset/mikko-kuitunen-nuorten-yrittajien-suomen-mestariksi/71746848-5508-39ab-af52-b6ffaed83a1e)
 [Haettu 21. 8. 2020].
-The Global Economic..., 2020. The World Bank. [Online] 
-Available at: https://www.worldbank.org/en/news/feature/2020/06/08/the-global-economic-outlook-during-the-covid-19-pandemic-a-changed-world
+- The Global Economic..., 2020. The World Bank. [Online] 
+Available at: [global economic](https://www.worldbank.org/en/news/feature/2020/06/08/the-global-economic-outlook-during-the-covid-19-pandemic-a-changed-world)
 [Haettu 11. 8. 2021].
-The human brain..., n.d.. The human brain project. [Online] 
-Available at: https://www.fzi.de/en/research/projekt-details/human-brain-project/
+- The human brain..., n.d.. The human brain project. [Online] 
+Available at: [human brain](https://www.fzi.de/en/research/projekt-details/human-brain-project/)
 [Haettu 16. 3. 2021].
-The Kompano Robot..., 2019. The Kompano Robot is here to change labor in horticulture. [Online] 
-Available at: https://meetphil.priva.com/insights/the-kompano-robot-is-here-to-change-labor-in-horticulture
-[Haettu 23 11. 2020].
-The Large Hadron..., 2020. The Large Hadron Collider. [Online] 
-Available at: https://home.cern/science/accelerators/large-hadron-collider
-[Haettu 7. 7. 2020].
-The robot butler..., 2018. The robot butler is coming to a hotel near you. [Online] 
-Available at: https://www.kone.com/en/news-and-insights/stories/the-robot-butler-is-coming-to-a-hotel-near-you.aspx
-[Haettu 2. 7. 2020].
-The Robotics Back-End, 2021. ROS1 vs ROS2, Practical Overview For ROS Developers. [Online] 
-Available at: https://roboticsbackend.com/ros1-vs-ros2-practical-overview/
-[Haettu 25 11. 2020].
-The Self-Driving Delivery..., n.d. The Self-Driving Delivery Robot. [Online] 
-Available at: https://www.starship.xyz/business/
-[Haettu 13 11. 2020].
-Thomessen, T., 2018. ROSWELD – ROS based framework for planning, monitoring and control of multipass robot welding. s.l.:s.n.
-Tieck, J. C. V., Weber, S., Roennau, A. & Dillman, R., 2018. Triggering robot hand reflexes with human EMG data using spiking neuron. Baden-Baden, ResearchGate.
-Tieck, J. C. V. ym., 2020. A spiking network classifies human sEMG signals and triggers finger reflexes on a robotic hand. s.l., ScienceDirect.
-Time Sensitive Networking... , 2021. Time Sensitive Networking (TSN). [Online] 
-Available at: https://us.profinet.com/digital/tsn/
-[Haettu 24. 9. 2021].
-Turtlebot3, 2021. Turtlebot3. [Online] 
-Available at: https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/
-[Haettu 18. 8. 2021].
-TUV Rheinland Certificate, 2019. TUV Rheinland Certificate. [Online] 
-Available at: https://www.safeopedia.com/definition/5013/tuv-rheinland-certificate
-[Haettu 16. 9. 2021].
-Unikie AI vision, n.d. Unikie AI Vision. [Online] 
-Available at: https://www.unikie.com/en/assets/unikie-ai-vision/
-[Haettu 31. 8. 2020].
-Unikie Oy, n.d. Unikie Oy. [Online] 
-Available at: https://www.finder.fi/IT-konsultointi+IT-palvelut/Unikie+Oy/Tampere/yhteystiedot/3066496
-[Haettu 21. 8. 2020].
-Unikie, 2018. Unikie. [Online] 
-Available at: https://fi.wikipedia.org/wiki/Unikie
-[Haettu 21. 8. 2020].
-Universal Robots ROS..., 2020. Universal Robots ROS Driver. [Online] 
-Available at: https://www.universal-robots.com/articles/ur/application-installation/universal-robots-ros-driver/
-[Haettu 1. 7. 2020].
-Vaisto Solutions Oy, 2021. Vaisto Solutions Oy. [Online] 
-Available at: https://www.kauppalehti.fi/yritykset/yritys/vaisto+solutions+oy/28339399
-[Haettu 13. 9. 2021].
-Velodyne Lidar, n.d.. Velodyne Lidar, Inc.. [Online] 
-Available at: https://www.linkedin.com/company/velodyne-lidar/about/
-[Haettu 6. 7. 2020].
-Wenzel, P., 2017. Profinet. Teoksessa: Industrial Communication Technology Handbook. s.l.:CRC Press.
-We're on a... , 2020. We're on a mission to revolutionise waste recycling. [Online] 
-Available at: https://zenrobotics.com/about-2/about/
-[Haettu 21. 8. 2020].
-What is a..., n.d.. What is a Turtlebot?. [Online] 
-Available at: https://www.turtlebot.com/
-[Haettu 18. 8. 2021].
-What is autoware?, 2020. What is autoware?. [Online] 
-Available at: https://tier4.jp/en/autoware/
-[Haettu 30. 8. 2021].
-What is Fieldbus?, n.d.. What is Fieldbus?. [Online] 
-Available at: https://www.processindustryforum.com/article/what-is-fieldbus
-[Haettu 21. 9. 2021].
-What is LIDAR?, 2020. What is LIDAR?. [Online] 
-Available at: https://velodynelidar.com/what-is-lidar/
-[Haettu 6. 7. 2020].
-What is Modbus..., n.d.. What is Modbus and How does it work?. [Online] 
-Available at: https://www.se.com/us/en/faqs/FA168406/
-[Haettu 21. 9. 2021].
-What is Network..., 2021. What is Network Overhead. [Online] 
-Available at: https://www.igi-global.com/dictionary/network-overhead/63224
-[Haettu 30 12. 2020].
-What Vaisto can..., n.d. What Vaisto can do for you.. [Online] 
-Available at: https://vaisto.io/services-landing/
-[Haettu 10. 7. 2020].
-White, R., Christensen, H. I. & Quigley, M., 2016. SROS: Securing ROS over the wire,in the graph, and through the kernel. s.l., s.n.
-Why use EtherCAT?, n.d.. Why use EtherCAT?. [Online] 
-Available at: https://www.ethercat.org/en/why_use_ethercat.htm
-[Haettu 15. 9. 2021].
-Wiggers, K. L., 2020. Ford releases a data set to accelerate autonomous car development. [Online] 
-Available at: https://venturebeat.com/2020/03/19/ford-releases-a-data-set-to-foster-autonomous-car-development/
-[Haettu 2. 7. 2020].
-wiki.ros.org www-sivut, 2020. Documentation. [Online] 
-Available at: http://wiki.ros.org/
-[Haettu 16. 9. 2021].
-Winder, P., 2021. Reinforcement learning : industrial applications of intelligent agents. 1st edition toim. s.l.:Beijing : O'Reilly.
-Vision-Guided Robot Trims..., 2016. Vision-Guided Robot Trims Tomato Plants with Chameleon3. [Online] 
+- The Kompano Robot..., 2019. The Kompano Robot is here to change labor in horticulture. [Online] 
+Available at: [kompano robot](https://meetphil.priva.com/insights/the-kompano-robot-is-here-to-change-labor-in-horticulture)
 [Haettu 23. 11. 2020].
-Vision-guided robot trims..., 2017. Vision-guided robot trims leaves off tomatoes in greenhouse. February 2017 snapshots: Robots for food delivery, greenhouse harvesting, disaster relief, and autonomous vehicles, 14 2.. 
-Woodall, W., n.d.. ROS on DDS. [Online] 
-Available at: https://design.ros2.org/articles/ros_on_dds.html
-[Haettu 26. 11. 2020].
-Wood, T., n.d.. What is the Softmax Function?. [Online] 
-Available at: https://deepai.org/machine-learning-glossary-and-terms/softmax-layer
-[Haettu 3. 8. 2021].
-World Robotics 2020, 2020. World Robotics 2020. s.l.:IFR Statistical department.
-Vozel, K., 2019. ROS-Enabled and Ready to GO!. [Online] 
-Available at: https://www.motoman.com/en-us/about/y-blog/ros-enabled-ready-to-go
-[Haettu 30. 6. 2020].
-Wright, J., 2014. International Space Station. [Online] 
-Available at: https://www.nasa.gov/mission_pages/station/main/robonaut.html
-[Haettu 4. 6. 2021].
-Vähäsantanen, S., 2020. Satakunnan talous kärsinyt merkittävästi koronasta - vaikutukset kuitenkin toistaiseksi lievemmät kuin maassa keskimäärin, s.l.: Satakuntaliitto.
-XRCE-DDS, 2021. XRCE-DDS. [Online] 
-Available at: https://www.eprosima.com/index.php/products-all/eprosima-micro-xrce-dds
-[Haettu 18. 3. 2021].
-xsens www-sivut, n.d. About us. [Online] 
-Available at: https://www.xsens.com/about-us
-[Haettu 7 7. 2020].
-xsens, n.d. Inertial Sensor Modules. [Online] 
-Available at: https://www.xsens.com/inertial-sensor-modules?hsCtaTracking=1ad2728d-59dc-49bd-bd03-834c4ad603ef%7C153ff913-4434-4ab9-a3c3-3b3a74b614e1
+- The Large Hadron..., 2020. The Large Hadron Collider. [Online] 
+Available at: [the large hadron](https://home.cern/science/accelerators/large-hadron-collider)
 [Haettu 7. 7. 2020].
-Zenner, M. J., 2019. Autonomous Mobile Robots Push Robot Boundaries. [Online] 
-Available at: https://www.robotics.org/co
-
-
-
-
-
-
-
-
-<!-- #### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-``` -->
+- The robot butler..., 2018. The robot butler is coming to a hotel near you. [Online] 
+Available at: [kone.com](https://www.kone.com/en/news-and-insights/stories/the-robot-butler-is-coming-to-a-hotel-near-you.aspx)
+[Haettu 2. 7. 2020].
+- The Robotics Back-End, 2021. ROS1 vs ROS2, Practical Overview For ROS Developers. [Online] 
+Available at: [roboticsbackend](https://roboticsbackend.com/ros1-vs-ros2-practical-overview/)
+[Haettu 25. 11. 2020].
+- The Self-Driving Delivery..., n.d. The Self-Driving Delivery Robot. [Online] 
+Available at: [self-driving delivery]() https://www.starship.xyz/business/)
+[Haettu 13. 11. 2020].
+- Thomessen, T., 2018. ROSWELD – ROS based framework for planning, monitoring and control of multipass robot welding. s.l.:s.n.
+- Tieck, J. C. V., Weber, S., Roennau, A. & Dillman, R., 2018. Triggering robot hand reflexes with human EMG data using spiking neuron. Baden-Baden, ResearchGate.
+- Tieck, J. C. V. ym., 2020. A spiking network classifies human sEMG signals and triggers finger reflexes on a robotic hand. s.l., ScienceDirect.
+- Time Sensitive Networking... , 2021. Time Sensitive Networking (TSN). [Online] 
+Available at: [profinet digital](https://us.profinet.com/digital/tsn/)
+[Haettu 24. 9. 2021].
+- Turtlebot3, 2021. Turtlebot3. [Online] 
+Available at: [turtlebot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+[Haettu 18. 8. 2021].
+- TUV Rheinland Certificate, 2019. TUV Rheinland Certificate. [Online] 
+Available at: [tuv-rheinland](https://www.safeopedia.com/definition/5013/tuv-rheinland-certificate)
+[Haettu 16. 9. 2021].
+- Unikie AI vision, n.d. Unikie AI Vision. [Online] 
+Available at: [unkikie ai](https://www.unikie.com/en/assets/unikie-ai-vision/)
+[Haettu 31. 8. 2020].
+- Unikie Oy, n.d. Unikie Oy. [Online] 
+Available at: [unikie oy](https://www.finder.fi/IT-konsultointi+IT-palvelut/Unikie+Oy/Tampere/yhteystiedot/3066496)
+[Haettu 21. 8. 2020].
+- Unikie, 2018. Unikie. [Online] 
+Available at: [unikie](https://fi.wikipedia.org/wiki/Unikie)
+[Haettu 21. 8. 2020].
+- Universal Robots ROS..., 2020. Universal Robots ROS Driver. [Online] 
+Available at: [universal robots](https://www.universal-robots.com/articles/ur/application-installation/universal-robots-ros-driver/)
+[Haettu 1. 7. 2020].
+- Vaisto Solutions Oy, 2021. Vaisto Solutions Oy. [Online] 
+Available at: [vaisto solutions](https://www.kauppalehti.fi/yritykset/yritys/vaisto+solutions+oy/28339399)
+[Haettu 13. 9. 2021].
+- Velodyne Lidar, n.d.. Velodyne Lidar, Inc.. [Online] 
+Available at: [velodyne lidar](https://www.linkedin.com/company/velodyne-lidar/about/)
+[Haettu 6. 7. 2020].
+- Wenzel, P., 2017. Profinet. Teoksessa: Industrial Communication Technology Handbook. s.l.:CRC Press.
+- We're on a... , 2020. We're on a mission to revolutionise waste recycling. [Online] 
+Available at: [zenrobotics](https://zenrobotics.com/about-2/about/)
+[Haettu 21. 8. 2020].
+- What is a..., n.d.. What is a Turtlebot?. [Online] 
+Available at: [turtlebot](https://www.turtlebot.com/)
+[Haettu 18. 8. 2021].
+- What is autoware?, 2020. What is autoware?. [Online] 
+Available at: [tier4](https://tier4.jp/en/autoware/)
+[Haettu 30. 8. 2021].
+- What is Fieldbus?, n.d.. What is Fieldbus?. [Online] 
+Available at: [fieldbus](https://www.processindustryforum.com/article/what-is-fieldbus)
+[Haettu 21. 9. 2021].
+- What is LIDAR?, 2020. What is LIDAR?. [Online] 
+Available at: [lidar](https://velodynelidar.com/what-is-lidar/)
+[Haettu 6. 7. 2020].
+- What is Modbus..., n.d.. What is Modbus and How does it work?. [Online] 
+Available at: [modbus](https://www.se.com/us/en/faqs/FA168406/)
+[Haettu 21. 9. 2021].
+- What is Network..., 2021. What is Network Overhead. [Online] 
+Available at: [network](https://www.igi-global.com/dictionary/network-overhead/63224)
+[Haettu 30. 12. 2020].
+- What Vaisto can..., n.d. What Vaisto can do for you.. [Online] 
+Available at: [vaisto.io](https://vaisto.io/services-landing/)
+[Haettu 10. 7. 2020].
+- White, R., Christensen, H. I. & Quigley, M., 2016. SROS: Securing ROS over the wire,in the graph, and through the kernel. s.l., s.n.
+- Why use EtherCAT?, n.d.. Why use EtherCAT?. [Online] 
+Available at: [ethercat use](https://www.ethercat.org/en/why_use_ethercat.htm)
+[Haettu 15. 9. 2021].
+- Wiggers, K. L., 2020. Ford releases a data set to accelerate autonomous car development. [Online] 
+Available at: [ford dataset](https://venturebeat.com/2020/03/19/ford-releases-a-data-set-to-foster-autonomous-car-development/)
+[Haettu 2. 7. 2020].
+- wiki.ros.org www-sivut, 2020. Documentation. [Online] 
+Available at: [documentation](http://wiki.ros.org/)
+[Haettu 16. 9. 2021].
+- Winder, P., 2021. Reinforcement learning : industrial applications of intelligent agents. 1st edition toim. s.l.:Beijing : O'Reilly.
+- Vision-guided robot trims..., 2017. February 2017 snapshots: Robots for food delivery, greenhouse harvesting, disaster relief, and autonomous vehicles. [online]
+Available at: [vision-guided](https://www.vision-systems.com/embedded/article/16737630/february-2017-snapshots-robots-for-food-delivery-greenhouse-harvesting-disaster-relief-and-autonomous-vehicles)
+[Haettu 23. 11. 2020].
+- Woodall, W., n.d.. ROS on DDS. [Online] 
+Available at: [ros on dds](https://design.ros2.org/articles/ros_on_dds.html)
+[Haettu 26. 11. 2020].
+- Wood, T., n.d.. What is the Softmax Function?. [Online] 
+Available at: [softmax](https://deepai.org/machine-learning-glossary-and-terms/softmax-layer)
+[Haettu 3. 8. 2021].
+- World Robotics 2020, 2020. World Robotics 2020. s.l.:IFR Statistical department.
+- Vozel, K., 2019. ROS-Enabled and Ready to GO!. [Online] 
+Available at: [ros-enabled](https://www.motoman.com/en-us/about/y-blog/ros-enabled-ready-to-go)
+[Haettu 30. 6. 2020].
+- Wright, J., 2014. International Space Station. [Online] 
+Available at: [iss](https://www.nasa.gov/mission_pages/station/main/robonaut.html)
+[Haettu 4. 6. 2021].
+- Vähäsantanen, S., 2020. Satakunnan talous kärsinyt merkittävästi koronasta - vaikutukset kuitenkin toistaiseksi lievemmät kuin maassa keskimäärin, s.l.: Satakuntaliitto.
+- XRCE-DDS, 2021. XRCE-DDS. [Online] 
+Available at: [xrce-dds](https://www.eprosima.com/index.php/products-all/eprosima-micro-xrce-dds)
+[Haettu 18. 3. 2021].
+- xsens www-sivut, n.d. About us. [Online] 
+Available at: [xsens](https://www.xsens.com/about-us)
+[Haettu 7. 7. 2020].
+- xsens, n.d. Inertial Sensor Modules. [Online] 
+Available at: [inertial sensor](https://www.xsens.com/inertial-sensor-modules?hsCtaTracking=1ad2728d-59dc-49bd-bd03-834c4ad603ef%7C153ff913-4434-4ab9-a3c3-3b3a74b614e1)
+[Haettu 7. 7. 2020].
+- Zenner, M. J., 2019. Autonomous Mobile Robots Push Robot Boundaries. [Online] 
+Available at: [robotics.org](https://www.robotics.org/co)
