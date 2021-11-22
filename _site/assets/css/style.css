@@ -207,7 +207,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .highlight .ss { color: #90a959; }
 
-body { font: 14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #2b2b2b; font-weight: 300; margin: 0px; padding: 0px 0 20px 0px; background: url(../images/body-background.png) #eae6d1; }
+body { font: 17px/25px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #2b2b2b; font-weight: 300; margin: 0px; padding: 0px 0 20px 0px; background: url(../images/body-background.png) #eae6d1; }
 
 h1, h2, h3, h4, h5, h6 { color: #333; margin: 0 0 10px; }
 
@@ -231,7 +231,7 @@ ul { list-style-image: url("../images/bullet.png"); }
 
 strong { font-weight: bold; color: #333; }
 
-.wrapper { width: 650px; margin: 0 auto; position: relative; }
+.wrapper { width: 850px; margin: 0 auto; position: relative; }
 
 section img { max-width: 100%; position: relative; }
 
@@ -268,12 +268,12 @@ header p { color: #d8d8d8; text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0; font-size: 1
 #banner ul li a.button { background-color: #FFE788; }
 #banner #logo { position: absolute; height: 36px; width: 36px; right: 7px; top: 7px; display: block; background: url(../images/octocat-logo.svg); }
 
-section { width: 650px; padding: 30px 30px 50px 30px; margin: 20px 0; margin-top: 190px; position: relative; background: #fbfbfb; border-radius: 3px; border: 1px solid #cbcbcb; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4); }
+section { width: 850px; padding: 30px 30px 50px 30px; margin: 20px 0; margin-top: 190px; position: relative; background: #fbfbfb; border-radius: 3px; border: 1px solid #cbcbcb; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4); }
 
 small { font-size: 12px; }
 
-nav { width: 260px; position: fixed; top: 200px; left: 50%; margin-left: -600px; text-align: right; }
-nav ul { list-style: none; list-style-image: none; font-size: 14px; line-height: 24px; overflow: auto; height: 450px; padding: 4%; }
+nav { width: 320px; position: fixed; top: 200px; left: 43%; margin-left: -600px; text-align: center; }
+nav ul { list-style: none; list-style-image: none; font-size: 16px; line-height: 24px; overflow: auto; height: 450px; padding: 4%; }
 nav ul li { padding: 5px 0px; line-height: 12px; }
 nav ul li.tag-h1 { font-size: 1.2em; }
 nav ul li.tag-h1 a { font-weight: bold; color: #333; }
